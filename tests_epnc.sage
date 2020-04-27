@@ -19,3 +19,11 @@ for e in g :
     k = k + 1
 print (k)
 print ((n + 1)^(n - 1))
+
+pi3 = SetPartition ([{1, 5}, {4}, {2, 3}])
+sig3 = Permutation ([2, 1, 4, 3, 5])
+e3 = EPNC (pi3, sig1)
+e4 = EPNC (pi3, sig3)
+print (couvre_epnc (e3, e1))
+print (couvre_epnc (e4, e1))
+print (couvre_epnc (e1, e3))

@@ -38,4 +38,34 @@ def generate_epnc (n) :
                 yield tmp
 
 def couvre_epnc (E1, E2) :
-    return True #TODO
+    pi1, sig1 = E1.pi, E1.sig
+    pi2, sig2 = E2.pi, E2.sig
+
+    if not E1.is_epnc () :
+        print (pi1, sig1, "n'est pas une epnc")
+        return False
+    if not E2.is_epnc () :
+        print (pi2, sig2, "n'est pas une pnc")
+        return False
+
+    if not couvre_pnc (pi1, pi2) :
+        print (pi1, "ne couvre pas", pi2)
+        return False
+
+    s = {}
+    for i, b2 in enumerate (pi2) :
+        s [i] = []
+        for b1 in pi1 :
+            if is_subset (b1, b2) :
+                for e in b1 :
+                   s [i].append (sig1 (e))
+        L = []
+        for e in b2 :
+            L.append (sig2 (e))
+
+        S1 = set (s [i])
+        S2 = set (L)
+        if S1 != S2 :
+            print (S1, "n'est pas", S2)
+            return False
+    return True

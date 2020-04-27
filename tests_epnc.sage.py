@@ -26,3 +26,11 @@ for e in g :
 print (k)
 print ((n + _sage_const_1 )**(n - _sage_const_1 ))
 
+pi3 = SetPartition ([{_sage_const_1 , _sage_const_5 }, {_sage_const_4 }, {_sage_const_2 , _sage_const_3 }])
+sig3 = Permutation ([_sage_const_2 , _sage_const_1 , _sage_const_4 , _sage_const_3 , _sage_const_5 ])
+e3 = EPNC (pi3, sig1)
+e4 = EPNC (pi3, sig3)
+print (couvre_epnc (e3, e1))
+print (couvre_epnc (e4, e1))
+print (couvre_epnc (e1, e3))
+
