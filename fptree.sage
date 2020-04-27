@@ -50,7 +50,7 @@ class FPT :
 
 def pref (T) :
     if not T.is_FPT () :
-        return False
+        return None
 
     E, val, children = T.E, T.val, T.children
     

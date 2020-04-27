@@ -23,7 +23,7 @@ def generate_fpp (n) :
         yield f
 
 def couvre_fp (L1, L2) :
-    return True
+    return True #TODO
 
 def perm_fp (P, L) :
     P2 = P.inverse ()
