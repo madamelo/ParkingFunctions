@@ -69,3 +69,33 @@ def couvre_epnc (E1, E2) :
             print (S1, "n'est pas", S2)
             return False
     return True
+
+def dpnc_to_epnc (D) :
+    pi, rho, lam = D.pi, D.rho, D.lam
+    n = pi.base_set_cardinality ()
+    L = [0] * n
+    for i, b1 in enumerate (pi) :
+        b2 = rho [lam [i]]
+        L1 = sorted (list (b1))
+        L2 = sorted (list (b2))
+        for j in range (len (L1)) :
+            idx = L1  [j] - 1
+            L [idx] = L2 [j]
+    P = Permutation (L)
+    return EPNC (pi, P)
+
+def epnc_to_dpnc (E) :
+    pi, sig = E.pi, E.sig
+    R = []
+    lam = {}
+    for b in pi :
+        r = []
+        for e in b :
+            r.append (sig [e - 1])
+        R.append (r)
+    rho = SetPartition (R)
+    for i, b in enumerate (R) :
+        for irho, brho in enumerate (rho) :
+            if sorted (b) == sorted (brho) :
+                lam [i] = irho
+    return DPNC (pi, rho, lam)

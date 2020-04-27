@@ -27,3 +27,17 @@ e4 = EPNC (pi3, sig3)
 print (couvre_epnc (e3, e1))
 print (couvre_epnc (e4, e1))
 print (couvre_epnc (e1, e3))
+
+pi5 = SetPartition ([{1, 4, 5}, {2, 3}])
+rho5 = SetPartition ([{1, 3, 5}, {2, 4}])
+lam5 = {0 : 0, 1 : 1}
+d5 = DPNC (pi5, rho5, lam5)
+e5 = dpnc_to_epnc (d5)
+ed5 = epnc_to_dpnc (e5)
+print (e5.pi, e5.sig)
+print (ed5.pi, ed5.rho, ed5.lam)
+
+d6 = epnc_to_dpnc (e1)
+de6 = dpnc_to_epnc (d6)
+print (d6.pi, d6.rho, d6.lam)
+print (de6.pi, de6.sig)
