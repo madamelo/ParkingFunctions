@@ -43,8 +43,8 @@ class FPT :
     def pretty_print (self, ec = 1) :
         val = self.val
         children = self.children
-        deb = "*" * ec * 2
-        print (deb, val)
+        debv = "*" * ec * 2
+        print (debv, val)
         for c in children :
             c.pretty_print (ec + 1)
 
@@ -63,7 +63,7 @@ def pref (T) :
 
 def fpt_to_fp (T) :
     if not T.is_FPT () :
-        return False
+        return None
     
     n = len (T.E)
     L = [0] * n
@@ -84,14 +84,16 @@ def make_fpt_aux (R, idx) :
     n = len (v)
     c = []
     tmp = n + 1
+    E = v
 
     for i in (1..n) :
         vci = R [i]
         F, idxi = make_fpt_aux (R, idx)
         idx = idxi
         c.append (F)
+        E = E + F.E
 
-    return FPT ([], v, c), idx
+    return FPT (sorted (E), v, c), idx
 
 def make_fpt (R) :
     F, idx = make_fpt_aux (R, 0)
@@ -102,7 +104,7 @@ def make_fpt (R) :
 
 def fp_to_fpt (L) :
     if not is_fp (L) :
-        return False
+        return None
 
     R = []
     for r in range (len (L)) :
@@ -112,9 +114,15 @@ def fp_to_fpt (L) :
         R [e - 1].append (i + 1)
 
     R.append ([])
-    print (R)
+    F = make_fpt (R)
 
-    return (make_fpt (R))
+    if F.is_FPT () :
+        return F
+    return None
 
-
+def generate_fpt (n) :
+    it = generate_fp (n)
+    for f in it :
+        if f != None :
+            yield fp_to_fpt (f)
 

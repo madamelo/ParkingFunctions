@@ -105,3 +105,15 @@ print ()
 
 T6 = fp_to_fpt (fpt_to_fp (T1))
 T6.pretty_print ()
+print ()
+
+n = 3
+g = generate_fpt (n)
+k = 0
+for e in g :
+    e.pretty_print ()
+    print ()
+    k = k + 1
+print (k)
+print ((n + 1)^(n - 1))
+print ()
