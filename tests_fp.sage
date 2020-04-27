@@ -31,3 +31,12 @@ for e in g :
     k = k + 1
 print (k)
 print (catalan_number (n))
+
+P = Permutation ([2, 4, 1, 3, 6, 5])
+print (perm_fp (P, L1))
+
+pi = SetPartition ([{1, 4, 6}, {2, 3}, {5}])
+rho = SetPartition ([{1, 5}, {2}, {3, 4, 6}])
+lam = {0 : 2, 1 : 0, 2 : 1}
+D = DPNC (pi, rho, lam)
+print (dpnc_to_fp (D))

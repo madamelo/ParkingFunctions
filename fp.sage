@@ -1,3 +1,5 @@
+load dpnc.sage
+
 def is_fp (L) :
     L2 = sorted (L)
     for i, b in enumerate (L2) :
@@ -22,3 +24,26 @@ def generate_fpp (n) :
 
 def couvre_fp (L1, L2) :
     return True
+
+def perm_fp (P, L) :
+    P2 = P.inverse ()
+    R = []
+    for i in range (len (L)) :
+        R.append (L [P2 [i] - 1])
+    return R
+
+def dpnc_to_fp (D) :
+    pi, rho, lam = D.pi, D.rho, D.lam
+    if not D.is_dpnc () :
+        print (pi, rho, lam, "n'est pas une dpnc")
+        return False
+
+    n = pi.base_set_cardinality ()
+    L = [0] * n
+
+    for i, B in enumerate (pi) :
+        b = min (B)
+        B2 = rho [lam [i]]
+        for e in B2 :
+            L [e -  1] = b
+    return L
