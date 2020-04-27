@@ -99,3 +99,8 @@ def epnc_to_dpnc (E) :
             if sorted (b) == sorted (brho) :
                 lam [i] = irho
     return DPNC (pi, rho, lam)
+
+def label (E1, E2) :
+    pi, sig = E1.pi, E1.sig
+    rho, tau = E2.pi, E2.sig
+    return True #TODO

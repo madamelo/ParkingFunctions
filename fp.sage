@@ -23,6 +23,9 @@ def generate_fpp (n) :
         yield f
 
 def couvre_fp (L1, L2) :
+    S1 = sum (L1)
+    S2 = sum (L2)
+    return S1 >= S2 # NOT THAT
     return True #TODO
 
 def perm_fp (P, L) :
