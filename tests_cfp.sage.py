@@ -29,6 +29,21 @@ for e in g :
     print (e)
     kt = kt + _sage_const_1 
 print (kt)
-fm = _sage_const_1  / (l + _sage_const_1 ) * binomial (k * n, l) * sum (i, _sage_const_0 , l + _sage_const_1 , (-_sage_const_1 )**i * binomial (l + _sage_const_1 , i) * (l + _sage_const_1  - i)**n)
-print (fm)
+
+def mpi (i) :
+    if is_odd (i) :
+        return - _sage_const_1 
+    return _sage_const_1 
+
+def stmp (a, b, n) :
+    r = _sage_const_0 
+    for i in (ellipsis_iter(a,Ellipsis,b)) :
+        print (i, mpi (i), binomial (b, i))
+        r = r + mpi (i) * binomial (b, i) * (b - i)**n
+        print (r)
+    return r
+
+tmp1 = binomial (k * n, l)
+tmp2 = stmp (_sage_const_0 , l + _sage_const_1 , n)
+print (factorial (l), binomial (k * n, l), stirling_number2 (n, l + _sage_const_1 ))
 

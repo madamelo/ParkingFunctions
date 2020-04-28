@@ -55,3 +55,19 @@
         * tests_fptree.sage
     Génération des arbres de parking de {1, ..., n}
     Bijection entre fonctions de parking et arbres de parking
+
+7 - Chaînes de Fonctions de Parking
+    Fichiers :
+        * cfp.sage
+        * tests_cfp.sage
+    Génération des k-chaînes de fonctions de parking
+
+8 - Chemins de Dyck décorés
+    Fichiers : 
+        * ddyck.sage
+        * tests_ddyck.sage
+    Forme (W, labels)
+        * W : mot de Dyck de longueur 2n
+        * labels : permutation de {1, ..., n}
+    Affichage des chemins de Dyck décorés
+    Bijection entre fonctions de parking et chemins de Dyck décorés

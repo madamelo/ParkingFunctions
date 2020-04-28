@@ -23,5 +23,20 @@ for e in g :
     print (e)
     kt = kt + 1
 print (kt)
-#fm = 1 / (l + 1) * binomial (k * n, l) * sum (i, 0, l + 1, (-1)^i * binomial (l + 1, i) * (l + 1 - i)^n)
-#print (fm) TODO
+
+def mpi (i) :
+    if is_odd (i) :
+        return - 1
+    return 1
+
+def stmp (a, b, n) :
+    r = 0
+    for i in (a..b) :
+        print (i, mpi (i), binomial (b, i))
+        r = r + mpi (i) * binomial (b, i) * (b - i)^n
+        print (r)
+    return r
+
+tmp1 = binomial (k * n, l)
+tmp2 = stmp (0, l + 1, n)
+print (factorial (l), binomial (k * n, l), stirling_number2 (n, l + 1))
