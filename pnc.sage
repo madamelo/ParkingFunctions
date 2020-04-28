@@ -68,3 +68,13 @@ def Kreweras (P) :
     k = om.left_action_product (pib)
     B = blocs_perm (k)
     return SetPartition (B)
+
+def label (P1, P2) :
+    if not couvre_pnc (P1, P2) :
+        return None
+
+    p1 = pnc_to_perm (P1)
+    p2 = pnc_to_perm (P2)
+    p2i = p2.inverse ()
+    t = p1.left_action_product (p2i)
+    return t

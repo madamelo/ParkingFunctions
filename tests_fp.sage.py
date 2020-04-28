@@ -37,9 +37,11 @@ for e in g :
     k = k + _sage_const_1 
 print (k)
 print (catalan_number (n))
+print ()
 
 P = Permutation ([_sage_const_2 , _sage_const_4 , _sage_const_1 , _sage_const_3 , _sage_const_6 , _sage_const_5 ])
 print (perm_fp (P, L1))
+print ()
 
 pi = SetPartition ([{_sage_const_1 , _sage_const_4 , _sage_const_6 }, {_sage_const_2 , _sage_const_3 }, {_sage_const_5 }])
 rho = SetPartition ([{_sage_const_1 , _sage_const_5 }, {_sage_const_2 }, {_sage_const_3 , _sage_const_4 , _sage_const_6 }])

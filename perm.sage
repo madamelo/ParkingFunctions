@@ -5,7 +5,7 @@ def is_perm (L) :
 
 def blocs_perm (L) :
     if not is_perm (L) :
-        return set ([])
+        return None
     S = []
     for i, e in enumerate (L) :
         s = [e]
@@ -19,5 +19,39 @@ def blocs_perm (L) :
         if not set (b) in R :
             R.append (set (b))
     return R
+
+def comp_perm (L1, L2) :
+    if not is_perm (L1) :
+        return None
+    if not is_perm (L2) :
+        return None
+
+    P1 = Permutation (L1)
+    P2 = Permutation (L2)
+    P = P1.left_action_product (P2)
+
+    return P
+
+def inv_perm (L) :
+    if not is_perm (L) :
+        return None
+    
+    p = Permutation (L)
+    return p.inverse ()
+
+def code (L) :
+    C = [0] * len (L)
+
+    for i, e in enumerate (L) :
+        cpt = 0
+        for e2 in L [i+1 :] :
+            if e2 < e :
+                cpt = cpt + 1
+        C [e - 1] = cpt
+
+    C.reverse ()
+
+    return C
+
 
     

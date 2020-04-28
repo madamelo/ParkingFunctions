@@ -20,3 +20,7 @@ print ()
 R  = blocs_perm (L3)
 for e in R :
     print (list (e))
+print ()
+
+L4 = [7, 3, 8, 5, 1, 2, 6, 4]
+print (code (L4))

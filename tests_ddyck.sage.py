@@ -17,14 +17,19 @@ dd1 = DDYCK (W1, L1)
 dd2 = DDYCK (W2, L2)
 print (dd1.is_ddyck ())
 print (dd2.is_ddyck ())
+print ()
 
 P3 = ParkingFunction ([_sage_const_1 , _sage_const_3 , _sage_const_2 , _sage_const_6 , _sage_const_2 , _sage_const_8 , _sage_const_2 , _sage_const_10 , _sage_const_1 , _sage_const_4 ])
 dd3 = fp_to_ddyck (P3)
 dd3.pretty_print ()
+print ()
+
 print (blocks (dd3))
 print (ddyck_to_fp (dd3))
+print ()
 
 print (dd3.to_list ())
+print ()
 
 W4 = [_sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_0 ]
 L4 = [_sage_const_1 , _sage_const_9 , _sage_const_3 , _sage_const_5 , _sage_const_2 , _sage_const_7 , _sage_const_10 , _sage_const_4 , _sage_const_6 , _sage_const_8 ]

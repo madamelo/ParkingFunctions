@@ -19,6 +19,7 @@ C2 = CFP (L2)
 print (C1.is_k_cfp (_sage_const_3 ))
 print (C1.is_k_cfp (_sage_const_2 ))
 print (C2.is_k_cfp (_sage_const_2 ))
+print ()
 
 n = _sage_const_4 
 k = _sage_const_2 
@@ -28,7 +29,8 @@ kt = _sage_const_0
 for e in g :
     print (e)
     kt = kt + _sage_const_1 
-print (kt)
+print ()
 
+print (kt)
 print (factorial (l) * binomial (k * n, l) * stirling_number2 (n, l + _sage_const_1 ))
 

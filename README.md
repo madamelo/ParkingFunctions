@@ -3,6 +3,9 @@
         * perm.sage
         * tests_perm.sage
     Découpage d'une permutation en ses blocs (cycles)
+    Composition de 2 permutations
+    Génération de la permutation inverse
+    Génération du code d'une permutation (nombre minimal de transpositions dans sa décomposition)
 
 2 - Partitions non-croisées
     Fichiers : 
@@ -12,6 +15,7 @@
     Relation de couverture
     Génération de la permutation associée à une partition non-croisée
     Complément de Kreweras
+    Génération du label d'une relation de couverture
 
 3 - 2-partitions non-croisées
     Fichiers :
@@ -38,6 +42,7 @@
     Génération des 2-partitions non-croisées adaptées de {1, ..., n}
     Relation de couverture
     Bijection entre EPNC et DPNC
+    Génération du label d'une relation de couverture : TODO
 
 5 - Fonctions de Parking
     Fichiers :
@@ -54,13 +59,15 @@
         * fptree.sage
         * tests_fptree.sage
     Génération des arbres de parking de {1, ..., n}
+    Affichage d'un arbre de parking
+    Parcours d'un arbre de parking (préfixe)
     Bijection entre fonctions de parking et arbres de parking
 
 7 - Chaînes de Fonctions de Parking
     Fichiers :
         * cfp.sage
         * tests_cfp.sage
-    Génération des k-chaînes de fonctions de parking
+    Génération des k-chaînes de fonctions de parking : TODO (relation de couverture ???)
 
 8 - Chemins de Dyck décorés
     Fichiers : 
@@ -69,5 +76,7 @@
     Forme (W, labels)
         * W : mot de Dyck de longueur 2n
         * labels : permutation de {1, ..., n}
-    Affichage des chemins de Dyck décorés
+    Affichage d'un chemin de Dyck décoré
+    Génération de la liste correspondant à un chemin de Dyck décoré
     Bijection entre fonctions de parking et chemins de Dyck décorés
+    Relation de couverture : TODO

@@ -13,6 +13,7 @@ C2 = CFP (L2)
 print (C1.is_k_cfp (3))
 print (C1.is_k_cfp (2))
 print (C2.is_k_cfp (2))
+print ()
 
 n = 4
 k = 2
@@ -22,6 +23,7 @@ kt = 0
 for e in g :
     print (e)
     kt = kt + 1
-print (kt)
+print ()
 
+print (kt)
 print (factorial (l) * binomial (k * n, l) * stirling_number2 (n, l + 1))

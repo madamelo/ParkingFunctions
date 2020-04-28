@@ -10,6 +10,7 @@ e1 = EPNC (pi, sig1)
 e2 = EPNC (pi, sig2)
 print (e1.is_epnc ())
 print (e2.is_epnc ())
+print ()
 
 n = 4
 g = generate_epnc (n)
@@ -19,6 +20,7 @@ for e in g :
     k = k + 1
 print (k)
 print ((n + 1)^(n - 1))
+print ()
 
 pi3 = SetPartition ([{1, 5}, {4}, {2, 3}])
 sig3 = Permutation ([2, 1, 4, 3, 5])
@@ -27,6 +29,7 @@ e4 = EPNC (pi3, sig3)
 print (couvre_epnc (e3, e1))
 print (couvre_epnc (e4, e1))
 print (couvre_epnc (e1, e3))
+print ()
 
 pi5 = SetPartition ([{1, 4, 5}, {2, 3}])
 rho5 = SetPartition ([{1, 3, 5}, {2, 4}])
@@ -36,6 +39,7 @@ e5 = dpnc_to_epnc (d5)
 ed5 = epnc_to_dpnc (e5)
 print (e5.pi, e5.sig)
 print (ed5.pi, ed5.rho, ed5.lam)
+print ()
 
 d6 = epnc_to_dpnc (e1)
 de6 = dpnc_to_epnc (d6)

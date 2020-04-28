@@ -39,4 +39,7 @@ print (pnc_to_perm (P1))
 print ()
 
 print (Kreweras (P1))
+print ()
+
+print (label (P4, P2))
 

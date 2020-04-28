@@ -21,6 +21,7 @@ print (d2.is_dpnc ())
 
 d3 = DPNC (rho, rho, lam)
 print (d3.is_dpnc ())
+print ()
 
 n = _sage_const_4 
 g = generate_dpnc (n)
@@ -30,18 +31,22 @@ for e in g :
     k = k + _sage_const_1 
 print (k)
 print ((n + _sage_const_1 )**(n - _sage_const_1 ))
+print ()
 
 pi4 = SetPartition ([{_sage_const_1 , _sage_const_5 }, {_sage_const_2 , _sage_const_3 }, {_sage_const_4 }])
 rho4 = SetPartition ([{_sage_const_1 }, {_sage_const_2 , _sage_const_4 }, {_sage_const_3 , _sage_const_5 }])
 lam4 = {_sage_const_0  : _sage_const_2 , _sage_const_1  : _sage_const_1 , _sage_const_2  : _sage_const_0 }
 d4 = DPNC (pi4, rho4, lam4)
 print (couvre_dpnc (d4, d))
+
 lam5 = {_sage_const_0  : _sage_const_1 , _sage_const_1  : _sage_const_2 , _sage_const_2  : _sage_const_0 }
 d5 = DPNC (pi4, rho4, lam5)
 print (couvre_dpnc (d5, d))
+print ()
 
 print (d.rang ())
 print (d4.rang ())
+print ()
 
 P = Permutation ([_sage_const_4 , _sage_const_5 , _sage_const_2 , _sage_const_1 , _sage_const_3 ])
 d6 = perm_dpnc (P, d)

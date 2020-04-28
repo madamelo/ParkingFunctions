@@ -122,5 +122,4 @@ for e in g :
     k = k + _sage_const_1 
 print (k)
 print ((n + _sage_const_1 )**(n - _sage_const_1 ))
-print ()
 

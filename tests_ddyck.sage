@@ -11,14 +11,19 @@ dd1 = DDYCK (W1, L1)
 dd2 = DDYCK (W2, L2)
 print (dd1.is_ddyck ())
 print (dd2.is_ddyck ())
+print ()
 
 P3 = ParkingFunction ([1, 3, 2, 6, 2, 8, 2, 10, 1, 4])
 dd3 = fp_to_ddyck (P3)
 dd3.pretty_print ()
+print ()
+
 print (blocks (dd3))
 print (ddyck_to_fp (dd3))
+print ()
 
 print (dd3.to_list ())
+print ()
 
 W4 = [1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0]
 L4 = [1, 9, 3, 5, 2, 7, 10, 4, 6, 8]

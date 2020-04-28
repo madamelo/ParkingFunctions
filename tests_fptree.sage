@@ -116,4 +116,3 @@ for e in g :
     k = k + 1
 print (k)
 print ((n + 1)^(n - 1))
-print ()
