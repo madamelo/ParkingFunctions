@@ -24,6 +24,9 @@ dd3 = fp_to_ddyck (P3)
 dd3.pretty_print ()
 print ()
 
+dd3.flat_print ()
+print ()
+
 print (blocks (dd3))
 print (ddyck_to_fp (dd3))
 print ()

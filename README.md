@@ -42,7 +42,7 @@
     Génération des 2-partitions non-croisées adaptées de {1, ..., n}
     Relation de couverture
     Bijection entre EPNC et DPNC
-    Génération du label d'une relation de couverture : TODO
+    Génération du label d'une relation de couverture
 
 5 - Fonctions de Parking
     Fichiers :

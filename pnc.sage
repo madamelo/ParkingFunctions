@@ -75,6 +75,6 @@ def label (P1, P2) :
 
     p1 = pnc_to_perm (P1)
     p2 = pnc_to_perm (P2)
-    p2i = p2.inverse ()
-    t = p1.left_action_product (p2i)
+    p1i = p1.inverse ()
+    t = p2.left_action_product (p1i)
     return t

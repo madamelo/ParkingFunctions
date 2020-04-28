@@ -100,7 +100,13 @@ def epnc_to_dpnc (E) :
                 lam [i] = irho
     return DPNC (pi, rho, lam)
 
-def label (E1, E2) :
+def epnc_label (E1, E2) :
+    if not couvre_epnc (E1, E2) :
+        return None
+
     pi, sig = E1.pi, E1.sig
     rho, tau = E2.pi, E2.sig
-    return True #TODO
+
+    gamma = code (sig)
+    tr = label (pi, rho)
+    return (gamma, tr)

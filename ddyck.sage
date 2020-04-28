@@ -66,6 +66,30 @@ class DDYCK :
     
         print (r)
 
+    def flat_print (self) :
+        if not self.is_ddyck () :
+            return
+
+        W = self.W
+        labels = self.labels
+
+        i = 0
+        s1 = ""
+        s2 = ""
+        for e in W :
+            if e == 0 :
+                s1 = s1 + "\\ "
+                s2 = s2 + "  "
+            else :
+                l = str (labels [i])
+                r = 2 - len (l)
+                s1 = s1 + "/ "
+                s2 = s2 + l + " " * r
+                i = i + 1
+        
+        print (s1)
+        print (s2)
+
     def to_list (self) :
         W, labels = self.W, self.labels
         i = 0

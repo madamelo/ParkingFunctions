@@ -45,3 +45,6 @@ d6 = epnc_to_dpnc (e1)
 de6 = dpnc_to_epnc (d6)
 print (d6.pi, d6.rho, d6.lam)
 print (de6.pi, de6.sig)
+print ()
+
+print (epnc_label (e3, e1))
