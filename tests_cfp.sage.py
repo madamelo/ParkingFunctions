@@ -22,7 +22,7 @@ print (C2.is_k_cfp (_sage_const_2 ))
 
 n = _sage_const_4 
 k = _sage_const_2 
-l = _sage_const_4 
+l = _sage_const_3 
 g = generate_cfp (n, k, l)
 kt = _sage_const_0 
 for e in g :
@@ -30,20 +30,5 @@ for e in g :
     kt = kt + _sage_const_1 
 print (kt)
 
-def mpi (i) :
-    if is_odd (i) :
-        return - _sage_const_1 
-    return _sage_const_1 
-
-def stmp (a, b, n) :
-    r = _sage_const_0 
-    for i in (ellipsis_iter(a,Ellipsis,b)) :
-        print (i, mpi (i), binomial (b, i))
-        r = r + mpi (i) * binomial (b, i) * (b - i)**n
-        print (r)
-    return r
-
-tmp1 = binomial (k * n, l)
-tmp2 = stmp (_sage_const_0 , l + _sage_const_1 , n)
-print (factorial (l), binomial (k * n, l), stirling_number2 (n, l + _sage_const_1 ))
+print (factorial (l) * binomial (k * n, l) * stirling_number2 (n, l + _sage_const_1 ))
 

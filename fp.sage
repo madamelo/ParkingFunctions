@@ -22,28 +22,6 @@ def generate_fpp (n) :
     for f in NonDecreasingParkingFunctions (n) :
         yield f
 
-def couvre_fp (L1, L2) :
-    seen = False
-    for e1, e2 in zip (L1, L2) :
-        if e2 > e1 :
-            return False
-        if e1 > e2 :
-            if seen :
-                return False
-            seen = True
-    return seen
-
-def couvre_fp_week (L1, L2) :
-    seen = False
-    for e1, e2 in zip (L1, L2) :
-        if e2 > e1 :
-            return False
-        if e1 > e2 :
-            if seen :
-                return False
-            seen = True
-    return True
-    
 def perm_fp (P, L) :
     P2 = P.inverse ()
     R = []

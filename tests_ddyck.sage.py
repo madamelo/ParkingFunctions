@@ -24,3 +24,15 @@ dd3.pretty_print ()
 print (blocks (dd3))
 print (ddyck_to_fp (dd3))
 
+print (dd3.to_list ())
+
+W4 = [_sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_0 ]
+L4 = [_sage_const_1 , _sage_const_9 , _sage_const_3 , _sage_const_5 , _sage_const_2 , _sage_const_7 , _sage_const_10 , _sage_const_4 , _sage_const_6 , _sage_const_8 ]
+dd4 = DDYCK (W4, L4)
+dd5 = DDYCK (W1, L4)
+dd6 = DDYCK (W4, L1)
+print (couvre_ddyck (dd1, dd4))
+print (couvre_ddyck (dd1, dd5))
+print (couvre_ddyck (dd1, dd6))
+print (couvre_ddyck (dd6, dd1))
+
