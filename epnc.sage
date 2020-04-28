@@ -110,3 +110,21 @@ def epnc_label (E1, E2) :
     gamma = code (sig)
     tr = label (pi, rho)
     return (gamma, tr)
+
+def precede_label (E, E1, E2) :
+    if not couvre_epnc (E1, E) :
+        return False
+    if not couvre_epnc (E2, E) :
+        return False
+    
+    g1, t1 = epnc_label (E1, E)
+    g2, t2 = epnc_label (E2, E)
+
+    if str (g1) >= str (g2) :
+        return False
+
+    if str (t1) >= str (t2) :
+        return False
+    
+    return True
+

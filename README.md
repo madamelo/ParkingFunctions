@@ -43,6 +43,7 @@
     Relation de couverture
     Bijection entre EPNC et DPNC
     Génération du label d'une relation de couverture
+    Relation d'ordre sur les labels couvrant une EPNC : TODO : exemples
 
 5 - Fonctions de Parking
     Fichiers :
