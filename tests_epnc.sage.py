@@ -53,5 +53,13 @@ print (d6.pi, d6.rho, d6.lam)
 print (de6.pi, de6.sig)
 print ()
 
+pi7 = SetPartition ([{_sage_const_1 , _sage_const_4 , _sage_const_5 }, {_sage_const_2 }, {_sage_const_3 }])
+sig7 = Permutation ([_sage_const_2 , _sage_const_5 , _sage_const_1 , _sage_const_3 , _sage_const_4 ])
+e7 = EPNC (pi7, sig7)
 print (epnc_label (e3, e1))
+print (epnc_label (e7, e1))
+print ()
+
+print (precede_label (e1, e3, e7))
+print (precede_label (e1, e7, e3))
 

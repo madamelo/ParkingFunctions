@@ -47,4 +47,12 @@ print (d6.pi, d6.rho, d6.lam)
 print (de6.pi, de6.sig)
 print ()
 
+pi7 = SetPartition ([{1, 4, 5}, {2}, {3}])
+sig7 = Permutation ([2, 5, 1, 3, 4])
+e7 = EPNC (pi7, sig7)
 print (epnc_label (e3, e1))
+print (epnc_label (e7, e1))
+print ()
+
+print (precede_label (e1, e3, e7))
+print (precede_label (e1, e7, e3))
