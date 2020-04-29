@@ -435,5 +435,18 @@ def arcs (C, P) :
 
     return L
 
-
+def part_arcs (C, P) :
+    if not C.is_cycle () :
+        return None
     
+    M, c = C.M, C.c
+
+    if not is_set_part (M, P) :
+        return None
+    
+    A = arcs (C, P)
+    N = []
+    for x in A :
+        N.append (x [0])
+    
+    return cycle_d_all (C, N)

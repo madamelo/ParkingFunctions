@@ -86,3 +86,7 @@ print ()
 
 print (arc (C4, A4))
 print (arcs (C4, P3))
+print ()
+
+C5 = part_arcs (C4, P3)
+print (C5.M, C5.c)

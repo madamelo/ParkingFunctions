@@ -110,3 +110,4 @@
     Générations des lacunes d'un cycle par une partition de M
     Génération de l'arc d'un cycle par A inclus dans M
     Génération des arcs d'un cycle par une partition de M
+    Génération de la trace des arcs d'un cycles
