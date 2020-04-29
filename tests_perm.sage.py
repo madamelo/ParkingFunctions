@@ -15,6 +15,10 @@ print (is_perm (L1))
 print (is_perm (L2))
 print ()
 
+Lc = [_sage_const_2 , _sage_const_5 , _sage_const_4 , _sage_const_1 , _sage_const_3 ]
+print (is_cycle (L1))
+print (is_cycle (Lc))
+
 print (inv_perm (L1))
 print ()
 

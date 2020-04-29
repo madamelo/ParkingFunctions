@@ -3,6 +3,27 @@ def is_perm (L) :
     L2 = [i for i in (1..n)]
     return (L2 == sorted (L))
 
+def is_cyclic (L) :
+    if not is_perm (L) :
+        return False
+
+    n = len (L)
+    
+    if n == 0 :
+        return True
+
+    C = [L [0]]
+    tmp = L [0]
+    for i in (1..n - 1) :
+        e = L [tmp - 1]
+        C.append (e)
+        tmp = e
+    
+    Ls = sorted (L)
+    Lc = sorted (C)
+
+    return (Ls == Lc)
+
 def blocs_perm (L) :
     if not is_perm (L) :
         return None

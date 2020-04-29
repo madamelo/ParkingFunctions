@@ -9,6 +9,11 @@ print (is_perm (L1))
 print (is_perm (L2))
 print ()
 
+Lc = [2, 5, 4, 1, 3]
+print (is_cycle (L1))
+print (is_cycle (Lc))
+print ()
+
 print (inv_perm (L1))
 print ()
 

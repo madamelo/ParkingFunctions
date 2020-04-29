@@ -2,6 +2,7 @@
     Fichiers : 
         * perm.sage
         * tests_perm.sage
+    Test de cyclicité (représente une bijection circulaire)
     Découpage d'une permutation en ses blocs (cycles)
     Composition de 2 permutations
     Génération de la permutation inverse
@@ -83,3 +84,29 @@
     Génération de la liste correspondant à un chemin de Dyck décoré
     Bijection entre fonctions de parking et chemins de Dyck décorés
     Relation de couverture : TODO
+
+9 - Posets
+    Fichier :
+        * posets.sage
+    Génération de posets exemples des objets ci-avant par leurs relations de couverture
+
+10 - Cycles
+    Fichiers :
+        * cycle.sage
+        * tests_cycle.sage
+    Forme (M, c, m)
+        * M : ensemble
+        * c : bijection cyclique sur M
+        * m : #M
+    Génération de la trace d'un cycle sur A inclus dans M
+    Calcul de la distance entre 2 points du cycle
+    Tests de croisement entre paires et parties d'une partition de M
+    Test d'adjacence de deux parties d'une partition de M
+    Test de correspondance d'un cycle à une partition non-croisée
+    Génération de la partition non-croisée la plus fine possible à partir d'une partition quelconque
+    Tests de serrage / dilution
+    Composition d'un cycle et d'une partition de M
+    Génération de la lacune d'un cycle par A inclus dans M
+    Générations des lacunes d'un cycle par une partition de M
+    Génération de l'arc d'un cycle par A inclus dans M
+    Génération des arcs d'un cycle par une partition de M
