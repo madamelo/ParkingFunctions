@@ -39,7 +39,14 @@ def inv_perm (L) :
     p = Permutation (L)
     return p.inverse ()
 
+def generate_perm (n) :
+    for P in Permutations (n) :
+        yield P    
+
 def code (L) :
+    if not is_perm (L) :
+        return None
+
     C = [0] * len (L)
 
     for i, e in enumerate (L) :
@@ -50,8 +57,31 @@ def code (L) :
         C [e - 1] = cpt
 
     C.reverse ()
-
     return C
+
+def couvre_perm (L1, L2) :
+    if not is_perm (L1) :
+        return False
+    if not is_perm (L2) :
+        return False
+    
+    c1 = code (L1)
+    c2 = code (L2)
+
+    if len (c1) != len (c2) :
+        return False
+
+    seen = False
+
+    for e1, e2 in zip (c1, c2) :
+        if e1 != e2 :
+            if e1 == e2 + 1 :
+                if seen :
+                    return False
+                seen = True
+            else :
+                return False
+    return seen
 
 
     

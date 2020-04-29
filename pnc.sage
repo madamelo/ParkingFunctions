@@ -43,11 +43,10 @@ def couvre_part (P1, P2) :
 
 def couvre_pnc (P1, P2) :
     if not is_pnc (P1) :
-        print (P1, "n'est pas une pnc")
         return False
     if not is_pnc (P2) :
-        print (P2, "n'est pas une pnc")
         return False
+        
     return couvre_part (P1, P2)
     
 

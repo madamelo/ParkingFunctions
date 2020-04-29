@@ -42,14 +42,11 @@ def couvre_epnc (E1, E2) :
     pi2, sig2 = E2.pi, E2.sig
 
     if not E1.is_epnc () :
-        print (pi1, sig1, "n'est pas une epnc")
         return False
     if not E2.is_epnc () :
-        print (pi2, sig2, "n'est pas une pnc")
         return False
 
     if not couvre_pnc (pi1, pi2) :
-        print (pi1, "ne couvre pas", pi2)
         return False
 
     s = {}
@@ -66,7 +63,6 @@ def couvre_epnc (E1, E2) :
         S1 = set (s [i])
         S2 = set (L)
         if S1 != S2 :
-            print (S1, "n'est pas", S2)
             return False
     return True
 

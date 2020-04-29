@@ -22,5 +22,24 @@ for e in R :
     print (list (e))
 print ()
 
+n = 4
+g = generate_perm (n)
+k = 0
+for e in g :
+    print (e)
+    k = k + 1
+print (k)
+print (factorial (n))
+print ()
+
 L4 = [7, 3, 8, 5, 1, 2, 6, 4]
+L5 = [1, 5, 2, 3, 4]
+L6 = [1, 3, 2, 4, 5]
 print (code (L4))
+print (code (L1))
+print (code (L5))
+print (code (L6))
+print ()
+
+print (couvre_perm (L1, L6))
+print (couvre_perm (L1, L5))

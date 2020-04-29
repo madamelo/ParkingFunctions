@@ -5,7 +5,9 @@
     Découpage d'une permutation en ses blocs (cycles)
     Composition de 2 permutations
     Génération de la permutation inverse
+    Généraiton des permutations de {1, ..., n}
     Génération du code d'une permutation (nombre minimal de transpositions dans sa décomposition)
+    Relation de couverture sur les codes des permutations
 
 2 - Partitions non-croisées
     Fichiers : 

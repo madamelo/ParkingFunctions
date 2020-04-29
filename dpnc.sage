@@ -42,19 +42,15 @@ def generate_dpnc (n) :
     
 def couvre_dpnc (D1, D2) :
     if not D1.is_dpnc () :
-        print (D1.pi, D1.rho, D1.lam, "n'est pas une dpnc")
         return False
     if not D2.is_dpnc () :
-        print (D2.pi, D2.rho, D2.lam, "n'est pas une dpnc")
         return False
 
     pi1, rho1, lam1 = D1.pi, D1.rho, D1.lam
     pi2, rho2, lam2 = D2.pi, D2.rho, D2.lam
     if not couvre_pnc (pi1, pi2) :
-        print (pi1, "ne couvre pas", pi2)
         return False
     if not couvre_part (rho1, rho2) :
-        print (rho1, "ne couvre pas", rho2)
         return False
     
     for i2, b2 in enumerate (pi2) :
