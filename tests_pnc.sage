@@ -36,3 +36,9 @@ print (Kreweras (P1))
 print ()
 
 print (label (P4, P2))
+print ()
+
+tmp = P1
+for i in range (5) :
+    print (Kreweras (Kreweras (tmp)), rot (tmp))
+    tmp = rot (tmp)

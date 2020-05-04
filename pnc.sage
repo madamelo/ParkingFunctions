@@ -53,12 +53,12 @@ def couvre_pnc (P1, P2) :
 
 def pnc_to_perm (P) :
     if not is_pnc (P) :
-        return []
+        return None
     return P.to_permutation ()
 
 def Kreweras (P) :
     if not is_pnc (P) :
-        return []
+        return None
 
     n = P.base_set_cardinality ()
     om = Permutation ([i for i in (2..n)] + [1])
@@ -77,3 +77,21 @@ def label (P1, P2) :
     p1i = p1.inverse ()
     t = p2.left_action_product (p1i)
     return t
+
+def rot (P) :
+    if not is_pnc (P) :
+        return None
+
+    n = P.base_set_cardinality ()
+    Parts = []
+
+    for p in P :
+        part = []
+        for e in p :
+            if e == n :
+                part.append (1)
+            else :
+                part.append (e + 1)
+        Parts.append (part)
+    
+    return SetPartition (Parts)
