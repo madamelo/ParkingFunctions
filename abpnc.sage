@@ -1,3 +1,4 @@
+load pnc.sage
 load rdyck.sage
 
 def mut_nc (P, Q) :
@@ -17,6 +18,15 @@ def mut_nc (P, Q) :
                             if a > b > c > d :
                                 return False
     return True
+
+def generate_mut (b) :
+    g1 = generate_pnc (b - 1)
+    g2 = generate_pnc (b - 1)
+
+    for P in g1 :
+        for Q in g2 :
+            if mut_nc (P, Q) :
+                yield (P, Q)
 
 
 class ABPNC :
@@ -49,6 +59,6 @@ class ABPNC :
 def generate_abpnc (a, b) :
     g = generate_rdyck (a, b)
     for e in g :
-        p, _ = P (e)
-        q, _ = Q (e)
-        yield ABPNC (a, b, p, q)
+        p, lp = P (e)
+        q, lq = Q (e)
+        yield ABPNC (a, b, p, q), lp, lq

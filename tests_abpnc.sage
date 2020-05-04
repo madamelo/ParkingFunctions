@@ -11,6 +11,15 @@ print (mut_nc (P1, Q1))
 print (mut_nc (P2, Q1))
 print ()
 
+b = 4
+g = generate_mut (b)
+k = 0
+for e in g :
+    print (e)
+    k = k + 1
+print (k)
+print ()
+
 A1 = ABPNC (10, 7, P1, Q1)
 A2 = ABPNC (10, 7, P2, Q1)
 print (A1.is_abpnc ())
@@ -31,8 +40,14 @@ a = 3
 b = 4
 g = generate_abpnc (a, b)
 k = 0
-for e in g :
-    print (e.P, e.Q)
+for e, lp, lq in g :
+    print (e.P, e.Q, lp, lq)
+    s = 0
+    for e in lp :
+        s = s + lp [e]
+    for e in lq :
+        s = s + lq [e]
+    print (s, s == a)
     k = k + 1
 print (k)
 print ((1 / (a + b)) * binomial (a + b, a))

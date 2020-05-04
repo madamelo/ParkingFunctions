@@ -140,3 +140,5 @@
         * |P| = |Q| = b - 1
         * P et Q : pnc mutuellement non-croisées
     Test de non-croisement mutuel entre deux partitions non-croisées
+    Génération des paires de pnc mutuellement non-croisées de {1, ..., a}
+    Génération des a, b - partitions non-croisées rationnelles
