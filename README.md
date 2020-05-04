@@ -111,3 +111,21 @@
     Génération de l'arc d'un cycle par A inclus dans M
     Génération des arcs d'un cycle par une partition de M
     Génération de la trace des arcs d'un cycles
+
+11 - Chemins de Dyck rationnels
+    Fichiers :
+        * rdyck.sage
+        * tests_rdyck.sage
+    Forme (a, b, p)
+        * a et b premiers entre eux
+        * pente y = a/b x
+        * p : pas 0 (Est) ou 1 (Nord)
+    Génération de la réprésentation d'un chemin de Dyck rationnel sous forme de liste
+    Calcul de la liste des coordonnées d'un chemin de Dyck rationnel
+    Affichage d'un chemin de Dyck rationnel
+    Génération des a, b - chemins de Dyck rationnels
+    Calcul des parcours verticaux d'un chemin de Dyck rationnel
+    Calcul des vallées d'un chemin de Dyck rationnel (angles droits orientés Nord-Ouest)
+    Calcul des lasers d'un chemin de Dyck rationnel ( segments parallèles à l'axe partant d'une vallée)
+    Calcul des hauteurs de chaque pas Est d'un chemin de Dyck rationnel
+    Génération des partitions non-croisées P et Q correspondant à un chemin de Dyck rationnel
