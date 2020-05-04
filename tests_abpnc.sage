@@ -1,0 +1,27 @@
+load abpnc.sage
+load rdyck.sage
+
+# TESTS ABPNC
+print ("Tests ABPNC")
+
+P1 = SetPartition ([[1, 4, 6], [2], [3], [5]])
+P2 = SetPartition ([[1, 3], [2], [4, 5], [6]])
+Q1 = SetPartition ([[1], [2, 3, 4], [5, 6]])
+print (mut_nc (P1, Q1))
+print (mut_nc (P2, Q1))
+print ()
+
+A1 = ABPNC (10, 7, P1, Q1)
+A2 = ABPNC (10, 7, P2, Q1)
+print (A1.is_abpnc ())
+print (A2.is_abpnc ())
+print ()
+
+a3 = 10
+b3 = 7
+p3 = [1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0]
+R3 = RDYCK (a3, b3, p3)
+P3, _ = P (R3)
+Q3, _ = Q (R3)
+A3 = ABPNC (a3, b3, P3, Q3)
+print (A3.is_abpnc ())

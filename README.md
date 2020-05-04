@@ -129,3 +129,13 @@
     Calcul des lasers d'un chemin de Dyck rationnel ( segments parallèles à l'axe partant d'une vallée)
     Calcul des hauteurs de chaque pas Est d'un chemin de Dyck rationnel
     Génération des partitions non-croisées P et Q correspondant à un chemin de Dyck rationnel
+
+12 - Partitions non-croisées rationnelles
+    Fichiers :
+        * abpnc.sage
+        * tests_abpnc.sage
+    Forme (a, b, P, Q)
+        * a et b premiers entre eux
+        * |P| = |Q| = b - 1
+        * P et Q : pnc mutuellement non-croisées
+    Test de non-croisement mutuel entre deux partitions non-croisées
