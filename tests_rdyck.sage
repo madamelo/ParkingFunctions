@@ -56,3 +56,8 @@ print ()
 
 print (P (R4))
 print (Q (R4))
+print ()
+
+R5 = transpose (R4)
+R4.pretty_print ()
+R5.pretty_print ()

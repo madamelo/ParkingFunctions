@@ -369,3 +369,20 @@ def Q (R) :
             SL [i] = 0
 
     return S, SL
+
+def transpose (R) :
+    if not R.is_rdyck () :
+        return None
+    
+    a = R.a
+    b = R.b
+    p = R.p
+
+    p2 = copy (p)
+    p2.reverse ()
+
+    p3 = []
+    for e in p2 :
+        p3.append (abs (e - 1))
+    
+    return RDYCK (b, a, p3)
