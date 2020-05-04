@@ -25,3 +25,14 @@ P3, _ = P (R3)
 Q3, _ = Q (R3)
 A3 = ABPNC (a3, b3, P3, Q3)
 print (A3.is_abpnc ())
+print ()
+
+a = 3
+b = 4
+g = generate_abpnc (a, b)
+k = 0
+for e in g :
+    print (e.P, e.Q)
+    k = k + 1
+print (k)
+print ((1 / (a + b)) * binomial (a + b, a))

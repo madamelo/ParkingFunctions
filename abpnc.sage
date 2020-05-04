@@ -1,4 +1,4 @@
-load pnc.sage
+load rdyck.sage
 
 def mut_nc (P, Q) :
     if not P.is_noncrossing () :
@@ -45,3 +45,10 @@ class ABPNC :
             return False
 
         return mut_nc (P, Q)
+
+def generate_abpnc (a, b) :
+    g = generate_rdyck (a, b)
+    for e in g :
+        p, _ = P (e)
+        q, _ = Q (e)
+        yield ABPNC (a, b, p, q)

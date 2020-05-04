@@ -129,6 +129,7 @@
     Calcul des lasers d'un chemin de Dyck rationnel ( segments parallèles à l'axe partant d'une vallée)
     Calcul des hauteurs de chaque pas Est d'un chemin de Dyck rationnel
     Génération des partitions non-croisées P et Q correspondant à un chemin de Dyck rationnel
+    Calcul du chemin transposé
 
 12 - Partitions non-croisées rationnelles
     Fichiers :

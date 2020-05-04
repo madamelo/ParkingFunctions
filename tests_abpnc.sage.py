@@ -31,4 +31,15 @@ P3, _ = P (R3)
 Q3, _ = Q (R3)
 A3 = ABPNC (a3, b3, P3, Q3)
 print (A3.is_abpnc ())
+print ()
+
+a = _sage_const_3 
+b = _sage_const_4 
+g = generate_abpnc (a, b)
+k = _sage_const_0 
+for e in g :
+    print (e.P, e.Q)
+    k = k + _sage_const_1 
+print (k)
+print ((_sage_const_1  / (a + b)) * binomial (a + b, a))
 
