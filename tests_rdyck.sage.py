@@ -67,4 +67,5 @@ print ()
 R5 = transpose (R4)
 R4.pretty_print ()
 R5.pretty_print ()
+print (R5.is_rdyck ())
 
