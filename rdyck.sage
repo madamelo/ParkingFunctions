@@ -386,3 +386,82 @@ def transpose (R) :
         p3.append (abs (e - 1))
     
     return RDYCK (b, a, p3)
+
+def rotr (R) :
+    if not R.is_rdyck () :
+        return None
+
+    a = R.a
+    b = R.b
+    p = R.p
+
+    E = []
+    el = []
+    N = []
+    nl = []
+    cpte = 0
+    cptn = 0
+
+    for e in p :
+        if e == 0 :
+            el.append (len (E))
+            cpte = cpte + 1
+            if cptn != 0 :
+                N.append (cptn)
+                cptn = 0
+        else :
+            nl.append (len (N))
+            cptn = cptn + 1
+            if cpte != 0 :
+                E.append (cpte)
+                cpte = 0
+    if cpte != 0 :
+        E.append (cpte)
+    if cptn != 0 :
+        N.append (cptn)
+    
+    if len (E) == 1 :
+        return R
+
+    if E [0] > 1 :
+        p2 = p [ : N [0] + E [0] - 1]
+        p3 = p [N [0] + E [0] : ]
+        res = RDYCK (a, b, p2 + p3 + [0])
+        return res
+    
+    v = (1, N [0])
+    k = laser (R, v)
+    idp = k + 1
+    h = el [idp]
+
+    s = 0
+    for e in E [ : h - 1] :
+        s = s + e
+    r = idp - s
+    if r == 1 :
+        s = 0
+        for e in E [ : h - 1] :
+            s = s + e
+        for e in N [ : h - 1] :
+            s = s + e
+        p2 = p [N [0] + E [0] : s]
+        p3 = [1] * N [0]
+        p4 = p [s + N [h - 1] : ]
+        p5 = [1] * N [h - 1]
+        res = RDYCK (a, b, p2 + p3 + p4 + p5 + [0])
+        return res
+
+    else :
+        s = 0
+        print ("laa", r)
+        for e in E [ : h - 1] :
+            s = s + e
+        for e in N [ : h] :
+            s = s + e
+        p2 = p [N [0] + E [0] : s]
+        p3 = [0] * (r - 1)
+        p4 = [1] * N [0]
+        p5 = [0] * (E [h - 1] - r + 1)
+        p6 = p [s + E [h - 1] : ]
+        res = RDYCK (a, b, p2 + p3 + p4 + p5 + p6 + [0])
+        return res

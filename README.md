@@ -131,6 +131,7 @@
     Calcul des hauteurs de chaque pas Est d'un chemin de Dyck rationnel
     Génération des partitions non-croisées P et Q correspondant à un chemin de Dyck rationnel
     Calcul du chemin transposé
+    Génération de la rotation d'un chemin de Dyck rationnel
 
 12 - Partitions non-croisées rationnelles
     Fichiers :

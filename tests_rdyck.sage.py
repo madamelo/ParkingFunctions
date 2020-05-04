@@ -68,4 +68,24 @@ R5 = transpose (R4)
 R4.pretty_print ()
 R5.pretty_print ()
 print (R5.is_rdyck ())
+print ()
+
+p6 = [_sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_0 ]
+R6 = RDYCK (a4, b4, p6)
+R7 = rotr (R6)
+R7.pretty_print ()
+print (R7.is_rdyck ())
+print ()
+
+R8 = rotr (R4)
+R8.pretty_print ()
+print (R8.is_rdyck ())
+print ()
+
+p9 = [_sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_0 ]
+R9 = RDYCK (a4, b4, p9)
+print (R9.is_rdyck ())
+R10 = rotr (R9)
+R10.pretty_print ()
+print (R10.is_rdyck ())
 
