@@ -6,7 +6,7 @@ from sage.all_cmdline import *   # import sage library
 _sage_const_1 = Integer(1); _sage_const_0 = Integer(0); _sage_const_9 = Integer(9); _sage_const_3 = Integer(3); _sage_const_5 = Integer(5); _sage_const_7 = Integer(7); _sage_const_2 = Integer(2); _sage_const_10 = Integer(10); _sage_const_4 = Integer(4); _sage_const_6 = Integer(6); _sage_const_8 = Integer(8)
 sage.repl.load.load(sage.repl.load.base64.b64decode("ZGR5Y2suc2FnZQ=="),globals(),False)
 
-# TESTS DDYCKFPT
+# TESTS DDYCK
 print ("Tests DDYCK")
 
 W1 = [_sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_1 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_0 , _sage_const_0 , _sage_const_1 , _sage_const_0 ]

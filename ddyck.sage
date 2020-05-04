@@ -33,36 +33,33 @@ class DDYCK :
     def pretty_print (self) :
         if not self.is_ddyck () :
             return
-
+  
         W = self.W
-        labels = self.labels
-        r = ""
+        l = self.labels
         i = 0
-        j = 0
-        j_next = 0
-        rtmp = "|"
+        r = ""
+        re = ""
+        x = ""
+        x_next = ""
 
-        for e in labels :
-            nbs = 10 - len (str (e)) + j
-            rtmp_next = "|"
-            i = i + 1
-            j = j_next 
-            
-            shifted = False
-
-            while (i < len (W) and W [i] != 1) :
-                shifted = True
-                j = j + 1
-                rtmp_next = "_" + rtmp_next
+        for e in W :
+            if e == 1 :
+                st = str (l [i])
+                n = 10 - len (st)
+                st = st + " " * n
+                r = st + x + re + "|" + "\n" + r
+                re = ""
+                x = x_next
                 i = i + 1
-                j_next = j_next + 1
-            
-            if shifted :
-                j_next = j_next + 1
+            else :
+                if re == "" :
+                    x = x + " "
+                    x_next = x_next + " "
+                re = "_" + re
+                x_next = x_next +  " "
 
-            sp = " " * nbs
-            r = str (e) + sp + rtmp + "\n" + r
-            rtmp = rtmp_next
+        if re != "" :
+            r = " " * 10 + x + re + "\n" + r
     
         print (r)
 
