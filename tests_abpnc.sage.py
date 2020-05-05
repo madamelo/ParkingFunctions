@@ -111,9 +111,15 @@ for B1 in P8 :
     for B2 in P8 :
         if couvre_block_abpnc (A8, B1, B2) :
             print (list (B1), list (B2))
-
 for B1 in P8 : 
     for B2 in Q8 :
         if couvre_block_abpnc (A8, B1, B2) :
             print (list (B1), list (B2))
+print ()
+
+print (rfn_p (P8))
+print (rfn_q (Q8))
+A12 = rfn (A8)
+print (A12.P, A12.Q)
+print (A12.is_abpnc ())
 

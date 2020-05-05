@@ -169,3 +169,45 @@ def couvre_block_abpnc (A, B1, B2) :
         return (B1 == B2)
     
     return False
+
+def rfn_p (P) :
+    b = P.base_set_cardinality () + 1
+
+    Parts = []
+
+    for B in P :
+        part = []
+        for e in B :
+            part.append (b - e)
+        Parts.append (part)
+    
+    return SetPartition (Parts)
+
+def rfn_q (Q) :
+    b = Q.base_set_cardinality () + 1
+
+    Parts = []
+
+    for B in Q :
+        part = []
+        for e in B :
+            if e == b - 1 :
+                part.append (b - 1)
+            else :
+                part.append (b - e - 1)
+        Parts.append (part)
+    
+    return SetPartition (Parts)
+
+def rfn (A) :
+    if not A.is_abpnc () :
+        return None
+    
+    a, b = A.a, A.b
+    P, Q = A.P, A.Q
+    
+    P2 = rfn_p (P)
+    Q2 = rfn_q (Q)
+    A2 = ABPNC (a, b, P2, Q2)
+
+    return A2
