@@ -90,7 +90,7 @@
 9 - Posets
     Fichier :
         * posets.sage
-    Génération de posets exemples des objets ci-avant par leurs relations de couverture
+    Génération de posets exemples des objets ci-avant et ci-après par leurs relations de couverture
 
 10 - Cycles
     Fichiers :

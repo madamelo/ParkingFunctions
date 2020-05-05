@@ -143,3 +143,29 @@ def abpnc_to_rdyck (A, rp, rq) :
         return None
     
     return R
+
+def couvre_block_abpnc (A, B1, B2) :
+    if not A.is_abpnc () :
+        return False
+    
+    P, Q = A.P, A.Q
+
+    if B1 in P :
+        min1 = min (B1)
+        min2 = min (B2)
+        max1 = max (B1)
+        max2 = max (B2)
+
+        if B2 in P and B1 != B2 :
+            if min1 <= min2 <= max1 :
+                if min1 <= max2 <= max1 :
+                    return True
+        
+        elif B2 in Q :
+            if min1 <= max2 <= max1 :
+                return True
+    
+    elif B1 in Q :
+        return (B1 == B2)
+    
+    return False

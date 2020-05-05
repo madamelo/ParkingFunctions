@@ -99,3 +99,14 @@ print ()
 print (ranks (A8, rp8, rq8))
 R11 = abpnc_to_rdyck (A8, rp8, rq8)
 R11.pretty_print ()
+print ()
+
+for B1 in P8 :
+    for B2 in P8 :
+        if couvre_block_abpnc (A8, B1, B2) :
+            print (list (B1), list (B2))
+
+for B1 in P8 : 
+    for B2 in Q8 :
+        if couvre_block_abpnc (A8, B1, B2) :
+            print (list (B1), list (B2))

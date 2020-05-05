@@ -33,3 +33,27 @@ g3 = P3.plot (label_elements = False)
 g3.save ('epnc_poset_3.pdf')
 print (P3.zeta_polynomial ())
 print ()
+
+load abpnc.sage
+
+print ("ABPNC")
+a4 = 10
+b4 = 7
+p4 = [1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0]
+R4 = RDYCK (a4, b4, p4)
+P4, _ = P (R4)
+Q4, _ = Q (R4)
+A4 = ABPNC (a4, b4, P4, Q4)
+L4 = list (P4) + list (Q4)
+
+def cbapnc (B1, B2) :
+    return couvre_block_abpnc (A4, B1, B2)
+
+d4 = {}
+for e in L4 :
+    d4 [e] = list (e)
+
+P4_ = Poset ([L4, cbapnc])
+g4 = P4_.plot (element_labels = d4)
+g4.save ('abpnc_block_poset.pdf')
+print (P4_.zeta_polynomial ())
