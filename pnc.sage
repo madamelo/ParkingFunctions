@@ -95,3 +95,21 @@ def rot (P) :
         Parts.append (part)
     
     return SetPartition (Parts)
+
+def rotb (P) :
+    if not is_pnc (P) :
+        return None
+    
+    n = P.base_set_cardinality ()
+    Parts = []
+
+    for p in P :
+        part = []
+        for e in p :
+            if e == 1 :
+                part.append (n)
+            else :
+                part.append (e - 1)
+        Parts.append (part)
+    
+    return SetPartition (Parts)

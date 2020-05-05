@@ -42,3 +42,14 @@ tmp = P1
 for i in range (5) :
     print (Kreweras (Kreweras (tmp)), rot (tmp))
     tmp = rot (tmp)
+print ()
+
+tmp = P1
+for i in range (5) :
+    print (rotb (tmp))
+    tmp = rotb (tmp)
+print ()
+
+print (P1)
+print (rot (rotb (P1)))
+print (rotb (rot (P1)))
