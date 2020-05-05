@@ -64,8 +64,11 @@ R5.pretty_print ()
 print (R5.is_rdyck ())
 print ()
 
+
+
 p6 = [1, 1, 1, 0, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0]
 R6 = RDYCK (a4, b4, p6)
+print (R6.is_rdyck ())
 R7 = rotr (R6)
 R7.pretty_print ()
 print (R7.is_rdyck ())
@@ -82,3 +85,11 @@ print (R9.is_rdyck ())
 R10 = rotr (R9)
 R10.pretty_print ()
 print (R10.is_rdyck ())
+print ()
+
+p11 = [1] * 10 + [0] * 7
+R11 = RDYCK (a4, b4, p11)
+print (R11.is_rdyck ())
+R12 = rotr (R11)
+R11.pretty_print ()
+print (R11.is_rdyck ())
