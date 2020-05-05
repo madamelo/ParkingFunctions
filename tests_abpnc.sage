@@ -88,3 +88,9 @@ print (P9, Q9)
 
 A9 = abrotb (A8)
 print (A9.P, A9.Q)
+print ()
+
+print (P9, Q9)
+P10 = rotb (P8)
+Q10 = rotb (Q8)
+print (P10, Q10)

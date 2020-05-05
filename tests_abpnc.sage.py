@@ -84,12 +84,20 @@ R8.pretty_print ()
 P8, _ = P (R8)
 Q8, _ = Q (R8)
 A8 = ABPNC (a8, b8, P8, Q8)
-print (P8, Q8, "\n")
+print (P8, Q8)
+
 R9 = rotr (R8)
 R9.pretty_print ()
 P9, _ = P (R9)
 Q9, _ = Q (R9)
 print (P9, Q9)
+
 A9 = abrotb (A8)
 print (A9.P, A9.Q)
+print ()
+
+print (P9, Q9)
+P10 = rotb (P8)
+Q10 = rotb (Q8)
+print (P10, Q10)
 
