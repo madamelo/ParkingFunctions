@@ -148,3 +148,17 @@
     Génération de la rotation d'une partition non-croisée rationnelle
     Calcul de la séquence de rang d'une partition non-croisée rationnelle
     Génération du chemin de Dyck rationnel associé à une partition non-croisée raitonnelle
+
+13 - Fonctions de parking rationnelles
+    Fichiers :
+        * abfp.sage
+        * tests_abfp.sage
+    Forme (a, b, P, Q, fP, fQ)
+        * a et b premiers entre eux
+        * P et Q mutuellement non-croisées
+        * fP : bloc de P -> sous-ensemble de {1, ..., a}
+        * fQ : bloc de Q -> sous-ensemble de {1, ..., a}
+        * fP (P) + fQ (Q) = {1, ..., a}
+        * (P, Q) : a, b - partition non-croisée
+        * | fP (B) | = rang (B)
+        * | fQ (B) | = rang (B)
