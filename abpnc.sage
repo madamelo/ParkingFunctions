@@ -20,8 +20,8 @@ def mut_nc (P, Q) :
     return True
 
 def generate_mut (b) :
-    g1 = generate_pnc (b - 1)
-    g2 = generate_pnc (b - 1)
+    g1 = list (generate_pnc (b - 1))
+    g2 = list (generate_pnc (b - 1))
 
     for P in g1 :
         for Q in g2 :
@@ -57,7 +57,7 @@ class ABPNC :
         return mut_nc (P, Q)
 
 def generate_abpnc (a, b) :
-    g = generate_rdyck (a, b)
+    g = list (generate_rdyck (a, b))
     for e in g :
         p, lp = P (e)
         q, lq = Q (e)
@@ -219,7 +219,6 @@ def couvre_block_abpnc (A, B1, B2) :
     return False
 
 def rfn_p (P, rp) :
-    print (P, rp)
     b = P.base_set_cardinality () + 1
 
     Parts = []
@@ -239,7 +238,6 @@ def rfn_p (P, rp) :
     return S, rps
 
 def rfn_q (Q, rq) :
-    print (Q, rq)
     b = Q.base_set_cardinality () + 1
 
     Parts = []
@@ -333,3 +331,28 @@ def is_rank_abpnc (A, rp, rq) :
                 return False
     
     return True
+
+from itertools import *
+
+def generate_rank_abpnc (a, b) :    
+    g = list (generate_mut (b))
+    L = [i for i in (0..a)]
+
+    for (P, Q) in g :
+        A = ABPNC (a, b, P, Q)
+        np, nq = len (P), len (Q)
+        Sp = list (product (L, repeat = np))
+        Sq = list (product (L, repeat = nq))
+
+        for rps in Sp :
+            rp = {}
+            for i in range (np) :
+                rp [i] = rps [i]
+            
+            for rqs in Sq :
+                rq = {}
+                for i in range (nq) :
+                    rq [i] = rqs [i]
+
+                if is_rank_abpnc (A, rp, rq) :
+                    yield (A, rp, rq)

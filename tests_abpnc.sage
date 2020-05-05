@@ -140,3 +140,14 @@ print (rotb (Kreweras (P8)), Q8)
 print ()
 
 print (is_rank_abpnc (A8, rp8, rq8))
+print ()
+
+a = 3
+b = 4
+g = generate_rank_abpnc (a, b)
+k = 0
+for e, rpe, rqe in g :
+    print (e.P, e.Q, rpe, rqe)
+    k = k + 1
+print (k)
+print ((1 / (a + b)) * binomial (a + b, a))

@@ -146,4 +146,15 @@ print (rotb (Kreweras (P8)), Q8)
 print ()
 
 print (is_rank_abpnc (A8, rp8, rq8))
+print ()
+
+a = _sage_const_3 
+b = _sage_const_4 
+g = generate_rank_abpnc (a, b)
+k = _sage_const_0 
+for e, rpe, rqe in g :
+    print (e.P, e.Q, rpe, rqe)
+    k = k + _sage_const_1 
+print (k)
+print ((_sage_const_1  / (a + b)) * binomial (a + b, a))
 
