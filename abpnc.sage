@@ -86,3 +86,60 @@ def abrotb (A) :
     Q2 = rotb (Q)
     A2 = ABPNC (a, b, P2, Q2)
     return A2
+
+def ranks (A, rp, rq) :
+    if not A.is_abpnc () :
+        return None
+    
+    b = A.b
+    P =  A.P
+    Q = A.Q
+    SP = {}
+    SQ = {}
+    LP = []
+    LQ = []
+
+    for (i, bp) in enumerate (P) :
+        m = min (bp)
+        SP [m] = rp [i]
+
+    for i in (1..b - 1) :
+        if i in SP :
+            LP.append (SP [i])
+        else :
+            LP.append (0)
+    
+    for (i, bq) in enumerate (Q) :
+        m = max (bq)
+        SQ [m] = rq [i]
+
+    for i in (1..b - 1) :
+        if i in SQ :
+            LQ.append (SQ [i])
+        else :
+            LQ.append (0)
+    
+    L = [LP [0]]
+    for i in range (b - 2) :
+        m = max (LP [i + 1], LQ [i])
+        L.append (m)
+    L.append (LQ [-1])
+    
+    return L
+
+def abpnc_to_rdyck (A, rp, rq) :
+    if not A.is_abpnc () :
+        return None
+
+    a, b = A.a, A.b
+    L = ranks (A, rp, rq)
+    P = []
+
+    for k in L :
+        P = P + [1] * k + [0]
+
+    R = RDYCK (a, b, P)
+    if not R.is_rdyck () :
+        return None
+    
+    return R

@@ -75,8 +75,8 @@ b8 = 7
 p8 = [1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0]
 R8 = RDYCK (a8, b8, p8)
 R8.pretty_print ()
-P8, _ = P (R8)
-Q8, _ = Q (R8)
+P8, rp8 = P (R8)
+Q8, rq8 = Q (R8)
 A8 = ABPNC (a8, b8, P8, Q8)
 print (P8, Q8)
 
@@ -94,3 +94,8 @@ print (P9, Q9)
 P10 = rotb (P8)
 Q10 = rotb (Q8)
 print (P10, Q10)
+print ()
+
+print (ranks (A8, rp8, rq8))
+R11 = abpnc_to_rdyck (A8, rp8, rq8)
+R11.pretty_print ()

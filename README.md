@@ -146,3 +146,5 @@
     Génération des paires de pnc mutuellement non-croisées de {1, ..., a}
     Génération des a, b - partitions non-croisées rationnelles
     Génération de la rotation d'une partition non-croisée rationnelle
+    Calcul de la séquence de rang d'une partition non-croisée rationnelle
+    Génération du chemin de Dyck rationnel associé à une partition non-croisée raitonnelle
