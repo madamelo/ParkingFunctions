@@ -63,7 +63,25 @@ def generate_abpnc (a, b) :
         q, lq = Q (e)
         yield ABPNC (a, b, p, q), lp, lq
 
-def abrot (A) :
+def rot_bloc (B, b) :
+    res = []
+    for e in B :
+        if e == b :
+            res.append (1)
+        else :
+            res.append (e + 1)
+    return set (res)
+
+def rotb_bloc (B, b) :
+    res = []
+    for e in B :
+        if e == 1 :
+            res.append (b)
+        else :
+            res.append (e - 1)
+    return set (res)
+
+def abrot (A, rp, rq) :
     if not A.is_abpnc () :
         return None
     
@@ -72,10 +90,25 @@ def abrot (A) :
 
     P2 = rot (P)
     Q2 = rot (Q)
-    A2 = ABPNC (a, b, P2, Q2)
-    return A2
 
-def abrotb (A) :
+    rp2 = {}
+    for i, bp in enumerate (P) :
+        for j, bp2 in enumerate (P2) :
+            if rot_bloc (bp, b - 1) == bp2 :
+                rp2 [j] = rp [i]
+                break
+    
+    rq2 = {}
+    for i, bq in enumerate (Q) :
+        for j, bq2 in enumerate (Q2) :
+            if rot_bloc (bq, b - 1) == bq2 :
+                rq2 [j] = rq [i]
+                break
+
+    A2 = ABPNC (a, b, P2, Q2)
+    return A2, rp2, rq2
+
+def abrotb (A, rp, rq) :
     if not A.is_abpnc () :
         return None
     
@@ -84,8 +117,23 @@ def abrotb (A) :
 
     P2 = rotb (P)
     Q2 = rotb (Q)
+
+    rp2 = {}
+    for i, bp in enumerate (P) :
+        for j, bp2 in enumerate (P2) :
+            if rotb_bloc (bp, b - 1) == bp2 :
+                rp2 [j] = rp [i]
+                break
+    
+    rq2 = {}
+    for i, bq in enumerate (Q) :
+        for j, bq2 in enumerate (Q2) :
+            if rotb_bloc (bq, b - 1) == bq2 :
+                rq2 [j] = rq [i]
+                break
+
     A2 = ABPNC (a, b, P2, Q2)
-    return A2
+    return A2, rp2, rq2
 
 def ranks (A, rp, rq) :
     if not A.is_abpnc () :
@@ -156,7 +204,7 @@ def couvre_block_abpnc (A, B1, B2) :
         max1 = max (B1)
         max2 = max (B2)
 
-        if B2 in P and B1 != B2 :
+        if B2 in P:
             if min1 <= min2 <= max1 :
                 if min1 <= max2 <= max1 :
                     return True
@@ -170,7 +218,8 @@ def couvre_block_abpnc (A, B1, B2) :
     
     return False
 
-def rfn_p (P) :
+def rfn_p (P, rp) :
+    print (P, rp)
     b = P.base_set_cardinality () + 1
 
     Parts = []
@@ -181,9 +230,16 @@ def rfn_p (P) :
             part.append (b - e)
         Parts.append (part)
     
-    return SetPartition (Parts)
+    S = SetPartition (Parts)
+    rps = {}
+    for i, p in enumerate (Parts) :
+        j = S.index (set (p))
+        rps [j] = rp [i]
+    
+    return S, rps
 
-def rfn_q (Q) :
+def rfn_q (Q, rq) :
+    print (Q, rq)
     b = Q.base_set_cardinality () + 1
 
     Parts = []
@@ -197,17 +253,83 @@ def rfn_q (Q) :
                 part.append (b - e - 1)
         Parts.append (part)
     
-    return SetPartition (Parts)
+    S = SetPartition (Parts)
+    rqs = {}
+    for i, p in enumerate (Parts) :
+        j = S.index (set (p))
+        rqs [j] = rq [i]
+    
+    return S, rqs
 
-def rfn (A) :
+def rfn (A, rp, rq) :
     if not A.is_abpnc () :
         return None
     
     a, b = A.a, A.b
     P, Q = A.P, A.Q
     
-    P2 = rfn_p (P)
-    Q2 = rfn_q (Q)
+    P2, rp2 = rfn_p (P, rp)
+    Q2, rq2 = rfn_q (Q, rq)
     A2 = ABPNC (a, b, P2, Q2)
 
-    return A2
+    return A2, rp2, rq2
+
+def rank_cond (A, rp, rq, B) :
+    if not A.is_abpnc () :
+        return False
+
+    a, b = A.a, A.b
+    P, Q = A.P, A.Q
+
+    if B not in P :
+        return False
+    
+    e1 = (max (B) - min (B) + 1) * (a / b)
+
+    e2 = 0
+    for i, B2 in enumerate (P) :
+        if couvre_block_abpnc (A, B, B2) :
+            e2 = e2 + rp [i]
+    for i, B2 in enumerate (Q) :
+        if couvre_block_abpnc (A, B, B2) :
+            e2 = e2 + rq [i]
+
+    e3 = e1 + (a / b)
+    return e1 <= e2 <= e3
+
+def is_rank_abpnc (A, rp, rq) :
+    if not A.is_abpnc () :
+        return False
+    
+    a, b = A.a, A.b
+    P, Q = A.P, A.Q
+
+    sump = 0
+    for (i, B) in enumerate (P) :
+        if i not in rp :
+            return False
+        sump = sump + rp [i]
+    
+    sumq = 0
+    for (i, B) in enumerate (Q) :
+        if i not in rq :
+            return False
+        if rq [i] >= (a / b) :
+            return False
+        sumq = sumq + rq [i]
+
+    if sump + sumq != a :
+        return False
+    
+    KR = rotb (Kreweras (P))
+    if KR != Q :
+        return False
+    
+    tmp, trp, trq = A, rp, rq
+    for m in (1..b - 1) :
+        tmp, trp, trq = abrot (tmp, trp, trq)
+        for B in tmp.P :
+            if not rank_cond (tmp, trp, trq, B) :
+                return False
+    
+    return True

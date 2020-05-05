@@ -53,21 +53,32 @@ print (k)
 print ((1 / (a + b)) * binomial (a + b, a))
 print ()
 
-A4 = abrot (A1)
+rp1 = {0 : 0, 1 : 1, 2 : 2, 3 : 3}
+rq1 = {0 : 2, 1 : 1, 2 : 0}
+A4, rp4, rq4 = abrot (A1, rp1, rq1)
+print (A1.P, A1.Q)
+print (rp1, rq1)
 print (A4.P, A4.Q)
+print (rp4, rq4)
 print (A4.is_abpnc ())
 print ()
 
-A5 = abrotb (A1)
+A5, rp5, rq5 = abrotb (A1, rp1, rq1)
+print (A1.P, A1.Q)
+print (rp1, rq1)
 print (A5.P, A5.Q)
+print (rp5, rq5)
 print (A5.is_abpnc ())
 print ()
 
 print (A1.P, A1.Q)
-A6 = abrotb (A4)
+A6, rp6, rq6 = abrotb (A4, rp4, rq4)
 print (A6.P, A6.Q)
-A7 = abrot (A5)
+A7, rp7, rq7 = abrot (A5, rp5, rq5)
 print (A7.P, A7.Q)
+print (rp1, rq1)
+print (rp6, rq6)
+print (rp7, rq7)
 print ()
 
 a8 = 10
@@ -86,8 +97,9 @@ P9, _ = P (R9)
 Q9, _ = Q (R9)
 print (P9, Q9)
 
-A9 = abrotb (A8)
+A9, rp9, rq9 = abrotb (A8, rp8, rq8)
 print (A9.P, A9.Q)
+print (rp9, rq9)
 print ()
 
 print (P9, Q9)
@@ -111,8 +123,20 @@ for B1 in P8 :
             print (list (B1), list (B2))
 print ()
 
-print (rfn_p (P8))
-print (rfn_q (Q8))
-A12 = rfn (A8)
+print (rfn_p (P8, rp8))
+print (rfn_q (Q8, rq8))
+A12, rp12, rq12 = rfn (A8, rp8, rq8)
 print (A12.P, A12.Q)
+print (rp12, rq12)
 print (A12.is_abpnc ())
+print ()
+
+print (A9.P, A9.Q)
+for B in P9 :
+    print (list (B), rank_cond (A9, rp9, rq9, B))
+print ()
+
+print (rotb (Kreweras (P8)), Q8)
+print ()
+
+print (is_rank_abpnc (A8, rp8, rq8))
