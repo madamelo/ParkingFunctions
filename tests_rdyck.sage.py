@@ -91,6 +91,7 @@ print (R9.is_rdyck ())
 R10 = rotr (R9)
 R10.pretty_print ()
 print (R10.is_rdyck ())
+print ()
 
 p11 = [_sage_const_1 ] * _sage_const_10  + [_sage_const_0 ] * _sage_const_7 
 R11 = RDYCK (a4, b4, p11)

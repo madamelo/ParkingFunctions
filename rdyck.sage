@@ -240,6 +240,8 @@ def P (R) :
         for (u, v) in c :
             if v <= cx :
                 und [(u, v)].append ((x, y))
+            elif v > cy : ### AJOUT
+                und [(u, v)].append ((x, y))
             elif v <= cy :
                 if v - cx <= (a / b) * (u - x) :
                     und [(u, v)].append ((x, y))
