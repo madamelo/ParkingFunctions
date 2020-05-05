@@ -453,7 +453,6 @@ def rotr (R) :
 
     else :
         s = 0
-        print ("laa", r)
         for e in E [ : h - 1] :
             s = s + e
         for e in N [ : h] :
