@@ -74,3 +74,15 @@ def abrot (A) :
     Q2 = rot (Q)
     A2 = ABPNC (a, b, P2, Q2)
     return A2
+
+def abrotb (A) :
+    if not A.is_abpnc () :
+        return None
+    
+    a, b = A.a, A.b
+    P, Q = A.P, A.Q
+
+    P2 = rotb (P)
+    Q2 = rotb (Q)
+    A2 = ABPNC (a, b, P2, Q2)
+    return A2
