@@ -51,3 +51,8 @@ for e, lp, lq in g :
     k = k + 1
 print (k)
 print ((1 / (a + b)) * binomial (a + b, a))
+print ()
+
+A4 = abrot (A1)
+print (A4.P, A4.Q)
+print (A4.is_abpnc ())

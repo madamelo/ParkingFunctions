@@ -145,3 +145,4 @@
     Test de non-croisement mutuel entre deux partitions non-croisées
     Génération des paires de pnc mutuellement non-croisées de {1, ..., a}
     Génération des a, b - partitions non-croisées rationnelles
+    Génération de la rotation d'une partition non-croisée rationnelle

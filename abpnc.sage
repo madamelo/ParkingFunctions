@@ -62,3 +62,15 @@ def generate_abpnc (a, b) :
         p, lp = P (e)
         q, lq = Q (e)
         yield ABPNC (a, b, p, q), lp, lq
+
+def abrot (A) :
+    if not A.is_abpnc () :
+        return None
+    
+    a, b = A.a, A.b
+    P, Q = A.P, A.Q
+
+    P2 = rot (P)
+    Q2 = rot (Q)
+    A2 = ABPNC (a, b, P2, Q2)
+    return A2

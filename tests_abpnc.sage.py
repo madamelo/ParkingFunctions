@@ -57,4 +57,9 @@ for e, lp, lq in g :
     k = k + _sage_const_1 
 print (k)
 print ((_sage_const_1  / (a + b)) * binomial (a + b, a))
+print ()
+
+A4 = abrot (A1)
+print (A4.P, A4.Q)
+print (A4.is_abpnc ())
 
