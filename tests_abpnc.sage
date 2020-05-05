@@ -68,3 +68,23 @@ A6 = abrotb (A4)
 print (A6.P, A6.Q)
 A7 = abrot (A5)
 print (A7.P, A7.Q)
+print ()
+
+a8 = 10
+b8 = 7
+p8 = [1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0]
+R8 = RDYCK (a8, b8, p8)
+R8.pretty_print ()
+P8, _ = P (R8)
+Q8, _ = Q (R8)
+A8 = ABPNC (a8, b8, P8, Q8)
+print (P8, Q8)
+
+R9 = rotr (R8)
+R9.pretty_print ()
+P9, _ = P (R9)
+Q9, _ = Q (R9)
+print (P9, Q9)
+
+A9 = abrotb (A8)
+print (A9.P, A9.Q)
