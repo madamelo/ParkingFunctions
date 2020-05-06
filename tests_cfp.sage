@@ -20,6 +20,7 @@ k = 2
 l = 2
 g = generate_cfp (n, k, l)
 lg = list (g)
+
 lg_nodup = []
 for e in lg :
     if e not in lg_nodup :

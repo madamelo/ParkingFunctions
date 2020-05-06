@@ -26,6 +26,7 @@ k = _sage_const_2
 l = _sage_const_2 
 g = generate_cfp (n, k, l)
 lg = list (g)
+print (len (lg))
 lg_nodup = []
 for e in lg :
     if e not in lg_nodup :
