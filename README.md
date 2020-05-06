@@ -162,3 +162,5 @@
         * (P, Q) : a, b - partition non-croisée
         * | fP (B) | = rang (B)
         * | fQ (B) | = rang (B)
+    Générations des partitions de {1, ..., a} de taille k AVEC parts vides
+    Génération des a, b - fonctions de parking

@@ -58,3 +58,57 @@ class ABFP :
         A = ABPNC (a, b, P, Q)
         res = is_rank_abpnc (A, rp, rq)
         return res
+
+def sp_emp (L, n) :
+    for i in (1..len (L)) :
+        S = SetPartitions (L, i)
+        for s in S :
+            s_ = list (s)
+            ls = [0] * i
+            for perm in Permutations (i) :
+                for ie, e in enumerate (perm) :
+                    ls [ie] = s_ [e - 1]
+                
+                mq = n - i
+                if mq > 0 :
+                    Lid = [j for j in range (n)]
+                    Lids = Subsets (Lid, mq)
+                    for ids in Lids :
+                        k = 0
+                        p = []
+                        for l in range (n) :
+                            if l in ids :
+                                p.append ({})
+                            else :
+                                p.append (ls [k])
+                                k = k + 1
+                        yield p
+                else :
+                    yield ls
+
+def generate_abfp (a, b) :
+    g = list (generate_mut (b))
+    L = [i for i in (1..a)]
+
+    for P, Q in g :
+        nbp = len (P) + len (Q)
+
+        S = list (sp_emp (L, nbp))
+
+        for s in S :
+            ls = s
+            j = 0
+
+            fP = {}
+            for i, _ in enumerate (P) :
+                fP [i] = list (ls [j])
+                j = j + 1
+            
+            fQ = {}
+            for i, _ in enumerate (Q) :
+                fQ [i] = list (ls [j])
+                j = j + 1
+
+            A = ABFP (a, b, P, Q, fP, fQ)
+            if A.is_abfp () :
+                yield A

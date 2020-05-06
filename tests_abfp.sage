@@ -14,3 +14,16 @@ A1 = ABFP (a1, b1, P1, Q1, fP1, fQ1)
 A2 = ABFP (a1, b1, P1, Q1, fP2, fQ1)
 print (A1.is_abfp ())
 print (A2.is_abfp ())
+print ()
+
+a = 3
+b = 4
+g = generate_abfp (a, b)
+k = 0
+for e in g :
+    print (e.P, e.Q)
+    print (e.fP, e.fQ)
+    print ()
+    k = k + 1
+print (k)
+print (b ^ (a - 1))
