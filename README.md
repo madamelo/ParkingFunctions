@@ -86,7 +86,7 @@
     Affichage d'un chemin de Dyck décoré
     Génération de la liste correspondant à un chemin de Dyck décoré
     Bijection entre fonctions de parking et chemins de Dyck décorés
-    Relation de couverture : TODO
+    Relation de couverture
 
 9 - Posets
     Fichier :
