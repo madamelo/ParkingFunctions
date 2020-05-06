@@ -42,3 +42,31 @@ rho = SetPartition ([{1, 5}, {2}, {3, 4, 6}])
 lam = {0 : 2, 1 : 0, 2 : 1}
 D = DPNC (pi, rho, lam)
 print (dpnc_to_fp (D))
+print ()
+
+L5 = [5, 1, 1, 1, 2, 5, 4, 3, 3, 2]
+D5 = fp_to_dpnc (L5)
+print (D5.pi)
+print (D5.rho)
+print (D5.lam)
+print (D5.is_dpnc ())
+print ()
+
+L6 = [1, 1, 5, 2, 3, 2, 1, 4, 9, 5, 1, 3, 13, 13]
+D6 = fp_to_dpnc (L6)
+print (D6.pi)
+print (D6.rho)
+print (D6.lam)
+print (D6.is_dpnc ())
+print ()
+
+print (L6)
+print (dpnc_to_fp (D6))
+print ()
+
+L7 = dpnc_to_fp (D)
+print (L7)
+D7 = fp_to_dpnc (L7)
+print (D.pi, D7.pi)
+print (D.rho, D7.rho)
+print (D.lam, D7.lam)

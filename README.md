@@ -58,7 +58,7 @@
     Génération des fonctions de parking de longueur n
     Génération des fonctions de parking primitives de longueur n
     Application d'une permutation à une fonction de parking
-    Génération de la fonction de parking associée à une 2-partition non-croisée
+    Bijection entre fonctions de parking et 2-partitions non-croisées
 
 6 - Arbres de Parking
     Fichiers :

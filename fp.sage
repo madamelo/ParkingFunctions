@@ -32,8 +32,7 @@ def perm_fp (P, L) :
 def dpnc_to_fp (D) :
     pi, rho, lam = D.pi, D.rho, D.lam
     if not D.is_dpnc () :
-        print (pi, rho, lam, "n'est pas une dpnc")
-        return False
+        return None
 
     n = pi.base_set_cardinality ()
     L = [0] * n
@@ -44,3 +43,73 @@ def dpnc_to_fp (D) :
         for e in B2 :
             L [e -  1] = b
     return L
+
+def fp_to_dpnc (P) :
+    if not is_fp (P) :
+        return None
+    
+    n = len (P)
+
+    labels = []
+
+    for i in range (n) :
+        lab = []
+        for j, e in enumerate (P) :
+            if e == i + 1 :
+                lab.append (j + 1)
+        labels.append (lab)
+    
+    orphans = []
+    missing = []
+    miss_nb = {}
+    for i in range (n) :
+        lab = labels [i]
+        ll = len (lab)
+        if ll == 0 :
+            orphans.append (i + 1)
+        else :
+            missing.append (i + 1)
+            miss_nb [i + 1] = ll - 1
+    
+    if len (missing) > 0 :
+        last = 0
+        for e in missing [ : : - 1] :
+            if miss_nb [e] > 0 :
+                last = e
+                break
+        idx = 0
+
+        for io, o in enumerate (orphans) :
+            if o > last :
+                idx = io
+                break
+
+        orphans = orphans [idx : ] + orphans [ : idx]
+
+    bros = {}
+    for m in missing [ : : - 1] :
+        nb = miss_nb [m]
+        bros [m] = orphans [ : nb]
+        orphans = orphans [nb : ]
+    
+    Parts_pi = []
+    Parts_rho = []
+
+    for i in missing :
+        part = [i]
+        for j in bros [i] :
+            part.append (j)
+        Parts_pi.append (part)
+        Parts_rho.append (labels [i - 1])
+    
+    pi = SetPartition (Parts_pi)
+    rho = SetPartition (Parts_rho)
+    
+    lam = {}
+    for ep, er in zip (Parts_pi, Parts_rho) :
+        idp = pi.index (set (ep))
+        idr = rho.index (set (er))
+        lam [idp] = idr
+
+    D = DPNC (pi, rho, lam)
+    return D
