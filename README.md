@@ -164,3 +164,16 @@
         * | fQ (B) | = rang (B)
     Générations des partitions de {1, ..., a} de taille k AVEC parts vides
     Génération des a, b - fonctions de parking
+
+14 - Fonctions de parking à pente rationnelle
+    Fichiers :
+        * abfpp.sage
+        * tests_abfpp.sage
+    Forme (a, b, p)
+        * a et b premiers entre eux
+        * p' = p triée = (b1, ..., ba)
+        * bi <= (a / b) (i - 1) + 1
+    Générations des a, b - fonctions de parking à pente rationnelle
+    Application d'une permutation à une fonction de parking à pente rationnelle
+    Génération de la fonction de parking à pente rationnelle associée à une fonction de parking rationnelle
+    Génération du chemin de Dyck rationnel associé à une fonction de parking à pente rationnelle

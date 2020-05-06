@@ -33,4 +33,17 @@ for e in g :
     k = k + _sage_const_1 
 print (k)
 print (b ** (a - _sage_const_1 ))
+print ()
+
+a = _sage_const_5 
+b = _sage_const_4 
+g = generate_abfp (a, b)
+k = _sage_const_0 
+for e in g :
+    print (e.P, e.Q)
+    print (e.fP, e.fQ)
+    print ()
+    k = k + _sage_const_1 
+print (k)
+print (b ** (a - _sage_const_1 ))
 

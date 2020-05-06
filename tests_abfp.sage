@@ -27,3 +27,4 @@ for e in g :
     k = k + 1
 print (k)
 print (b ^ (a - 1))
+print ()
