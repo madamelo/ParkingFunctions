@@ -69,7 +69,7 @@ sage.repl.load.load(sage.repl.load.base64.b64decode("ZnAuc2FnZQ=="),globals(),Fa
 
 print ("FP")
 P5 = Poset ([list (generate_fp (_sage_const_3 )), couvre_fp])
-g5 = P5.plot (label_elements = False)
+g5 = P5.plot () #label_elements = False)
 g5.save ('fp_poset_3.pdf')
 print (P5.zeta_polynomial ())
 

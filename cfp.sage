@@ -27,16 +27,33 @@ class CFP :
         
         return True
 
+from itertools import *
+
 def generate_cfp (n, k, l) :
     it = generate_fp (n)
-    L = []
-    for e in it :
-        L.append (e)
-    S = Subsets (L, k)
+    L = list (it)
+
+    rmax = 0
+    lr = [i for i in (1..n)]
+    lrl = lr [n - l - 1 : ]
+    for e in lrl :
+        rmax = rmax + e - 1
+
+    S = product (L, repeat = rmax)
+
     for s in S :
-        for p in Permutations (s) :
-            c = CFP (p) 
-            fk = c.C [k - 1]
-            if rank (fk) == l :
-                if c.is_k_cfp (k) :
-                    yield p
+        C = CFP (s)
+
+        if C.is_k_cfp (rmax) :
+            L0 = [i for i in range (rmax)]
+            LK = Subsets (L0, k)
+
+            for lk in LK :
+                c = []
+
+                for e in lk :
+                    c.append (s [e])
+
+                fk = c [-1]
+                if rank (fk) == l :
+                    yield c

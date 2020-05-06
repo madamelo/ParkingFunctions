@@ -63,7 +63,7 @@ load fp.sage
 
 print ("FP")
 P5 = Poset ([list (generate_fp (3)), couvre_fp])
-g5 = P5.plot (label_elements = False)
+g5 = P5.plot () #label_elements = False)
 g5.save ('fp_poset_3.pdf')
 print (P5.zeta_polynomial ())
 

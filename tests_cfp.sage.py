@@ -21,12 +21,18 @@ print (C1.is_k_cfp (_sage_const_2 ))
 print (C2.is_k_cfp (_sage_const_2 ))
 print ()
 
-n = _sage_const_4 
+n = _sage_const_3 
 k = _sage_const_2 
-l = _sage_const_3 
+l = _sage_const_2 
 g = generate_cfp (n, k, l)
+lg = list (g)
+lg_nodup = []
+for e in lg :
+    if e not in lg_nodup :
+        lg_nodup.append (e)
+
 kt = _sage_const_0 
-for e in g :
+for e in lg_nodup :
     print (e)
     kt = kt + _sage_const_1 
 print ()

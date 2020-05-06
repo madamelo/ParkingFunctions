@@ -75,7 +75,8 @@
     Fichiers :
         * cfp.sage
         * tests_cfp.sage
-    Génération des k-chaînes de fonctions de parking : TODO (relation de couverture ???)
+    Génération des k-chaînes de fonctions de parking
+    TODO : eviter doublons
 
 8 - Chemins de Dyck décorés
     Fichiers : 

@@ -15,12 +15,18 @@ print (C1.is_k_cfp (2))
 print (C2.is_k_cfp (2))
 print ()
 
-n = 4
+n = 3
 k = 2
-l = 3
+l = 2
 g = generate_cfp (n, k, l)
+lg = list (g)
+lg_nodup = []
+for e in lg :
+    if e not in lg_nodup :
+        lg_nodup.append (e)
+
 kt = 0
-for e in g :
+for e in lg_nodup :
     print (e)
     kt = kt + 1
 print ()

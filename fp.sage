@@ -132,13 +132,11 @@ def couvre_fp (L1, L2) :
     if not is_fp (L2) :
         return False
     
+    if L1 == L2 :
+        return True
+    
     D1 = fp_to_dpnc (L1)
     D2 = fp_to_dpnc (L2)
-
-    if D1.pi == D2.pi :
-        if D1.rho == D2.rho :
-            if D1.lam == D2.lam :
-                return True
 
     res = couvre_dpnc (D1, D2)
     return res
