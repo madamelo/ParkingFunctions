@@ -70,3 +70,22 @@ D7 = fp_to_dpnc (L7)
 print (D.pi, D7.pi)
 print (D.rho, D7.rho)
 print (D.lam, D7.lam)
+print ()
+
+pi8 = SetPartition ([{1, 4, 5}, {2, 3}])
+rho8 = SetPartition ([{1, 3, 5}, {2, 4}])
+lam8 = {0 : 0, 1 : 1}
+D8 = DPNC (pi8, rho8, lam8)
+L8 = dpnc_to_fp (D8)
+
+pi9 = SetPartition ([{1, 5}, {2, 3}, {4}])
+rho9 = SetPartition ([{1}, {2, 4}, {3, 5}])
+lam9 = {0 : 2, 1 : 1, 2 : 0}
+D9 = DPNC (pi9, rho9, lam9)
+L9 = dpnc_to_fp (D9)
+
+lam10 = {0 : 1, 1 : 2, 2 : 0}
+D10 = DPNC (pi9, rho9, lam10)
+L10 = dpnc_to_fp (D10)
+print (couvre_fp (L9, L8))
+print (couvre_fp (L10, L8))

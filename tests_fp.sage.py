@@ -76,4 +76,23 @@ D7 = fp_to_dpnc (L7)
 print (D.pi, D7.pi)
 print (D.rho, D7.rho)
 print (D.lam, D7.lam)
+print ()
+
+pi8 = SetPartition ([{_sage_const_1 , _sage_const_4 , _sage_const_5 }, {_sage_const_2 , _sage_const_3 }])
+rho8 = SetPartition ([{_sage_const_1 , _sage_const_3 , _sage_const_5 }, {_sage_const_2 , _sage_const_4 }])
+lam8 = {_sage_const_0  : _sage_const_0 , _sage_const_1  : _sage_const_1 }
+D8 = DPNC (pi8, rho8, lam8)
+L8 = dpnc_to_fp (D8)
+
+pi9 = SetPartition ([{_sage_const_1 , _sage_const_5 }, {_sage_const_2 , _sage_const_3 }, {_sage_const_4 }])
+rho9 = SetPartition ([{_sage_const_1 }, {_sage_const_2 , _sage_const_4 }, {_sage_const_3 , _sage_const_5 }])
+lam9 = {_sage_const_0  : _sage_const_2 , _sage_const_1  : _sage_const_1 , _sage_const_2  : _sage_const_0 }
+D9 = DPNC (pi9, rho9, lam9)
+L9 = dpnc_to_fp (D9)
+
+lam10 = {_sage_const_0  : _sage_const_1 , _sage_const_1  : _sage_const_2 , _sage_const_2  : _sage_const_0 }
+D10 = DPNC (pi9, rho9, lam10)
+L10 = dpnc_to_fp (D10)
+print (couvre_fp (L9, L8))
+print (couvre_fp (L10, L8))
 

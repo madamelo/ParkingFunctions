@@ -59,6 +59,7 @@
     Génération des fonctions de parking primitives de longueur n
     Application d'une permutation à une fonction de parking
     Bijection entre fonctions de parking et 2-partitions non-croisées
+    Relation de couverture (basée sur la bijection ci-dessus)
 
 6 - Arbres de Parking
     Fichiers :

@@ -44,17 +44,17 @@ def dpnc_to_fp (D) :
             L [e -  1] = b
     return L
 
-def fp_to_dpnc (P) :
-    if not is_fp (P) :
+def fp_to_dpnc (L) :
+    if not is_fp (L) :
         return None
     
-    n = len (P)
+    n = len (L)
 
     labels = []
 
     for i in range (n) :
         lab = []
-        for j, e in enumerate (P) :
+        for j, e in enumerate (L) :
             if e == i + 1 :
                 lab.append (j + 1)
         labels.append (lab)
@@ -113,3 +113,15 @@ def fp_to_dpnc (P) :
 
     D = DPNC (pi, rho, lam)
     return D
+
+def couvre_fp (L1, L2) :
+    if not is_fp (L1) :
+        return False
+    if not is_fp (L2) :
+        return False
+    
+    D1 = fp_to_dpnc (L1)
+    D2 = fp_to_dpnc (L2)
+
+    res = couvre_dpnc (D1, D2)
+    return res
