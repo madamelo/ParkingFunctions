@@ -61,4 +61,17 @@ R4 = abfpp_to_rdyck (A1)
 print (R4.p)
 print (R4.is_rdyck ())
 R4.pretty_print ()
+print ()
+
+R5, l5 = abfpp_to_labeled_rdyck (A1)
+print (R5.p)
+print (l5)
+print (R5.is_rdyck ())
+R5.pretty_print ()
+print ()
+
+A6 = abfpp_to_abfp (A1)
+print (A6.P, A6.Q)
+print (A6.fP, A6.fQ)
+print (A6.is_abfp ())
 

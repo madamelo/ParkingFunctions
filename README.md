@@ -175,5 +175,5 @@
         * bi <= (a / b) (i - 1) + 1
     Générations des a, b - fonctions de parking à pente rationnelle
     Application d'une permutation à une fonction de parking à pente rationnelle
-    Génération de la fonction de parking à pente rationnelle associée à une fonction de parking rationnelle
-    Génération du chemin de Dyck rationnel associé à une fonction de parking à pente rationnelle
+    Bijection entre fonctions de parking à pente rationnelle et fonctions de parking rationnelle
+    Génération du chemin de Dyck rationnel associé à une fonction de parking à pente rationnelle (+ labels)

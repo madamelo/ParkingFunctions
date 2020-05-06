@@ -105,3 +105,50 @@ def abfpp_to_rdyck (A) :
     
     R = RDYCK (a, b, p2)
     return R
+
+def abfpp_to_labeled_rdyck (A) :
+    if not A.is_abfpp () :
+        return None
+    
+    a, b = A.a, A.b
+    p = A.p
+    rises = [0] * b
+    labels = []
+
+    for i in range (b) :
+        lab = []
+        for j, e in enumerate (p) :
+            if e == i + 1 :
+                rises [i] = rises [i] + 1
+                lab.append (j + 1)
+        labels.append (lab)
+    
+    p2 = []
+    for e in rises :
+        p2 = p2 + [1] * e + [0]
+    
+    R = RDYCK (a, b, p2)
+    return R, labels
+
+def abfpp_to_abfp (A) :
+    if not A.is_abfpp () :
+        return None
+    
+    a, b = A.a, A.b
+    
+    R, l = abfpp_to_labeled_rdyck (A)
+    PA, _ = P (R)
+    QA, _ = Q (R)
+
+    fP = {}
+    for i, e in enumerate (PA) :
+        m = min (e)
+        fP [i] = l [m - 1]
+    
+    fQ = {}
+    for i, e in enumerate (QA) :
+        m = max (e)
+        fQ [i] = l [m]
+    
+    A2 = ABFP (a, b, PA, QA, fP, fQ)
+    return A2
