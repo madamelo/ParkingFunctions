@@ -12,6 +12,18 @@ def is_primitive (L) :
         return (list (L) == sorted (L))
     return False
 
+def rank (L) :
+    if not is_fp (L) :
+        return None
+
+    n = len (L)
+    s = 0
+    for i in (1..n) :
+        if i in L :
+            s = s + 1
+    
+    return s - 1
+
 import itertools
 
 def generate_fp (n) :

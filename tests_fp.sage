@@ -14,6 +14,11 @@ print (is_primitive (L3))
 print (is_primitive (L4))
 print ()
 
+print (rank (L1))
+print (rank (L3))
+print (rank ([1, 5, 4, 2, 2, 3, 6, 7]))
+print ()
+
 n = 4
 g = generate_fp (n)
 k = 0

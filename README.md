@@ -55,6 +55,7 @@
         * fp.sage
         * tests_fp.sage
     Test de primitivité ( = fonction de parking non-décroissante)
+    Calcul du rang d'une fonction de parking
     Génération des fonctions de parking de longueur n
     Génération des fonctions de parking primitives de longueur n
     Application d'une permutation à une fonction de parking
