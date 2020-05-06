@@ -28,3 +28,10 @@ for e in g :
 print (k)
 print (b ^ (a - 1))
 print ()
+
+a = 5
+b = 4
+g = generate_abfp (a, b)
+k = len (list (g))
+print (k)
+print (b^(a - 1))

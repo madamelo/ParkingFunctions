@@ -63,11 +63,11 @@ def sp_emp (L, n) :
     for i in (1..len (L)) :
         S = SetPartitions (L, i)
         for s in S :
-            s_ = list (s)
-            ls = [0] * i
+            sl = list (s)
             for perm in Permutations (i) :
+                ls = [0] * i
                 for ie, e in enumerate (perm) :
-                    ls [ie] = s_ [e - 1]
+                    ls [ie] = sl [e - 1]
                 
                 mq = n - i
                 if mq > 0 :
