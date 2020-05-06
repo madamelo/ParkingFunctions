@@ -28,12 +28,13 @@ print ()
 print (dd3.to_list ())
 print ()
 
-W4 = [1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0]
-L4 = [1, 9, 3, 5, 2, 7, 10, 4, 6, 8]
-dd4 = DDYCK (W4, L4)
-dd5 = DDYCK (W1, L4)
-dd6 = DDYCK (W4, L1)
-print (couvre_ddyck (dd1, dd4))
-print (couvre_ddyck (dd1, dd5))
-print (couvre_ddyck (dd1, dd6))
-print (couvre_ddyck (dd6, dd1))
+L4 = [1, 2, 1, 2, 1]
+L5 = [4, 2, 1, 2, 1]
+L6 = [4, 1, 2, 1, 2]
+
+dd4 = fp_to_ddyck (L4)
+dd5 = fp_to_ddyck (L5)
+dd6 = fp_to_ddyck (L6)
+print (couvre_ddyck (dd5, dd4))
+print (couvre_ddyck (dd4, dd5))
+print (couvre_ddyck (dd6, dd4))

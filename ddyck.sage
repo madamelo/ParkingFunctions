@@ -154,68 +154,8 @@ def couvre_ddyck (D1, D2) :
     if not D2.is_ddyck () :
         return False
 
-    L1 = D1.to_list ()
-    L2 = D2.to_list ()
-
-    n = len (L1)
-    if n != len (L2) :
-        return False
-
-    left = []
-    i1 = 0
-    i2 = 0
-    while (i1 < n and i2 < n and L1 [i1] == L2 [i2]) :
-        left.append (L1 [i1])
-        i1 = i1 + 1
-        i2 = i2 + 1
-
-    shiftl = []
-    while (i1 < n and i2 < n and L1 [i1] != L2 [i2]) :
-        shiftl.append (L1 [i1])
-        i1 = i1 + 1
-
-    middle = []
-    while (i1 < n and i2 < n and L1 [i1] == L2 [i2]) :
-        middle.append (L1 [i1])
-        i1 = i1 + 1
-        i2 = i2 + 1
+    L1 = ddyck_to_fp (D1)
+    L2 = ddyck_to_fp (D2)
     
-    shiftr = []
-    while (i1 < n and i2 < n and L1 [i1] != L2 [i2]) :
-        shiftr.append (L2 [i2])
-        i2 = i2 + 1
-
-    right = []
-    while (i1 < n and i2 < n and L1 [i1] == L2 [i2]) :
-        right.append (L1 [i1])
-        i1 = i1 + 1
-        i2 = i2 + 1
-    
-    if i1 != n :
-        return False
-    if i2 != n :
-        return False
-    
-    if shiftl != shiftr :
-        return False
-
-    shift = shiftl
-    m = len (shift)
-    while (m > 0 and shift [m - 1] == 0) :
-        shift = shift [:-1]
-        m = m - 1
-    
-    if 0 in shift :
-        return False
-    
-    return True
-
-def couvre_fp (L1, L2) :
-    if not is_fp (L1) :
-        return False
-    if not is_fp (L2) :
-        return False
-
-    D1 = fp_to_ddyck (L1)
-    D2 = fp_to_ddyck (L2)
-    return couvre_ddyck (D1, D2)
+    res = couvre_fp (L1, L2)
+    return res
