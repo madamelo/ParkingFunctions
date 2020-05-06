@@ -63,4 +63,15 @@ P4_ = Poset ([L4, cbapnc])
 g4 = P4_.plot (element_labels = d4)
 g4.save ('abpnc_block_poset.pdf')
 print (P4_.zeta_polynomial ())
+print ()
+
+sage.repl.load.load(sage.repl.load.base64.b64decode("ZnAuc2FnZQ=="),globals(),False)
+
+print ("FP")
+P5 = Poset ([list (generate_fp (_sage_const_3 )), couvre_fp])
+g5 = P5.plot (label_elements = False)
+g5.save ('fp_poset_3.pdf')
+print (P5.zeta_polynomial ())
+
+
 

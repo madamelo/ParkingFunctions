@@ -37,6 +37,6 @@ def generate_cfp (n, k, l) :
         for p in Permutations (s) :
             c = CFP (p) 
             fk = c.C [k - 1]
-            if max (fk) == l : #NOT THAT
+            if rank (fk) == l :
                 if c.is_k_cfp (k) :
                     yield p
