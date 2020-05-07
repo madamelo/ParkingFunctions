@@ -1,3 +1,4 @@
+load pnc.sage
 load dpnc.sage
 
 def is_fp (L) :
@@ -33,6 +34,34 @@ def generate_fp (n) :
 def generate_fpp (n) :
     for f in NonDecreasingParkingFunctions (n) :
         yield f
+
+def pnc_to_fpp (P) :
+    if not is_pnc (P) :
+        return None
+    
+    n = P.base_set_cardinality ()
+    L = [0] * n
+
+    for p in P :
+        m = min (p)
+        np = len (p)
+        L [m - 1] = np
+    
+    F = []
+    for i, e in enumerate (L) :
+        F = F + [i + 1] * e
+    
+    return F
+
+def fpp_to_pnc (L) :
+    if not is_primitive (L) :
+        return None
+
+    n = len (L)
+    for p in generate_pnc (n) :
+        F = pnc_to_fpp (p)
+        if F == L :
+            return p
 
 def perm_fp (P, L) :
     P2 = P.inverse ()

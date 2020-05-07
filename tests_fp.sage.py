@@ -44,6 +44,13 @@ print (k)
 print (catalan_number (n))
 print ()
 
+pnc1 = SetPartition ([[_sage_const_1 , _sage_const_2 , _sage_const_4 ], [_sage_const_3 ], [_sage_const_5 , _sage_const_6 ]])
+F1 = pnc_to_fpp (pnc1)
+print (F1)
+print (is_primitive (F1))
+print (pnc1)
+print (fpp_to_pnc (F1))
+
 P = Permutation ([_sage_const_2 , _sage_const_4 , _sage_const_1 , _sage_const_3 , _sage_const_6 , _sage_const_5 ])
 print (perm_fp (P, L1))
 print ()

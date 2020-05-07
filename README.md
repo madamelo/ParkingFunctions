@@ -58,6 +58,8 @@
     Calcul du rang d'une fonction de parking
     Génération des fonctions de parking de longueur n
     Génération des fonctions de parking primitives de longueur n
+    Bijection entre partitions non-croisées et fonctions de parking
+    primitives
     Application d'une permutation à une fonction de parking
     Bijection entre fonctions de parking et 2-partitions non-croisées
     Relation de couverture (basée sur la bijection ci-dessus)
