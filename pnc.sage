@@ -67,6 +67,20 @@ def Kreweras (P) :
     B = blocs_perm (k)
     return SetPartition (B)
 
+def krew_mins (P) :
+    if not is_pnc (P) :
+        return None
+    
+    mins = []
+    for i, b in enumerate (P) :
+        l = sorted (list (b))
+        if i == 0 :
+            mins = mins + l
+        else :
+            mins = mins + l [:-1]
+    
+    return sorted (mins)
+
 def label (P1, P2) :
     if not couvre_pnc (P1, P2) :
         return None

@@ -18,6 +18,7 @@
     Relation de couverture
     Génération de la permutation associée à une partition non-croisée
     Complément de Kreweras
+    Minimums du complément de Kreweras
     Génération du label d'une relation de couverture
     Génération de la rotation d'une partition non-croisée
     Génération de la rotation inverse d'une partition non-croisée ( = double application de Kreweras )

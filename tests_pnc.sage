@@ -32,8 +32,13 @@ print ()
 print (pnc_to_perm (P1))
 print ()
 
-print (Kreweras (P1))
+tmp = P1
+for i in range (10) :
+    print (Kreweras (tmp), krew_mins (tmp))
+    tmp = Kreweras (tmp)
 print ()
+
+
 
 print (label (P4, P2))
 print ()
