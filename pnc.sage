@@ -81,6 +81,40 @@ def krew_mins (P) :
     
     return sorted (mins)
 
+def find_part (P, e) :
+    for p in P :
+        if e in p :
+            return p
+
+def krew_sizes (P) :
+    if not is_pnc (P) :
+        return None
+    
+    n = P.base_set_cardinality ()
+    mins = krew_mins (P)
+    sizes = {}
+
+    for i, m in enumerate (mins) :
+        cpt = 1
+
+        tmp = m + 1
+        if tmp > n :
+            tmp = tmp - n
+
+        p = find_part (P, m)
+
+        while (tmp not in p) :
+            p2 = find_part (P, tmp)
+
+            tmp = max (p2) + 1
+            if tmp > n :
+                tmp = tmp - n
+
+            cpt = cpt + 1
+        sizes [m] = cpt
+    
+    return sizes
+
 def label (P1, P2) :
     if not couvre_pnc (P1, P2) :
         return None

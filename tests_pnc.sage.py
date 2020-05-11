@@ -40,7 +40,7 @@ print ()
 
 tmp = P1
 for i in range (_sage_const_10 ) :
-    print (Kreweras (tmp), krew_mins (tmp))
+    print (Kreweras (tmp), krew_sizes (tmp))
     tmp = Kreweras (tmp)
 print ()
 
