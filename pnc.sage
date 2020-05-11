@@ -48,8 +48,6 @@ def couvre_pnc (P1, P2) :
         return False
         
     return couvre_part (P1, P2)
-    
-
 
 def pnc_to_perm (P) :
     if not is_pnc (P) :
@@ -61,10 +59,11 @@ def Kreweras (P) :
         return None
 
     n = P.base_set_cardinality ()
-    om = Permutation ([i for i in (2..n)] + [1])
+    lom = [n] + [i for i in range (1, n)]
+    om = Permutation (lom)
     pi = P.to_permutation ()
-    pib = pi.inverse ()
-    k = om.left_action_product (pib)
+
+    k = om.left_action_product (pi)
     B = blocs_perm (k)
     return SetPartition (B)
 

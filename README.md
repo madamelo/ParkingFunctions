@@ -19,8 +19,8 @@
     Génération de la permutation associée à une partition non-croisée
     Complément de Kreweras
     Génération du label d'une relation de couverture
-    Génération de la rotation d'une partition non-croisée ( = double application de Kreweras )
-    Génération de la rotation inverse d'une partition
+    Génération de la rotation d'une partition non-croisée
+    Génération de la rotation inverse d'une partition non-croisée ( = double application de Kreweras )
 
 3 - 2-partitions non-croisées
     Fichiers :

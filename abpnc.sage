@@ -319,7 +319,7 @@ def is_rank_abpnc (A, rp, rq) :
     if sump + sumq != a :
         return False
     
-    KR = rotb (Kreweras (P))
+    KR = Kreweras (P)
     if KR != Q :
         return False
     

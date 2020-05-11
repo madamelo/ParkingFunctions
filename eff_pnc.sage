@@ -117,4 +117,6 @@ def couvre_eff_pnc (P1, P2) :
     new_size = S1 [not_in_2] + S1 [diff_size]
     res = new_size == S2 [diff_size]
     return res
+
+def Kreweras_eff (P)
     

@@ -40,13 +40,13 @@ print ()
 
 tmp = P1
 for i in range (5) :
-    print (Kreweras (Kreweras (tmp)), rot (tmp))
+    print (rot (tmp))
     tmp = rot (tmp)
 print ()
 
 tmp = P1
 for i in range (5) :
-    print (rotb (tmp))
+    print (Kreweras (Kreweras (tmp)), rotb (tmp))
     tmp = rotb (tmp)
 print ()
 
