@@ -18,6 +18,7 @@
 \newtheorem{definition}{Definition}
 \newtheorem*{example}{Example}
 \newtheorem*{notation}{Notation}
+\newtheorem*{cor}{Corollary}
 
 \begin{document}
 
@@ -51,10 +52,10 @@
     \end{align*}
 \end{example}
 
-\begin{prop}
+\begin{theorem}
     Let $pf_n$ be the cardinal of $\mathcal{PF}_n$.
     We have $pf_n = (n + 1)^{n-1}$.
-\end{prop}
+\end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
     \text{} \\
@@ -88,34 +89,34 @@
 \begin{definition}[Primitive]
     A parking function $(a_1, a_2, \ldots, a_n)$ is said \emph{primitive} if
     it is already in non-decreasing order. \\
-    We denote by $\mathcal{PPF}_n$ the set of primitive parking functions of length $n$.
-    $$\mathcal{PPF} = \bigcup_{n > 0}{\mathcal{PPF}_n}$$
+    We denote by $\mathcal{PF'}_n$ the set of primitive parking functions of length $n$.
+    $$\mathcal{PF'} = \bigcup_{n > 0}{\mathcal{PF'}_n}$$
     
 \end{definition}
 
 \begin{example}
     \begin{align*}
-        &f_1 = (1, 2, 2, 3) \in \mathcal{PPF}_4\\
-        &f_2 = (1, 2, 3, 2) \notin \mathcal{PPF}_4
+        &f_1 = (1, 2, 2, 3) \in \mathcal{PF'}_4\\
+        &f_2 = (1, 2, 3, 2) \notin \mathcal{PF'}_4
          \text{, even though } f_2 \in \mathcal{PF}_4\\
     \end{align*}
 \end{example}
 
-\begin{prop}
-    Let $ppf_n$ be the cardinal of $\mathcal{PPF}_n$.
-    We have $ppf_n = \frac{1}{n + 1} \binom{2n}{n}$,
+\begin{theorem}
+    Let $pf'_n$ be the cardinal of $\mathcal{PF'}_n$.
+    We have $pf'_n = \frac{1}{n + 1} \binom{2n}{n}$,
     which is the $n^{th}$ Catalan number.
-\end{prop}
+\end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
     \text{}\\
     \begin{itemize*}
-        \item $n = 1$ \text{ } $:$ \text{ } $ppf_1 = 1$\\
+        \item $n = 1$ \text{ } $:$ \text{ } $pf'_1 = 1$\\
         \subitem $(1)$\\
-        \item $n = 2$ \text{ } $:$ \text{ } $ppf_2 = 2$\\
+        \item $n = 2$ \text{ } $:$ \text{ } $pf'_2 = 2$\\
         \subitem $(1, 1)$
         \subitem $(1, 2)$\\
-        \item $n = 3$ \text{ } $:$ \text{ } $ppf_3 = 5$\\
+        \item $n = 3$ \text{ } $:$ \text{ } $pf'_3 = 5$\\
         \subitem $(1, 1, 1)$
         \subitem $(1, 1, 2)$
         \subitem $(1, 1, 3)$
@@ -147,11 +148,11 @@
     \end{align*}
 \end{example}
 
-\begin{prop}
+\begin{theorem}
     Let $nc_n$ be the cardinal of $\mathcal{NC}_n$.
     We have $nc_n = \frac{1}{n + 1} \binom{2n}{n}$,
     which is the $n^{th}$ Catalan number.
-\end{prop}
+\end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
     \text{}\\
@@ -172,18 +173,18 @@
 
 \begin{prop}
     This means we can create a \emph{bijection} between
-    $\mathcal{PPF}_n$ and $\mathcal{NC}_n$.
+    $\mathcal{PF'}_n$ and $\mathcal{NC}_n$.
 \end{prop}
 
 \begin{itemize}
-    \item $\mathcal{NC}_n \to \mathcal{PPF}_n$ :
+    \item $\mathcal{NC}_n \to \mathcal{PF'}_n$ :
     For each block $B$ in the non-crossing partition, take
     $i = min (B)$, and $k_i = size (B)$.\\
     $k_i = 0$ if $i$ is not the minimum of a block.\\
     The corresponding parking function is
     $(\underbrace{1, \ldots, 1}_{k_1}, \underbrace{2, \ldots,
     2}_{k_2}, \ldots, \underbrace{n, \ldots, n}_{k_n})$.\\
-    \item $\mathcal{PPF}_n \to \mathcal{NC}_n$ :
+    \item $\mathcal{PF'}_n \to \mathcal{NC}_n$ :
     For each $i$ in $[n]$, if $i$ appears $n_i$ times in the
     parking function, $B_i$ will be of size $n_i$ with minimum
     element $i$.
@@ -198,19 +199,175 @@
     \end{align*}
 \end{example}
 
+\begin{cor}
+    A non-crossing partition can be represented by the minimums
+    and sizes of its blocks.
+\end{cor}
+
+\begin{example}
+    $\{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$ can be represented by
+    the following dictionnary :\\
+    \begin{itemize*}
+        \item 1 : 3\\
+        \item 3 : 2\\
+        \item 6 : 1\\
+    \end{itemize*}
+\end{example}
+
 A non-crossing partition of $[n]$ can be represented graphically
 on a regular $n$-vertices polygon, with vertices labeled from $1$
 to $n$ clockwise. We then represent each block $B = \{b_1, \ldots, b_k\}$
-by the convex hull of $\{b_1, \ldots, b_k\}$.
+by the convex hull of $\{b_1, \ldots, b_k\}$.\\
 
 \begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
     \text {}\\
     \begin{align*}
-    \includegraphics[scale = 0.3]{fig2}
+    \includegraphics[scale = 0.3]{fig1}
     \end{align*}
 \end{example}
 
-Thus non-crossing meaning the hulls are \emph{disjoint}.
+Thus non-crossing meaning the hulls are \emph{disjoint}.\\
+
+\subsection{The non-crossing partitions poset}
+
+\begin{definition}[$\succ$]
+    We say that $P$ covers $Q$, written $P \succ Q$,
+    if $\exists B_i, B_j \in P$ such that
+    $Q = P - \{B_i, B_j\} \cup \{B_i \cup B_j\}$    
+\end{definition}
+
+\begin{example}
+    $\{\{1, 6\}, \{2, 3\}, \{4, 5\}\} \succ
+    \{\{1, 2, 3, 6\}, \{4, 5\}\}$\\
+    \begin{itemize*}
+        \item $B_i = \{1, 6\}$\\
+        \item $B_j = \{2, 3\}$\\
+    \end{itemize*}
+\end{example}
+
+\begin{prop}
+    This covering relation defines the \emph{poset} of
+    non-crossing partitions of $[n]$.
+    We denote by $\mathcal{NCC}_n$ the set of
+    \emph{maximal chains} in the poset of $\mathcal{NC}_n$.\\
+    $$\mathcal{NCC} = \bigcup_{n > 0}{\mathcal{NCC}_n}$$
+\end{prop}
+
+% todo : figure of the poset of NC_4
+
+\begin{theorem}
+    Let $ncc_n$ be the cardinal of $\mathcal{NC}_n$.
+    We have $ncc_n = n^{n - 2}$.
+\end{theorem}
+
+\begin{example}[Shape of the poset of $\mathcal{NC}_4$]
+    \text {}\\
+    \begin{align*}
+    \includegraphics[scale = 0.8]{fig2}
+    \end{align*}
+    \begin{center}
+        This figure was generated with Sagemath.
+        There are $4^2 = 16$ different maximal chains,
+        and $\frac {1}{5} \binom{8}{4} = \frac{70}{5} = 14$
+        elements in this poset.
+    \end{center}
+\end{example}
+
+\subsection{Kreweras complement}
+
+\begin{definition}[Associated permutation]
+    The \emph{permutation} $\sigma$ associated to a non-crossing
+    partition has a cycle $(b_1, \ldots, b_k)$ for each block
+    $B = \{b_1, \ldots, b_k\}$ of the partition.
+\end{definition}
+
+\begin{example}
+    The permutation associated to $\{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$
+    is $(1\ 2\ 5)\ (3\ 4)\ (6) = 254316$.
+\end{example}
+
+\begin{definition}[Kreweras complement]
+    The \emph{Kreweras complement} $K (P)$ of a non-crossing
+    partition $P$ is defined as follows :\\
+    \begin{itemize*}
+        \item Let $\sigma$ be the permutation associated to $P$\\
+        \item Let $\pi$ be the permutation $(n\ n-1\ n-2\
+        \ldots\ 3\ 2\ 1) = n123 \ldots n-1$\\
+        \item $K (P)$ is the \emph{non-crossing partition}
+        associated to $\pi \sigma$.\\
+    \end{itemize*}
+\end{definition}
+
+\begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
+    \text {} \\
+    \begin{itemize*}
+        \item $\sigma = (1\ 2\ 5)\ (3\ 4)\ (6) = 254316$\\
+        \item $\pi = (6\ 5\ 4\ 3\ 2\ 1) = 612345$\\
+        \item $\pi \sigma = 143265 = (1)\ (2\ 4)\ (3)\ (5\ 6)$\\
+        \item $K(P) = \{\{1\},\{2, 4\}, \{3\}, \{5, 6\}\}$\\
+    \end{itemize*}
+\end{example}
+
+\begin{prop}[Kreweras minimums]
+        Let $P = \{B_1, \ldots, B_k\}$ be a non-crossing partition.
+        Let $K (P) = \{B'_1, \ldots, B'_l\}$ be its Kreweras complement.
+        Then $$\bigcup_{1 \leq i \leq l}{min (B'_i)} =
+        B_1 \cup \bigcup_{1 < j \leq k}{B_i - {max (B_i)}}$$\\
+\end{prop}
+
+\begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
+    \text{}\\
+    \begin{itemize}
+        \item $K (P) = \{\{1\},\{2, 4\}, \{3\}, \{5, 6\}\}$
+        \item $\bigcup{min (B'_i)} = \{1, 2, 3, 5\}$
+        \item $B_1\ \cup\ \bigcup{B_i - {max (B_i)}}
+        = \{1, 2, 5\} \cup \{3, 4\} - \{4\} \cup \{6\} - \{6\}
+        = \{1, 2, 5\} \cup \{3\} \cup \emptyset = \{1, 2, 3, 5\}$\\
+    \end{itemize}
+\end{example}
+
+\begin{notation}
+    $B_{[i]} = $ block containing $i$.
+\end{notation}
+
+\begin{prop}[Kreweras block sizes]
+    Let $P = \{B_1, \ldots, B_k\}$ be a non-crossing partition.
+    Let $K (P) = \{B'_1, \ldots, B'_l\}$ be its Kreweras complement.
+    Then the size of the block $B'_i$ is defined as follows :
+    \begin{itemize}
+        \item Let $m_i$ be the the $i^{th}$ minimum of $K (P)$
+        \item Define a \emph{transition} $\phi (e)$ as 
+            \subitem Let $j = e + 1$ (or $1$ if $e = n$)
+            \subitem $\phi(e) = max (B_{[j]})$
+        \item The size of $B'_i$ is $k_{min}$ such that
+        $k_{min} = min \{k > 0\ |\ \phi^k (m_i) \in B_{[m_i]}\}$.\\
+    \end{itemize}
+\end{prop}
+
+\begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
+    \text{}
+    \begin{itemize}
+        \item $mins = \{1, 2, 3, 5\}$
+        \item $m_1 = 1$
+            \subitem $B_{[1]} = B_1$
+            \subitem $max (B_{[2]} = max (B_1) = 5$
+            \subitem The size for $m_1$ is $1$.
+        \item $m_2$
+            \subitem $B_{[2]} = B_1$
+            \subitem $max (B_{[3]}) = max (B_2) = 4$
+            \subitem $max (B_{[5]}) = max (B_1) = 5$
+            \subitem The size for $m_2$ is $2$.
+        \item $m_3 = 3$
+            \subitem $B_{[3]} = B_2$
+            \subitem $max (B_{[4]}) = max (B_2) = 4$
+            \subitem The size for $m_3$ is $1$.
+        \item $m_4 = 5$
+            \subitem $B_{[5]} = B_1$
+            \subitem $max (B_{[6]}) = max (B_3) = 6$
+            \subitem $max (B_{[1]}) = max (B_1) = 5$
+            \subitem The size for $m_4$ is $2$.
+    \end{itemize}
+\end{example}
 
 \section{Non-crossing 2-partitions}
 
@@ -220,7 +377,69 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.
     \begin{itemize*}
         \item $P$ is a non-crossing partition of $E$\\
         \item $\sigma$ is a permutation of the elements of $E$\\
-    \end{itemize*}  
+    \end{itemize*}
+    We denote by $\mathcal{NC}^2_n$ the set of non-crossing
+    2-partitions of $[n]$.
+    $$\mathcal{NC}^2 = \bigcup_{n > 0}{\mathcal{NC}^2_n}$$.
 \end{definition}
+
+% TODO : CLARIFY ALLOWED SIGMAS
+
+\begin{example}[$\mathcal{NC}^2_6$]
+    \begin{itemize*}
+            \subitem $P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$
+            \subitem $\sigma = 416235$ 
+    \end{itemize*}    
+\end{example}
+
+\begin{theorem}
+    Let $nc^2_n$ be the cardinal of $\mathcal{NC}^2_n$.
+    We have $nc^2_n = (n + 1)^{n-1}$.
+\end{theorem}
+
+\begin{example}[$n = 1, 2, 3$]
+    \text{}
+    \begin{itemize}
+            \item $n = 1$ \text{ } $:$ \text{ } $nc^2_1 = 1$
+            \subitem $\{\{1\}\}$ \hspace{1cm} $1$
+            \item $n = 2$ \text{ } $:$ \text{ } $nc^2_2 = 3$
+            \subitem $\{\{1\}, \{2\}\}$ \hspace{1cm} $12$
+            \subitem $\{\{1\}, \{2\}\}$ \hspace{1cm} $21$
+            \subitem $\{\{1, 2\}\}$ \hspace{14mm} $12$
+            \item $n = 3$ \text{ } $:$ \text{ } $nc^2_3 = 16$
+            \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
+                $123$
+            \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
+                $132$            
+            \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
+                $213$
+            \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
+                $231$
+            \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
+                $312$
+            \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
+                $321$            
+            \subitem $\{\{1, 2\}, \{3\}\}$ \hspace{14mm}
+                $123$            
+            \subitem $\{\{1, 2\}, \{3\}\}$ \hspace{14mm}
+                $132$
+            \subitem $\{\{1, 2\}, \{3\}\}$ \hspace{14mm}
+                $231$
+            \subitem $\{\{1\}, \{2, 3\}\}$ \hspace{14mm}
+                $123$            
+            \subitem $\{\{1\}, \{2, 3\}\}$ \hspace{14mm}
+                $213$
+            \subitem $\{\{1\}, \{2, 3\}\}$ \hspace{14mm}
+                $312$
+            \subitem $\{\{1, 3\}, \{2\}\}$ \hspace{14mm}
+                $123$
+            \subitem $\{\{1, 3\}, \{2\}\}$ \hspace{14mm}
+                $132$
+            \subitem $\{\{1, 3\}, \{2\}\}$ \hspace{14mm}
+                $231$            
+            \subitem $\{\{1, 2, 3\}\}$ \hspace{18mm}
+                $123$\\
+    \end{itemize}
+\end{example}
 
 \end{document}

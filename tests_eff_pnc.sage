@@ -24,11 +24,14 @@ print ()
 
 m4 = {1 : 4, 3 : 4}
 m5 = {1 : 8, 7 : 1}
+m6 = {3 : 7, 7 : 1}
 E4 = EFFPNC (m4)
 E5 = EFFPNC (m5)
+E6 = EFFPNC (m6)
 print (couvre_eff_pnc (E1, E4))
 print (couvre_eff_pnc (E4, E1))
 print (couvre_eff_pnc (E1, E5))
+print (couvre_eff_pnc (E1, E6))
 print ()
 
 print (Kreweras_eff (E1))
