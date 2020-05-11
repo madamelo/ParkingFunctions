@@ -29,3 +29,6 @@ E5 = EFFPNC (m5)
 print (couvre_eff_pnc (E1, E4))
 print (couvre_eff_pnc (E4, E1))
 print (couvre_eff_pnc (E1, E5))
+print ()
+
+print (Kreweras_eff (E1))

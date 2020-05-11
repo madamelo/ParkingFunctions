@@ -182,3 +182,13 @@
     Application d'une permutation à une fonction de parking à pente rationnelle
     Bijection entre fonctions de parking à pente rationnelle et fonctions de parking rationnelle
     Génération du chemin de Dyck rationnel associé à une fonction de parking à pente rationnelle (+ labels)
+
+15 - Partitions non-croisées efficaces
+    Fichiers :
+        * eff_pnc.sage
+        * tests_eff_pnc.sage
+    Forme :
+        * sizes = dictionnaire où un bloc est représenté par min : taille
+    Bijection entre partitions non-croisées et partitions non-croisées efficaces
+    Relation de couverture
+    Génération du complément de Kreweras (en passant par la partition non-croisée)
