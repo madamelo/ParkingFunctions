@@ -18,19 +18,29 @@ print ()
 n = 3
 k = 2
 l = 2
-g = generate_cfp (n, k, l)
-lg = list (g)
+g1 = generate_strict_cfp (n, k, l)
+lg1 = list (g1)
+k1 = 0
+for e in lg1 :
+    print (e)
+    k1 = k1 + 1
+print ()
+print (k1)
+print ()
+
+g2 = generate_weak_cfp (n, k, l)
+lg2 = list (g2)
+k2 = 0
 
 lg_nodup = []
-for e in lg :
+for e in lg2 :
     if e not in lg_nodup :
         lg_nodup.append (e)
 
-kt = 0
 for e in lg_nodup :
     print (e)
-    kt = kt + 1
+    k2 = k2 + 1
 print ()
 
-print (kt)
+print (k2)
 print (factorial (l) * binomial (k * n, l) * stirling_number2 (n, l + 1))

@@ -29,7 +29,20 @@ class CFP :
 
 from itertools import *
 
-def generate_cfp (n, k, l) :
+def generate_strict_cfp (n, k, l) :
+    it = generate_fp (n)
+    L = list (it)
+    P = Poset ([L, couvre_fp])
+    C = P.chains ()
+    L2 = C.elements_of_depth_iterator (l)
+
+    for e in L2 :
+        e.reverse ()
+        last = e [-1]
+        if rank (last) == k :
+            yield e
+
+def generate_weak_cfp (n, k, l) :
     it = generate_fp (n)
     L = list (it)
 
