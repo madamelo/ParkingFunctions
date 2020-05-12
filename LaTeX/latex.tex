@@ -361,7 +361,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 
 \subsection{Kreweras complement}
 
-\begin{definition}[Associated permutation]
+\begin{definition}[Associated Permutation]
     The \emph{permutation} $\sigma$ associated to a non-crossing
     partition has a cycle $(b_1, \ldots, b_k)$ for each block
     $B = \{b_1, \ldots, b_k\}$ of the partition.
@@ -372,7 +372,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     is $(1\ 2\ 5)\ (3\ 4)\ (6) = 254316$.
 \end{example}
 
-\begin{definition}[Kreweras complement]
+\begin{definition}[Kreweras Complement]
     The \emph{Kreweras complement} $K (P)$ of a non-crossing
     partition $P$ is defined as follows :\\
     \begin{itemize*}
@@ -721,11 +721,81 @@ greatest common divisor).
         \item $n = a$\\
         \item its non-decreasing reordering 
         $(b_1, b_2, \ldots, b_n)$
-        has $b_i < \frac{a}{b}(i - 1) + 1$ for all $i$.\\\\
+        has $b_i < \frac{b}{a}(i-1) + 1$ for all $i$.\\\\
     \end{itemize*}
     We denote by $\mathcal{PF}^b_a$ the set of 
     a, b - parking functions.
 \end{definition}
+
+\begin{example}
+    \text{}
+    \begin{itemize}
+        \item Ex. 1 :
+            \subitem $a = 7$
+            \subitem $b = 3$
+            \subitem Limits of the non-decreasing
+            reordering of any $f \in \mathcal{PF}^3_7$ :
+            \subitem $[1,\ 1 \frac{3}{7},\ 1 \frac{6}{7},\ 
+            2 \frac{2}{7},\ 2 \frac{5}{7},\ 3 \frac{1}{7},\ 
+            3 \frac{4}{7}]$
+            \subitem $f_1 = (2, 1, 1, 3, 2, 3, 1) \in
+            \mathcal{PF}^3_7$
+            \subitem $f_2 = (2, 1, 2, 3, 2, 3, 1) \notin
+            \mathcal{PF}^3_7$, even though $f_2 \in
+            \mathcal{PF}_7$
+        \item Ex. 2 :
+            \subitem $a = 5$
+            \subitem $b = 7$
+            \subitem Limits of the non-decreasing            
+            reordering of any $f \in \mathcal{PF}^7_5$ :
+            \subitem $[1,\ 2 \frac{2}{5},\ 3 \frac{4}{5},\ 
+            5 \frac{1}{5},\ 6 \frac{3}{5}]$
+            \subitem $f_3 = (6, 3, 5, 1, 2) \in
+            \mathcal{PF}^7_5$, even though $f_3 \notin
+            \mathcal{PF}_5$
+            \subitem $f_4 = (6, 3, 5, 1, 3) \notin
+            \mathcal{PF}^7_5$\\
+    \end{itemize}
+\end{example}
+
+\begin{theorem}
+    Let $pf^b_a$ be the cardinal of $\mathcal{PF}^b_a$.
+    We have $pf^b_a = b^{a-1}$.
+\end{theorem}
+
+\begin{example}[$a = 3, b = 5$]
+    \text{}
+    \begin{itemize*}\\
+        \item $pf^b_a = 25$
+        \item Limits : $[1,\ 2 \frac{2}{3},\ 
+            4 \frac{1}{3}]$\\\\
+        \subitem $(1, 1, 1)$
+        \subitem $(1, 1, 2)$
+        \subitem $(1, 1, 3)$
+        \subitem $(1, 1, 4)$
+        \subitem $(1, 2, 1)$
+        \subitem $(1, 2, 2)$
+        \subitem $(1, 2, 3)$
+        \subitem $(1, 2, 4)$
+        \subitem $(1, 3, 1)$
+        \subitem $(1, 3, 2)$
+        \subitem $(1, 4, 1)$
+        \subitem $(1, 4, 2)$
+        \subitem $(2, 1, 1)$
+        \subitem $(2, 1, 2)$
+        \subitem $(2, 1, 3)$
+        \subitem $(2, 1, 4)$
+        \subitem $(2, 2, 1)$
+        \subitem $(2, 3, 1)$
+        \subitem $(2, 4, 1)$
+        \subitem $(3, 1, 1)$
+        \subitem $(3, 1, 2)$
+        \subitem $(3, 2, 1)$
+        \subitem $(4, 1, 1)$
+        \subitem $(4, 1, 2)$
+        \subitem $(4, 2, 1)$
+    \end{itemize*}
+\end{example}
 
 \chapter{Trees}
 
