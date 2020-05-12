@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  12 MAY 2020 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  12 MAY 2020 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -619,85 +619,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--263
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--275
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 <fig2.png, id=45, 250.39095pt x 341.63634pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 277.
+Package pdftex.def Info: fig2.png  used on input line 275.
 (pdftex.def)             Requested size: 200.31302pt x 273.30943pt.
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 277.
+Package pdftex.def Info: fig2.png  used on input line 275.
 (pdftex.def)             Requested size: 200.31302pt x 273.30943pt.
 [6 </home/salsifi/Documents/Stage/Recherche/LaTeX/fig2.png>]
-Overfull \hbox (37.05708pt too wide) in paragraph at lines 295--297
+Overfull \hbox (37.05708pt too wide) in paragraph at lines 293--295
 \T1/cmr/bx/n/12 Example. \T1/cmr/m/it/12 The per-mu-ta-tion as-so-ci-ated to $\OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gg$ \T1/cmr/m/it/12 is $\OT1/cmr/m/n/12 (1 2 5) (3 4) (6) =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--309
+Underfull \hbox (badness 10000) in paragraph at lines 298--307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--319
+Underfull \hbox (badness 10000) in paragraph at lines 310--317
 
  []
 
 
-Overfull \hbox (1.20062pt too wide) in paragraph at lines 322--324
+Overfull \hbox (1.20062pt too wide) in paragraph at lines 320--322
 \T1/cmr/bx/n/12 Proposition \T1/cmr/m/n/12 (Krew-eras min-i-mums)\T1/cmr/bx/n/12 . \T1/cmr/m/it/12 Let $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; [] ; B[]\OMS/cmsy/m/n/12 g$ \T1/cmr/m/it/12 be a non-crossing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--331
+Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--336
+Underfull \hbox (badness 10000) in paragraph at lines 331--334
 
  []
 
 
-Overfull \hbox (0.61322pt too wide) in paragraph at lines 344--348
+Overfull \hbox (0.61322pt too wide) in paragraph at lines 342--346
 \T1/cmr/bx/n/12 Proposition \T1/cmr/m/n/12 (Krew-eras block sizes)\T1/cmr/bx/n/12 . \T1/cmr/m/it/12 Let $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; [] ; B[]\OMS/cmsy/m/n/12 g$ \T1/cmr/m/it/12 be a non-crossing
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 352--354
+Underfull \hbox (badness 10000) in paragraph at lines 350--352
 
  []
 
 [8]
-LaTeX Font Info:    Try loading font information for U+euf on input line 384.
+LaTeX Font Info:    Try loading font information for U+euf on input line 382.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Underfull \hbox (badness 10000) in paragraph at lines 396--407
+Underfull \hbox (badness 10000) in paragraph at lines 394--405
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 467--469
+Underfull \hbox (badness 10000) in paragraph at lines 465--467
 
  []
 
-[10]
+[10] [11]
 Chapter 2.
-[11
+[12
 
 ]
 Chapter 3.
-[12
+[13
 
 ] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
@@ -709,10 +709,10 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  41i,14n,26p,318b,301s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (14 pages, 188326 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (15 pages, 191279 bytes).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 366 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

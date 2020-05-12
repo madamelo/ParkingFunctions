@@ -263,8 +263,6 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     $$\mathcal{NCC} = \bigcup_{n > 0}{\mathcal{NCC}_n}$$
 \end{prop}
 
-% todo : figure of the poset of NC_4
-
 \begin{theorem}
     Let $ncc_n$ be the cardinal of $\mathcal{NC}_n$.
     We have $ncc_n = n^{n - 2}$.
@@ -476,10 +474,38 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 
 \begin{itemize}
     \item $\mathcal{PF}_n \to \mathcal{NC}^2_n$ :
-    todo
+    Let $f = (a_1, \ldots, a_n) \in \mathcal{PF}_n$
+    be our parking function.
+    For $i \in \{1, \ldots, n\}$, we define :
+        \subitem $l_i$ : the number of occurences of $i$ in $f$. 
+        \subitem $im_i$ : $\{j\ |\ a_j = i\}$\\
+    The corresponding non-crossing partition will
+    have the following constraints :
+        \subitem For each $i \in \{1, \ldots, n\}$, if $l_i > 0$,
+        then there is a block $B_{[i]}$ of length
+        \subitem $l_i$ with minimum element $i$.
+        \subitem $\sigma (B_{[i]}) = im_i$\\
+    There is a unique set partition
+    $\displaystyle P = \bigcup_{i}{B}_{[i]}$ of $[n]$
+    and a unique permutation $\sigma$ respecting these
+    conditions such that $(P, \sigma) \in \mathcal{NC}^2_n$.
     \item $\mathcal{NC}^2_n \to \mathcal{PF}_n$ :
-    todo
+    Let $(P, \sigma)$ with $P = \{B_1, \ldots, B_l\}$ be our
+    non-crossing 2-partition.
+    For each block $B_i = \{b_1, \ldots, b_k\} \in P$ :
+    \subitem $m_i = min (B_i) = b_1$
+    \subitem $pos_i = \sigma (B_i)$
+    \subitem For each $j \in pos_i$, we define $a_j = m_i$\\
+    The corresponding parking function is $(a_1, \ldots, a_n)$.
 \end{itemize}
+
+\begin{example}[$n = 8$]
+    \begin{align*}
+        &P = \{\{1, 2, 5\}, \{3, 4\}, \{6, 8\}, \{7\}\}\\
+        &\sigma = 36187245\\
+        &f = (3, 6, 1, 7, 6, 1, 1, 3)\\
+    \end{align*}
+\end{example}
 
 \chapter{The rational case}
 
