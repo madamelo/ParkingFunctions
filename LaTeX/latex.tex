@@ -19,6 +19,7 @@
 \newtheorem*{example}{Example}
 \newtheorem*{notation}{Notation}
 \newtheorem*{cor}{Corollary}
+\newtheorem*{rem}{Remark}
 
 \begin{document}
 
@@ -88,6 +89,8 @@
     \end{itemize*}
 \end{example}
 
+\subsection{Primitive parking functions}
+
 \begin{definition}[Primitive]
     A parking function $(a_1, a_2, \ldots, a_n)$ is said \emph{primitive} if
     it is already in non-decreasing order. \\
@@ -125,6 +128,76 @@
         \subitem $(1, 2, 2)$
         \subitem $(1, 2, 3)$\\
     \end{itemize*}
+\end{example}
+
+\subsection{The parking functions poset}
+
+\begin{definition}[Rank]
+    Given $f = (a_1, \ldots, a_n) \in \mathcal{PF}_n$, let
+    $$b_i =
+    \begin{cases}
+        1 \text{ if } \exists j\ |\ a_j = i\\
+        0 \text{ otherwise}
+    \end{cases} $$
+    We define the \emph{rank} of $f$, noted $rk(f)$, as
+    $$\sum_{1 \leq i \leq n}{b_i}$$
+\end{definition}
+
+\begin{example}
+    \begin{align*}
+        &rk((1, 5, 4, 2, 3, 3, 1)) = 5\\
+        &rk((4, 7, 1, 1, 3, 2 ,2, 8)) = 6\\
+    \end{align*}
+\end{example}
+
+\begin{definition}[$\succ_{pf}$]
+    We say that $f = (a_1, \ldots, a_n)$ covers 
+    $g = (b_1, \ldots, gb_n)$, written $f \succ_{pf} g$,
+    if $\exists i, j$ such that :
+    \begin{itemize}
+        \item $i < j$
+        \item There is at least $1$ occurence of $i$ in $f$
+        \item There is at least $1$ occurence of $j$ in $f$
+        $$b_k =
+            \begin{cases}
+                i \text{ if } a_k = j\\
+                a_k \text{ otherwise}\\
+            \end{cases}$$
+    \end{itemize} 
+\end{definition}
+
+\begin{rem}
+    If $f \succ_{pf} g$, then $rk(f) = rk(g) + 1$.
+\end{rem}
+
+\begin{example}
+    \begin{align*}
+        &(1, 4, 2, 6, 1, 1, 3) \succ_{pf} (1, 4, 2, 1, 1, 1, 3)\\
+        &(1, 4, 2, 6, 1, 1, 3) \not \succ_{pf} (1, 4, 2, 5, 1, 1, 3)\\
+    \end{align*}
+\end{example}
+
+\begin{prop}
+    This covering relation defines the \emph{poset}
+    of $\mathcal{PF}_n$.
+\end{prop}
+
+\begin{rem}
+    The bottom element of this poset is
+    $(\underbrace{1, \ldots, 1}_{n})$,
+    and the top elements are the \emph{permutations} of
+    $\{1, \ldots, n\}$.
+\end{rem}
+
+\begin{example}[Shape of the poset of $\mathcal{PF}_3$]
+    \text {}\\
+    \begin{align*}
+    \includegraphics[scale = 0.8, angle = 180]{fig0}
+    \end{align*}
+    \begin{center}
+        This figure was generated with Sagemath.
+        There are $4^2 = 16$ elements in this poset.
+    \end{center}
 \end{example}
 
 \section{Non-crossing Partitions}
@@ -202,7 +275,7 @@ is \emph{sorted} such that :\\
     of $[n]$ respecting these conditions that is non-crossing.
 \end{itemize}
 
-\begin{example}[$E = \lbrack 6 \rbrack$]
+\begin{example}[$n = 6$]
     \begin{align*}
         &P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}
         &f = (1, 1, 1, 3, 3, 6)\\
@@ -256,22 +329,27 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{example}
 
 \begin{prop}
-    This covering relation defines the \emph{poset} of
-    non-crossing partitions of $[n]$.
+    This covering relation defines the \emph{poset}
+    of $\mathcal{NC}_n$.
     We denote by $\mathcal{NCC}_n$ the set of
     \emph{maximal chains} in the poset of $\mathcal{NC}_n$.\\
     $$\mathcal{NCC} = \bigcup_{n > 0}{\mathcal{NCC}_n}$$
 \end{prop}
 
+\begin{rem}
+    The bottom element of this poset is $\{\{1, \ldots, n\}\}$,
+    and the top element is $\{\{1\}, \ldots, \{n\}\}$.
+\end{rem}
+
 \begin{theorem}
-    Let $ncc_n$ be the cardinal of $\mathcal{NC}_n$.
+    Let $ncc_n$ be the cardinal of $\mathcal{NCC}_n$.
     We have $ncc_n = n^{n - 2}$.
 \end{theorem}
 
 \begin{example}[Shape of the poset of $\mathcal{NC}_4$]
     \text {}\\
     \begin{align*}
-    \includegraphics[scale = 0.8]{fig2}
+    \includegraphics[scale = 0.7, angle = 180]{fig2}
     \end{align*}
     \begin{center}
         This figure was generated with Sagemath.
@@ -377,7 +455,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     \end{itemize}
 \end{example}
 
-\section{Non-crossing 2-partitions}
+\subsection{Action of $\mathfrak{S}_n$ on $\mathcal{NC}_n$}
 
 \begin{definition}[Action of $\mathfrak{S}_n$]
     The action of $\mathfrak{S}_n$ on a non-crossing partition
@@ -389,6 +467,41 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
             \{\sigma (B_1), \ldots, \sigma (B_l)\}$
     \end{itemize*}
 \end{definition}
+
+\begin{example}[$\sigma = 415362$]
+    \text{}\\
+    $\sigma (\{\{1, 6\}, \{2, 3, 5\}, \{4\}\}) = 
+        \{\{1, 5, 6\}, \{2, 4\}, \{3\}\}$
+\end{example}
+
+\begin{rem}
+    Note that $\sigma (P)$ is \emph{not} necessarily
+    non-crossing.
+\end{rem}
+
+\begin{definition}[Rotation]
+    We define the \emph{rotation operator} $rot$ of
+    $P \in \mathcal{NC}_n$ as $rot (P) = 
+    (1\ 2\ 3\  \ldots \ n)(P) = 23 \ldots n1 (P)$.\\
+    Conversely, we define $rot^{-1}$ of $P$ as
+    $rot^{-1}(P) = (n\ n-1\ \ldots 3\ 2\ 1)(P) = 
+    n12 \ldots n-1 (P)$.
+\end{definition}
+
+\begin{rem}
+    $K (K (P)) = rot^{-1} (P)$.
+\end{rem}
+
+\begin{example}[$P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
+    \text{}
+    \begin{itemize}
+        \item $rot (P) = \{\{1, 2\}, \{3, 4, 6\}, \{5\}\}$
+        \item $rot^{-1}(P) = \{\{1, 2, 4\}, \{3\}, \{5, 6\}\}$
+    \end{itemize}
+    
+\end{example}
+
+\section{Non-crossing 2-partitions}
 
 \begin{definition}[Non-crossing 2-partition]
     A \emph{non-crossing 2-partition} of a set $E$ is a pair $(P, \sigma)$
@@ -505,6 +618,87 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
         &\sigma = 36187245\\
         &f = (3, 6, 1, 7, 6, 1, 1, 3)\\
     \end{align*}
+\end{example}
+
+\subsection{The non-crossing 2-partitions poset}
+
+\begin{definition}[$\succ^2$]
+    We say that $(P, \sigma)$ covers $(Q, \tau)$, written
+    ($P, \sigma) \succ^2 (Q, \tau)$,
+    if $\exists B_i, B_j \in P$ such that\\
+    \begin{itemize*}
+        \item $Q = P - \{B_i, B_j\} \cup \{B_i \cup B_j\}$\\
+        \item $l \neq i, j \and b \in B_l \rightarrow
+            \tau (b) = \sigma (b)$\\
+        \item Let $B_i \cup B_j = \{b_1, \ldots, b_k\}$ :\\
+            \subitem $\tau (B_i \cup B_j) = \sigma (B_i \cup B_j)$\\
+            \subitem $\tau (b_1) < \ldots < \tau (b_k)$
+    \end{itemize*}    
+\end{definition}
+
+\begin{example}
+    \text{}\\
+    \begin{itemize*}
+        \item $P = \{\{1, 6\}, \{2, 3\}, \{4\}, \{5\}\}$\\
+        \item $\sigma = 236154$\\
+        \item $Q = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$\\
+        \item $\tau = 235164$\\
+        \item $(P, \sigma) \succ^2 (Q, \tau)$\\
+        \item $(P, \sigma) \not \succ^2 (Q, \sigma)$,
+        because  $\sigma (\{2, 3, 5\}) = \{3, 6, 5\}$ is
+        \emph{not} ordered. 
+    \end{itemize*}
+\end{example}
+
+\begin{prop}
+    This covering relation defines the \emph{poset} of
+    $\mathcal{NC}^2_n$.
+\end{prop}
+
+\begin{rem}
+    The bottom element of this poset is 
+    $(\{\{1, \ldots, n\}\}, 12 \ldots n)$, and the top
+    elements are $\{(\{\{1\}, \ldots, \{n\}\}, \sigma)\ 
+    |\ \sigma \in \mathfrak{S}_n\}$.
+\end{rem}
+
+\begin{example}[Shape of the poset of $\mathcal{NC}^2_3$]
+    \text {}\\
+    \begin{align*}
+    \includegraphics[scale = 0.8, angle = 180]{fig3}
+    \end{align*}
+    \begin{center}
+        This figure was generated with Sagemath.
+        There are $4^2 = 16$ elements in this poset.
+    \end{center}
+\end{example}
+
+\begin{rem}
+    This poset is in \emph{bijection} with the poset of
+    $\mathcal{PF}_n$, and each can be obtained by applying
+    the aforementioned bijection between $\mathcal{NC}_n$
+    and $\mathcal{PF}_n$ to the elements of the other :
+    $f \in \mathcal{PF}_n \succ_{pf} g \in \mathcal{PF}_n$
+    if and only if :
+    \begin{itemize}
+        \item $(P,\sigma)$ is the non-crossing 2-partition
+        associated to $f$
+        \item $(Q, \tau)$ is the non-crossing 2-partition
+        associated to $g$
+        \item $(P, \sigma) \succ^2 (Q, \tau)$
+    \end{itemize}
+\end{rem}
+
+\begin{example}
+    \text{}\\
+    \begin{itemize*}
+        \item $P = \{\{1, 6\}, \{2, 3\}, \{4\}, \{5\}\}$\\
+        \item $\sigma = 236154$\\
+        \item $Q = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$\\
+        \item $\tau = 235164$\\
+        \item $f = (4, 1, 2, 1, 5, 2) \succ_{pf}
+            g = (4, 1, 2, 1, 2, 2)$\\
+    \end{itemize*}
 \end{example}
 
 \chapter{The rational case}
