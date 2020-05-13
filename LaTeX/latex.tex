@@ -130,76 +130,6 @@
     \end{itemize*}
 \end{example}
 
-\subsection{The parking functions poset}
-
-\begin{definition}[Rank]
-    Given $f = (a_1, \ldots, a_n) \in \mathcal{PF}_n$, let
-    $$b_i =
-    \begin{cases}
-        1 \text{ if } \exists j\ |\ a_j = i\\
-        0 \text{ otherwise}
-    \end{cases} $$
-    We define the \emph{rank} of $f$, noted $rk(f)$, as
-    $$\sum_{1 \leq i \leq n}{b_i}$$
-\end{definition}
-
-\begin{example}
-    \begin{align*}
-        &rk((1, 5, 4, 2, 3, 3, 1)) = 5\\
-        &rk((4, 7, 1, 1, 3, 2 ,2, 8)) = 6\\
-    \end{align*}
-\end{example}
-
-\begin{definition}[$\succ_{pf}$]
-    We say that $f = (a_1, \ldots, a_n)$ covers 
-    $g = (b_1, \ldots, gb_n)$, written $f \succ_{pf} g$,
-    if $\exists i, j$ such that :
-    \begin{itemize}
-        \item $i < j$
-        \item There is at least $1$ occurence of $i$ in $f$
-        \item There is at least $1$ occurence of $j$ in $f$
-        $$b_k =
-            \begin{cases}
-                i \text{ if } a_k = j\\
-                a_k \text{ otherwise}\\
-            \end{cases}$$
-    \end{itemize} 
-\end{definition}
-
-\begin{rem}
-    If $f \succ_{pf} g$, then $rk(f) = rk(g) + 1$.
-\end{rem}
-
-\begin{example}
-    \begin{align*}
-        &(1, 4, 2, 6, 1, 1, 3) \succ_{pf} (1, 4, 2, 1, 1, 1, 3)\\
-        &(1, 4, 2, 6, 1, 1, 3) \not \succ_{pf} (1, 4, 2, 5, 1, 1, 3)\\
-    \end{align*}
-\end{example}
-
-\begin{prop}
-    This covering relation defines the \emph{poset}
-    of $\mathcal{PF}_n$.
-\end{prop}
-
-\begin{rem}
-    The bottom element of this poset is
-    $(\underbrace{1, \ldots, 1}_{n})$,
-    and the top elements are the \emph{permutations} of
-    $\{1, \ldots, n\}$.
-\end{rem}
-
-\begin{example}[Shape of the poset of $\mathcal{PF}_3$]
-    \text {}\\
-    \begin{align*}
-    \includegraphics[scale = 0.8, angle = 180]{fig0}
-    \end{align*}
-    \begin{center}
-        This figure was generated with Sagemath.
-        There are $4^2 = 16$ elements in this poset.
-    \end{center}
-\end{example}
-
 \section{Non-crossing Partitions}
 
 \begin{definition}[Non-crossing Partition]
@@ -673,13 +603,32 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     \end{center}
 \end{example}
 
-\begin{rem}
-    This poset is in \emph{bijection} with the poset of
-    $\mathcal{PF}_n$, and each can be obtained by applying
-    the aforementioned bijection between $\mathcal{NC}_n$
-    and $\mathcal{PF}_n$ to the elements of the other :
+\subsection{The parking functions poset}
+
+\begin{definition}[Rank]
+    Given $f = (a_1, \ldots, a_n) \in \mathcal{PF}_n$, let
+    $$b_i =
+    \begin{cases}
+        1 \text{ if } \exists j\ |\ a_j = i\\
+        0 \text{ otherwise}
+    \end{cases} $$
+    We define the \emph{rank} of $f$, noted $rk(f)$, as
+    $$\sum_{1 \leq i \leq n}{b_i}$$
+\end{definition}
+
+\begin{example}
+    \begin{align*}
+        &rk((1, 5, 4, 2, 3, 3, 1)) = 5\\
+        &rk((4, 7, 1, 1, 3, 2 ,2, 8)) = 6\\
+    \end{align*}
+\end{example}
+
+\begin{definition}[$\succ_{pf}$]
+    Since $\mathcal{PF}_n$ and $\mathcal{NC}^2_n$ are
+    in bijection, we can define a \emph{covering relation}
+    $\succ_{pf}$ for $\mathcal{PF}_n$ as follows :\\
     $f \in \mathcal{PF}_n \succ_{pf} g \in \mathcal{PF}_n$
-    if and only if :
+    if and only if :    
     \begin{itemize}
         \item $(P,\sigma)$ is the non-crossing 2-partition
         associated to $f$
@@ -687,7 +636,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
         associated to $g$
         \item $(P, \sigma) \succ^2 (Q, \tau)$
     \end{itemize}
-\end{rem}
+\end{definition}
 
 \begin{example}
     \text{}\\
@@ -701,10 +650,43 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     \end{itemize*}
 \end{example}
 
-% TODO : INSERT PROOF
-\begin{proof}
-    It works
-\end{proof}
+\begin{rem}
+    If $f \succ_{pf} g$, then $rk(f) = rk(g) + 1$, and
+    there exists $i$ and $j$ such that :
+    \begin{itemize}
+        \item $i < j$
+        \item There is at least $1$ occurence of $i$ in $f$
+        \item There is at least $1$ occurence of $j$ in $f$
+        $$b_k =
+            \begin{cases}
+                i \text{ if } a_k = j\\
+                a_k \text{ otherwise}\\
+            \end{cases}$$
+    \end{itemize}
+\end{rem}
+
+\begin{prop}
+    This covering relation defines the \emph{poset}
+    of $\mathcal{PF}_n$.
+\end{prop}
+
+\begin{rem}
+    The bottom element of this poset is
+    $(\underbrace{1, \ldots, 1}_{n})$,
+    and the top elements are the \emph{permutations} of
+    $\{1, \ldots, n\}$.
+\end{rem}
+
+\begin{example}[Shape of the poset of $\mathcal{PF}_3$]
+    \text {}\\
+    \begin{align*}
+    \includegraphics[scale = 0.8, angle = 180]{fig0}
+    \end{align*}
+    \begin{center}
+        This figure was generated with Sagemath.
+        There are $4^2 = 16$ elements in this poset.
+    \end{center}
+\end{example}
 
 \chapter{The rational case}
 
@@ -730,7 +712,7 @@ greatest common divisor).
 \begin{example}
     \text{}
     \begin{itemize}
-        \item Ex. 1 :
+        \item Ex. 1 : $a > b$
             \subitem $a = 7$
             \subitem $b = 3$
             \subitem Limits of the non-decreasing
@@ -743,7 +725,7 @@ greatest common divisor).
             \subitem $f_2 = (2, 1, 2, 3, 2, 3, 1) \notin
             \mathcal{PF}^3_7$, even though $f_2 \in
             \mathcal{PF}_7$
-        \item Ex. 2 :
+        \item Ex. 2 : $a < b$
             \subitem $a = 5$
             \subitem $b = 7$
             \subitem Limits of the non-decreasing            
