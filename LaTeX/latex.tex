@@ -12,6 +12,8 @@
 
 \usepackage[inline]{enumitem}
 
+\usepackage{tikz}
+
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
 \newtheorem*{prop}{Proposition}
@@ -61,15 +63,15 @@
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
-    \text{} \\
+    ~\\
     \begin{itemize*}
-            \item $n = 1$ \text{ } $:$ \text{ } $pf_1 = 1$\\
+            \item $n = 1$ \  $:$ \  $pf_1 = 1$\\
             \subitem $(1)$\\
-            \item $n = 2$ \text{ } $:$ \text{ } $pf_2 = 3$\\
+            \item $n = 2$ \  $:$ \  $pf_2 = 3$\\
             \subitem $(1, 1)$
             \subitem $(1, 2)$
             \subitem $(2, 1)$\\
-            \item $n = 3$ \text{ } $:$ \text{ } $pf_3 = 16$\\
+            \item $n = 3$ \  $:$ \  $pf_3 = 16$\\
             \subitem $(1, 1, 1)$
             \subitem $(1, 1, 2)$
             \subitem $(1, 1, 3)$
@@ -114,14 +116,14 @@
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
-    \text{}\\
+    ~\\
     \begin{itemize*}
-        \item $n = 1$ \text{ } $:$ \text{ } $pf'_1 = 1$\\
+        \item $n = 1$ \  $:$ \  $pf'_1 = 1$\\
         \subitem $(1)$\\
-        \item $n = 2$ \text{ } $:$ \text{ } $pf'_2 = 2$\\
+        \item $n = 2$ \  $:$ \  $pf'_2 = 2$\\
         \subitem $(1, 1)$
         \subitem $(1, 2)$\\
-        \item $n = 3$ \text{ } $:$ \text{ } $pf'_3 = 5$\\
+        \item $n = 3$ \  $:$ \  $pf'_3 = 5$\\
         \subitem $(1, 1, 1)$
         \subitem $(1, 1, 2)$
         \subitem $(1, 1, 3)$
@@ -168,14 +170,14 @@ is \emph{sorted} such that :\\
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
-    \text{}\\
+    ~\\
     \begin{itemize*}
-        \item $n = 1$ \text{ } $:$ \text{ } $nc_1 = 1$\\
+        \item $n = 1$ \  $:$ \  $nc_1 = 1$\\
         \subitem $\{\{1\}\}$\\
-        \item $n = 2$ \text{ } $:$ \text{ } $nc_2 = 2$\\
+        \item $n = 2$ \  $:$ \  $nc_2 = 2$\\
         \subitem $\{\{1, 2\}\}$
         \subitem $\{\{1\}, \{2\}\}$\\
-        \item $n = 3$ \text{ } $:$ \text{ } $nc_3 = 5$\\
+        \item $n = 3$ \  $:$ \  $nc_3 = 5$\\
         \subitem $\{\{1, 2, 3\}\}$
         \subitem $\{\{1\}, \{2, 3\}\}$
         \subitem $\{\{1, 3\}, \{2\}\}$
@@ -233,10 +235,31 @@ to $n$ clockwise. We then represent each block $B = \{b_1, \ldots, b_k\}$
 by the convex hull of $\{b_1, \ldots, b_k\}$.\\
 
 \begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
-    \text {}\\
-    \begin{align*}
-    \includegraphics[scale = 0.3]{fig1}
-    \end{align*}
+    ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = magenta] (4,5) -- (5,3)
+                -- (1,3) -- cycle;
+            \draw [color = cyan][line width = 4pt] 
+                (4,1) -- (2,1);
+            \fill [color=yellow] (2,5) circle (0.2);
+          \end{tikzpicture}
+    \end{center}
 \end{example}
 
 Thus non-crossing meaning the hulls are \emph{disjoint}.\\
@@ -276,18 +299,97 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     We have $ncc_n = n^{n - 2}$.
 \end{theorem}
 
-\begin{example}[Shape of the poset of $\mathcal{NC}_4$]
-    \text {}\\
-    \begin{align*}
-    \includegraphics[scale = 0.7, angle = 180]{fig2}
-    \end{align*}
+\begin{example}[The poset of $\mathcal{NC}_4$]
+    ~\\
     \begin{center}
-        This figure was generated with Sagemath.
+
+        \begin{tikzpicture}[scale = 1]
+            \node (0)  at (0,0)  {$1234$};
+            \node (1)  at (-5,4) {$1|234$};
+            \node (2)  at (-3,4) {$134|2$};
+            \node (3)  at (-1,4) {$124|3$};
+            \node (4)  at (1,4)  {$123|4$};
+            \node (5)  at (3,4)  {$12|34$};
+            \node (6)  at (5,4)  {$14|23$};
+            \node (7)  at (-5,8) {$1|2|34$};
+            \node (8)  at (-3,8) {$1|24|3$};
+            \node (9)  at (-1,8) {$1|23|4$};
+            \node (10) at (1,8)  {$14|2|3$};
+            \node (11) at (3,8)  {$13|2|4$};
+            \node (12) at (5,8)  {$12|3|4$};
+            \node (13) at (0,12) {$1|2|3|4$};
+        
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=magenta](0,11.5) to (-5,8.5);
+            \draw [->][color=magenta, ultra thick]
+                (-5,7.5) to (-5.2,4.5);
+            \draw [->][color=magenta, ultra thick]
+                (-5,7.5) to (-3.2,4.5); 
+            \draw [->][color=magenta, ultra thick]
+                (-5,7.5) to (2.8,4.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=magenta](-5,3.5) to (-0.5,0.5);
+        
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=yellow] (0,11.5) to (-3,8.5);
+            \draw [->][color=yellow, ultra thick]
+                (-3,7.5) to (-5,4.5);
+            \draw [->][color=yellow, ultra thick]
+                (-3,7.5) to (-1.2,4.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=yellow](-1,3.5) to (-0.1,0.5);
+            
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=green](0,11.5) to (-1,8.5);
+            \draw [->][color=green, ultra thick]
+                (-1,7.5) to (-4.8,4.5);
+            \draw [->][color=green, ultra thick]
+                (-1,7.5) to (0.8,4.5);
+            \draw [->][color=green, ultra thick]
+                (-1,7.5) to (4.8,4.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=green](1,3.5) to (0.1,0.5);
+        
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=violet](0,11.5) to (1,8.5);
+            \draw [->][color=violet, ultra thick]
+                (1,7.5) to (-3,4.5);
+            \draw [->][color=violet, ultra thick]
+                (1,7.5) to (-1,4.5);
+            \draw [->][color=violet, ultra thick]
+                (1,7.5) to (5.2,4.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=violet](5,3.5) to (0.5,0.5);
+        
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=orange](0,11.5) to (3,8.5);
+            \draw [->][color=orange, ultra thick]
+                (3,7.5) to (-2.8,4.5);
+            \draw [->][color=orange, ultra thick]
+                (3,7.5) to (1,4.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=orange](-3,3.5) to (-0.3,0.5);
+        
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=cyan](0,11.5) to (5,8.5);
+            \draw [->][color=cyan, ultra thick]
+                (5,7.5) to (-0.8,4.5);
+            \draw [->][color=cyan, ultra thick]
+                (5,7.5) to (1.2,4.5);
+            \draw [->][color=cyan, ultra thick]
+                (5,7.5) to (3.2,4.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=cyan](3,3.5) to (0.3,0.5);
+        
+        \end{tikzpicture}
+        
         There are $4^2 = 16$ different maximal chains,
         and $\frac {1}{5} \binom{8}{4} = \frac{70}{5} = 14$
         elements in this poset.
     \end{center}
 \end{example}
+
+
 
 \subsection{Kreweras complement}
 
@@ -315,7 +417,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{definition}
 
 \begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
-    \text {} \\
+    ~\\
     \begin{itemize*}
         \item $\sigma = (1\ 2\ 5)\ (3\ 4)\ (6) = 254316$\\
         \item $\pi = (6\ 5\ 4\ 3\ 2\ 1) = 612345$\\
@@ -332,7 +434,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{prop}
 
 \begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
-    \text{}\\
+    ~\\
     \begin{itemize}
         \item $K (P) = \{\{1\},\{2, 4\}, \{3\}, \{5, 6\}\}$
         \item $\bigcup{min (B'_i)} = \{1, 2, 3, 5\}$
@@ -361,7 +463,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{prop}
 
 \begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
-    \text{}
+    ~\\
     \begin{itemize}
         \item $mins = \{1, 2, 3, 5\}$
         \item $m_1 = 1$
@@ -399,7 +501,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{definition}
 
 \begin{example}[$\sigma = 415362$]
-    \text{}\\
+    ~\\
     $\sigma (\{\{1, 6\}, \{2, 3, 5\}, \{4\}\}) = 
         \{\{1, 5, 6\}, \{2, 4\}, \{3\}\}$
 \end{example}
@@ -423,7 +525,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{rem}
 
 \begin{example}[$P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
-    \text{}
+    ~\\
     \begin{itemize}
         \item $rot (P) = \{\{1, 2\}, \{3, 4, 6\}, \{5\}\}$
         \item $rot^{-1}(P) = \{\{1, 2, 4\}, \{3\}, \{5, 6\}\}$
@@ -462,19 +564,19 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
-    \text{}
+    ~\\
     \begin{itemize}
-            \item $n = 1$ \text{ } $:$ \text{ } $nc^2_1 = 1$
+            \item $n = 1$ \  $:$ \  $nc^2_1 = 1$
             \subitem $\{\{1\}\}$ \hspace{1cm} $1$
                 \hspace{1cm} $\rho = P$
-            \item $n = 2$ \text{ } $:$ \text{ } $nc^2_2 = 3$
+            \item $n = 2$ \  $:$ \  $nc^2_2 = 3$
             \subitem $\{\{1\}, \{2\}\}$ \hspace{1cm} $12$
                 \hspace{1cm} $\rho = P$
             \subitem $\{\{1\}, \{2\}\}$ \hspace{1cm} $21$
                 \hspace{1cm} $\rho = P$
             \subitem $\{\{1, 2\}\}$ \hspace{14mm} $12$
                 \hspace{1cm} $\rho = P$
-            \item $n = 3$ \text{ } $:$ \text{ } $nc^2_3 = 16$
+            \item $n = 3$ \  $:$ \  $nc^2_3 = 16$
             \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
                 $123$ \hspace{1cm} $\rho = P$
             \subitem $\{\{1\}, \{2\}, \{3\}\}$ \hspace{1cm}
@@ -567,7 +669,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{definition}
 
 \begin{example}
-    \text{}\\
+    ~\\
     \begin{itemize*}
         \item $P = \{\{1, 6\}, \{2, 3\}, \{4\}, \{5\}\}$\\
         \item $\sigma = 236154$\\
@@ -576,7 +678,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
         \item $(P, \sigma) \succ^2 (Q, \tau)$\\
         \item $(P, \sigma) \not \succ^2 (Q, \sigma)$,
         because  $\sigma (\{2, 3, 5\}) = \{3, 6, 5\}$ is
-        \emph{not} ordered. 
+        \emph{not} ordemagenta. 
     \end{itemize*}
 \end{example}
 
@@ -593,7 +695,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{rem}
 
 \begin{example}[Shape of the poset of $\mathcal{NC}^2_3$]
-    \text {}\\
+    ~\\
     \begin{align*}
     \includegraphics[scale = 0.8, angle = 180]{fig3}
     \end{align*}
@@ -639,7 +741,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{definition}
 
 \begin{example}
-    \text{}\\
+    ~\\
     \begin{itemize*}
         \item $P = \{\{1, 6\}, \{2, 3\}, \{4\}, \{5\}\}$\\
         \item $\sigma = 236154$\\
@@ -678,7 +780,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 \end{rem}
 
 \begin{example}[Shape of the poset of $\mathcal{PF}_3$]
-    \text {}\\
+    ~\\
     \begin{align*}
     \includegraphics[scale = 0.8, angle = 180]{fig0}
     \end{align*}
@@ -710,7 +812,7 @@ greatest common divisor).
 \end{definition}
 
 \begin{example}
-    \text{}
+    ~\\
     \begin{itemize}
         \item Ex. 1 : $a > b$
             \subitem $a = 7$
@@ -746,7 +848,7 @@ greatest common divisor).
 \end{theorem}
 
 \begin{example}[$a = 3, b = 5$]
-    \text{}
+    ~\\
     \begin{itemize*}\\
         \item $pf^b_a = 25$
         \item Limits : $[1,\ 2 \frac{2}{3},\ 
