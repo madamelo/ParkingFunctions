@@ -60,7 +60,7 @@
 
 \begin{theorem}
     Let $pf_n$ be the cardinal of $\mathcal{PF}_n$.
-    We have $pf_n = (n + 1)^{n-1}$.
+    We have $$pf_n = (n + 1)^{n-1}$$.
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
@@ -112,7 +112,7 @@
 
 \begin{theorem}
     Let $pf'_n$ be the cardinal of $\mathcal{PF'}_n$.
-    We have $pf'_n = \frac{1}{n + 1} \binom{2n}{n}$,
+    We have $$pf'_n = \frac{1}{n + 1} \binom{2n}{n}$$
     which is the $n^{th}$ Catalan number.
 \end{theorem}
 
@@ -166,8 +166,8 @@ is \emph{sorted} such that :\\
 
 \begin{theorem}
     Let $nc_n$ be the cardinal of $\mathcal{NC}_n$.
-    We have $nc_n = \frac{1}{n + 1} \binom{2n}{n}$,
-    which is the $n^{th}$ Catalan number.
+    We have $$nc_n = \frac{1}{n + 1} \binom{2n}{n}$$
+    which is again the $n^{th}$ Catalan number.
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
@@ -297,7 +297,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 
 \begin{theorem}
     Let $ncc_n$ be the cardinal of $\mathcal{NCC}_n$.
-    We have $ncc_n = n^{n - 2}$.
+    We have $$ncc_n = n^{n - 2}$$.
 \end{theorem}
 
 \begin{example}[The poset of $\mathcal{NC}_4$]
@@ -564,7 +564,7 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
 
 \begin{theorem}
     Let $nc^2_n$ be the cardinal of $\mathcal{NC}^2_n$.
-    We have $nc^2_n = (n + 1)^{n-1}$.
+    We have $$nc^2_n = (n + 1)^{n-1}$$
 \end{theorem}
 
 \begin{example}[$n = 1, 2, 3$]
@@ -1000,7 +1000,8 @@ greatest common divisor).
         \item $n = a$\\
         \item its non-decreasing reordering 
         $(b_1, b_2, \ldots, b_n)$
-        has $b_i < \frac{b}{a}(i-1) + 1$ for all $i$.\\\\
+        has $b_i \leqslant \frac{b}{a}(i-1) + 1$
+        for all $i$.\\\\
     \end{itemize*}
     We denote by $\mathcal{PF}^b_a$ the set of 
     a, b - parking functions.
@@ -1039,7 +1040,7 @@ greatest common divisor).
 
 \begin{theorem}
     Let $pf^b_a$ be the cardinal of $\mathcal{PF}^b_a$.
-    We have $pf^b_a = b^{a-1}$.
+    We have $$pf^b_a = b^{a-1}$$
 \end{theorem}
 
 \begin{example}[$a = 3, b = 5$]
@@ -1075,6 +1076,65 @@ greatest common divisor).
         \subitem $(4, 2, 1)$
     \end{itemize*}
 \end{example}
+
+\begin{rem}    
+    $\mathcal{PF}^{n+1}_n = \mathcal{PF}_n$.
+    In fact, we do have $b^{a-1} = (n+1)^{n-1}$.
+\end{rem}
+
+\subsection{Rational primitives parking functions}
+
+\begin{definition}[Rational Primitive]
+    A rational parking function $f$ is said
+    \emph{primitive} if it is already in
+    non-decreasing order.\\
+    We denote by $\mathcal{PF'}^b_a$ the set of
+    primitive a, b - parking functions.
+\end{definition}
+
+\begin{example}[$a = 4, b = 3$]
+    Limits : $[1,\ 1 \frac{3}{4},\ 2 \frac{1}{2},\ 
+    3 \frac{1}{4}]$
+    \begin{align*}
+        &f_1 = (1, 1, 2, 2) \in \mathcal{PF'}^3_4\\
+        &f_2 = (1, 1, 2, 1) \notin \mathcal{PF'}^3_4,
+        \text{ even though } f_2 \in \mathcal{PF}^3_4.
+    \end{align*}
+\end{example}
+
+\begin{theorem}
+    Let $pf'^b_a$ be the cardinal of
+    $\mathcal{PF'}^b_a$.
+    We have $$\displaystyle pf'^b_a = 
+    \frac{1}{a + b} \binom{a + b}{b}$$
+\end{theorem}
+
+\begin{example}[$a = 3, b = 5$]
+    ~\\
+    \begin{itemize*}
+        \item $pf'^b_a = 7$
+        \item Limits : $[1,\ 2 \frac{2}{3},\ 
+            4 \frac{1}{3}]$\\\\
+        \subitem $(1, 1, 1)$
+        \subitem $(1, 1, 2)$
+        \subitem $(1, 1, 3)$
+        \subitem $(1, 1, 4)$
+        \subitem $(1, 2, 2)$
+        \subitem $(1, 2, 3)$
+        \subitem $(1, 2, 4)$
+    \end{itemize*}    
+\end{example}
+
+\begin{rem}
+    $\mathcal{PF'}^{n+1}_n = \mathcal{PF'}_n$.
+    In fact, we do have
+    $$\frac{1}{n + n + 1} \binom{n + n + 1}{n + 1}
+    = \frac{1}{2n + 1} \binom {2n + 1}{n + 1}
+    = \frac{1}{2n + 1} \frac{(2n + 1)!}{n ! (n+1)!}$$
+    $$= \frac{(2n)!}{n!(n+1)!}
+    = \frac{1}{n+1} \frac{(2n)!}{n!n!}
+    = \frac{1}{n+1} \binom{2n}{n}$$
+\end{rem}
 
 \chapter{Trees}
 
