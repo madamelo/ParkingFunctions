@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  13 MAY 2020 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  14 MAY 2020 16:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -797,211 +797,241 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--206
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 228--235
+Underfull \hbox (badness 10000) in paragraph at lines 231--238
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+Underfull \hbox (badness 10000) in paragraph at lines 240--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 270--271
+Underfull \hbox (badness 10000) in paragraph at lines 271--273
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--287
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--294
+Underfull \hbox (badness 10000) in paragraph at lines 316--322
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 308--311
+Underfull \hbox (badness 10000) in paragraph at lines 325--329
 
  []
 
 [6]
-Overfull \hbox (37.05708pt too wide) in paragraph at lines 411--413
-[]\T1/cmr/bx/n/12 Example. []\T1/cmr/m/it/12 The per-mu-ta-tion as-so-ci-ated to $\OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gg$ \T1/cmr/m/it/12 is $\OT1/cmr/m/n/12 (1 2 5) (3 4) (6) =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 416--425
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 428--435
+Overfull \hbox (37.05708pt too wide) in paragraph at lines 446--448
+[]\T1/cmr/bx/n/12 Example. []\T1/cmr/m/it/12 The per-mu-ta-tion as-so-ci-ated to $\OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gg$ \T1/cmr/m/it/12 is $\OT1/cmr/m/n/12 (1 2 5) (3 4) (6) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--460
 
  []
 
 
-Overfull \hbox (1.20062pt too wide) in paragraph at lines 438--440
+Underfull \hbox (badness 10000) in paragraph at lines 463--470
+
+ []
+
+
+Overfull \hbox (1.20062pt too wide) in paragraph at lines 473--475
 []\T1/cmr/bx/n/12 Proposition \T1/cmr/m/n/12 (Krew-eras min-i-mums)\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12 Let $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; [] ; B[]\OMS/cmsy/m/n/12 g$ \T1/cmr/m/it/12 be a non-crossing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--442
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--447
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 449--452
-
- []
-
-
-Overfull \hbox (0.61322pt too wide) in paragraph at lines 460--464
-[]\T1/cmr/bx/n/12 Proposition \T1/cmr/m/n/12 (Krew-eras block sizes)\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12 Let $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; [] ; B[]\OMS/cmsy/m/n/12 g$ \T1/cmr/m/it/12 be a non-crossing
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 468--470
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 474--476
+Underfull \hbox (badness 10000) in paragraph at lines 484--487
 
  []
 
 [8]
-LaTeX Font Info:    Try loading font information for U+euf on input line 498.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [9]
-Underfull \hbox (badness 10000) in paragraph at lines 536--538
+Overfull \hbox (0.61322pt too wide) in paragraph at lines 495--499
+[]\T1/cmr/bx/n/12 Proposition \T1/cmr/m/n/12 (Krew-eras block sizes)\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12 Let $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; [] ; B[]\OMS/cmsy/m/n/12 g$ \T1/cmr/m/it/12 be a non-crossing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--558
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
+
+ []
+
+
+Overfull \hbox (52.1079pt too wide) in paragraph at lines 585--586
+[]\T1/cmr/bx/n/12 Example \T1/cmr/m/n/12 (Coun-ter-ex-am-ple : $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ;  \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 gg\OML/cmm/m/it/12 ; Q \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 gg$\T1/cmr/m/n/12 )\T1/cmr/bx/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 575--577
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
+LaTeX Font Info:    Try loading font information for U+euf on input line 670.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+Underfull \hbox (badness 10000) in paragraph at lines 685--689
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 629--631
+Underfull \hbox (badness 10000) in paragraph at lines 747--750
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 709--712
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 989--1000
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 1017--1019
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1062
 
  []
 
 
-Overfull \hbox (3.55185pt too wide) in paragraph at lines 830--831
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 1156--1159
+
+ []
+
+[17]
+Overfull \hbox (3.55185pt too wide) in paragraph at lines 1277--1278
  [] 
  []
 
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 872--881
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1328
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 911--912
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1359
 
  []
 
-[15] [16]
+[19] [20]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1015
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1018--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1465--1467
 
  []
 
-[17
+[21
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1490--1492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1054--1085
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1532
 
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 1054--1085
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 1501--1532
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 1054--1085
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 1501--1532
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 1054--1085
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 1501--1532
 | $\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1122--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1569--1582
 
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 1122--1135
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 1569--1582
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ 
  []
 
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1600--1603
 
  []
 
-[19]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1633--1635
+
+ []
+
+[23] [24]
 Chapter 3.
-[20
+[25
 
 ] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
- 13912 strings out of 494923
- 275026 string characters out of 6180742
- 318007 words of memory out of 5000000
- 16943 multiletter control sequences out of 15000+600000
- 21303 words of font info for 61 fonts, out of 8000000 for 9000
+ 13925 strings out of 494923
+ 275166 string characters out of 6180742
+ 319935 words of memory out of 5000000
+ 16950 multiletter control sequences out of 15000+600000
+ 23843 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,14n,55p,465b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (22 pages, 226170 bytes).
+ </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (27 pages, 254765 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 443 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

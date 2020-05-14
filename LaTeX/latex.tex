@@ -198,7 +198,7 @@ is \emph{sorted} such that :\\
 \begin{itemize}
     \item $\mathcal{NC}_n \to \mathcal{PF'}_n$ :
     For each block $B$ in the non-crossing partition, take
-    $i = min (B)$, and $k_i = size (B)$.\\
+    $i = min (B)$, and let $k_i = size (B)$.\\
     $k_i = 0$ if $i$ is not the minimum of a block.\\
     The corresponding parking function is
     $(\underbrace{1, \ldots, 1}_{k_1}, \underbrace{2, \ldots,
@@ -208,7 +208,10 @@ is \emph{sorted} such that :\\
     parking function, $B_i$ will be of size $n_i$ with minimum
     element $i$.
     There is a unique set partition $\displaystyle P = \bigcup_{i}{B_i}$
-    of $[n]$ respecting these conditions that is non-crossing.
+    of $[n]$ respecting these conditions that is non-crossing :
+    for each minimum $i$ in \emph{decreasing order}, add
+    the $n_i$ first free elements of
+    $[i+1, i+2, \ldots, n, 1, \ldots, i-1]$ to $B_i$.
 \end{itemize}
 \end{proof}
 
@@ -265,9 +268,41 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
             \fill [color=yellow] (2,5) circle (0.2);
           \end{tikzpicture}
     \end{center}
+    Thus non-crossing meaning the hulls are
+    \emph{disjoint}.\\
 \end{example}
 
-Thus non-crossing meaning the hulls are \emph{disjoint}.\\
+\begin{example}[Counter-example : $P = \{\{1, 5, 2\},
+    \{3, 6\}, \{4\}\}$]
+    ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = orange] (4,5) -- (5,3)
+                -- (1,3) -- cycle;
+            \draw [color = violet][line width = 4pt] 
+                (4,1) -- (2,5);
+            \fill [color=green] (2,1) circle (0.2);
+          \end{tikzpicture}
+    \end{center}
+    This partition is \emph{not} non-crossing, as the
+    convex hulls of $\{1, 2, 5\}$ and $\{3, 6\}$ are
+    \emph{not} disjoint.
+\end{example}
 
 \subsection{The non-crossing partitions poset}
 
@@ -495,6 +530,143 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     \end{itemize}
 \end{example}
 
+\begin{definition}[Mutually Non-crossing Partitions]
+    2 partitions $P$ and $Q$ are said
+    \emph{mutually non-crossing} if :\\
+    \begin{itemize*}
+        \item P is non-crossing\\
+        \item Q is non-crossing\\
+        \item For every block $B_i$ of $P$ and every
+        block $B_j$ of $Q$, if $a,c \in B_i$ and
+        $b, d \in B_j$, then we can \emph{not} have
+        $a < b < c < d$, nor $a > b > c > d$.
+    \end{itemize*}    
+\end{definition}
+
+\begin{example}[$P = \{\{1, 2\},\{3, 6\},\ \{4, 5\}\},
+    Q = \{\{1, 6\}, \{2\}, \{3, 4\}, \{5\}\}$]
+    ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \draw [color = magenta][line width = 4pt] 
+                (4,5) -- (5,3);
+            \draw [color = magenta][line width = 4pt] 
+                (4,1) -- (2,5);
+            \draw [color = magenta][line width = 4pt] 
+                (2,1) -- (1,3);
+            \draw [color = cyan][line width = 4pt] 
+                (4,5) -- (2,5);                
+            \draw [color = cyan][line width = 4pt] 
+                (4,1) -- (2,1);
+            \fill [color=cyan] (5,3) circle (0.2);
+            \fill [color=cyan] (1,3) circle (0.2);
+          \end{tikzpicture}
+    \end{center}
+\end{example}
+
+\begin{example}[Counter-example : $P = \{\{1, 2\},
+    \{3, 6\},\ \{4, 5\}\},
+    Q = \{\{1, 6\}, \{2, 5\}, \{3, 4\}\}$]
+    ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \draw [color = orange][line width = 4pt] 
+                (4,5) -- (5,3);
+            \draw [color = orange][line width = 4pt] 
+                (4,1) -- (2,5);
+            \draw [color = orange][line width = 4pt] 
+                (2,1) -- (1,3);
+            \draw [color = violet][line width = 4pt] 
+                (4,5) -- (2,5);                
+            \draw [color = violet][line width = 4pt] 
+                (5,3) -- (1,3);        
+            \draw [color = violet][line width = 4pt] 
+                (4,1) -- (2,1);
+
+          \end{tikzpicture}
+    \end{center}
+\end{example}
+
+\begin{rem}
+    Note that vertices \emph{can} touch, but the edges
+    of the convex hulls can \emph{not} cross.
+\end{rem}
+
+\begin{prop}
+    For any non-crossing partition $P$, $P$ and $K(P)$
+    are mutually non-crossing.\\
+    Furthermore, $K(P)$ is a \emph{densest} partition that
+    is mutually non-crossing with $P$. That is, \emph{no}
+    partition $Q$ that is mutually non-crossing with $P$
+    has less blocks than $K(P)$.
+\end{prop}
+
+\begin{example}[$P = \{1, 2, 6\}, \{3, 5\}, \{4\}\}$]
+    $Q = \{\{1\}, \{2, 5\}, \{3, 4\}, \{6\}\}$
+
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = magenta] (4,5) -- (5,3)
+                -- (2,5) -- cycle;
+            \draw [color = magenta][line width = 4pt] 
+                (4,1) -- (1,3);
+            \draw [color = cyan][line width = 4pt] 
+                (4,1) -- (2,1);                
+            \draw [color = cyan][line width = 4pt] 
+                (5,3) -- (1,3);
+            \fill [color=magenta] (2,1) circle (0.2);
+            \fill [color=cyan] (4,5) circle (0.2);
+            \fill [color=cyan] (2,5) circle (0.2);
+
+          \end{tikzpicture}
+    \end{center}
+\end{example}
+
 \subsection{Action of $\mathfrak{S}_n$ on $\mathcal{NC}_n$}
 
 \begin{definition}[Action of $\mathfrak{S}_n$]
@@ -508,16 +680,123 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     \end{itemize*}
 \end{definition}
 
-\begin{example}[$\sigma = 415362$]
+\begin{example}[$\sigma = 415362,
+    P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
     ~\\
-    $\sigma (\{\{1, 6\}, \{2, 3, 5\}, \{4\}\}) = 
+    $\sigma (P) = 
         \{\{1, 5, 6\}, \{2, 4\}, \{3\}\}$
+        ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{P}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \draw [color = cyan][line width = 4pt] 
+                (4,5) -- (2,5);
+            \fill [color = magenta] (5,3) -- (4,1)
+                -- (1,3) -- cycle;
+            \fill [color = yellow] (2,1) circle (0.2);
+        \end{tikzpicture}
+        \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{\sigma(P)}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = orange] (4,5) -- (1,3)
+                -- (2,5) -- cycle;
+            \draw [color = violet][line width = 4pt] 
+                (5,3) -- (2,1);
+            \fill [color=green] (4,1) circle (0.2);
+
+          \end{tikzpicture}
+    \end{center}
 \end{example}
 
 \begin{rem}
     Note that $\sigma (P)$ is \emph{not} necessarily
     non-crossing.
 \end{rem}
+
+\begin{example}[Counter-example : $\sigma = 413562,
+    P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
+    $\sigma (P) = 
+        \{\{1, 3, 6\}, \{2, 4\}, \{5\}\}$
+        ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{P}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \draw [color = cyan][line width = 4pt] 
+                (4,5) -- (2,5);
+            \fill [color = magenta] (5,3) -- (4,1)
+                -- (1,3) -- cycle;
+            \fill [color = yellow] (2,1) circle (0.2);
+        \end{tikzpicture}
+        \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{\sigma (P)}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = orange] (4,5) -- (4,1)
+                -- (2,5) -- cycle;
+            \draw [color = violet][line width = 4pt] 
+                (5,3) -- (2,1);
+            \fill [color=green] (1,3) circle (0.2);
+            
+          \end{tikzpicture}
+    \end{center}
+\end{example}
 
 \begin{definition}[Rotation]
     We define the \emph{rotation operator} $rot$ of
@@ -528,17 +807,180 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     n12 \ldots n-1 (P)$.
 \end{definition}
 
-\begin{rem}
-    $K (K (P)) = rot^{-1} (P)$.
-\end{rem}
-
 \begin{example}[$P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
-    ~\\
+    ~
     \begin{itemize}
         \item $rot (P) = \{\{1, 2\}, \{3, 4, 6\}, \{5\}\}$
         \item $rot^{-1}(P) = \{\{1, 2, 4\}, \{3\}, \{5, 6\}\}$
     \end{itemize}
+    \begin{center}
+    \begin{tikzpicture}[scale=1]
+        \node at (3,0) {\large $\mathbf{P}$};
+        \node [label = above : {$1$}] (1)
+            at (4,5) {};
+        \node [label = right : {$2$}] (2)
+            at (5,3) {};
+        \node [label = below : {$3$}] (3)
+            at (4,1) {};
+        \node [label = below : {$4$}] (4)
+            at (2,1) {};
+        \node [label = left : {$5$}]  (5)
+            at (1,3) {};
+        \node [label = above : {$6$}] (6)
+            at (2,5) {};
+        \draw [dashed][very thick]
+        (1) -- (2) -- (3) -- (4)
+            -- (5) -- (6) -- (1);
+        \fill [color = magenta] (5,3) -- (4,1)
+            -- (1,3) -- cycle;
+        \draw [color = cyan][line width = 4pt] 
+            (4,5) -- (2,5);
+        \fill [color=yellow] (2,1) circle (0.2);
+      \end{tikzpicture}
+      ~\\
+      ~\\
+
+      \begin{tikzpicture}[scale=1]
+        \node at (3,0) {\large $\mathbf{rot(P)}$};
+        \node [label = above : {$1$}] (1)
+            at (4,5) {};
+        \node [label = right : {$2$}] (2)
+            at (5,3) {};
+        \node [label = below : {$3$}] (3)
+            at (4,1) {};
+        \node [label = below : {$4$}] (4)
+            at (2,1) {};
+        \node [label = left : {$5$}]  (5)
+            at (1,3) {};
+        \node [label = above : {$6$}] (6)
+            at (2,5) {};
+        \draw [dashed][very thick]
+        (1) -- (2) -- (3) -- (4)
+            -- (5) -- (6) -- (1);
+        \fill [color = orange] (4,1) -- (2,1)
+            -- (2,5) -- cycle;
+        \draw [color = violet][line width = 4pt] 
+            (4,5) -- (5,3);
+        \fill [color=green] (1,3) circle (0.2);    
+      \end{tikzpicture}
+      \begin{tikzpicture}[scale=1]
+        \node at (3,0) {\large $\mathbf{rot^{-1}(P)}$};
+        \node [label = above : {$1$}] (1)
+            at (4,5) {};
+        \node [label = right : {$2$}] (2)
+            at (5,3) {};
+        \node [label = below : {$3$}] (3)
+            at (4,1) {};
+        \node [label = below : {$4$}] (4)
+            at (2,1) {};
+        \node [label = left : {$5$}]  (5)
+            at (1,3) {};
+        \node [label = above : {$6$}] (6)
+            at (2,5) {};
+        \draw [dashed][very thick]
+        (1) -- (2) -- (3) -- (4)
+            -- (5) -- (6) -- (1);
+        \fill [color = orange] (4,5) -- (5,3)
+            -- (2,1) -- cycle;
+        \draw [color = violet][line width = 4pt] 
+            (1,3) -- (2,5);
+        \fill [color=green] (4,1) circle (0.2);    
+      \end{tikzpicture}
+    \end{center}
+\end{example}
+
+\begin{rem}
+    ~
+    \begin{itemize}
+        \item $rot (rot^{-1}(P)) = rot^{-1}(rot(P)) = P$
+        \item $rot(P)$ and $rot^{-1}(P)$ are always
+            non-crossing partitions.
+        \item If $P \in \mathcal{NC}_n$, then $rot^n(P) =
+            rot^{-n}(P) = P$.
+    \end{itemize}
+\end{rem}
+
+\begin{prop}
+    $K (K (P)) = rot^{-1} (P)$.
+\end{prop}
+
+\begin{example}[$P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
+    ~
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{P}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = magenta] (5,3) -- (4,1)
+                -- (1,3) -- cycle;
+            \draw [color = cyan][line width = 4pt] 
+                (4,5) -- (2,5);
+            \fill [color=yellow] (2,1) circle (0.2);
+          \end{tikzpicture}
+          ~\\
+          ~\\
     
+          \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{K(P)}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \draw [color = orange][line width = 4pt] 
+                (4,5) -- (1,3);            
+            \draw [color = violet][line width = 4pt] 
+                (4,1) -- (2,1);
+            \fill [color=green] (5,3) circle (0.2); 
+            \fill [color=green] (2,5) circle (0.2);   
+          \end{tikzpicture}
+          \begin{tikzpicture}[scale=1]
+            \node at (3,0) {\large $\mathbf{K(K(P))}$};
+            \node [label = above : {$1$}] (1)
+                at (4,5) {};
+            \node [label = right : {$2$}] (2)
+                at (5,3) {};
+            \node [label = below : {$3$}] (3)
+                at (4,1) {};
+            \node [label = below : {$4$}] (4)
+                at (2,1) {};
+            \node [label = left : {$5$}]  (5)
+                at (1,3) {};
+            \node [label = above : {$6$}] (6)
+                at (2,5) {};
+            \draw [dashed][very thick]
+            (1) -- (2) -- (3) -- (4)
+                -- (5) -- (6) -- (1);
+            \fill [color = orange] (4,5) -- (5,3)
+                -- (2,1) -- cycle;
+            \draw [color = violet][line width = 4pt] 
+                (1,3) -- (2,5);
+            \fill [color=green] (4,1) circle (0.2);    
+          \end{tikzpicture}
+        \end{center}
 \end{example}
 
 \section{Non-crossing 2-partitions}
@@ -643,7 +1085,12 @@ Thus non-crossing meaning the hulls are \emph{disjoint}.\\
     There is a unique set partition
     $\displaystyle P = \bigcup_{i}{B}_{[i]}$ of $[n]$
     and a unique permutation $\sigma$ respecting these
-    conditions such that $(P, \sigma) \in \mathcal{NC}^2_n$.
+    conditions such that $(P, \sigma) \in \mathcal{NC}^2_n$ :
+    for each minimum $i$ in \emph{decreasing order}, add
+    the $n_i$ first free elements of
+    $[i+1, i+2, \ldots, n, 1, \ldots, i-1]$ to $B_i$.
+    $\sigma$ is then trivially obtained by the second
+    constraint. 
     \item $\mathcal{NC}^2_n \to \mathcal{PF}_n$ :
     Let $(P, \sigma)$ with $P = \{B_1, \ldots, B_l\}$ be our
     non-crossing 2-partition.
@@ -1147,28 +1594,35 @@ greatest common divisor).
 
 \section{Rational Non-crossing Partitions}
 
-\begin{definition}[Mutually Non-crossing Partitions]
-    2 partitions $P$ and $Q$ are said
-    \emph{mutually non-crossing} if :\\
-    \begin{itemize*}
-        \item P is non-crossing\\
-        \item Q is non-crossing\\
-        \item For every block $B_i$ of $P$ and every
-        block $B_j$ of $Q$, if $a,c \in B_i$ and
-        $b, d \in B_j$, then we can \emph{not} have
-        $a < b < c < d$, nor $a > b > c > d$.
-    \end{itemize*}    
-\end{definition}
+
 
 \begin{definition}[a, b - Non-crossing Partition]
     An \emph{a, b - non-crossing partition} is
-    a pair $(P,Q)$ such that :\\
-    \begin{itemize*}
-        \item $P, Q \in \mathcal{NC}_{b-1}$\\
-        \item $P$ and $Q$ are mutually non-crossing.\\
-        \item TODO : ADD THE CONDITION
-    \end{itemize*}
+    a pair $(P,f)$ such that :\\
+    \begin{itemize}
+        \item $P = (B_1, \ldots, B_k) \in 
+            \mathcal{NC}_{b-1}$
+        \item $f : \{B_i\} \to \mathbb{N}$
+        \item $\displaystyle \sum_{1 \leqslant i 
+        \leqslant k}{f(B_i)} = a$
+        \item $\displaystyle \forall\ 1 \leqslant i 
+        \leqslant k,\ \sum_{1 \leqslant j \leqslant i}
+        {f(B_i)} \geqslant \frac{a}{b}min(B_i)$
+    \end{itemize}
+    We denote TODO
 \end{definition}
+
+\begin{example}
+    An abncp
+\end{example}
+
+\begin{theorem}
+    number of abncp
+\end{theorem}
+
+\begin{example}
+    all abncp for some a b
+\end{example}
 
 \begin{prop}
     This means we can create a \emph{bijection} between
@@ -1182,6 +1636,30 @@ greatest common divisor).
     
     \item $\mathcal{PF'}_{a,b} \to \mathcal{NC}_{a,b}$ :
 \end{itemize}
+\end{proof}
+
+\begin{definition}
+    ncab2
+\end{definition}
+
+\begin{example}
+    some ncab2
+\end{example}
+
+\begin{theorem}
+    number of ncab2
+\end{theorem}
+
+\begin{example}
+    all ncab2 for some a b
+\end{example}
+
+\begin{prop}
+    bijection
+\end{prop}
+
+\begin{proof}
+    bijection proof
 \end{proof}
 
 \chapter{Trees}

@@ -146,7 +146,7 @@ print (Kreweras (P8), Q8)
 print ()
 
 print (is_rank_abpnc (A8, rp8, rq8))
-print ("ctla\n")
+print ()
 
 a = _sage_const_3 
 b = _sage_const_4 
