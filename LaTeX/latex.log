@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  14 MAY 2020 16:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  14 MAY 2020 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -651,6 +651,11 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 \pgfnodepartsevenbox=\box57
 \pgfnodepartsixbox=\box58
 \pgfnodepartfivebox=\box59
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
+\arrowsize=\dimen161
 ))
 \c@theorem=\count120
 \c@lemma=\count121
@@ -658,28 +663,28 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
  (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux)
 \openout1 = `latex.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count123
-\scratchdimen=\dimen161
+\scratchdimen=\dimen162
 \scratchbox=\box60
 \nofMPsegments=\count124
 \nofMParguments=\count125
 \everyMPshowfont=\toks41
 \MPscratchCnt=\count126
-\MPscratchDim=\dimen162
+\MPscratchDim=\dimen163
 \MPnumerator=\count127
 \makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks42
@@ -724,16 +729,26 @@ Package grfext Info: Graphics extension search list:
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 34.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1] [1]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.toc
+LaTeX Font Info:    Try loading font information for U+euf on input line 7.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+))
+\tf@toc=\write4
+\openout4 = `latex.toc'.
+
+ [1
+
+]
 Chapter 1.
 
 Overfull \hbox (25.4177pt too wide) in paragraph at lines 47--51
@@ -902,10 +917,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 585--586
  []
 
 [10]
-LaTeX Font Info:    Try loading font information for U+euf on input line 670.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
 Underfull \hbox (badness 10000) in paragraph at lines 685--689
 
  []
@@ -1005,33 +1016,28 @@ Overfull \hbox (29.03442pt too wide) in paragraph at lines 1569--1582
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 1600--1603
+Underfull \hbox (badness 10000) in paragraph at lines 1622--1624
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1633--1635
-
- []
-
-[23] [24]
+[23]
 Chapter 3.
-[25
+[24
 
-] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
+] [25] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
- 13925 strings out of 494923
- 275166 string characters out of 6180742
- 319935 words of memory out of 5000000
- 16950 multiletter control sequences out of 15000+600000
+ 14538 strings out of 494923
+ 290720 string characters out of 6180742
+ 329186 words of memory out of 5000000
+ 17554 multiletter control sequences out of 15000+600000
  23843 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,14n,55p,465b,691s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (27 pages, 254765 bytes).
+ 55i,14n,55p,465b,694s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (27 pages, 256308 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
+ 442 PDF objects out of 1000 (max. 8388607)
+ 138 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
