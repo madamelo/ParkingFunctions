@@ -14,3 +14,4 @@
 \contentsline {section}{\numberline {2.2}Rational Non-crossing Partitions}{23}
 \contentsline {chapter}{\numberline {3}Trees}{24}
 \contentsline {section}{\numberline {3.1}Parking Trees}{24}
+\contentsline {section}{\numberline {3.2}Rational Parking Trees}{27}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  14 MAY 2020 21:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  15 MAY 2020 14:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1024,20 +1024,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 1622--1624
 Chapter 3.
 [24
 
-] [25] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
+] [25] [26]
+Underfull \hbox (badness 10000) in paragraph at lines 1868--1871
+
+ []
+
+
+Overfull \hbox (10.83911pt too wide) in paragraph at lines 1933--1934
+ [] 
+ []
+
+[27] [28]
+Underfull \hbox (badness 10000) in paragraph at lines 1962--1965
+
+ []
+
+
+Overfull \hbox (47.76611pt too wide) in paragraph at lines 2021--2022
+ [] 
+ []
+
+[29] [30] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
- 14538 strings out of 494923
- 290720 string characters out of 6180742
- 329186 words of memory out of 5000000
- 17554 multiletter control sequences out of 15000+600000
+ 14577 strings out of 494923
+ 291265 string characters out of 6180742
+ 333842 words of memory out of 5000000
+ 17593 multiletter control sequences out of 15000+600000
  23843 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,14n,55p,465b,694s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (27 pages, 256308 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (32 pages, 266277 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 459 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
