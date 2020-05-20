@@ -194,3 +194,16 @@
     Bijection entre partitions non-croisées et partitions non-croisées efficaces
     Relation de couverture
     Génération du complément de Kreweras (en passant par la partition non-croisée)
+
+16 - Enumération de chaînes selon Edelman
+    Fichiers :
+        * edelman.sage
+        * tests_edelman.sage
+    Calcul de sigma_b (m)
+    Tri selon sigma_b (m)
+    Calcul de sigma^_b (m)
+    Bon parenthésage
+    PNC associée à un bon parenthésage
+    Génération des PNC à k blocs
+    Bijection entre couples de parenthésages (L, R) et couples (P, b) avec P une partition, et b son premier élément pour le tri
+    
