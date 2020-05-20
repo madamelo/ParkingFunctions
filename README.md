@@ -208,5 +208,8 @@
     Bijection entre couples de parenthésages (L, R) et couples (P, b) avec P une partition, et b son premier élément pour le tri
     Calcul du rang
     Relation de couverture
-    Génération des chaînes strictes pour une liste de rangs donnée
+    Génération et comptage des chaînes strictes pour une liste de rangs donnée
+    Génération et comptage des chaînes maximales
+    Comptage des chaînes faibles de longueur donnée
+
     

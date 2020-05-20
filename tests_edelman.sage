@@ -69,3 +69,15 @@ for e in g2 :
     k = k + 1
 print (k)
 print (cpt_strict_chains ([1, 2], 4))
+print ()
+
+g3 = generate_max_chains (5)
+k = 0
+for e in g3 :
+    k = k + 1
+print (k)
+print (cpt_max_chains (5))
+print ()
+
+print (zeta_pnc (6, 3))
+print (cpt_weak_chains (6, 3))

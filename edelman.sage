@@ -195,3 +195,20 @@ def cpt_strict_chains (T, m) :
     
     res = res / m
     return res
+
+def generate_max_chains (m) :
+    T = [i for i in range (m)]
+    return generate_strict_chains (T, m)
+
+def cpt_max_chains (m) :
+    return m^(m-2)
+
+def zeta_pnc (n, m) :
+    P = Poset ([list (generate_pnc (m)), couvre_pnc])
+    res = P.zeta_polynomial ()
+    return res (q = n)
+
+def cpt_weak_chains (n, m) :
+    res = binomial (n * m, m - 1)
+    res = res / m
+    return res
