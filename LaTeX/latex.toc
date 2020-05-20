@@ -4,7 +4,7 @@
 \contentsline {section}{\numberline {1.2}Non-crossing Partitions}{4}
 \contentsline {subsection}{\numberline {1.2.1}The non-crossing partitions poset}{6}
 \contentsline {subsection}{\numberline {1.2.2}Kreweras complement}{8}
-\contentsline {subsection}{\numberline {1.2.3}Action of $\mathfrak {S}_n$ on $\mathcal {NC}_n$}{11}
+\contentsline {subsection}{\numberline {1.2.3}Action of $\mathfrak {S}_n$ on partitions of $[n]$}{11}
 \contentsline {section}{\numberline {1.3}Non-crossing 2-partitions}{14}
 \contentsline {subsection}{\numberline {1.3.1}The non-crossing 2-partitions poset}{17}
 \contentsline {subsection}{\numberline {1.3.2}The parking functions poset}{18}

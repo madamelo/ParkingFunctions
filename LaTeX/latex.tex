@@ -668,15 +668,17 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
     \end{center}
 \end{example}
 
-\subsection{Action of $\mathfrak{S}_n$ on $\mathcal{NC}_n$}
+\subsection{Action of $\mathfrak{S}_n$ on partitions of 
+$[n]$}
 
 \begin{definition}[Action of $\mathfrak{S}_n$]
-    The action of $\mathfrak{S}_n$ on a non-crossing partition
-    $P = \{B_1, \ldots, B_l\} \in \mathcal{NC}_n$ is defined by :\\
+    The action of $\mathfrak{S}_n$ on a partition
+    $P = \{B_1, \ldots, B_l\}$ of $[n]$ is defined by :\\
     \begin{itemize*}
         \item For each block $B_i = \{b_1, \ldots, b_k\}$ :
         $\sigma(Bi) =\{\sigma (b_1), \ldots, \sigma (b_k)\}$ \\
-        \item We denote $\rho = \sigma(P) =
+        \item When $P \in \mathcal{NC}_n$, we denote 
+        $\rho = \sigma(P) =
             \{\sigma (B_1), \ldots, \sigma (B_l)\}$
     \end{itemize*}
 \end{definition}
@@ -739,8 +741,10 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
 \end{example}
 
 \begin{rem}
-    Note that $\sigma (P)$ is \emph{not} necessarily
-    non-crossing.
+    Note that $\mathcal{NC}_n$ is \emph{not} stable under
+    the action of $\mathfrak{S}_n$.
+    That is, even if $P$ is non-crossing, $\sigma (P)$ is 
+    \emph{not} necessarily non-crossing.
 \end{rem}
 
 \begin{example}[Counter-example : $\sigma = 413562,
