@@ -211,5 +211,9 @@
     Génération et comptage des chaînes strictes pour une liste de rangs donnée
     Génération et comptage des chaînes maximales
     Comptage des chaînes faibles de longueur donnée
+    Test de k-divisibilité
+    Rang par k-divisibilité
+    Génération des PNC k-divisibles de {1, ..., m * k} à h blocs
+    Comptage des PNC k-divisibles de {1, ..., m * k} à h blocs
 
     

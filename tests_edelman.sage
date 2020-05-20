@@ -81,3 +81,23 @@ print ()
 
 print (zeta_pnc (6, 3))
 print (cpt_weak_chains (6, 3))
+print ()
+
+P4 = [[1, 2, 12], [3, 10, 11], [4, 5, 6, 7, 8, 9]]
+print (is_k_divisible (P4, 3, 4))
+print (is_k_divisible (P4, 3, 3))
+print (is_k_divisible (P4, 4, 3))
+print ()
+
+P5 = [[1, 2, 3, 10, 11, 12], [4, 5, 6, 7, 8, 9]]
+print (rk_k (P4, 3, 4))
+print (rk_k (P5, 3, 4))
+print ()
+
+g4 = generate_pnc_k_h (4, 2, 2)
+k = 0
+for e in g4 :
+    print (e)
+    k = k + 1
+print (k)
+print (cpt_pnc_k_h (4, 2, 2))

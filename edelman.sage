@@ -212,3 +212,37 @@ def cpt_weak_chains (n, m) :
     res = binomial (n * m, m - 1)
     res = res / m
     return res
+
+def is_k_divisible (P, k, m) :
+    P1 = SetPartition (P)
+    if not is_pnc (P1) :
+        return False
+
+    n = P1.base_set_cardinality ()
+    if n != k * m :
+        return False
+
+    for p in P :
+        l = len (p)
+        if l % k != 0 :
+            return False
+
+    return True
+
+def rk_k (P, k, m) :
+    if not is_k_divisible (P, k, m) :
+        return None
+
+    return m - len (P)
+
+def generate_pnc_k_h (m, k, h) :
+    g = generate_pnc_k (m * k, h)
+    for P in g :
+        if is_k_divisible (P, k, m) :
+            yield P
+
+def cpt_pnc_k_h (m, k, h) :
+    res = binomial (m, h) 
+    res = res * binomial (k * m, h - 1)
+    res = res / m
+    return res
