@@ -206,4 +206,7 @@
     PNC associée à un bon parenthésage
     Génération des PNC à k blocs
     Bijection entre couples de parenthésages (L, R) et couples (P, b) avec P une partition, et b son premier élément pour le tri
+    Calcul du rang
+    Relation de couverture
+    Génération des chaînes strictes pour une liste de rangs donnée
     

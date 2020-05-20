@@ -154,3 +154,44 @@ def pnc_b_to_par (P, b, m) :
             R.append (p [-1])
     
     return (sorted (L), sorted (R))
+
+def rk (P) :
+    P1 = SetPartition (P)
+    if not is_pnc (P1) :
+        return None
+
+    m = P1.base_set_cardinality ()
+    l = len (P)
+    return m - l
+
+def cov (P1, P2) :
+    P1_ = SetPartition (P1)
+    P2_ = SetPartition (P2)
+    return couvre_pnc (P2_, P1_)
+
+def generate_strict_chains (T, m) :
+    P = Poset ([list (generate_pnc (m)), couvre_pnc])
+
+    for c in P.chains () :
+        c2 = c [ : : -1]
+        T2 = []
+        for e in c2 :
+            T2.append (rk (e))
+        if T [: : - 1] == T2 :
+            yield c2
+
+
+def cpt_strict_chains (T, m) :
+    T = [0] + T + [m - 1]
+    S = []
+    l = len (T)
+    for i in range (1, l) :
+        s = T[i] - T [i - 1]
+        S.append (s)
+
+    res = 1
+    for e in S :
+        res = res * binomial (m, e)
+    
+    res = res / m
+    return res

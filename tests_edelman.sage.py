@@ -58,4 +58,21 @@ print ()
 
 P3 = [[_sage_const_1 ], [_sage_const_2 , _sage_const_6 ], [_sage_const_3 , _sage_const_4 ], [_sage_const_5 ], [_sage_const_7 , _sage_const_8 ]]
 print (pnc_b_to_par (P3, _sage_const_3 , _sage_const_8 ))
+print ()
+
+print (rk (P3))
+print ()
+
+P4 = [[_sage_const_1 ], [_sage_const_2 , _sage_const_5 , _sage_const_6 ], [_sage_const_3 , _sage_const_4 ], [_sage_const_7 , _sage_const_8 ]]
+print (cov (P4, P3))
+print (cov (P3, P4))
+print ()
+
+g2 = generate_strict_chains ([_sage_const_1 , _sage_const_2 ], _sage_const_4 )
+k = _sage_const_0 
+for e in g2 :
+    print (e)
+    k = k + _sage_const_1 
+print (k)
+print (cpt_strict_chains ([_sage_const_1 , _sage_const_2 ], _sage_const_4 ))
 

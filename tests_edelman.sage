@@ -52,3 +52,20 @@ print ()
 
 P3 = [[1], [2, 6], [3, 4], [5], [7, 8]]
 print (pnc_b_to_par (P3, 3, 8))
+print ()
+
+print (rk (P3))
+print ()
+
+P4 = [[1], [2, 5, 6], [3, 4], [7, 8]]
+print (cov (P4, P3))
+print (cov (P3, P4))
+print ()
+
+g2 = generate_strict_chains ([1, 2], 4)
+k = 0
+for e in g2 :
+    print (e)
+    k = k + 1
+print (k)
+print (cpt_strict_chains ([1, 2], 4))
