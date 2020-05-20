@@ -216,5 +216,8 @@
     Génération des PNC k-divisibles de {1, ..., m * k} à h blocs
     Comptage des PNC k-divisibles de {1, ..., m * k} à h blocs
     Passage d'une PNC sur {1, ..., m} à une PNC k-divisible sur {1, ..., k*m}
+    Génération et comptage des chaînes k-divisibles strictes pour une liste de rangs donnée
+    Génération et comptage des chaînes k-divisibles maximales
+    Comptage des chaînes k-divisibles faibles de longueur donnée
 
     

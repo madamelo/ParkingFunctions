@@ -253,6 +253,18 @@ def cpt_pnc_k_h (m, k, h) :
     res = res / m
     return res
 
+def generate_pnc_k_div (m, k) :
+    g = generate_pnc (m * k)
+    for P in g :
+        if is_k_divisible (P, k, m) :
+            yield P
+
+def cpt_pnc_k_div (m, k) :
+    res = 0
+    for h in (1..m) :
+        res = res + cpt_pnc_k_h (m, k, h)
+    return res
+
 def par_to_pnc_b_k (L, R, m, k) :
     h = len (L)
     if h != len (R) + 1 :
@@ -260,7 +272,7 @@ def par_to_pnc_b_k (L, R, m, k) :
 
     R2 = []
     for e in R :
-        for i in (0..m) :
+        for i in (1..m) :
             if k * (i - 1) + 1 <= e <= k * i :
                 R2.append (i)
                 break
@@ -299,3 +311,47 @@ def par_to_pnc_b_k (L, R, m, k) :
         L.append (idy)
 
     return  (to_part (L, [R], m * k), w)
+
+def generate_strict_chains_k (T, m, k) :
+    P = Poset ([list (generate_pnc_k_div (m, k)), couvre_pnc])
+    for c in P.chains () :
+        c2 = c [ : : -1]
+        T2 = []
+        for e in c2 :
+            T2.append (rk_k (e, k, m))
+        if T [: : - 1] == T2 :
+            yield c2
+
+def cpt_strict_chains_k (T, m, k) :
+    T = [0] + T + [m - 1]
+    S = []
+    l = len (T)
+    for i in range (1, l) :
+        s = T[i] - T [i - 1]
+        S.append (s)
+
+    res = binomial (m, S[0])
+    for e in S [1 : ] :
+        res = res * binomial (m * k, e)
+    
+    res = res / m
+    return res
+
+def generate_max_chains_k (m, k) :
+    T = [i for i in range (m)]
+    return generate_strict_chains_k (T, m, k)
+
+def cpt_max_chains_k (m, k) :
+    res = (k * m) ^ (m - 2)
+    res = k * res
+    return res
+
+def zeta_pnc_k (n, m, k) :
+    P = Poset ([list (generate_pnc_k_div (m, k)), couvre_pnc])
+    res = P.zeta_polynomial ()
+    return res (q = n)
+
+def cpt_weak_chains_k (n, m, k) :
+    res = binomial (m * (k * (n - 1) + 1), m - 1)
+    res = res / m
+    return res

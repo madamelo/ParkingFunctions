@@ -73,13 +73,13 @@ print (cov (P4, P3))
 print (cov (P3, P4))
 print ()
 
-g2 = generate_strict_chains ([_sage_const_1 , _sage_const_2 ], _sage_const_4 )
+g2 = generate_strict_chains ([_sage_const_1 , _sage_const_3 ], _sage_const_5 )
 k = _sage_const_0 
 for e in g2 :
     print (e)
     k = k + _sage_const_1 
 print (k)
-print (cpt_strict_chains ([_sage_const_1 , _sage_const_2 ], _sage_const_4 ))
+print (cpt_strict_chains ([_sage_const_1 , _sage_const_3 ], _sage_const_5 ))
 print ()
 
 g3 = generate_max_chains (_sage_const_5 )
@@ -114,7 +114,38 @@ print (k)
 print (cpt_pnc_k_h (_sage_const_5 , _sage_const_2 , _sage_const_2 ))
 print ()
 
-L5 = [_sage_const_1 , _sage_const_2 , _sage_const_3 , _sage_const_5 ]
-R5 = [_sage_const_2 , _sage_const_9 , _sage_const_11 ]
-print (par_to_pnc_b_k (L5, R5, _sage_const_5 , _sage_const_3 ))
+g5 = generate_pnc_k_div (_sage_const_3 , _sage_const_2 )
+k = _sage_const_0 
+for e in g5 :
+    print (e)
+    k = k + _sage_const_1 
+print (k)
+print (cpt_pnc_k_div (_sage_const_3 , _sage_const_2 ))
+print ()
+
+L6 = [_sage_const_1 , _sage_const_2 , _sage_const_3 , _sage_const_5 ]
+R6 = [_sage_const_2 , _sage_const_9 , _sage_const_11 ]
+print (par_to_pnc_b_k (L6, R6, _sage_const_5 , _sage_const_3 ))
+print ()
+
+g7 = generate_strict_chains_k ([_sage_const_0 , _sage_const_2 ], _sage_const_3 , _sage_const_2 )
+k = _sage_const_0 
+for e in g7 :
+    print (e)
+    k = k + _sage_const_1 
+print (k)
+print (cpt_strict_chains_k ([_sage_const_0 , _sage_const_2 ], _sage_const_3 , _sage_const_2 ))
+print ()
+
+g8 = generate_max_chains_k (_sage_const_3 , _sage_const_2 )
+k = _sage_const_0 
+for e in g8 :
+    print (e)
+    k = k + _sage_const_1 
+print (k)
+print (cpt_max_chains_k (_sage_const_3 , _sage_const_2 ))
+print ()
+
+print (zeta_pnc_k (_sage_const_3 , _sage_const_3 , _sage_const_2 ))
+print (cpt_weak_chains_k (_sage_const_3 , _sage_const_3 , _sage_const_2 ))
 

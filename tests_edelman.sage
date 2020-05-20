@@ -67,13 +67,13 @@ print (cov (P4, P3))
 print (cov (P3, P4))
 print ()
 
-g2 = generate_strict_chains ([1, 2], 4)
+g2 = generate_strict_chains ([1, 3], 5)
 k = 0
 for e in g2 :
     print (e)
     k = k + 1
 print (k)
-print (cpt_strict_chains ([1, 2], 4))
+print (cpt_strict_chains ([1, 3], 5))
 print ()
 
 g3 = generate_max_chains (5)
@@ -108,6 +108,37 @@ print (k)
 print (cpt_pnc_k_h (5, 2, 2))
 print ()
 
-L5 = [1, 2, 3, 5]
-R5 = [2, 9, 11]
-print (par_to_pnc_b_k (L5, R5, 5, 3))
+g5 = generate_pnc_k_div (3, 2)
+k = 0
+for e in g5 :
+    print (e)
+    k = k + 1
+print (k)
+print (cpt_pnc_k_div (3, 2))
+print ()
+
+L6 = [1, 2, 3, 5]
+R6 = [2, 9, 11]
+print (par_to_pnc_b_k (L6, R6, 5, 3))
+print ()
+
+g7 = generate_strict_chains_k ([0, 2], 3, 2)
+k = 0
+for e in g7 :
+    print (e)
+    k = k + 1
+print (k)
+print (cpt_strict_chains_k ([0, 2], 3, 2))
+print ()
+
+g8 = generate_max_chains_k (3, 2)
+k = 0
+for e in g8 :
+    print (e)
+    k = k + 1
+print (k)
+print (cpt_max_chains_k (3, 2))
+print ()
+
+print (zeta_pnc_k (3, 3, 2))
+print (cpt_weak_chains_k (3, 3, 2))
