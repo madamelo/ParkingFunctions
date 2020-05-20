@@ -25,11 +25,22 @@ def is_subset (S1, S2) :
 
 def couvre_part (P1, P2) :
     d = {}
-    for i, b2 in enumerate (P2) :
-        d [i] = 0
-        for b1 in P1 :
+    cpt_in = {}
+    for i1, b1 in enumerate (P1) :
+        cpt_in [i1] = 0
+
+    for i2, b2 in enumerate (P2) :
+        d [i2] = 0
+        for i1, b1 in enumerate (P1) :
             if is_subset (b1, b2) :
-                d [i] = d [i] + 1
+                d [i2] = d [i2] + 1
+                cpt_in [i1] = cpt_in [i1] + 1
+
+    for k in cpt_in :
+        v = cpt_in [k]
+        if v != 1 :
+            return False
+            
     found = False
     for k in d :
         v = d [k]
