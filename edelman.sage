@@ -83,30 +83,32 @@ def good_par (L) :
     return s, (open == 0)
 
 def to_part (L, R, m) :
-    good = ""
+    good = []
     b_good = 0
 
     for b in (1..m) :
         s = sigb_hat (L, R, b, m)
         s2, r = good_par (s)
         if r :
-            good = s2
+            good = list (s2)
             b_good = b
             break
 
-    print (good)
-
     Parts = []
 
-    while (good != '') :
+    while (good != []) :
         c = good.count('(')
 
         if c == 0 :
             part = []
+            tmp = ''
             for e in good :
                 if e != ',' :
-                    part.append (int (e))
-            good = ''
+                    tmp = tmp + e
+                else :
+                    part.append (int (tmp))
+                    tmp = ''
+            good = []
             Parts.append (part)
 
         else :
@@ -114,13 +116,17 @@ def to_part (L, R, m) :
             i = len (good) - idx - 1
             j = i
             part = []
+            tmp = ''
             while (good [j] != ')') :
                 e = good [j]
                 if e != ',' and e != '(' :
-                    part.append (int (e))
+                    tmp = tmp + e
+                if e == ',' :
+                    part.append (int (tmp))
+                    tmp = ''
                 j = j + 1
             Parts.append (part)
-            good = good [:i] + good [j+1:]
+            good = good [:i] + good [j + 1:]
 
     return reorder (Parts, b_good, m)
 
@@ -246,3 +252,50 @@ def cpt_pnc_k_h (m, k, h) :
     res = res * binomial (k * m, h - 1)
     res = res / m
     return res
+
+def par_to_pnc_b_k (L, R, m, k) :
+    h = len (L)
+    if h != len (R) + 1 :
+        return None
+
+    R2 = []
+    for e in R :
+        for i in (0..m) :
+            if k * (i - 1) + 1 <= e <= k * i :
+                R2.append (i)
+                break
+
+    P, b = par_to_pnc_b (L, R2, m)
+    s = sigb_hat (L, [R2], b, m)
+    good, _ = good_par (s)
+    w = k * (b - 1) + 1
+
+    s3 = sigb (w, m * k)
+
+    sizes = []
+    good = list (good)
+    good = good [ : : -1]
+
+    while (good.count (')') != 0) :
+        idx = (good [: : -1]).index (')')
+        i = len (good) - idx - 1
+        j = i
+        size = 0
+
+        while (good [j] != '(') :
+            e = good [j]
+            if e != ',' and e != ')' :
+                size = size + 1
+            j = j + 1
+
+        sizes.append (size * k)
+        good [i] = '*'
+
+    L = [w]
+    for i, e in enumerate (R) :
+        l = sizes [i]
+        idx = s3.index (e)
+        idy = s3 [idx - l + 1]
+        L.append (idy)
+
+    return  (to_part (L, [R], m * k), w)

@@ -215,5 +215,6 @@
     Rang par k-divisibilité
     Génération des PNC k-divisibles de {1, ..., m * k} à h blocs
     Comptage des PNC k-divisibles de {1, ..., m * k} à h blocs
+    Passage d'une PNC sur {1, ..., m} à une PNC k-divisible sur {1, ..., k*m}
 
     

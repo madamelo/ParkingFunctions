@@ -5,8 +5,8 @@ for b in (1..m) :
     print (sigb (b, m))
 print ()
 
-P1 = [[1, 6, 9], [2], [3, 4, 5], [7, 8]]
-print (reorder (P1, 3, 9))
+P1 = [[1, 6, 9], [2], [3, 4, 5], [7, 8], [10, 11]]
+print (reorder (P1, 3, 11))
 print ()
 
 L2 = [1, 3, 5, 6, 7]
@@ -17,22 +17,27 @@ print (s2)
 print ()
 
 s3 = ['(', 3, 2, '(', 4, ')', ')', '(', '(', 1, ')']
+s4 = ['(', 33, 2, '(', 4, ')', '(', 1, ')']
 print (good_par (s2))
 print (good_par (s3))
+print (good_par (s4))
 print ()
 
 cpt = 0
-found = 0
-for b in (1..8) :
-    s = sigb_hat (L2, [R2_1, R2_2], b, 8)
-    _, r = good_par (s)
+foundb = 0
+founds = ""
+for b in (1..12) :
+    s = sigb_hat (L2, [R2_1, R2_2], b, 12)
+    s_, r = good_par (s)
     if r :
         cpt = cpt + 1
-        found = b
-print (cpt, found)
+        foundb = b
+        founds = s_ 
+print (cpt, foundb)
+print (founds)
 print ()
 
-print (to_part (L2, [R2_1, R2_2], 8))
+print (to_part (L2, [R2_1, R2_2], 12))
 print ()
 
 m = 6
@@ -47,17 +52,17 @@ print (kt)
 print ((1 / m) * binomial (m, k) * binomial (m, k - 1))
 print ()
 
-print (par_to_pnc_b (L2, R2_1 + R2_2, 8))
+P3, b3 = par_to_pnc_b (L2, R2_1 + R2_2, 11)
+print (P3, b3)
 print ()
 
-P3 = [[1], [2, 6], [3, 4], [5], [7, 8]]
-print (pnc_b_to_par (P3, 3, 8))
+print (pnc_b_to_par (P3, b3, 11))
 print ()
 
 print (rk (P3))
 print ()
 
-P4 = [[1], [2, 5, 6], [3, 4], [7, 8]]
+P4 = [[1], [2, 6, 9, 10, 11], [3, 4, 5], [7,8]]
 print (cov (P4, P3))
 print (cov (P3, P4))
 print ()
@@ -94,10 +99,15 @@ print (rk_k (P4, 3, 4))
 print (rk_k (P5, 3, 4))
 print ()
 
-g4 = generate_pnc_k_h (4, 2, 2)
+g4 = generate_pnc_k_h (5, 2, 2)
 k = 0
 for e in g4 :
     print (e)
     k = k + 1
 print (k)
-print (cpt_pnc_k_h (4, 2, 2))
+print (cpt_pnc_k_h (5, 2, 2))
+print ()
+
+L5 = [1, 2, 3, 5]
+R5 = [2, 9, 11]
+print (par_to_pnc_b_k (L5, R5, 5, 3))
