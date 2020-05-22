@@ -1,1 +1,0 @@
-load edelman_rat.sage
