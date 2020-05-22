@@ -220,4 +220,18 @@
     Génération et comptage des chaînes k-divisibles maximales
     Comptage des chaînes k-divisibles faibles de longueur donnée
 
+17 - 2-PNC selon Edelman
+    Fichiers :
+        * edelman_two.sage
+        * tests_edelman_two.sage
+    Relation de couverture
+    Génération et comptage des 2-PNC de {1, ..., n}
+    Génération des 2-PNC couvertes par une 2-PNC donnée
+    Calcul du type d'une 2-PNC
+    Génération et comptage des 2-PNC d'un type donné
+    Calcul du type d'une partition et d'une PNC
+    Génération et comptage des PNC d'un type donné
+    Génération et comptage des partitions d'un type donné
+    Comptage des 2-PNC en passant par les PNC et partitions
+
     
