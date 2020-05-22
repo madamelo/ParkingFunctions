@@ -219,7 +219,6 @@
     Génération et comptage des chaînes k-divisibles strictes pour une liste de rangs donnée
     Génération et comptage des chaînes k-divisibles maximales
     Comptage des chaînes k-divisibles faibles de longueur donnée
-    TODO : POSET
 
 17 - 2-PNC selon Edelman
     Fichiers :
