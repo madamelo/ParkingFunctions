@@ -69,9 +69,20 @@ sage.repl.load.load(sage.repl.load.base64.b64decode("ZnAuc2FnZQ=="),globals(),Fa
 
 print ("FP")
 P5 = Poset ([list (generate_fp (_sage_const_3 )), couvre_fp])
-g5 = P5.plot () #label_elements = False)
+g5 = P5.plot (label_elements = False)
 g5.save ('fp_poset_3.pdf')
 print (P5.zeta_polynomial ())
+print ()
 
+sage.repl.load.load(sage.repl.load.base64.b64decode("ZWRlbG1hbi5zYWdl"),globals(),False)
 
+print ("Edelman")
+L6 = []
+for k in (ellipsis_iter(_sage_const_1 ,Ellipsis,_sage_const_4 )) :
+    tmp = generate_pnc_k (_sage_const_4 , k)
+    L6 = L6 + list (tmp)
+P6 = Poset ([L6, cov])
+g6 = P6.plot (label_elements = False)
+g6.save ('edelman_poset_4.pdf')
+print (P6.zeta_polynomial ())
 

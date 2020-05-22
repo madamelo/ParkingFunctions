@@ -63,8 +63,19 @@ load fp.sage
 
 print ("FP")
 P5 = Poset ([list (generate_fp (3)), couvre_fp])
-g5 = P5.plot () #label_elements = False)
+g5 = P5.plot (label_elements = False)
 g5.save ('fp_poset_3.pdf')
 print (P5.zeta_polynomial ())
+print ()
 
+load edelman.sage
 
+print ("Edelman")
+L6 = []
+for k in (1..4) :
+    tmp = generate_pnc_k (4, k)
+    L6 = L6 + list (tmp)
+P6 = Poset ([L6, cov])
+g6 = P6.plot (label_elements = False)
+g6.save ('edelman_poset_4.pdf')
+print (P6.zeta_polynomial ())

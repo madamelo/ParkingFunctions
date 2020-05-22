@@ -235,4 +235,3 @@
     Génération et comptage des partitions d'un type donné
     Comptage des 2-PNC en passant par les PNC et partitions
     Comptage des chaînes faibles de longueur donnée
-    TODO : POSET
