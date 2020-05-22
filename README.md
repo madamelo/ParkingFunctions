@@ -219,6 +219,7 @@
     Génération et comptage des chaînes k-divisibles strictes pour une liste de rangs donnée
     Génération et comptage des chaînes k-divisibles maximales
     Comptage des chaînes k-divisibles faibles de longueur donnée
+    TODO : POSET
 
 17 - 2-PNC selon Edelman
     Fichiers :
@@ -233,5 +234,5 @@
     Génération et comptage des PNC d'un type donné
     Génération et comptage des partitions d'un type donné
     Comptage des 2-PNC en passant par les PNC et partitions
-
-    
+    Comptage des chaînes faibles de longueur donnée
+    TODO : POSET

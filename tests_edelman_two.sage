@@ -99,3 +99,9 @@ for e in g :
     k = k + 1
 print (k)
 print (cpt_edeltwo_h (m, h))
+print ()
+
+m = 3
+n = 3
+print (zeta_edeltwo (n, m))
+print (cpt_weak_edeltwo_chains (n, m))

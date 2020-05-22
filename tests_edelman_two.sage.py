@@ -105,4 +105,10 @@ for e in g :
     k = k + _sage_const_1 
 print (k)
 print (cpt_edeltwo_h (m, h))
+print ()
+
+m = _sage_const_3 
+n = _sage_const_3 
+print (zeta_edeltwo (n, m))
+print (cpt_weak_edeltwo_chains (n, m))
 
