@@ -59,6 +59,27 @@ g4.save ('abpnc_block_poset.pdf')
 print (P4_.zeta_polynomial ())
 print ()
 
+print ("ABPNC : Cas Fuß - Catalan")
+a4_ = 15
+b4_ = 7
+p4_ = [1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1, 0,
+       1, 1, 1, 0, 1, 0]
+R4_ = RDYCK (a4_, b4_, p4_)
+P4_, _ = P (R4_)
+Q4_, _ = Q (R4_)
+A4_ = ABPNC (a4_, b4_, P4_, Q4_)
+L4_ = list (P4_) + list (Q4_)
+
+d4_ = {}
+for e in L4_ :
+    d4_ [e] = list (e)
+
+P4__ = Poset ([L4_, cbapnc])
+g4_ = P4__.plot (element_labels = d4_)
+g4_.save ('abpnc_block_poset_FC.pdf')
+print (P4__.zeta_polynomial ())
+print ()
+
 load fp.sage
 
 print ("FP")
