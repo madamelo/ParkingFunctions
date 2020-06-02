@@ -7,15 +7,18 @@ def fpp_to_dyck (L) :
 
     n = len (L)
 
+    tot0 = 0
     w = []
     prec = 1
+
     for e in L :
         diff = e - prec
         sub = [0] * diff + [1]
         w = w + sub
         prec = e
+        tot0 = tot0 + diff
 
-    prec = n + 1 - prec
+    prec = n - tot0
     w = w + [0] * prec
 
     return w
