@@ -15,6 +15,7 @@
 \usepackage{tikz}
 \usetikzlibrary{shapes.multipart}
 \usetikzlibrary{arrows}
+\usetikzlibrary{patterns}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
@@ -2349,7 +2350,361 @@ $[n]$}
         \item $w_1 = 10110$
         \item $w_2 = 1001100$
     \end{itemize}
+    \begin{center}
+        \begin{tikzpicture}[scale=1]
+            \node (a) at (0, 0) {};
+            \node (b) at (0, 8) {};
+            \node (c) at (8, 0) {};
+            \node (d) at (7.5, 7.5) {};
+            \node (e) at (8, 7) [color = magenta]
+                {$x = y$}; 
+            \draw [dashed, very thick, ->] (a) to (b);
+            \draw [dashed, very thick, ->] (a) to (c);
+            \draw [dashed, very thick, ->]
+                [color = magenta] (a) to (d);
+
+            \node (1)  at (0,0)   {};
+            \node (2)  at (0,1)   {};
+            \node (3)  at (1,1)   {};
+            \node (4)  at (1,2)   {};
+            \node (5)  at (1,3)   {};
+            \node (6)  at (2,3)   {};
+            \node (7)  at (3,3)   {};
+            \node (7b) at (2,4)   {};
+            \node (8)  at (3,4)   {};
+            \node (9)  at (3,5)   {};
+            \node (10) at (4,5)   {};
+            \node (11) at (5,5)   {};
+            \node (12) at (5,6)   {};
+            \node (13) at (5,7)   {};
+            \node (14) at (6,7)   {};
+            \node (15) at (7,7)   {};
+
+            \draw [->, ultra thick, color = cyan]
+                (1)  to (2);
+            \draw [->, ultra thick, color = cyan] 
+                (2)  to (3);
+            \draw [->, ultra thick, color = cyan]
+                (3)  to (4);
+            \draw [->, ultra thick, color = cyan]
+                (4)  to (5);
+            \draw [->, ultra thick, color = cyan]
+                (5)  to (6);
+            \draw [->, ultra thick, color = cyan]
+                (6)  to (7);
+            \draw [->, ultra thick, color = cyan]
+                (7)  to (8);
+            \draw [->, ultra thick, color = cyan]
+                (8)  to (9);
+            \draw [->, ultra thick, color = cyan]
+                (9)  to (10);
+            \draw [->, ultra thick, color = cyan]
+                (10) to (11);
+            \draw [->, ultra thick, color = cyan]
+                (11) to (12);
+            \draw [->, ultra thick, color = cyan]
+                (12) to (13);
+            \draw [->, ultra thick, color = cyan]
+                (13) to (14);
+            \draw [->, ultra thick, color = cyan]
+                (14) to (15);
+
+            \draw [->, dashed, ultra thick, color = violet]
+                (1)  to (2);
+            \draw [->, dashed, ultra thick, color = violet] 
+                (2)  to (3);
+            \draw [->, dashed, ultra thick, color = violet]
+                (3)  to (4);
+            \draw [->, dashed, ultra thick, color = violet]
+                (4)  to (5);
+            \draw [->, dashed, ultra thick, color = violet]
+                (5)  to (6);
+            \draw [->, ultra thick, color = violet]
+                (6)  to (7b);
+            \draw [->, ultra thick, color = violet]
+                (7b)  to (8);
+            \draw [->, dashed, ultra thick, color = violet]
+                (8)  to (9);
+            \draw [->, dashed, ultra thick, color = violet]
+                (9)  to (10);
+            \draw [->, dashed, ultra thick, color = violet]
+                (10) to (11);
+            \draw [->, dashed, ultra thick, color = violet]
+                (11) to (12);
+            \draw [->, dashed, ultra thick, color = violet]
+                (12) to (13);
+            \draw [->, dashed, ultra thick, color = violet]
+                (13) to (14);
+            \draw [->, dashed, ultra thick, color = violet]
+                (14) to (15);
+
+            \node at (-0.2, -0.2) {$0$};
+            \node at (-0.3, 1)    {$1$};
+            \node at (1, -0.3)    {$1$};
+            \node at (-0.3, 2)    {$2$};
+            \node at (2, -0.3)    {$2$};
+            \node at (-0.3, 3)    {$3$};
+            \node at (3, -0.3)    {$3$};
+            \node at (-0.3, 4)    {$4$};
+            \node at (4, -0.3)    {$4$};
+            \node at (-0.3, 5)    {$5$};
+            \node at (5, -0.3)    {$5$};
+            \node at (-0.3, 6)    {$6$};
+            \node at (6, -0.3)    {$6$};
+            \node at (-0.3, 7)    {$7$};
+            \node at (7, -0.3)    {$7$};
+
+            \draw[color = red, ultra thick]
+                (2.1,3.1) -- (2.9,3.9);
+            \draw[color = red, ultra thick]
+                (2.1,3.4) -- (2.6,3.9);
+            \draw[color = red, ultra thick]
+                (2.15,3.7) -- (2.35,3.9);
+            \draw[color = red, ultra thick]
+                (2.4,3.1) -- (2.9,3.6);
+            \draw[color = red, ultra thick]
+                (2.7,3.15) -- (2.9,3.35);
+
+            \fill[color = cyan] (-3,-1.9) rectangle
+                (-2.5,-1.7);
+            \node at (-0.7,-1.8) {$10110011001100$};
+            \fill[color = violet] (2,-1.9) rectangle
+            (2.5,-1.7);
+            \node at (4.3,-1.8) {$10110101001100$};
+            \fill[color = red] (7,-1.9) rectangle
+            (7.5,-1.7);
+            \node at (8.7,-1.8) {difference};
+        \end{tikzpicture}
+    \end{center}
 \end{example}
+
+\begin{rem}
+    If $w_1 \gtrdot_d w_2$, then the path corresponding to
+    $w_2$ is \emph{over} the path corresponding to $w_1$,
+    and the \emph{difference} between the two paths is a
+    square of size 1 by 1.
+\end{rem}
+
+\begin{prop}
+    This covering relation defines a \emph{poset}
+    for $\mathcal{D}_n$.
+\end{prop}
+
+\begin{example}[The poset of $\mathcal{D}_4$]
+    ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale = 0.3]
+            \draw [ultra thick, color = cyan] (0,0) -- (0,1)
+                -- (0,2) -- (0,3) -- (0,4) -- (1,4) -- (2,4)
+                -- (3,4) -- (4,4);
+
+            \draw [ultra thick, color = cyan] (0,8) -- (0,9)
+                -- (0,10) -- (0,11) -- (1,11) -- (1,12) -- (2,12)
+                -- (3,12) -- (4,12);
+                
+            \draw [ultra thick, color = cyan] (-4,16) -- (-4,17)
+                -- (-4,18) -- (-3,18) -- (-3,19) -- (-3,20)
+                -- (-2,20) -- (-1,20) -- (0,20);
+
+            \draw [ultra thick, color = cyan] (4,16) -- (4,17)
+                -- (4,18) -- (4,19) -- (5,19) -- (6,19) -- (6,20)
+                -- (7,20) -- (8,20);
+
+            \draw [ultra thick, color = cyan] (-6,24) -- (-6,25)
+                -- (-5,25) -- (-5,26) -- (-5,27) -- (-5,28)
+                -- (-4,28) -- (-3,28) -- (-2,28);
+
+            \draw [ultra thick, color = cyan] (0,24) -- (0,25)
+                -- (0,26) -- (1,26) -- (1,27) -- (2,27) -- (2,28)
+                -- (3,28) -- (4,28);
+
+            \draw [ultra thick, color = cyan] (6,24) -- (6,25)
+                -- (6,26) -- (6,27) -- (7,27) -- (8,27) -- (9,27)
+                -- (9,28) -- (10,28);
+
+            \draw [ultra thick, color = cyan] (-6,32) -- (-6,33)
+                -- (-5,33) -- (-5,34) -- (-5,35) -- (-4,35)
+                -- (-4,36) -- (-3,36) -- (-2,36);
+
+            \draw [ultra thick, color = cyan] (0,32) -- (0,33)
+                -- (0,34) -- (1,34) -- (2,34) -- (2,35) -- (2,36)
+                -- (3,36) -- (4,36);
+
+            \draw [ultra thick, color = cyan] (6,32) -- (6,33)
+                -- (6,34) -- (7,34) -- (7,35) -- (8,35) -- (9,35)
+                -- (9,36) -- (10,36);
+
+            \draw [ultra thick, color = cyan] (-6,40) -- (-6,41)
+                -- (-5,41) -- (-5,42) -- (-4,42) -- (-4,43)
+                -- (-4,44) -- (-3,44) -- (-2,44);
+
+            \draw [ultra thick, color = cyan] (0,40) -- (0,41)
+                -- (1,41) -- (1,42) -- (1,43) -- (2,43) -- (3,43)
+                -- (3,44) -- (4,44);
+
+            \draw [ultra thick, color = cyan] (6,40) -- (6,41)
+                -- (6,42) -- (7,42) -- (8,42) -- (8,43) -- (9,43)
+                -- (9,44) -- (10,44);
+
+            \draw [ultra thick, color = cyan] (0,48) -- (0,49)
+                -- (1,49) -- (1,50) -- (2,50) -- (2,51) -- (3,51)
+                -- (3,52) -- (4,52);
+
+
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=magenta](1.7,47.5) to (-4,44.5);
+            \draw [->][color=magenta, ultra thick]
+                (-4,39.5) to (-4,36.5);
+            \draw [->][color=magenta, ultra thick]
+                (-4,39.5) to (1.8,36.5); 
+            \draw [->][color=magenta, ultra thick]
+                (-4,31.5) to (-4,28.5);
+            \draw [->][color=magenta, ultra thick]
+                (-4,31.5) to (1.5,28.5);
+            \draw [->][color=magenta, ultra thick]
+                (-4,23.5) to (-2,20.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=magenta](-2,15.5) to (1.5,12.5);
+        
+
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=green](2,47.5) to (2,44.5);
+            \draw [->][color=green, ultra thick]
+                (2,39.5) to (-3.5,36.5);
+            \draw [->][color=green, ultra thick]
+                (2,39.5) to (7.5,36.5);
+            \draw [->][color=green, ultra thick]
+                (2,31.5) to (2,28.5);
+            \draw [->][color=green, ultra thick]
+                (2,23.5) to (-1.5,20.5);
+            \draw [->][color=green, ultra thick]
+                (2,23.5) to (5.5,20.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=green](2,7.5) to (2,4.5);
+        
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=violet](2.3,47.5) to (8,44.5);
+            \draw [->][color=violet, ultra thick]
+                (8,39.5) to (2.5,36.5);
+            \draw [->][color=violet, ultra thick]
+                (8,39.5) to (8,36.5);
+            \draw [->][color=violet, ultra thick]
+                (8,31.5) to (2.5,28.5);
+            \draw [->][color=violet, ultra thick]
+                (8,31.5) to (8,28.5);
+            \draw [->][color=violet, ultra thick]
+                (8,23.5) to (6,20.5);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=violet](6,15.5) to (2.5,12.5);
+        
+        \end{tikzpicture}
+        ~\\
+        ~\\
+        There are $\frac {1}{5} \binom{8}{4} = \frac{70}{5} = 14$
+        elements in this poset.
+    \end{center}
+\end{example}
+
+\begin{definition}[$\gtrdot'$]
+    For $f$ and $g$ two primitive parking functions, we say
+    that $f$ covers $g$, written $f \gtrdot' g$, if
+    $\exists i$ such that :
+    \begin{itemize}
+        \item $f = (a_1, \ldots, a_{i-1}, a_i,\ \ \ \ 
+            a_{i+1}, \ldots, a_n)$
+        \item $g = (a_1, \ldots, a_{i-1}, a_i - 1, a_{i+1},
+        \ldots, a_n)$
+    \end{itemize}
+\end{definition}
+
+\begin{example}[$n = 6$]
+    $(1, 1, 2, 3, 4, 5) \gtrdot' (1, 1, 2, 3, 3, 5)$    
+\end{example}
+
+\begin{prop}
+    This covering relation defines a \emph{poset}
+    for $\mathcal{PF'}_n$.
+\end{prop}
+
+\begin{example}[The poset of $\mathcal{PF'}_4$]
+    ~\\
+    \begin{center}
+        \begin{tikzpicture}[scale = 0.3]
+            \node at (0,0)   {$1111$};
+            \node at (0,6)   {$1112$};                
+            \node at (-4,12) {$1122$};
+            \node at (4,12)  {$1113$};
+            \node at (-6,18) {$1222$};
+            \node at (0,18)  {$1123$};
+            \node at (6,18)  {$1114$};
+            \node at (-6,24) {$1223$};
+            \node at (0,24)  {$1133$};
+            \node at (6,24)  {$1124$};
+            \node at (-6,30) {$1233$};
+            \node at (0,30)  {$1224$};
+            \node at (6,30)  {$1134$};
+            \node at (0,36)  {$1234$};
+
+
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=magenta](-0.3,35) to (-6.5,31);
+            \draw [->][color=magenta, ultra thick]
+                (-6,29) to (-6,25);
+            \draw [->][color=magenta, ultra thick]
+                (-6,29) to (-0.5,25); 
+            \draw [->][color=magenta, ultra thick]
+                (-6,23) to (-6,19);
+            \draw [->][color=magenta, ultra thick]
+                (-6,23) to (-0.5,19);
+            \draw [->][color=magenta, ultra thick]
+                (-6,17) to (-4.5,13);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=magenta](-4,11) to (-0.5,7);
+        
+
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=green](0,35) to (0,31);
+            \draw [->][color=green, ultra thick]
+                (0,29) to (-5,25);
+            \draw [->][color=green, ultra thick]
+                (0,29) to (5,25);
+            \draw [->][color=green, ultra thick]
+                (0,23) to (0,19);
+            \draw [->][color=green, ultra thick]
+                (0,17) to (-3.5,13);
+            \draw [->][color=green, ultra thick]
+                (0,17) to (3.5,13);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=green](0,5) to (0,1);
+        
+            \draw [->][out=-90,in=90, ultra thick]
+                [color=violet](0.3,35) to (6,31);
+            \draw [->][color=violet, ultra thick]
+                (6,29) to (0.5,25);
+            \draw [->][color=violet, ultra thick]
+                (6,29) to (6,25);
+            \draw [->][color=violet, ultra thick]
+                (6,23) to (0.5,19);
+            \draw [->][color=violet, ultra thick]
+                (6,23) to (6,19);
+            \draw [->][color=violet, ultra thick]
+                (6,17) to (4.5,13);
+            \draw [->][out=-90,in=90, ultra thick] 
+                [color=violet](4,11) to (0.5,7);
+        
+        \end{tikzpicture}
+        ~\\
+        ~\\
+        There are $\frac {1}{5} \binom{8}{4} = \frac{70}{5} = 14$
+        elements in this poset.
+    \end{center}
+\end{example}
+
+\begin{rem}
+    The two posets are isomorphic, and one can be obtained by
+    applying the aforementioned bijection to the other.
+\end{rem}
+
 
 % Define the order for both D and LD at the same time
 % Make the remark about diamonds
