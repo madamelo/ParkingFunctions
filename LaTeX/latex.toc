@@ -13,10 +13,11 @@
 \contentsline {subsection}{\numberline {1.4.2}Labeled Dyck Paths}{24}
 \contentsline {subsection}{\numberline {1.4.3}Dyck - Parking Posets}{28}
 \contentsline {subsubsection}{Primitive Dyck - Parking Posets}{28}
-\contentsline {chapter}{\numberline {2}The rational case}{32}
-\contentsline {section}{\numberline {2.1}Rational Parking Functions}{32}
-\contentsline {subsection}{\numberline {2.1.1}Rational primitive parking functions}{33}
-\contentsline {section}{\numberline {2.2}Rational Non-crossing Partitions}{34}
-\contentsline {chapter}{\numberline {3}Trees}{35}
-\contentsline {section}{\numberline {3.1}Parking Trees}{35}
-\contentsline {section}{\numberline {3.2}Rational Parking Trees}{38}
+\contentsline {subsubsection}{Classical Dyck - Parking Posets}{31}
+\contentsline {chapter}{\numberline {2}The rational case}{38}
+\contentsline {section}{\numberline {2.1}Rational Parking Functions}{38}
+\contentsline {subsection}{\numberline {2.1.1}Rational primitive parking functions}{39}
+\contentsline {section}{\numberline {2.2}Rational Non-crossing Partitions}{40}
+\contentsline {chapter}{\numberline {3}Trees}{41}
+\contentsline {section}{\numberline {3.1}Parking Trees}{41}
+\contentsline {section}{\numberline {3.2}Rational Parking Trees}{44}

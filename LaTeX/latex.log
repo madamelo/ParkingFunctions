@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  8 JUN 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  8 JUN 2020 20:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -990,98 +990,113 @@ Underfull \hbox (badness 10000) in paragraph at lines 2630--2631
 
  []
 
-[31]
+[31] [32] [33] [34]
+Underfull \hbox (badness 10000) in paragraph at lines 3134--3135
+
+ []
+
+
+Overfull \hbox (4.68745pt too wide) in paragraph at lines 3303--3304
+ [] 
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 3334--3335
+
+ []
+
+[36] [37]
 Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2724--2735
+Underfull \hbox (badness 10000) in paragraph at lines 3432--3443
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2738--2740
+Underfull \hbox (badness 10000) in paragraph at lines 3446--3448
 
  []
 
-[32
+[38
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2763--2765
+Underfull \hbox (badness 10000) in paragraph at lines 3471--3473
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2774--2805
+Underfull \hbox (badness 10000) in paragraph at lines 3482--3513
 
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 2774--2805
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 3482--3513
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 2774--2805
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 3482--3513
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 2774--2805
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 3482--3513
 | $\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2842--2855
+Underfull \hbox (badness 10000) in paragraph at lines 3550--3563
 
  []
 
 
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 2842--2855
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 3550--3563
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ 
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 2895--2897
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 3603--3605
 
  []
 
-[34]
+[40]
 Chapter 3.
-[35
+[41
 
-] [36] [37]
-Underfull \hbox (badness 10000) in paragraph at lines 3141--3144
+] [42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 3849--3852
 
  []
 
 
-Overfull \hbox (10.83911pt too wide) in paragraph at lines 3206--3207
+Overfull \hbox (10.83911pt too wide) in paragraph at lines 3914--3915
  [] 
  []
 
-[38] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 3235--3238
+[44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 3943--3946
 
  []
 
 
-Overfull \hbox (47.76611pt too wide) in paragraph at lines 3294--3295
+Overfull \hbox (47.76611pt too wide) in paragraph at lines 4002--4003
  [] 
  []
 
-[40] [41] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
+[46] [47] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
- 14724 strings out of 494923
- 295573 string characters out of 6180742
- 364306 words of memory out of 5000000
- 17731 multiletter control sequences out of 15000+600000
+ 14769 strings out of 494923
+ 296403 string characters out of 6180742
+ 367737 words of memory out of 5000000
+ 17776 multiletter control sequences out of 15000+600000
  26072 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,14n,59p,465b,695s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (43 pages, 308052 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (49 pages, 322100 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 182 compressed objects within 2 object streams
+ 548 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
