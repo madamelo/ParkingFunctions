@@ -112,4 +112,25 @@ P7 = Poset ([list (generate_pnc_k_div (_sage_const_3 , _sage_const_2 )), cov])
 g7 = P7.plot (label_elements = False)
 g7.save ('edelman_2div_poset_3.pdf')
 print (P7.zeta_polynomial ())
+print ()
+
+sage.repl.load.load(sage.repl.load.base64.b64decode("bXlfcHJpbWl0aXZlX2NvdmVyLnNhZ2U="),globals(),False)
+
+print ("My primitive PF cover")
+
+P8 = Poset ([list (generate_fpp (_sage_const_4 )), my_prim_cov])
+g8 = P8.plot ()
+g8.save ('MPC_poset_4.pdf')
+print (P8.zeta_polynomial ())
+print ()
+
+print ("My primitive Dyck cover")
+L9 = []
+for f in generate_fpp (_sage_const_4 ) :
+    L9.append (DyckWord (fpp_to_dyck (f)))
+P9 = Poset ([L9, my_prim_cov_dyck])
+g9 = P9.plot ()
+g9.save ('MPCD_poset_4.pdf')
+print (P9.zeta_polynomial ())
+print ()
 
