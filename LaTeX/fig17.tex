@@ -1,0 +1,111 @@
+\begin{tikzpicture}[scale = 0.8]
+    \node (0)  at (0,0) [align = center]
+    [rectangle, draw]
+        {$123$\\$123$};
+    \node (1)  at (-8,6)[align = center]
+    [rectangle, draw]
+        {$1|23$\\$123$};
+    \node (2)  at (-6,6) [align = center]
+    [rectangle, draw]
+        {$13|2$\\$123$};
+    \node (3)  at (-4,6) [align = center]
+    [rectangle, draw]
+        {$12|3$\\$123$};
+    \node (4)  at (-2,6) [align = center]
+    [rectangle, draw]
+        {$13|2$\\$132$};
+    \node (5)  at (0,6) [align = center]
+    [rectangle, draw]
+        {$12|3$\\$132$};
+    \node (6)  at (2,6) [align = center]
+    [rectangle, draw]
+        {$1|23$\\$213$};
+    \node (7)  at (4,6) [align = center]
+    [rectangle, draw]
+        {$13|2$\\$213$};
+    \node (8)  at (6,6) [align = center]
+    [rectangle, draw]
+        {$12|3$\\$231$};
+    \node (9)  at (8,6) [align = center]
+    [rectangle, draw]
+        {$1|23$\\$312$};
+    \node (10) at (-5,12) [align = center]
+    [rectangle, draw]
+        {$1|2|3$\\$123$};
+    \node (11) at (-3,12) [align = center]
+    [rectangle, draw]
+        {$1|2|3$\\$132$};
+    \node (12) at (-1,12) [align = center]
+    [rectangle, draw]
+        {$1|2|3$\\$213$};
+    \node (13) at (1,12) [align = center]
+    [rectangle, draw]
+        {$1|2|3$\\$231$};
+    \node (14) at (3,12) [align = center]
+    [rectangle, draw]
+        {$1|2|3$\\$312$};
+    \node (15) at (5,12) [align = center]
+    [rectangle, draw]
+        {$1|2|3$\\$321$};
+
+    \draw [->][color=magenta, ultra thick]
+        (-5,11) to (-8.2,7);
+    \draw [->][color=magenta, ultra thick]
+        (-5,11) to (-6.2, 7); 
+    \draw [->][color=magenta, ultra thick]
+        (-5,11) to (-4.2,7);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=magenta](-8,5) to (-0.5,1);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=magenta](-6,5) to (-0.5,1);
+
+    \draw [->][color=yellow, ultra thick]
+        (-3,11) to (-7.8,7);
+    \draw [->][color=yellow, ultra thick]
+        (-3,11) to (-2.2,7);
+    \draw [->][color=yellow, ultra thick]
+        (-3,11) to (-0.2, 7);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=yellow](-2,5) to (-0.1,1);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=yellow](0,5) to (-0.1,1);
+    
+    \draw [->][color=orange, ultra thick]
+        (-1,11) to (1.8,7);
+    \draw [->][color=orange, ultra thick]
+        (-1,11) to (3.8,7);
+    \draw [->][color=orange, ultra thick]
+        (-1,11) to (-3.8,7);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=orange](-4,5) to (-0.3,1);
+
+    \draw [->][color=green, ultra thick]
+        (1,11) to (2.2,7);
+    \draw [->][color=green, ultra thick]
+        (1,11) to (-1.8,7);
+    \draw [->][color=green, ultra thick]
+        (1,11) to (5.8,7);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=green](2,5) to (0.1,1);
+
+    \draw [->][color=cyan, ultra thick]
+        (3,11) to (7.8,7);
+    \draw [->][color=cyan, ultra thick]
+        (3,11) to (4.2,7);
+    \draw [->][color=cyan, ultra thick]
+        (3,11) to (0.2,7);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=cyan](4,5) to (0.3,1);
+
+    \draw [->][color=violet, ultra thick]
+        (5,11) to (8.2,7);
+    \draw [->][color=violet, ultra thick]
+        (5,11) to (-5.8,7);
+    \draw [->][color=violet, ultra thick]
+        (5,11) to (6.2,7);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=violet](6,5) to (0.5,1);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=violet](8,5) to (0.5,1);
+    
+\end{tikzpicture}
