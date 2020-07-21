@@ -1,0 +1,92 @@
+\section{Parking Functions}
+
+\begin{definition}[Parking Function]
+    A \emph{parking function} is a sequence of positive integers
+    $(a_1, a_2, \ldots, a_n)$
+    such that its non-decreasing reordering $(b_1, b_2, \ldots, b_n)$
+    has $b_i \leqslant i$ for all $i$.\\
+    We denote by $\mathcal{PF}_n$ the set of parking functions of length $n$.
+    $$\mathcal{PF} = \bigcup_{n > 0}{\mathcal{PF}_n}$$.
+\end{definition}
+
+\begin{example}
+    \begin{align*}
+    &f_1 = (7, 3, 1, 4, 2, 5, 2) \in \mathcal{PF}_7\\
+    &f_2 = (7, 3, 1, 4, 2, 5, 4) \notin \mathcal{PF}_7\\
+    \end{align*}
+\end{example}
+
+\begin{theorem}
+    Let $pf_n$ be the cardinal of $\mathcal{PF}_n$.
+    We have $$pf_n = (n + 1)^{n-1}$$.
+\end{theorem}
+
+\begin{example}[$n = 1, 2, 3$]
+    ~\\
+    \begin{itemize*}
+            \item $n = 1$ \  $:$ \  $pf_1 = 1$\\
+            \subitem $(1)$\\
+            \item $n = 2$ \  $:$ \  $pf_2 = 3$\\
+            \subitem $(1, 1)$
+            \subitem $(1, 2)$
+            \subitem $(2, 1)$\\
+            \item $n = 3$ \  $:$ \  $pf_3 = 16$\\
+            \subitem $(1, 1, 1)$
+            \subitem $(1, 1, 2)$
+            \subitem $(1, 1, 3)$
+            \subitem $(1, 2, 1)$
+            \subitem $(1, 2, 2)$
+            \subitem $(1, 2, 3)$
+            \subitem $(1, 3, 1)$
+            \subitem $(1, 3, 2)$
+            \subitem $(2, 1, 1)$
+            \subitem $(2, 1, 2)$
+            \subitem $(2, 1, 3)$
+            \subitem $(2, 2, 1)$
+            \subitem $(2, 3, 1)$
+            \subitem $(3, 1, 1)$
+            \subitem $(3, 1, 2)$
+            \subitem $(3, 2, 1)$\\
+    \end{itemize*}
+\end{example}
+
+\subsection{Primitive parking functions}
+
+\begin{definition}[Primitive]
+    A parking function $(a_1, a_2, \ldots, a_n)$ is said \emph{primitive} if
+    it is already in non-decreasing order. \\
+    We denote by $\mathcal{PF'}_n$ the set of primitive parking functions of length $n$.
+    $$\mathcal{PF'} = \bigcup_{n > 0}{\mathcal{PF'}_n}$$
+    
+\end{definition}
+
+\begin{example}
+    \begin{align*}
+        &f_1 = (1, 2, 2, 3) \in \mathcal{PF'}_4\\
+        &f_2 = (1, 2, 3, 2) \notin \mathcal{PF'}_4
+         \text{, even though } f_2 \in \mathcal{PF}_4\\
+    \end{align*}
+\end{example}
+
+\begin{theorem}
+    Let $pf'_n$ be the cardinal of $\mathcal{PF'}_n$.
+    We have $$pf'_n = \frac{1}{n + 1} \binom{2n}{n}$$
+    which is the $n^{th}$ Catalan number $Cat(n)$.
+\end{theorem}
+
+\begin{example}[$n = 1, 2, 3$]
+    ~\\
+    \begin{itemize*}
+        \item $n = 1$ \  $:$ \  $pf'_1 = 1$\\
+        \subitem $(1)$\\
+        \item $n = 2$ \  $:$ \  $pf'_2 = 2$\\
+        \subitem $(1, 1)$
+        \subitem $(1, 2)$\\
+        \item $n = 3$ \  $:$ \  $pf'_3 = 5$\\
+        \subitem $(1, 1, 1)$
+        \subitem $(1, 1, 2)$
+        \subitem $(1, 1, 3)$
+        \subitem $(1, 2, 2)$
+        \subitem $(1, 2, 3)$\\
+    \end{itemize*}
+\end{example}
