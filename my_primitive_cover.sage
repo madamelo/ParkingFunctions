@@ -47,3 +47,26 @@ def my_prim_cov_dyck (d, e) :
                 return False
         
     return False
+
+def num_cov (n) :
+    if n < 2 :
+        return 0
+    if n == 2 :
+        return 1
+    if n == 3 :
+        return 5
+    
+    res = 7 * num_cov (n - 1) 
+    res = res - 14 * num_cov (n - 2)
+    res = res + 7 * num_cov (n - 3)
+    return res
+
+def num_rel (n) :
+    if n < 1 :
+        return 0
+    res = 6 * factorial (2 * n) * factorial (2 * n + 2)
+    res = res / factorial (n)
+    res = res / factorial (n + 1)
+    res = res / factorial (n + 2)
+    res = res / factorial (n + 3)
+    return res

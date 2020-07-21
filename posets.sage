@@ -116,9 +116,13 @@ P8 = Poset ([list (generate_fpp (4)), my_prim_cov])
 g8 = P8.plot ()
 g8.save ('MPC_poset_4.pdf')
 print (P8.zeta_polynomial ())
+print ('---')
+print (len (P8.cover_relations ()))
+print ('---')
+print (P8.relations_number ())
 print ()
 
-print ("My primitive Dyck cover")
+print ("My Dyck cover")
 L9 = []
 for f in generate_fpp (4) :
     L9.append (DyckWord (fpp_to_dyck (f)))
@@ -126,4 +130,36 @@ P9 = Poset ([L9, my_prim_cov_dyck])
 g9 = P9.plot ()
 g9.save ('MPCD_poset_4.pdf')
 print (P9.zeta_polynomial ())
+print ('---')
+print (len (P9.cover_relations ()))
+print ('---')
+print (P9.relations_number ())
+print ()
+
+load my_cover.sage
+
+print ("My PF cover")
+
+P10 = Poset ([list (generate_fp (5)), my_cov])
+g10 = P10.plot ()
+g10.save ('MC_poset_4.pdf')
+print (P10.zeta_polynomial ())
+print ('---')
+print (len (P10.cover_relations ()))
+print ('---')
+print (P10.relations_number ())
+print ()
+
+print ("My decorated Dyck cover")
+L11 = []
+for f in generate_fp (4) :
+    L11.append (fp_to_ddyck (f))
+#P11 = Poset ([L11, my_cov_ddyck])
+#g11 = P11.plot ()
+#g11.save ('MCD_poset_4.pdf')
+#print (P11.zeta_polynomial ())
+print ('---')
+#print (len (P11.cover_relations ()))
+print ('---')
+#print (P11.relations_number ())
 print ()

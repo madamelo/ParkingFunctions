@@ -25,3 +25,22 @@ print (my_prim_cov_dyck (D2, D1))
 print (my_prim_cov_dyck (D3, D1))
 print (my_prim_cov_dyck (D3, D2))
 print (my_prim_cov_dyck (D4, D1))
+print ()
+
+
+L = list (generate_fpp (7))
+P1 = Poset ([L, my_prim_cov])
+print (len (P1.cover_relations ()))
+print (P1.relations_number ())
+print ()
+
+L2 = []
+for f in L :
+    L2.append (DyckWord (fpp_to_dyck (f)))
+P2 = Poset ([L2, my_prim_cov_dyck])
+print (len (P2.cover_relations ()))
+print (P2.relations_number ())
+print ()
+
+print (num_cov (7))
+print (num_rel (7))

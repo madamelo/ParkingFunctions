@@ -22,7 +22,6 @@ print (my_prim_cov (L4, L1))
 print ()
 
 D1 = fpp_to_dyck (L1)
-print (D1)
 D2 = fpp_to_dyck (L2)
 D3 = fpp_to_dyck (L3)
 D4 = fpp_to_dyck (L4)
@@ -32,4 +31,23 @@ print (my_prim_cov_dyck (D2, D1))
 print (my_prim_cov_dyck (D3, D1))
 print (my_prim_cov_dyck (D3, D2))
 print (my_prim_cov_dyck (D4, D1))
+print()
+
+
+L = list (generate_fpp (_sage_const_7 ))
+P1 = Poset ([L, my_prim_cov])
+print (len (P1.cover_relations ()))
+print (P1.relations_number ())
+print ()
+
+L2 = []
+for f in L :
+    L2.append (DyckWord (fpp_to_dyck (f)))
+P2 = Poset ([L2, my_prim_cov_dyck])
+print (len (P2.cover_relations ()))
+print (P2.relations_number ())
+print ()
+
+print (num_cov (_sage_const_7 ))
+print (num_rel (_sage_const_7 ))
 
