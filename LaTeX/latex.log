@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  21 JUL 2020 13:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  21 JUL 2020 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -825,7 +825,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig1.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -835,7 +835,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig2.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -855,7 +855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--164
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig3.tex) [7]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig3.tex) [7]
 Overfull \hbox (37.05708pt too wide) in paragraph at lines 183--185
 []\T1/cmr/bx/n/12 Example. []\T1/cmr/m/it/12 The per-mu-ta-tion as-so-ci-ated to $\OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 gg$ \T1/cmr/m/it/12 is $\OT1/cmr/m/n/12 (1 2 5) (3 4) (6) =
  []
@@ -905,12 +905,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--248
 
  []
 
-[9] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig4.tex
+[9] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig4.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig5.tex
+) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig5.tex
 Overfull \hbox (52.1079pt too wide) in paragraph at lines 1--2
 []\T1/cmr/bx/n/12 Example \T1/cmr/m/n/12 (Coun-ter-ex-am-ple : $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ;  \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 gg\OML/cmm/m/it/12 ; Q \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ff\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OMS/cmsy/m/n/12 gg$\T1/cmr/m/n/12 )\T1/cmr/bx/n/12 .
  []
@@ -920,7 +920,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-[10]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig6.tex)
+[10]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig6.tex)
 Overfull \hbox (11.42203pt too wide) in paragraph at lines 317--326
 []\T1/cmr/bx/n/12 Definition 8 \T1/cmr/m/n/12 (Ac-tion of $\U/euf/m/n/12 S[]$\T1/cmr/m/n/12 )\T1/cmr/bx/n/12 . []\T1/cmr/m/it/12 The ac-tion of $\U/euf/m/n/12 S[]$ \T1/cmr/m/it/12 on a par-ti-tion $\OML/cmm/m/it/12 P \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 B[]; [] ; B[]\OMS/cmsy/m/n/12 g$
  []
@@ -930,12 +930,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 330--334
 
  []
 
-[11] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig7.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig8.tex)
+[11] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig7.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig8.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 349--352
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig9.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig10.tex) [12] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig11.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig12.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig13.tex [13]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig14.tex) [14] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig15.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig16.tex)) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C1S3.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig9.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig10.tex) [12] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig11.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig12.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig13.tex [13]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig14.tex) [14] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig15.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig16.tex)) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C1S3.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--16
 
  []
@@ -960,7 +960,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--175
 
  []
 
-[18] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig17.tex)
+[18] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig17.tex)
 Overfull \hbox (3.55185pt too wide) in paragraph at lines 111--184
  [] 
  []
@@ -970,7 +970,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--234
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig18.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig18.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
@@ -980,27 +980,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--33
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig19.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig20.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig21.tex [22]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig22.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig23.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig24.tex [23]) [24] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig25.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig26.tex [25]) [26] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig27.tex) [27] [28] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig28.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig29.tex [29]) [30] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig30.tex)
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig19.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig20.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig21.tex [22]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig22.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig23.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig24.tex [23]) [24] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig25.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig26.tex [25]) [26] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig27.tex) [27] [28] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig28.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig29.tex [29]) [30] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig30.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig31.tex [31]) [32]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig31.tex [31]) [32]
 Underfull \hbox (badness 10000) in paragraph at lines 347--348
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig32.tex)
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig32.tex)
 Overfull \hbox (37.23468pt too wide) in paragraph at lines 361--367
 \T1/cmr/m/it/12 The first terms of this se-quence are $\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 84\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 594\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4719\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 40898\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 379236\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3711916\OML/cmm/m/it/12 ; :::$ 
  []
 
-[33] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig33.tex [34]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig34.tex [35]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig35.tex [36])
+[33] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig33.tex [34]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig34.tex [35]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig35.tex [36])
 Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig36.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig36.tex
 Overfull \hbox (4.68745pt too wide) in paragraph at lines 168--169
  [] 
  []
@@ -1010,7 +1010,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig37.tex [38])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig37.tex [38])
 Overfull \hbox (82.56949pt too wide) in paragraph at lines 494--499
 \T1/cmr/m/it/12 The first terms of this se-quence are $\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 64\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1587\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 65421\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4071178\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 357962760\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4237910716\OML/cmm/m/it/12 ; :::$\T1/cmr/m/it/12 . 
  []
@@ -1079,56 +1079,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[43] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig38.tex)
+[43] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig38.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig39.tex [44]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig40.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig41.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig42.tex [45]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig43.tex) [46]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig39.tex [44]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig40.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig41.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig42.tex [45]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig43.tex) [46]
 Overfull \hbox (7.09125pt too wide) in paragraph at lines 78--87
 \T1/cmr/m/n/12 The cor-re-spond-ing ra-tio-nal Dyck word will be $[] \OT1/cmr/m/n/12 0 [] 0 [] [] 0$\T1/cmr/m/n/12 . 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig44.tex [47]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig45.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig46.tex [48]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig47.tex [49]) [50] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig48.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig44.tex [47]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig45.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig46.tex [48]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig47.tex [49]) [50] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig48.tex
 Underfull \hbox (badness 10000) in paragraph at lines 210--1
 
  []
 
-) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig49.tex
+) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig49.tex
 Underfull \hbox (badness 10000) in paragraph at lines 215--1
 
  []
 
-) [51] [52] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig50.tex
+) [51] [52] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig50.tex
 Missing character: There is no ; in font nullfont!
- [53]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig51.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig52.tex [54]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig53.tex [55]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig54.tex [56])
+ [53]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig51.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig52.tex [54]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig53.tex [55]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig54.tex [56])
 Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig55.tex [57])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig55.tex [57])
 Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig56.tex [58])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig56.tex [58])
 Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
-[59] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig57.tex)
+[59] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig57.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig58.tex [60]) [61] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig59.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig58.tex [60]) [61] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig59.tex
 Missing character: There is no 0 in font nullfont!
  [62]) [63]
 Underfull \hbox (badness 10000) in paragraph at lines 593--594
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig60.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig60.tex
 Overfull \hbox (35.99564pt too wide) in paragraph at lines 221--222
  [] 
  []
@@ -1138,12 +1138,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 605--606
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig61.tex [65])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig61.tex [65])
 Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig62.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig62.tex
 Overfull \hbox (70.2178pt too wide) in paragraph at lines 96--97
  [] 
  []
@@ -1153,16 +1153,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig63.tex)) [67]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex)) [67]
 Chapter 3.
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig64.tex [68
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [68
 
-]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig65.tex [69])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [70]
+]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [69])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [70]
 Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig66.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig66.tex
 Overfull \hbox (10.83911pt too wide) in paragraph at lines 62--63
  [] 
  []
@@ -1172,16 +1172,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig67.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig67.tex
 Overfull \hbox (47.76611pt too wide) in paragraph at lines 55--56
  [] 
  []
 
 )) [73] [74] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
- 15084 strings out of 494923
- 306910 string characters out of 6180742
- 364119 words of memory out of 5000000
+ 15086 strings out of 494923
+ 307500 string characters out of 6180742
+ 364123 words of memory out of 5000000
  17863 multiletter control sequences out of 15000+600000
  26072 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
