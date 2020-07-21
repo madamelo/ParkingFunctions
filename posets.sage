@@ -140,8 +140,8 @@ load my_cover.sage
 
 print ("My PF cover")
 
-P10 = Poset ([list (generate_fp (5)), my_cov])
-g10 = P10.plot ()
+P10 = Poset ([list (generate_fp (4)), my_cov])
+g10 = P10.plot (label_elements = False)
 g10.save ('MC_poset_4.pdf')
 print (P10.zeta_polynomial ())
 print ('---')
@@ -155,7 +155,7 @@ L11 = []
 for f in generate_fp (4) :
     L11.append (fp_to_ddyck (f))
 #P11 = Poset ([L11, my_cov_ddyck])
-#g11 = P11.plot ()
+#g11 = P11.plot (label_elements = False)
 #g11.save ('MCD_poset_4.pdf')
 #print (P11.zeta_polynomial ())
 print ('---')
