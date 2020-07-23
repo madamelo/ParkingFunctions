@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  21 JUL 2020 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  23 JUL 2020 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -995,8 +995,8 @@ Overfull \hbox (37.23468pt too wide) in paragraph at lines 361--367
 \T1/cmr/m/it/12 The first terms of this se-quence are $\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 84\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 594\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4719\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 40898\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 379236\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3711916\OML/cmm/m/it/12 ; :::$ 
  []
 
-[33] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig33.tex [34]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig34.tex [35]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig35.tex [36])
-Underfull \hbox (badness 10000) in paragraph at lines 450--451
+[33] [34] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig33.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig34.tex [35]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig35.tex [36])
+Underfull \hbox (badness 10000) in paragraph at lines 459--460
 
  []
 
@@ -1006,12 +1006,12 @@ Overfull \hbox (4.68745pt too wide) in paragraph at lines 168--169
  []
 
 [37])
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 490--491
 
  []
 
 (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig37.tex [38])
-Overfull \hbox (82.56949pt too wide) in paragraph at lines 494--499
+Overfull \hbox (82.56949pt too wide) in paragraph at lines 503--508
 \T1/cmr/m/it/12 The first terms of this se-quence are $\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 64\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1587\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 65421\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4071178\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 357962760\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4237910716\OML/cmm/m/it/12 ; :::$\T1/cmr/m/it/12 . 
  []
 
@@ -1187,7 +1187,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  55i,14n,59p,465b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (76 pages, 385236 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (76 pages, 385320 bytes).
 PDF statistics:
  643 PDF objects out of 1000 (max. 8388607)
  254 compressed objects within 3 object streams

@@ -374,26 +374,35 @@
     that $w$ covers $w'$, written $w \gtrdot_{ld} w'$,
     if either :
     \begin{itemize}
-        \item $\exists w_2, x, x', y$ such that :
-            \subitem $x = x_1x_2 \cdots x_n$ has all 
-            its digits $> 0$
-            \subitem $x' = x$ where $y$ is correctly
-            inserted regarding the order condition
-            \subitem $y > 0$
-            \subitem $w = x0yw_2$
-            \subitem $w' = x'0w_2$
-        \item $\exists w_1, w_2, x, x', y$ such that :
+        \item $\exists w_2, x, x', y, z, z'$ such that :
             \subitem $x = x_1x_2 \cdots x_n$ has all 
                 its digits $> 0$
-            \subitem $y > 0$
+            \subitem $z = z_1z_2 \cdots z_m$ has all
+                its digits $>0$
+            \subitem $y$ is in $z$
             \subitem $x' = x$ where $y$ is correctly
                 inserted regarding the order condition
-            \subitem $w = w_10x0yw_2$
-            \subitem $w' = w_10x'0w_2$
-        \item or $\exists w_1, w_2, y$ such that :
-            \subitem $y > 0$
-            \subitem $w = w_100yw_2$
-            \subitem $w' = w_10y0w_2$
+            \subitem $z' = z$ where $y$ is removed
+            \subitem $w = x0zw_2$
+            \subitem $w' = x'0z'w_2$
+        \item $\exists w_1, w_2, x, x', y, z, z'$ such that :
+            \subitem $x = x_1x_2 \cdots x_n$ has all 
+                its digits $> 0$
+            \subitem $z = z_1z_2 \cdots z_m$ has all
+                its digits $>0$
+            \subitem $y$ is in $z$
+            \subitem $x' = x$ where $y$ is correctly
+                inserted regarding the order condition
+            \subitem $z' = z$ where $y$ is removed
+            \subitem $w = w_10x0zw_2$
+            \subitem $w' = w_10x'0z'w_2$
+        \item or $\exists w_1, w_2, y, z$ such that :
+            \subitem $z = z_1z_2 \cdots z_m$ has all
+                its digits $>0$
+            \subitem $y$ is in $z$
+            \subitem $z' = z$ where $y$ is removed
+            \subitem $w = w_100zw_2$
+            \subitem $w' = w_10y0z'w_2$
     \end{itemize}  
 \end{definition}
 
