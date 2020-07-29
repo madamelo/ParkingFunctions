@@ -41,87 +41,33 @@ def correctly_removed (z, z2, y) :
     z3 = z2 + [y]
     return sorted (z3) == z
 
-def mcd_case_1 (d, e) :
-    w = d.to_list ()
-    w2 = e.to_list ()
-    n = len (w)
-
-    for i in range (n - 1) :
-        for j in range (i + 1, n) :
-            if w [i] == 0 and w2 [i + 1] == 0 :
-                x = w [ : i]
-                x2 = w2 [ : i + 1]
-                z = w [i + 1 : j + 1]
-                z2 = w2 [i + 2 : j + 1]
-                r = w [j + 1 : ]
-                r2 = w2 [ j + 1 : ]
-                if r == r2 :
-                    for y in z :
-                        if correctly_inserted (x, x2, y) :
-                            if correctly_removed (z, z2, y) :
-                                return True
-
-    return False
-
-def mcd_case_2 (d, e) :
-    w = d.to_list ()
-    w2 = e.to_list ()
-    n = len (w)
-
-    for i in range (n - 1) :
-        for j in range (i + 1, n - 1) :
-            for k in range (j + 1, n) :
-                if w [i] == 0 and w2 [i] == 0 :
-                    if w [j] == 0 and w2 [j + 1] == 0 :
-                        l = w [ : i]
-                        l2 = w2 [ : i]
-                        x = w [i + 1 : j]
-                        x2 = w2 [i + 1 : j + 1]
-                        z = w [j + 1 : k + 1]
-                        z2 = w [j + 2 : k + 1]
-                        r = w [k + 1 : ]
-                        r2 = w2 [k + 1 : ]
-                        if l == l2 and r == r2 :
-                            for y in z :
-                                if correctly_inserted (x, x2, y) :
-                                    if correctly_removed (z, z2, y) :
-                                        return True
-
-    return False
-
-def mcd_case_3 (d, e) :
-    w = d.to_list ()
-    w2 = e.to_list ()
-    n = len (w)
-
-    for i in range (n - 2) :
-        for j in range (i + 1, n - 1) :
-            if w [i] == 0 and w[i + 1] == 0 :
-                if w2 [i] == 0 and w2 [i + 2] == 0 :
-                    l = w [ : i]
-                    l2 = w2 [ : i]
-                    y = w2 [i + 1]
-                    z = w [i + 2 : j + 1]
-                    z2 = w [i + 3 : j + 1]   
-                    r = w [j + 2 : ]
-                    r2 = w2 [j + 2 : ]
-                    if l == l2 and r == r2 :
-                        if correctly_removed (z, z2, y) :
-                            return True
-
-    return False
-
 def my_cov_ddyck (d, e) :
     if not d.is_ddyck () :
-        return False
+            return False
     if not e.is_ddyck () :
         return False
 
-    if mcd_case_3 (d, e) :
-        return True
-    if mcd_case_2 (d, e) :
-        return True
-    if mcd_case_1 (d, e) :
-        return True
+    bd = blocks (d)
+    be = blocks (e)
+    n = len (bd)
+    if len (be) != n :
+        return False
 
+    for i in range (n - 1) :
+        ld = bd [ : i]
+        le = be [ : i]
+
+        wd = bd [i]
+        zd = bd [i + 1]
+        we = be [i]
+        ze = be [i + 1]
+
+        rd = bd [i + 2 : ]
+        re = be [i + 2 : ]
+
+        if ld == le and rd == re :
+            for y in we : 
+                if correctly_inserted (wd, we, y) :
+                    if correctly_removed (zd, ze, y) :
+                        return True
     return False
