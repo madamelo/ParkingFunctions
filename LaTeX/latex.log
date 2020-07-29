@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  23 JUL 2020 16:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.3.26)  29 JUL 2020 16:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -995,8 +995,8 @@ Overfull \hbox (37.23468pt too wide) in paragraph at lines 361--367
 \T1/cmr/m/it/12 The first terms of this se-quence are $\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 14\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 84\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 594\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4719\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 40898\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 379236\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3711916\OML/cmm/m/it/12 ; :::$ 
  []
 
-[33] [34] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig33.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig34.tex [35]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig35.tex [36])
-Underfull \hbox (badness 10000) in paragraph at lines 459--460
+[33] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig33.tex [34])
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
@@ -1005,17 +1005,17 @@ Overfull \hbox (4.68745pt too wide) in paragraph at lines 168--169
  [] 
  []
 
-[37])
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+[35])
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig37.tex [38])
-Overfull \hbox (82.56949pt too wide) in paragraph at lines 503--508
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig37.tex [36])
+Overfull \hbox (82.56949pt too wide) in paragraph at lines 481--486
 \T1/cmr/m/it/12 The first terms of this se-quence are $\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 5\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 64\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1587\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 65421\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4071178\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 357962760\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4237910716\OML/cmm/m/it/12 ; :::$\T1/cmr/m/it/12 . 
  []
 
-) [39]
+) [37]
 Chapter 2.
 (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S1.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--15
@@ -1027,7 +1027,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
-[40
+[38
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 43--45
@@ -1064,12 +1064,12 @@ Overfull \hbox (29.03442pt too wide) in paragraph at lines 122--135
 | $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ 
  []
 
-[41]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S2.tex
+[39]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-[42]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S3.tex
+[40]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S3.tex
 Overfull \hbox (7.36905pt too wide) in paragraph at lines 1--1
 []\T1/cmr/bx/n/17.28 A di-rect poset linked to Ra-tio-nal Dyck paths 
  []
@@ -1079,17 +1079,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-[43] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig38.tex)
+[41] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig38.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig39.tex [44]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig40.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig41.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig42.tex [45]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig43.tex) [46]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig39.tex [42]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig40.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig41.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig42.tex [43]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig43.tex) [44]
 Overfull \hbox (7.09125pt too wide) in paragraph at lines 78--87
 \T1/cmr/m/n/12 The cor-re-spond-ing ra-tio-nal Dyck word will be $[] \OT1/cmr/m/n/12 0 [] 0 [] [] 0$\T1/cmr/m/n/12 . 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig44.tex [47]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig45.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig46.tex [48]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig47.tex [49]) [50] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig48.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig44.tex [45]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig45.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig46.tex [46]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig47.tex [47]) [48] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig48.tex
 Underfull \hbox (badness 10000) in paragraph at lines 210--1
 
  []
@@ -1099,31 +1099,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--1
 
  []
 
-) [51] [52] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig50.tex
+) [49] [50] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig50.tex
 Missing character: There is no ; in font nullfont!
- [53]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig51.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig52.tex [54]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig53.tex [55]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig54.tex [56])
+ [51]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig51.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig52.tex [52]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig53.tex [53]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig54.tex [54])
 Underfull \hbox (badness 10000) in paragraph at lines 419--420
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig55.tex [57])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig55.tex [55])
 Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig56.tex [58])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig56.tex [56])
 Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
-[59] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig57.tex)
+[57] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig57.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 471--472
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig58.tex [60]) [61] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig59.tex
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig58.tex [58]) [59] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig59.tex
 Missing character: There is no 0 in font nullfont!
- [62]) [63]
+ [60]) [61]
 Underfull \hbox (badness 10000) in paragraph at lines 593--594
 
  []
@@ -1133,12 +1133,12 @@ Overfull \hbox (35.99564pt too wide) in paragraph at lines 221--222
  [] 
  []
 
-[64])
+[62])
 Underfull \hbox (badness 10000) in paragraph at lines 605--606
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig61.tex [65])
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig61.tex [63])
 Underfull \hbox (badness 10000) in paragraph at lines 640--641
 
  []
@@ -1148,16 +1148,16 @@ Overfull \hbox (70.2178pt too wide) in paragraph at lines 96--97
  [] 
  []
 
-[66])
+[64])
 Underfull \hbox (badness 10000) in paragraph at lines 651--652
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex)) [67]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex)) [65]
 Chapter 3.
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [68
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [66
 
-]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [69])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [70]
+]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [67])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [68]
 Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
@@ -1167,7 +1167,7 @@ Overfull \hbox (10.83911pt too wide) in paragraph at lines 62--63
  [] 
  []
 
-[71]) [72]
+[69]) [70]
 Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
@@ -1177,20 +1177,20 @@ Overfull \hbox (47.76611pt too wide) in paragraph at lines 55--56
  [] 
  []
 
-)) [73] [74] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
+)) [71] [72] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux) ) 
 Here is how much of TeX's memory you used:
- 15086 strings out of 494923
- 307500 string characters out of 6180742
- 364123 words of memory out of 5000000
- 17863 multiletter control sequences out of 15000+600000
+ 15074 strings out of 494923
+ 307182 string characters out of 6180742
+ 367625 words of memory out of 5000000
+ 17857 multiletter control sequences out of 15000+600000
  26072 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,14n,59p,465b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (76 pages, 385320 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (74 pages, 381121 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 254 compressed objects within 3 object streams
+ 637 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

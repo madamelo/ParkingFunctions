@@ -372,71 +372,49 @@
 \begin{definition}[$\gtrdot_{ld}$]
     For $w$ and $w'$ two labeled Dyck words, we say
     that $w$ covers $w'$, written $w \gtrdot_{ld} w'$,
-    if either :
+    if $\exists l, r, x, x', y, z, z'$ such that :
     \begin{itemize}
-        \item $\exists w_2, x, x', y, z, z'$ such that :
-            \subitem $x = x_1x_2 \cdots x_n$ has all 
-                its digits $> 0$
-            \subitem $z = z_1z_2 \cdots z_m$ has all
-                its digits $>0$
-            \subitem $y$ is in $z$
-            \subitem $x' = x$ where $y$ is correctly
-                inserted regarding the order condition
-            \subitem $z' = z$ where $y$ is removed
-            \subitem $w = x0zw_2$
-            \subitem $w' = x'0z'w_2$
-        \item $\exists w_1, w_2, x, x', y, z, z'$ such that :
-            \subitem $x = x_1x_2 \cdots x_n$ has all 
-                its digits $> 0$
-            \subitem $z = z_1z_2 \cdots z_m$ has all
-                its digits $>0$
-            \subitem $y$ is in $z$
-            \subitem $x' = x$ where $y$ is correctly
-                inserted regarding the order condition
-            \subitem $z' = z$ where $y$ is removed
-            \subitem $w = w_10x0zw_2$
-            \subitem $w' = w_10x'0z'w_2$
-        \item or $\exists w_1, w_2, y, z$ such that :
-            \subitem $z = z_1z_2 \cdots z_m$ has all
-                its digits $>0$
-            \subitem $y$ is in $z$
-            \subitem $z' = z$ where $y$ is removed
-            \subitem $w = w_100zw_2$
-            \subitem $w' = w_10y0z'w_2$
+        \item $l$ is either empty or ends with $0$
+        \item $r$ is either empty or starts with $0$
+        \item $x = x_1x_2 \cdots$ has all its digits $> 0$
+        \item $z = z_1z_2 \cdots$ has all its digits $> 0$
+        \item $x' = x$ where $y$ is correctly inserted
+            regarding the order condition
+        \item $y$ is in $z$, and $z' = z$ where $y$ is removed
+        \item $w = lx0zr$
+        \item $w' = lx'0z'r$
     \end{itemize}  
 \end{definition}
 
-\begin{example}[$n = 5$, first case]
-    $1450302000 \gtrdot_{ld} 1345002000$
+\begin{example}[$n = 5$]
+    $104503600200 \gtrdot_{ld} 10345060200$
     \begin{itemize}
-        \item $w_2 = 02000$
-        \item $x = 145$
-        \item $x' = 1345$
+        \item $l = 10$
+        \item $r = 0200$
+        \item $x = 45$
+        \item $x' = 345$
         \item $y = 3$
+        \item $z = 36$
+        \item $z' = 6$
     \end{itemize}
     \input{fig/fig33.tex}
 \end{example}
 
-\begin{example}[$n = 5$, second case]
-    $4015030200 \gtrdot_{ld} 4013500200$
-    \begin{itemize}
-        \item $w_1 = 4$
-        \item $w_2 = 0200$
-        \item $x = 15$
-        \item $x' = 135$
-        \item $y = 3$
-    \end{itemize}
-    \input{fig/fig34.tex}
-\end{example}
+\begin{definition}[Rise]
+    A \emph{rise} of a decorated Dyck word is a maximal
+    sequence of non-zero digits preceding a zero.
+\end{definition}
 
-\begin{example}[$n = 5$, third case]
-    $4015003020 \gtrdot_{ld} 4015030020$
-    \begin{itemize}
-        \item $w_1 = 4015$
-        \item $w_2 = 020$
-        \item $y = 3$
-    \end{itemize}
-    \input{fig/fig35.tex}
+\begin{example}[$n = 5$]
+    In order, the rises of $104503600200$ are :\\
+    \begin{itemize*}
+        \item $1$
+        \item $45$
+        \item $36$
+        \item $\emptyset$
+        \item $2$
+        \item $\emptyset$
+    \end{itemize*}
 \end{example}
 
 \begin{rem}
@@ -444,10 +422,10 @@
     $w_2$ is \emph{over} the path corresponding to $w_1$,
     and the \emph{difference} between the two paths is a
     square of size 1 by 1.\\
-    Furthermore, the labeling can be seen as follows :
-    if one has to merge two sequences of North steps of $w_1$
-    to make $w_2$, then the merging will be made by ordering the
-    corresponding labels.
+    Furthermore, the covering relation can be seen as follows :
+    $w_1$ covers $w_2$ if we can obtain $w_2$ by taking a
+    digit from the $i + 1^{th}$ rise of $w_1$, and inserting it
+    into the $i^{th}$ rise of $w_1$ in increasing order.
 \end{rem}
 
 \begin{prop}
