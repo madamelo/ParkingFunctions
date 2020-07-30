@@ -487,89 +487,44 @@
 \begin{definition}[$\gtrdot_{lr}$]
     For $w$ and $w'$ two labeled a, b - Dyck words, we say
     that $w$ covers $w'$, written $w \gtrdot_{lr} w'$,
-    if either :
+    if $\exists l, r, x, x', y, z, z'$ such that :
     \begin{itemize}
-        \item $\exists w_2, x, x', y$ such that :
-            \subitem $x = x_1x_2 \cdots x_n$ has all 
-            its digits $> 0$
-            \subitem $x' = x$ where $y$ is correctly
-            inserted regarding the order condition
-            \subitem $y > 0$
-            \subitem $w = x0yw_2$
-            \subitem $w' = x'0w_2$
-        \item $\exists w_1, w_2, x, x', y$ such that :
-            \subitem $x = x_1x_2 \cdots x_n$ has all 
-                its digits $> 0$
-            \subitem $y > 0$
-            \subitem $x' = x$ where $y$ is correctly
-                inserted regarding the order condition
-            \subitem $w = w_10x0yw_2$
-            \subitem $w' = w_10x'0w_2$
-        \item or $\exists w_1, w_2, y$ such that :
-            \subitem $y > 0$
-            \subitem $w = w_100yw_2$
-            \subitem $w' = w_10y0w_2$
+        \item $l$ is either empty or ends with $0$
+        \item $r$ is either empty or starts with $0$
+        \item $x = x_1x_2 \cdots$ has all its digits $> 0$
+        \item $z = z_1z_2 \cdots$ has all its digits $> 0$
+        \item $x' = x$ where $y$ is correctly inserted
+            regarding the order condition
+        \item $y$ is in $z$, and $z' = z$ where $y$ is removed
+        \item $w = lx0zr$
+        \item $w' = lx'0z'r$
     \end{itemize}  
+
 \end{definition}
 
-\begin{example}[$a > b : a = 7, b = 3$, first case]
-    $1457030260 \gtrdot_{lr} 1345700260$
-    \begin{itemize}
-        \item $w_2 = 0260$
-        \item $x = 1457$
-        \item $x' = 13457$
-        \item $y = 3$
-    \end{itemize}
-    \input{fig/fig59.tex}
-\end{example}
-
-\begin{example}[$a < b : a = 3, b = 5$, first case]
-    $20130000 \gtrdot_{lr} 12030000$
-    \begin{itemize}
-        \item $w_2 = 30000$
-        \item $x = 2$
-        \item $x' = 12$
-        \item $y = 1$
-    \end{itemize}
-\end{example}
-
-\begin{example}[$a > b : a = 7, b = 3$, second case]
+\begin{example}[$a > b : a = 7, b = 3$]
     $2460150370 \gtrdot_{lr} 2460135070$
     \begin{itemize}
-        \item $w_1 = 246$
-        \item $w_2 = 70$
+        \item $l = 2460$
+        \item $r = 0$
         \item $x = 15$
         \item $x' = 135$
         \item $y = 3$
+        \item $z = 37$
+        \item $z' = 7$
     \end{itemize}
 \end{example}
 
-\begin{example}[$a < b : a = 3, b = 5$, second case]
+\begin{example}[$a < b : a = 3, b = 5$]
     $20301000 \gtrdot_{lr} 20130000 $
     \begin{itemize}
-        \item $w_1 = 2$
-        \item $w_2 = 000$
+        \item $l = 20$
+        \item $r = 000$
         \item $x = 3$
         \item $x' = 13$
         \item $y = 1$
-    \end{itemize}
-\end{example}
-
-\begin{example}[$a > b : a = 7, b = 3$, third case]
-    $235670014 \gtrdot_{lr} 235670104$
-    \begin{itemize}
-        \item $w_1 = 23567$
-        \item $w_2 = 4$
-        \item $y = 1$
-    \end{itemize}
-\end{example}
-
-\begin{example}[$a < b : a = 3, b = 5$, third case]
-    $23000100 \gtrdot_{lr} 23001000$
-    \begin{itemize}
-        \item $w_1 = 230$
-        \item $w_2 = 00$
-        \item $y = 1$
+        \item $z = 1$
+        \item $z' = \emptyset$
     \end{itemize}
 \end{example}
 
@@ -578,10 +533,10 @@
     $w_2$ is \emph{over} the path corresponding to $w_1$,
     and the \emph{difference} between the two paths is a
     square of size 1 by 1.\\
-    Furthermore, the labeling can be seen as follows :
-    if one has to merge two sequences of North steps of $w_1$
-    to make $w_2$, then the merging will be made by ordering the
-    corresponding labels.
+    Furthermore, the covering relation can be seen as follows :
+    $w_1$ covers $w_2$ if we can obtain $w_2$ by taking a
+    digit from the $i + 1^{th}$ rise of $w_1$, and inserting it
+    into the $i^{th}$ rise of $w_1$ in increasing order.
 \end{rem}
 
 \begin{prop}

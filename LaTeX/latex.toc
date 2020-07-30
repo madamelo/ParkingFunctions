@@ -24,6 +24,6 @@
 \contentsline {subsection}{\numberline {2.3.3}Rational Dyck - Parking Posets}{54}
 \contentsline {subsubsection}{Rational Primitive Dyck - Parking Posets}{54}
 \contentsline {subsubsection}{Rational Dyck - Parking Posets}{59}
-\contentsline {chapter}{\numberline {3}Trees}{66}
-\contentsline {section}{\numberline {3.1}Parking Trees}{66}
-\contentsline {section}{\numberline {3.2}Rational Parking Trees}{69}
+\contentsline {chapter}{\numberline {3}Trees}{64}
+\contentsline {section}{\numberline {3.1}Parking Trees}{64}
+\contentsline {section}{\numberline {3.2}Rational Parking Trees}{67}
