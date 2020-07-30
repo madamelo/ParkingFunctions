@@ -129,6 +129,27 @@ def generate_rdyck (a, b) :
         if R.is_rdyck () :
             yield R
 
+def rblocks (D, l) :
+    if not D.is_rdyck () :
+        return None
+
+    a, b, p = D.a, D.b, D.p
+
+    L = [i for i in (1..a)]
+    if sorted (l) != L :
+        return None
+    B = []
+    b = []
+    i = 0
+    for e in p :
+        if e == 0 :
+            B.append (b)
+            b = []
+        else :
+            b.append (l [i])
+            i = i + 1
+    return B
+
 def parcours (R) :
     if not R.is_rdyck () :
         return None
