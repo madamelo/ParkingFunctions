@@ -162,3 +162,97 @@ print ('---')
 print (len (P11.cover_relations ()))
 print ('---')
 print (P11.relations_number ())
+print ()
+
+load my_primitive_ab_cover.sage
+
+print ("My primitive a, b - FP cover with a > b")
+L12_0 = list (generate_prim_rfp (8, 3))
+L12 = []
+for e in L12_0 :
+    f = ABFPP (8, 3, e)
+    L12.append (f)
+
+d12 = {}
+for e in L12 :
+    val = ""
+    for a in e.p :
+        val = val + str (a)
+    d12 [e] = val
+
+P12 = Poset ([L12, my_prim_ab_cov])
+g12 = P12.plot (element_labels = d12)
+g12.save ('../posets/MPABC_poset_8_3.pdf')
+print (P12.zeta_polynomial ())
+print ('---')
+print (len (P12.cover_relations ()))
+print ('---')
+print (P12.relations_number ())
+print ()
+
+print ("My primitive a, b - Dyck cover with a > b")
+L12_ = []
+for e in L12_0 :
+    L12_.append (prfp_to_rdyck (e, 8, 3))
+
+d12_ = {}
+for e in L12_ :
+    val = ""
+    for a in e.p :
+        val = val + str (a)
+    d12_ [e] = val
+
+P12_ = Poset ([L12_, my_prim_ab_cov_dyck])
+g12_ = P12_.plot (element_labels = d12_)
+g12_.save ('../posets/MPABC_dyck_poset_8_3.pdf')
+print (P12_.zeta_polynomial ())
+print ('---')
+print (len (P12_.cover_relations ()))
+print ('---')
+print (P12_.relations_number ())
+print ()
+
+print ("My primitive a, b - FP cover with a < b")
+L13_0 = list (generate_prim_rfp (4, 7))
+L13 = []
+for e in L13_0 :
+    f = ABFPP (4, 7, e)
+    L13.append (f)
+
+d13 = {}
+for e in L13 :
+    val = ""
+    for a in e.p :
+        val = val + str (a)
+    d13 [e] = val
+
+P13 = Poset ([L13, my_prim_ab_cov])
+g13 = P13.plot (element_labels = d13)
+g13.save ('../posets/MPABC_poset_4_7.pdf')
+print (P13.zeta_polynomial ())
+print ('---')
+print (len (P13.cover_relations ()))
+print ('---')
+print (P13.relations_number ())
+print ()
+
+print ("My primitive a, b - Dyck cover with a < b")
+L13_ = []
+for e in L13_0 :
+    L13_.append (prfp_to_rdyck (e, 4, 7))
+
+d13_ = {}
+for e in L13_ :
+    val = ""
+    for a in e.p :
+        val = val + str (a)
+    d13_ [e] = val
+
+P13_ = Poset ([L13_, my_prim_ab_cov_dyck])
+g13_ = P13_.plot (element_labels = d13_)
+g13_.save ('../posets/MPABC_dyck_poset_4_7.pdf')
+print (P13_.zeta_polynomial ())
+print ('---')
+print (len (P13_.cover_relations ()))
+print ('---')
+print (P13_.relations_number ())
