@@ -1,7 +1,7 @@
 1 - Permutations
     Fichiers : 
-        * perm.sage
-        * tests_perm.sage
+        * code/perm.sage
+        * tests/tests_perm.sage
     Test de cyclicité (représente une bijection circulaire)
     Découpage d'une permutation en ses blocs (cycles)
     Composition de 2 permutations
@@ -12,8 +12,8 @@
 
 2 - Partitions non-croisées
     Fichiers : 
-        * pnc.sage
-        * tests_pnc.sage
+        * code/pnc.sage
+        * tests/tests_pnc.sage
     Génération des partitions non-croisées de {1, ..., n}
     Relation de couverture
     Génération de la permutation associée à une partition non-croisée
@@ -26,8 +26,8 @@
 
 3 - 2-partitions non-croisées
     Fichiers :
-        * dpnc.sage
-        * tests_dpnc.sage
+        * code/dpnc.sage
+        * tests/tests_dpnc.sage
     Forme : (pi, rho, lam)
         * pi : partition non-croisée de {1, ..., n}
         * rho : partition de {1, ..., n}
@@ -39,8 +39,8 @@
 
 4 - 2-partitions non-croisées adaptées à l'espace de parking
     Fichiers :
-        * epnc.sage
-        * tests_epnc.sage
+        * code/epnc.sage
+        * tests/tests_epnc.sage
     Forme (pi, sig)
         * pi : partition non-croisée de {1, ..., n}
         * sig : permutation de {1, ..., n}
@@ -54,8 +54,8 @@
 
 5 - Fonctions de Parking
     Fichiers :
-        * fp.sage
-        * tests_fp.sage
+        * code/fp.sage
+        * tests/tests_fp.sage
     Test de primitivité ( = fonction de parking non-décroissante)
     Calcul du rang d'une fonction de parking
     Génération des fonctions de parking de longueur n
@@ -68,8 +68,8 @@
 
 6 - Arbres de Parking
     Fichiers :
-        * fptree.sage
-        * tests_fptree.sage
+        * code/fptree.sage
+        * tests/tests_fptree.sage
     Génération des arbres de parking de {1, ..., n}
     Affichage d'un arbre de parking
     Parcours d'un arbre de parking (préfixe)
@@ -77,15 +77,15 @@
 
 7 - Chaînes de Fonctions de Parking
     Fichiers :
-        * cfp.sage
-        * tests_cfp.sage
+        * code/cfp.sage
+        * tests/tests_cfp.sage
     Génération des k-chaînes de fonctions de parking
     TODO : eviter doublons
 
 8 - Chemins de Dyck décorés
     Fichiers : 
-        * ddyck.sage
-        * tests_ddyck.sage
+        * code/ddyck.sage
+        * tests/tests_ddyck.sage
     Forme (W, labels)
         * W : mot de Dyck de longueur 2n
         * labels : permutation de {1, ..., n}
@@ -96,13 +96,13 @@
 
 9 - Posets
     Fichier :
-        * posets.sage
+        * code/posets.sage
     Génération de posets exemples des objets ci-avant et ci-après par leurs relations de couverture
 
 10 - Cycles
     Fichiers :
-        * cycle.sage
-        * tests_cycle.sage
+        * code/cycle.sage
+        * tests/tests_cycle.sage
     Forme (M, c, m)
         * M : ensemble
         * c : bijection cyclique sur M
@@ -123,8 +123,8 @@
 
 11 - Chemins de Dyck rationnels
     Fichiers :
-        * rdyck.sage
-        * tests_rdyck.sage
+        * code/rdyck.sage
+        * tests/tests_rdyck.sage
     Forme (a, b, p)
         * a et b premiers entre eux
         * pente y = a/b x
@@ -143,8 +143,8 @@
 
 12 - Partitions non-croisées rationnelles
     Fichiers :
-        * abpnc.sage
-        * tests_abpnc.sage
+        * code/abpnc.sage
+        * tests/tests_abpnc.sage
     Forme (a, b, P, Q)
         * a et b premiers entre eux
         * |P| = |Q| = b - 1
@@ -158,8 +158,8 @@
 
 13 - Fonctions de parking rationnelles
     Fichiers :
-        * abfp.sage
-        * tests_abfp.sage
+        * code/abfp.sage
+        * tests/tests_abfp.sage
     Forme (a, b, P, Q, fP, fQ)
         * a et b premiers entre eux
         * P et Q mutuellement non-croisées
@@ -174,8 +174,8 @@
 
 14 - Fonctions de parking à pente rationnelle
     Fichiers :
-        * abfpp.sage
-        * tests_abfpp.sage
+        * code/abfpp.sage
+        * tests/tests_abfpp.sage
     Forme (a, b, p)
         * a et b premiers entre eux
         * p' = p triée = (b1, ..., ba)
@@ -187,8 +187,8 @@
 
 15 - Partitions non-croisées efficaces
     Fichiers :
-        * eff_pnc.sage
-        * tests_eff_pnc.sage
+        * code/eff_pnc.sage
+        * tests/tests_eff_pnc.sage
     Forme :
         * sizes = dictionnaire où un bloc est représenté par min : taille
     Bijection entre partitions non-croisées et partitions non-croisées efficaces
@@ -197,8 +197,8 @@
 
 16 - Enumération de chaînes selon Edelman
     Fichiers :
-        * edelman.sage
-        * tests_edelman.sage
+        * code/edelman.sage
+        * tests/tests_edelman.sage
     Calcul de sigma_b (m)
     Tri selon sigma_b (m)
     Calcul de sigma^_b (m)
@@ -222,8 +222,8 @@
 
 17 - 2-PNC selon Edelman
     Fichiers :
-        * edelman_two.sage
-        * tests_edelman_two.sage
+        * code/edelman_two.sage
+        * tests/tests_edelman_two.sage
     Relation de couverture
     Génération et comptage des 2-PNC de {1, ..., n}
     Génération des 2-PNC couvertes par une 2-PNC donnée
