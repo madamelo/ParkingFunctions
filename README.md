@@ -103,7 +103,7 @@ Fichiers :
 * tests/tests_fptree.sage
 
 Contenu :
-
+-
 + Génération des arbres de parking de {1, ..., n}
 + Affichage d'un arbre de parking
 + Parcours d'un arbre de parking (préfixe)
@@ -133,6 +133,7 @@ Forme : (W, labels)
 * labels : permutation de {1, ..., n}
 
 Contenu :
+-
 + Affichage d'un chemin de Dyck décoré
 + Génération de la liste correspondant à un chemin de Dyck décoré
 + Bijection entre fonctions de parking et chemins de Dyck décorés
