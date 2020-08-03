@@ -1,3 +1,9 @@
+0 - Introduction
+==
+Ce code a pour but d'implémenter les concepts décrits dans mon rapport de stage, ainsi que certains concepts annexes définis par de multiples chercheurs sur le sujet des partitions non-croisées et des fonctions de parking.
+
+Pour chaque partie, lancer les tests depuis le dossier <code>code</code> par la commande <code>sage ../tests/tests_XXX.sage</code>.
+
 1 - Permutations
 ==
 Fichiers :
