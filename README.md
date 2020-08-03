@@ -7,40 +7,52 @@ Fichiers :
 
 Contenu :
 -
-Test de cyclicité (représente une bijection circulaire)
-Découpage d'une permutation en ses blocs (cycles)
-Composition de 2 permutations
-Génération de la permutation inverse
-Généraiton des permutations de {1, ..., n}
-Génération du code d'une permutation (nombre minimal de transpositions dans sa décomposition)
-Relation de couverture sur les codes des permutations
++ Test de cyclicité (représente une bijection circulaire)
++ Découpage d'une permutation en ses blocs (cycles)
++ Composition de 2 permutations
++ Génération de la permutation inverse
++ Généraiton des permutations de {1, ..., n}
++ Génération du code d'une permutation (nombre minimal de transpositions dans sa décomposition)
++ Relation de couverture sur les codes des permutations
 
 2 - Partitions non-croisées
-    Fichiers : 
-        * code/pnc.sage
-        * tests/tests_pnc.sage
-    Génération des partitions non-croisées de {1, ..., n}
-    Relation de couverture
-    Génération de la permutation associée à une partition non-croisée
-    Complément de Kreweras
-    Minimums du complément de Kreweras
-    Tailles des blocs du complément de Kreweras
-    Génération du label d'une relation de couverture
-    Génération de la rotation d'une partition non-croisée
-    Génération de la rotation inverse d'une partition non-croisée ( = double application de Kreweras )
+==
+Fichiers : 
+-
+* code/pnc.sage
+* tests/tests_pnc.sage
+
+Contenu :
+-
++ Génération des partitions non-croisées de {1, ..., n}
++ Relation de couverture
++ Génération de la permutation associée à une partition non-croisée
++ Complément de Kreweras
++ Minimums du complément de Kreweras
++ Tailles des blocs du complément de Kreweras
++ Génération du label d'une relation de couverture
++ Génération de la rotation d'une partition non-croisée
++ Génération de la rotation inverse d'une partition non-croisée ( = double application de Kreweras )
 
 3 - 2-partitions non-croisées
-    Fichiers :
-        * code/dpnc.sage
-        * tests/tests_dpnc.sage
-    Forme : (pi, rho, lam)
-        * pi : partition non-croisée de {1, ..., n}
-        * rho : partition de {1, ..., n}
-        * lam : bijection entre les blocs de pi et les blocs de rho tq 2 blocs associés sont de même cardinal
-    Calcul du rang d'une 2-partition non-croisée (#pi - 1)
-    Générations des 2-partitions non-croisées de {1, ..., n}
-    Relation de couverture
-    Application d'une permutation à une 2-partition non-croisée
+==
+Fichiers :
+-
+* code/dpnc.sage
+* tests/tests_dpnc.sage
+
+Forme : (pi, rho, lam)
+-
+* pi : partition non-croisée de {1, ..., n}
+* rho : partition de {1, ..., n}
+* lam : bijection entre les blocs de pi et les blocs de rho tq 2 blocs associés sont de même cardinal
+
+Contenu :
+-
++ Calcul du rang d'une 2-partition non-croisée (#pi - 1)
++ Générations des 2-partitions non-croisées de {1, ..., n}
++ Relation de couverture
++ Application d'une permutation à une 2-partition non-croisée
 
 4 - 2-partitions non-croisées adaptées à l'espace de parking
     Fichiers :
