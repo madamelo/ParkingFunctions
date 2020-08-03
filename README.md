@@ -2,8 +2,8 @@
 ==
 Fichiers :
 -
-code/perm.sage
-tests/tests_perm.sage
+* code/perm.sage
+* tests/tests_perm.sage
 
 Contenu :
 -
