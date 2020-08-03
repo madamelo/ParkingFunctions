@@ -8,8 +8,8 @@ Pour chaque partie, lancer les tests depuis le dossier <code>code</code> par la 
 ==
 Fichiers :
 -
-* code/perm.sage
-* tests/tests_perm.sage
+* <code>code/perm.sage</code>
+* <code>tests/tests_perm.sage</code>
 
 Contenu :
 -
@@ -25,8 +25,8 @@ Contenu :
 ==
 Fichiers : 
 -
-* code/pnc.sage
-* tests/tests_pnc.sage
+* <code>code/pnc.sage</code>
+* <code>tests/tests_pnc.sage</code>
 
 Contenu :
 -
@@ -44,14 +44,14 @@ Contenu :
 ==
 Fichiers :
 -
-* code/dpnc.sage
-* tests/tests_dpnc.sage
+* <code>code/dpnc.sage</code>
+* <code>tests/tests_dpnc.sage</code>
 
-Forme : (pi, rho, lam)
+Forme : <code>(pi, rho, lam)</code>
 -
-* pi : partition non-croisée de {1, ..., n}
-* rho : partition de {1, ..., n}
-* lam : bijection entre les blocs de pi et les blocs de rho tq 2 blocs associés sont de même cardinal
+* <code>pi</code> : partition non-croisée de {1, ..., n}
+* <code>rho</code> : partition de {1, ..., n}
+* <code>lam</code> : bijection entre les blocs de pi et les blocs de rho tq 2 blocs associés sont de même cardinal
 
 Contenu :
 -
@@ -64,13 +64,13 @@ Contenu :
 ==
 Fichiers :
 -
-* code/epnc.sage
-* tests/tests_epnc.sage
+* <code>code/epnc.sage</code>
+* <code>tests/tests_epnc.sage</code>
 
-Forme : (pi, sig)
+Forme : <code>(pi, sig)</code>
 -
-* pi : partition non-croisée de {1, ..., n}
-* sig : permutation de {1, ..., n} MINIMALE dans l'ordre lexicographique
+* <code>pi</code> : partition non-croisée de {1, ..., n}
+* <code>sig</code> : permutation de {1, ..., n} MINIMALE dans l'ordre lexicographique
 
 Cette forme est équivalente aux 2-partitions non-croisées
 
@@ -87,8 +87,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/fp.sage
-* tests/tests_fp.sage
+* <code>code/fp.sage</code>
+* <code>tests/tests_fp.sage</code>
 
 Contenu :
 -
@@ -105,8 +105,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/fptree.sage
-* tests/tests_fptree.sage
+* <code>code/fptree.sage</code>
+* <code>tests/tests_fptree.sage</code>
 
 Contenu :
 -
@@ -119,8 +119,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/cfp.sage
-* tests/tests_cfp.sage
+* <code>code/cfp.sage</code>
+* <code>tests/tests_cfp.sage</code>
 
 Contenu :
 -
@@ -130,13 +130,13 @@ Contenu :
 ==
 Fichiers :
 -
-* code/ddyck.sage
-* tests/tests_ddyck.sage
+* <code>code/ddyck.sage</code>
+* <code>tests/tests_ddyck.sage</code>
 
-Forme : (W, labels)
+Forme : <code>(W, labels)</code>
 -
-* W : mot de Dyck de longueur 2n
-* labels : permutation de {1, ..., n}
+* <code>W</code> : mot de Dyck de longueur 2n
+* <code>labels</code> : permutation de {1, ..., n}
 
 Contenu :
 -
@@ -149,7 +149,7 @@ Contenu :
 ==
 Fichier :
 -
-* code/posets.sage
+* <code>code/posets.sage</code>
 
 Contenu :
 -
@@ -159,14 +159,14 @@ Contenu :
 ==
 Fichiers :
 -
-* code/cycle.sage
-* tests/tests_cycle.sage
+* <code>code/cycle.sage</code>
+* <code>tests/tests_cycle.sage</code>
 
-Forme : (M, c, m)
+Forme : <code>(M, c, m)</code>
 -
-* M : ensemble
-* c : bijection cyclique sur M
-* m : #M
+* <code>M</code> : ensemble
+* <code>c</code> : bijection cyclique sur M
+* <code>m</code> : #M
 
 Contenu :
 -
@@ -188,14 +188,14 @@ Contenu :
 ==
 Fichiers :
 -
-* code/rdyck.sage
-* tests/tests_rdyck.sage
+* <code>code/rdyck.sage</code>
+* <code>tests/tests_rdyck.sage</code>
 
-Forme : (a, b, p)
+Forme : <code>(a, b, p)</code>
 -
-* a et b premiers entre eux
-* pente y = a/b x
-* p : pas 0 (Est) ou 1 (Nord)
+* <code>a</code> et <code>b</code> premiers entre eux
+* pente <code>y = a/b x</code>
+* <code>p</code> : pas 0 (Est) ou 1 (Nord)
 
 Contenu :
 -
@@ -215,14 +215,14 @@ Contenu :
 ==
 Fichiers :
 -
-* code/abpnc.sage
-* tests/tests_abpnc.sage
+* <code>code/abpnc.sage</code>
+* <code>tests/tests_abpnc.sage</code>
 
-Forme : (a, b, P, Q)
+Forme : <code>(a, b, P, Q)</code>
 -
-* a et b premiers entre eux
-* |P| = |Q| = b - 1
-* P et Q : pnc mutuellement non-croisées
+* <code>a</code> et <code>b</code> premiers entre eux
+* <code>|P| = |Q| = b - 1</code>
+* <code>P</code> et <code>Q</code> : pnc mutuellement non-croisées
 
 Contenu :
 -
@@ -237,19 +237,19 @@ Contenu :
 ==
 Fichiers :
 -
-* code/abfp.sage
-* tests/tests_abfp.sage
+* <code>code/abfp.sage</code>
+* <code>tests/tests_abfp.sage</code>
 
-Forme : (a, b, P, Q, fP, fQ)
+Forme : <code>(a, b, P, Q, fP, fQ)</code>
 -
-* a et b premiers entre eux
-* P et Q mutuellement non-croisées
-* fP : bloc de P -> sous-ensemble de {1, ..., a}
-* fQ : bloc de Q -> sous-ensemble de {1, ..., a}
-* fP (P) + fQ (Q) = {1, ..., a}
-* (P, Q) : a, b - partition non-croisée
-* | fP (B) | = rang (B)
-* | fQ (B) | = rang (B)
+* <code>a</code> et <code>b</code> premiers entre eux
+* <code>P</code> et <code>Q</code> mutuellement non-croisées
+* <code>fP</code> : bloc de <code>P</code> -> sous-ensemble de {1, ..., a}
+* <code>fQ</code> : bloc de <code>Q</code> -> sous-ensemble de {1, ..., a}
+* <code>fP (P) + fQ (Q)</code> = {1, ..., a}
+* <code>(P, Q)</code> : <code>a, b</code> - partition non-croisée
+* | <code>fP (B)</code> | = rang (<code>B</code>)
+* | <code>fQ (B)</code> | = rang (<code>B</code>)
 
 Contenu :
 -
@@ -260,14 +260,14 @@ Contenu :
 ==
 Fichiers :
 -
-* code/abfpp.sage
-* tests/tests_abfpp.sage
+* <code>code/abfpp.sage</code>
+* <code>tests/tests_abfpp.sage</code>
 
-Forme : (a, b, p)
+Forme : <code>(a, b, p)</code>
 -
-* a et b premiers entre eux
-* p' = p triée = (b1, ..., ba)
-* bi <= (a / b) (i - 1) + 1
+* <code>a</code> et <code>b</code> premiers entre eux
+* <code>p'</code> = <code>p</code> triée = (b1, ..., ba)
+* <code>bi <= (a / b) (i - 1) + 1</code>
 
 Contenu :
 -
@@ -280,12 +280,12 @@ Contenu :
 ==
 Fichiers :
 -
-* code/eff_pnc.sage
-* tests/tests_eff_pnc.sage
+* <code>code/eff_pnc.sage</code>
+* <code>tests/tests_eff_pnc.sage</code>
 
 Forme :
 -
-* sizes = dictionnaire où un bloc est représenté par min : taille
+* <code>sizes</code> = dictionnaire où un bloc est représenté par <code>min : taille</code>
 
 Contenu :
 -
@@ -297,8 +297,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/edelman.sage
-* tests/tests_edelman.sage
+* <code>code/edelman.sage</code>
+* <code>tests/tests_edelman.sage</code>
 
 Contenu :
 -
@@ -327,8 +327,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/edelman_two.sage
-* tests/tests_edelman_two.sage
+* <code>code/edelman_two.sage</code>
+* <code>tests/tests_edelman_two.sage</code>
 
 Contenu :
 -
@@ -347,8 +347,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/my_primitive_ab_cover.sage
-* tests/tests_my_primitive_ab_cover.sage
+* <code>code/my_primitive_ab_cover.sage</code>
+* <code>tests/tests_my_primitive_ab_cover.sage</code>
 
 Contenu :
 -
@@ -359,8 +359,8 @@ Contenu :
 ==
 Fichiers :
 -
-* code/my_ab_cover.sage
-* tests/tests_my_ab_cover.sage
+* <code>code/my_ab_cover.sage</code>
+* <code>tests/tests_my_ab_cover.sage</code>
 
 Contenu :
 -
