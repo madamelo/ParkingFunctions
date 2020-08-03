@@ -235,4 +235,16 @@
     Comptage des 2-PNC en passant par les PNC et partitions
     Comptage des chaînes faibles de longueur donnée
 
-# TODO : mes relations de couvertures et les posets pour le cas rationnel
+18 - Mes posets bijectifs pour le cas classique
+    Fichiers :
+        * code/my_primitive_ab_cover.sage
+        * tests/tests_my_primitive_ab_cover.sage
+    Ma relation de couverture pour les fonctions de parking rationnelles primitives
+    Ma relation de couverture pour les chemins de Dyck rationnels
+
+19 - Mes posets bijectifs pour le cas rationnel
+    Fichiers :
+        * code/my_ab_cover.sage
+        * tests/tests_my_ab_cover.sage
+    Ma relation de couverture pour les fonctions de parking rationnelles
+    Ma relation de couverture pour les chemins de Dyck rationnels décorés
