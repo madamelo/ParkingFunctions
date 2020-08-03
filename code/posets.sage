@@ -256,3 +256,64 @@ print ('---')
 print (len (P13_.cover_relations ()))
 print ('---')
 print (P13_.relations_number ())
+print ()
+
+load my_ab_cover.sage
+
+print ("My a, b - FP cover with a > b")
+L14 = list (generate_abfpp (4, 3))
+P14 = Poset ([L14, my_ab_cov])
+g14 = P14.plot (label_elements = None)
+g14.save ('../posets/MABC_poset_4_3.pdf')
+print (P14.zeta_polynomial ())
+print ('---')
+print (len (P14.cover_relations ()))
+print ('---')
+print (P14.relations_number ())
+print ()
+
+print ("My a, b - Dyck cover with a > b")
+L14_ = []
+for f in L14 :
+    Df, lf = rfp_to_drdyck (f.p, 4, 3)
+    R = DRDYCK (Df, lf)
+    L14_.append (R)
+
+P14_ = Poset ([L14_, my_ab_cov_dyck])
+g14_ = P14_.plot (label_elements = None)
+g14_.save ('../posets/MABC_dyck_poset_4_3.pdf')
+print (P14_.zeta_polynomial ())
+print ('---')
+print (len (P14_.cover_relations ()))
+print ('---')
+print (P14_.relations_number ())
+print ()
+
+print ("My a, b - FP cover with a < b")
+L15 = list (generate_abfpp (3, 5))
+
+P15 = Poset ([L15, my_ab_cov])
+g15 = P15.plot (label_elements = None)
+g15.save ('../posets/MABC_poset_3_5.pdf')
+print (P15.zeta_polynomial ())
+print ('---')
+print (len (P15.cover_relations ()))
+print ('---')
+print (P15.relations_number ())
+print ()
+
+print ("My a, b - Dyck cover with a < b")
+L15_ = []
+for f in L15 :
+    Df, lf = rfp_to_drdyck (f.p, 3, 5)
+    R = DRDYCK (Df, lf)
+    L15_.append (R)
+
+P15_ = Poset ([L15_, my_ab_cov_dyck])
+g15_ = P15_.plot (label_elements = None)
+g15_.save ('../posets/MABC_dyck_poset_3_5.pdf')
+print (P15_.zeta_polynomial ())
+print ('---')
+print (len (P15_.cover_relations ()))
+print ('---')
+print (P15_.relations_number ())
