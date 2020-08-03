@@ -1,5 +1,7 @@
 1 - Permutations
-    Fichiers : 
+==
+Fichiers :
+-
         * code/perm.sage
         * tests/tests_perm.sage
     Test de cyclicité (représente une bijection circulaire)
