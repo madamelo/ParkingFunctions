@@ -322,6 +322,17 @@
     \end{center}
 \end{example}
 
+\begin{definition}[Nested Dyck paths]
+    Two Dyck Paths $w_1$ and $w_2$ are said \emph{nested}
+    if $w_1$ is equal to $w_2$ or over $w_2$. 
+\end{definition}
+
+\begin{prop}
+    If there exists a sequence $w_1 \gtrdot_d w_2 \gtrdot_d
+    w_3 \gtrdot_d \cdots \gtrdot_d w_k$ with $k \geqslant 0$,
+    then $w_1$ and $w_k$ are \emph{nested}.
+\end{prop}
+
 \begin{definition}[$\gtrdot'$]
     For $f$ and $g$ two primitive parking functions, we say
     that $f$ covers $g$, written $f \gtrdot' g$, if
@@ -366,6 +377,15 @@
     Alec Mihailovs proved this sequence to be equal to
     $$\frac {6 (2n)! (2n+2)!}{n!(n+1)!(n+2)!(n+3)!}$$.
 \end{theorem}
+
+\begin{proof}
+    As the number of intervals in the poset for Dyck words
+    can be seen as the number of pairs $(w_1, w_k)$ such that
+    $w_1 \gtrdot_d w_2 \gtrdot_d \cdots \gtrdot_d w_k$, we can
+    define it as the number of \emph{nested pairs of Dyck paths}.
+    This has been proved to be equal to this integer sequence by
+    Bruce Westbury in 2013.
+\end{proof}
 
 \subsubsection{Classical Dyck - Parking Posets}
 
