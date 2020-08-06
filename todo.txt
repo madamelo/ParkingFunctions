@@ -1,0 +1,5 @@
+TODO
+
+1) Add a real proof to theorem 8
+
+2) Try to find out more about conjecture 
