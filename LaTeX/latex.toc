@@ -1,29 +1,34 @@
-\contentsline {chapter}{\numberline {1}The integer case}{2}
-\contentsline {section}{\numberline {1.1}Parking Functions}{2}
-\contentsline {subsection}{\numberline {1.1.1}Primitive parking functions}{3}
-\contentsline {section}{\numberline {1.2}Non-crossing Partitions}{4}
-\contentsline {subsection}{\numberline {1.2.1}The non-crossing partitions poset}{6}
-\contentsline {subsection}{\numberline {1.2.2}Kreweras complement}{8}
-\contentsline {subsection}{\numberline {1.2.3}Action of $\mathfrak {S}_n$ on partitions of $[n]$}{11}
-\contentsline {section}{\numberline {1.3}Non-crossing 2-partitions}{16}
-\contentsline {subsection}{\numberline {1.3.1}The non-crossing 2-partitions poset}{18}
-\contentsline {subsection}{\numberline {1.3.2}The parking functions poset}{19}
-\contentsline {section}{\numberline {1.4}A direct poset linked to Dyck paths}{21}
-\contentsline {subsection}{\numberline {1.4.1}Dyck Paths}{21}
-\contentsline {subsection}{\numberline {1.4.2}Labeled Dyck Paths}{26}
-\contentsline {subsection}{\numberline {1.4.3}Dyck - Parking Posets}{30}
-\contentsline {subsubsection}{Primitive Dyck - Parking Posets}{30}
-\contentsline {subsubsection}{Classical Dyck - Parking Posets}{34}
-\contentsline {chapter}{\numberline {2}The rational case}{38}
-\contentsline {section}{\numberline {2.1}Rational Parking Functions}{38}
-\contentsline {subsection}{\numberline {2.1.1}Rational primitive parking functions}{39}
-\contentsline {section}{\numberline {2.2}Rational Non-crossing Partitions}{40}
-\contentsline {section}{\numberline {2.3}A direct poset linked to Rational Dyck paths}{41}
-\contentsline {subsection}{\numberline {2.3.1}Rational Dyck Paths}{41}
-\contentsline {subsection}{\numberline {2.3.2}Rational Labeled Dyck Paths}{48}
-\contentsline {subsection}{\numberline {2.3.3}Rational Dyck - Parking Posets}{54}
-\contentsline {subsubsection}{Rational Primitive Dyck - Parking Posets}{54}
-\contentsline {subsubsection}{Rational Dyck - Parking Posets}{59}
-\contentsline {chapter}{\numberline {3}Trees}{64}
-\contentsline {section}{\numberline {3.1}Parking Trees}{64}
-\contentsline {section}{\numberline {3.2}Rational Parking Trees}{67}
+\contentsline {paragraph}{}{1}{section*.1}
+\contentsline {paragraph}{}{1}{section*.2}
+\contentsline {paragraph}{}{1}{section*.3}
+\contentsline {paragraph}{}{1}{section*.4}
+\contentsline {paragraph}{}{1}{section*.5}
+\contentsline {chapter}{\numberline {1}The integer case}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Parking Functions}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Primitive parking functions}{3}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Non-crossing Partitions}{4}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}The non-crossing partitions poset}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Kreweras complement}{8}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Action of $\mathfrak {S}_n$ on partitions of $[n]$}{12}{subsection.1.2.3}
+\contentsline {section}{\numberline {1.3}Non-crossing 2-partitions}{17}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}The non-crossing 2-partitions poset}{19}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}The parking functions poset}{21}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}A direct poset linked to Dyck paths}{23}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Dyck Paths}{23}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Labeled Dyck Paths}{28}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Dyck - Parking Posets}{32}{subsection.1.4.3}
+\contentsline {subsubsection}{Primitive Dyck - Parking Posets}{32}{section*.7}
+\contentsline {subsubsection}{Classical Dyck - Parking Posets}{37}{section*.8}
+\contentsline {chapter}{\numberline {2}The rational case}{41}{chapter.2}
+\contentsline {section}{\numberline {2.1}Rational Parking Functions}{41}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Rational primitive parking functions}{42}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Rational Non-crossing Partitions}{43}{section.2.2}
+\contentsline {section}{\numberline {2.3}A direct poset linked to Rational Dyck paths}{44}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Rational Dyck Paths}{44}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Rational Labeled Dyck Paths}{51}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Rational Dyck - Parking Posets}{57}{subsection.2.3.3}
+\contentsline {subsubsection}{Rational Primitive Dyck - Parking Posets}{57}{section*.9}
+\contentsline {subsubsection}{Rational Dyck - Parking Posets}{62}{section*.10}
+\contentsline {chapter}{\numberline {3}Trees}{67}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parking Trees}{67}{section.3.1}
+\contentsline {section}{\numberline {3.2}Rational Parking Trees}{70}{section.3.2}

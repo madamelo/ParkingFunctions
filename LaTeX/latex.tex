@@ -4,6 +4,8 @@
 \usepackage{amssymb}
 \usepackage{amsthm}
 
+\usepackage{hyperref}
+
 \usepackage{graphicx}
 \graphicspath{ {./} }
 
@@ -29,14 +31,52 @@
 
 \begin{document}
 
-\title{Rational Parking Functions}
-\author{Matthieu Josuat-Vergès \and Tessa Lelièvre-Osswald}
-\date{August 27, 2020}
+\title{(Rational) Parking Functions}
+\author{Tessa Lelièvre-Osswald\\
+    {\small Advisor: Matthieu Josuat-Vergès}\\
+    {\small Team: IRIF Combinatorics}}
+\date{\today}
 
 \maketitle
 
 \begin{abstract}
-    This is an abstract about Rational Parking Functions.
+    \paragraph{} Introduced in 1966 by Konheim and Weiss
+    \cite{ref1}, a (classical) Parking Function is a
+    combinatorial structure represented by an integer
+    sequence $(a_1, \ldots, a_n)$ such that
+    $\#\{i\ |\ a_i \leqslant k\} \geqslant k\ \forall k$.
+
+    \paragraph{} In this article, we will address bijections
+    and posets on four types of parking functions :
+    classical (also called \emph{integer}), primitive classical,
+    rational, and primitive rational.
+    Those four types are defined throughout the article.
+    
+    \paragraph{} Each of these types has been proved
+    to be counted by a well-known number -- respectively 
+    $(n+1)^{n-1}$, $Cat_n$, $b^{a-1}$, and $Cat_{a,b}$.
+    Nevertheless, to the best of our knowledge, the posets
+    we will present here have not been exploited on parking
+    functions specifically.
+
+    Furthermore, Theorem 8 and its equivalent Conjecture for
+    classical parking functions reveal interesting results on
+    the number of intervals in those posets.
+
+    \paragraph{} This report goes hand in hand with a Sagemath
+    implementation. Notions found in \cite{ref2}, \cite{ref3},
+    \cite{ref4}, \cite{ref5}, \cite{ref6}, \cite{ref7},
+    \cite{ref8}, and \cite{ref9} are encoded alongside the
+    aforementioned posets.
+    All of the source code and premade tests can be found
+    \href{https://github.com/tessalsifi/ParkingFunctions}{here}
+    \footnote{github.com/tessalsifi/ParkingFunctions}.
+
+    \paragraph{} Finally, The notion of Parking Trees defined
+    in \cite{ref9} is extended to the rational case, hence
+    creating a bijection between rational parking functions and
+    Rational Parking Trees.
+
 \end{abstract}
 
 \tableofcontents
@@ -61,5 +101,8 @@ greatest common divisor).
 
 \input{C3S1.tex}
 \input{C3S2.tex}
+
+\bibliographystyle{unsrt}
+\bibliography{references}
 
 \end{document}

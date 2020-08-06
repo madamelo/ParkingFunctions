@@ -4,10 +4,12 @@
     A \emph{parking function} is a sequence of positive integers
     $(a_1, a_2, \ldots, a_n)$
     such that its non-decreasing reordering $(b_1, b_2, \ldots, b_n)$
-    has $b_i \leqslant i$ for all $i$.\\
-    We denote by $\mathcal{PF}_n$ the set of parking functions of length $n$.
-    $$\mathcal{PF} = \bigcup_{n > 0}{\mathcal{PF}_n}$$.
+    has $b_i \leqslant i$ for all $i$.
+    In other words, $\#\{i\ |\ a_i \leqslant k\} \geqslant k\ \forall k$.
 \end{definition}
+
+We denote by $\mathcal{PF}_n$ the set of parking functions of length $n$.
+$$\mathcal{PF} = \bigcup_{n > 0}{\mathcal{PF}_n}$$.
 
 \begin{example}
     \begin{align*}
@@ -16,7 +18,7 @@
     \end{align*}
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[Konheim and Weiss, 1966]
     Let $pf_n$ be the cardinal of $\mathcal{PF}_n$.
     We have $$pf_n = (n + 1)^{n-1}$$.
 \end{theorem}
@@ -54,11 +56,11 @@
 
 \begin{definition}[Primitive]
     A parking function $(a_1, a_2, \ldots, a_n)$ is said \emph{primitive} if
-    it is already in non-decreasing order. \\
-    We denote by $\mathcal{PF'}_n$ the set of primitive parking functions of length $n$.
-    $$\mathcal{PF'} = \bigcup_{n > 0}{\mathcal{PF'}_n}$$
-    
+    it is already in non-decreasing order.    
 \end{definition}
+
+We denote by $\mathcal{PF'}_n$ the set of primitive parking functions of length $n$.
+$$\mathcal{PF'} = \bigcup_{n > 0}{\mathcal{PF'}_n}$$
 
 \begin{example}
     \begin{align*}
@@ -68,11 +70,12 @@
     \end{align*}
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[Stanley, 1999]
     Let $pf'_n$ be the cardinal of $\mathcal{PF'}_n$.
     We have $$pf'_n = \frac{1}{n + 1} \binom{2n}{n}$$
-    which is the $n^{th}$ Catalan number $Cat(n)$.
 \end{theorem}
+
+which is the $n^{th}$ Catalan number $Cat(n)$.
 
 \begin{example}[$n = 1, 2, 3$]
     ~\\
@@ -90,3 +93,9 @@
         \subitem $(1, 2, 3)$\\
     \end{itemize*}
 \end{example}
+
+As comparing two parking functions can be tricky, one could
+wonder whether there exists an other combinatorial structure
+with a well-defined order that is in bijection with
+$\mathcal{PF}_n$ or $\mathcal{PF'}_n$. 
+The next section will present such a candidate.  

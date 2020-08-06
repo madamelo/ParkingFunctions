@@ -5,11 +5,12 @@
     ordered} set $E$ is
     a set partition $P = \{E_1, E_2, \ldots, E_k\}$ such that
     if $a, c \in E_i$, $b, d \in E_j$, and $i \neq j$, then
-    we do \emph{not} have $a < b < c < d$, nor $a > b > c > d$.\\
-    We denote by $\mathcal{NC}_n$ the set of non-crossing partitions
-    of $\{1, 2, \ldots, n\}$.
-    $$\mathcal{NC} = \bigcup_{n > 0}{\mathcal{NC}_n}$$
+    we do \emph{not} have $a < b < c < d$, nor $a > b > c > d$.
 \end{definition}
+
+We denote by $\mathcal{NC}_n$ the set of non-crossing partitions
+of $\{1, 2, \ldots, n\}$.
+$$\mathcal{NC} = \bigcup_{n > 0}{\mathcal{NC}_n}$$
 
 From this point, we assume that every partition $P = \{B_1, \ldots, B_l\}$
 is \emph{sorted} such that :\\
@@ -30,12 +31,12 @@ is \emph{sorted} such that :\\
     \end{align*}
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[Kreweras, 1972]
     Let $nc_n$ be the cardinal of $\mathcal{NC}_n$.
     We have $$nc_n = \frac{1}{n + 1} \binom{2n}{n}$$
-    which is again the $n^{th}$ Catalan number
-    $Cat(n)$.
 \end{theorem}
+
+which is, again, the $n^{th}$ Catalan number $Cat(n)$.
 
 \begin{example}[$n = 1, 2, 3$]
     ~\\
@@ -88,6 +89,9 @@ is \emph{sorted} such that :\\
     \end{align*}
 \end{example}
 
+From the construction of the proof, we can deduce the
+following corollary:
+
 \begin{cor}
     A non-crossing partition can be represented by the minimums
     and sizes of its blocks.
@@ -122,6 +126,10 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
     \emph{not} disjoint.
 \end{example}
 
+Now that we have a bijection between the two combinatorial
+structures, we wish to use the well-known order on
+$\mathcal{NC}_n$ and apply it to $\mathcal{PF}_n$.
+
 \subsection{The non-crossing partitions poset}
 
 \begin{definition}[$\succ$]
@@ -152,7 +160,7 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
     and the top element is $\{\{1\}, \ldots, \{n\}\}$.
 \end{rem}
 
-\begin{theorem}
+\begin{theorem}[Kreweras, 1972]
     Let $ncc_n$ be the cardinal of $\mathcal{NCC}_n$.
     We have $$ncc_n = n^{n - 2}$$.
 \end{theorem}
@@ -170,6 +178,12 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
     \end{center}
 \end{example}
 
+One of the main constructions on non-crossing partitions
+is the \emph{complement}, defined by Kreweras.
+Not only does it posess multiple interesting properties 
+that will be presented in the next part, but will also be 
+helpful once we attempt to generalize the aforementioned
+bijection to the rational case, in the second chapter.
 
 \subsection{Kreweras complement}
 
@@ -296,19 +310,25 @@ by the convex hull of $\{b_1, \ldots, b_k\}$.\\
     of the convex hulls can \emph{not} cross.
 \end{rem}
 
-\begin{prop}
+\begin{prop}[Bodnar, 2017]
     For any non-crossing partition $P$, $P$ and $K(P)$
-    are mutually non-crossing.\\
-    Furthermore, $K(P)$ is a \emph{densest} partition that
-    is mutually non-crossing with $P$. That is, \emph{no}
-    partition $Q$ that is mutually non-crossing with $P$
-    has less blocks than $K(P)$.
+    are mutually non-crossing.
 \end{prop}
+
+Furthermore, $K(P)$ is a \emph{densest} partition that
+is mutually non-crossing with $P$. That is, \emph{no}
+partition $Q$ that is mutually non-crossing with $P$
+has less blocks than $K(P)$.
 
 \begin{example}[$P = \{1, 2, 6\}, \{3, 5\}, \{4\}\}$]
     $Q = \{\{1\}, \{2, 5\}, \{3, 4\}, \{6\}\}$
     \input{fig/fig6.tex}
 \end{example}
+
+ By construction, the symmetric group of order n carries a
+ natural action on $\mathcal{NC}_n$. The following section
+ presents some of the constructions and properties that 
+ emerge from this action.
 
 \subsection{Action of $\mathfrak{S}_n$ on partitions of 
 $[n]$}
@@ -358,11 +378,12 @@ $[n]$}
 \begin{definition}[Rotation]
     We define the \emph{rotation operator} $rot$ of
     $P \in \mathcal{NC}_n$ as $rot (P) = 
-    (1\ 2\ 3\  \ldots \ n)(P) = 23 \ldots n1 (P)$.\\
-    Conversely, we define $rot^{-1}$ of $P$ as
-    $rot^{-1}(P) = (n\ n-1\ \ldots 3\ 2\ 1)(P) = 
-    n12 \ldots n-1 (P)$.
+    (1\ 2\ 3\  \ldots \ n)(P) = 23 \ldots n1 (P)$.
 \end{definition}
+
+Conversely, we define $rot^{-1}$ of $P$ as
+$rot^{-1}(P) = (n\ n-1\ \ldots 3\ 2\ 1)(P) = 
+n12 \ldots n-1 (P)$.
 
 \begin{example}[$P = \{\{1, 6\}, \{2, 3, 5\}, \{4\}\}$]
     ~
@@ -390,7 +411,7 @@ $[n]$}
     \end{itemize}
 \end{rem}
 
-\begin{prop}
+\begin{prop}[Bodnar, 2017]
     $K (K (P)) = rot^{-1} (P)$.
 \end{prop}
 
@@ -405,3 +426,9 @@ $[n]$}
         \input{fig/fig16.tex}
     \end{center}
 \end{example}
+
+Now that we assessed the link between primitive parking
+functions and non-crossing partitions, we wish to find a
+similar structure for classical parking functions.
+Hence, we introduce an other combinatorial object : the
+\emph{non-crossing 2-partition}. 

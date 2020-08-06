@@ -24,9 +24,10 @@
         \item Each $0$ corresponds to an \emph{East step}
         $\rightarrow$.
     \end{itemize}
-    We denote by $\mathcal{D}_n$ the set of Dyck words of
-    length $2n$.
 \end{definition}
+
+We denote by $\mathcal{D}_n$ the set of Dyck words of
+length $2n$.
 
 \begin{example}[$n = 5$]
     ~\\
@@ -40,11 +41,12 @@
     \input{fig/fig19.tex}
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[André, 1887]
     Let $d_n$ be the cardinal of $\mathcal{D}_n$.
     We have $$d_n = \frac{1}{n + 1} \binom {2n}{n}$$
-    which is the $n^{th}$ Catalan number.
 \end{theorem}
+
+which is the $n^{th}$ Catalan number.
 
 \begin{example}[$n = 3$]
     $d_n = 5$.
@@ -125,9 +127,13 @@
     
 \end{example}
 
+To apply a similar bijection to non-primitive parking
+functions, we will need an upgraded version of Dyck paths,
+that is, Labeled Dyck Paths.
+
 \subsection{Labeled Dyck Paths}
 
-\begin{definition}[Labeled Dyck Path]
+\begin{definition}[Labeled Dyck Word]
     A \emph{labeled Dyck word} is a word $w \in 
     \{0, \ldots, n\}^*$ such that :
     \begin{itemize}
@@ -140,19 +146,20 @@
             then $w_i < w_{i+1}$. That is, consecutive
             North steps have increasing labels.
     \end{itemize}
-    A labeled Dyck word of length $2n$ can be represented
-    as a path from $(0,0)$ to $(n,n)$, where each North
-    step is associated to a label :
-    \begin{itemize}
-        \item Each $i \neq 0$ corresponds to a
-            \emph{North step} $\uparrow$ labeled $i$.
-        \item Each $0$ corresponds to an
-            \emph{East step} $\rightarrow$.
-    \end{itemize}
-    Those paths are called \emph{labeled Dyck paths}.\\
-    We denote by $\mathcal{LD}_n$ the set of labeled
-    Dyck words of length $2n$.
 \end{definition}
+
+A labeled Dyck word of length $2n$ can be represented
+as a \emph{path} from $(0,0)$ to $(n,n)$, where each North
+step is associated to a label :
+\begin{itemize}
+    \item Each $i \neq 0$ corresponds to a
+        \emph{North step} $\uparrow$ labeled $i$.
+    \item Each $0$ corresponds to an
+        \emph{East step} $\rightarrow$.
+\end{itemize}
+Those paths are called \emph{labeled Dyck paths}.\\
+We denote by $\mathcal{LD}_n$ the set of labeled
+Dyck words of length $2n$.
 
 \begin{example}[$n = 5$]
     \begin{align*}
@@ -278,6 +285,9 @@
     where the $i^{th}$ North step is labeled $i$.
 \end{rem}
 
+With those bijections in mind, we can now define cover
+relations that will issue in the expected bijective posets.
+
 \subsection{Dyck - Parking Posets}
 
 \subsubsection{Primitive Dyck - Parking Posets}
@@ -327,11 +337,19 @@
     if $w_1$ is equal to $w_2$ or over $w_2$. 
 \end{definition}
 
+We can thus easily deduce the following proposition from the
+preceding remark.
+
 \begin{prop}
     If there exists a sequence $w_1 \gtrdot_d w_2 \gtrdot_d
     w_3 \gtrdot_d \cdots \gtrdot_d w_k$ with $k \geqslant 0$,
     then $w_1$ and $w_k$ are \emph{nested}.
 \end{prop}
+
+Now that we have defined the cover relation for Dyck paths,
+we have to define the corresponding relation for primitive
+parking functions, that will allow us to create the wanted
+bijective posets.
 
 \begin{definition}[$\gtrdot'$]
     For $f$ and $g$ two primitive parking functions, we say
@@ -368,7 +386,7 @@
     applying the aforementioned bijection to the other.
 \end{rem}
 
-\begin{theorem}
+\begin{theorem}[Main Theorem]
     The number of intervals in those posets is equal to
     the $n+1^{th}$ term of the integer sequence defined by
     https://oeis.org/A005700.\\
@@ -386,6 +404,8 @@
     This has been proved to be equal to this integer sequence by
     Bruce Westbury in 2013.
 \end{proof}
+
+We now extend this construction to the non-primitive case.
 
 \subsubsection{Classical Dyck - Parking Posets}
 
@@ -497,10 +517,27 @@
     applying the aforementioned bijection to the other.
 \end{rem}
 
-\begin{conj}
+\begin{conj}[Main Conjecture]
     The number of intervals in those posets is equal to
     the $n+1^{th}$ term of the integer sequence defined by
     https://oeis.org/A196304.\\
     The first terms of this sequence are $1, 1, 5, 64, 1587,
     65421, 4071178, 357962760, 4237910716, ...$.
 \end{conj}
+
+While, to the best of our knowledge, there is no combinatorial
+structure proved to follow this integer sequence, tests on
+$n = 1, 2, \cdots, 8$ suggest that the number of intervals in
+those posets might be one.\\
+
+To go further, the next chapter will tackle a generalization
+of classical parking functions called \emph{Rational Parking
+Functions}.
+The upgrade can be seen as such :
+Let $(a_1, \ldots, a_n)$ be a sequence of positive integers,
+and $(b_1, \ldots, b_n)$ its non-decreasing rearrangement.
+In the classical case, the bounds for $(b_1, \ldots, b_n)$
+were $(1, \ldots, n)$, thus simply depending on the integer $n$.
+In the rational case, the bounds will depend on \emph{two
+coprime integers} $a$ and $b$, namely $(1, 1 + \frac{b}{a},
+1 + \frac{2b}{a}, 1 + \frac{3b}{a}, \ldots)$, with $a = n$. 

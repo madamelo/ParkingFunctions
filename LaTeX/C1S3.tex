@@ -11,10 +11,11 @@
             $B_i = \{b_1, \ldots, b_k\} \in P$, we have
             $\sigma (b_i) < \ldots < \sigma (b_k)$\\\\
     \end{itemize*}
-    We denote by $\mathcal{NC}^2_n$ the set of non-crossing
-    2-partitions of $[n]$.
-    $$\mathcal{NC}^2 = \bigcup_{n > 0}{\mathcal{NC}^2_n}$$.
 \end{definition}
+
+We denote by $\mathcal{NC}^2_n$ the set of non-crossing
+2-partitions of $[n]$.
+$$\mathcal{NC}^2 = \bigcup_{n > 0}{\mathcal{NC}^2_n}$$.
 
 \begin{example}[$\mathcal{NC}^2_6$]
     \begin{itemize*}
@@ -24,7 +25,7 @@
     \end{itemize*}    
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[Edelman, 1979]
     Let $nc^2_n$ be the cardinal of $\mathcal{NC}^2_n$.
     We have $$nc^2_n = (n + 1)^{n-1}$$
 \end{theorem}
@@ -126,6 +127,10 @@
     \end{align*}
 \end{example}
 
+Following the path of the classical primitive case, we recall
+the cover relation defined in \cite{ref9} in order to deduce
+a poset for $\mathcal{PF}_n$.
+
 \subsection{The non-crossing 2-partitions poset}
 
 \begin{definition}[$\succ^2$]
@@ -152,7 +157,7 @@
         \item $(P, \sigma) \succ^2 (Q, \tau)$\\
         \item $(P, \sigma) \not \succ^2 (Q, \sigma)$,
         because  $\sigma (\{2, 3, 5\}) = \{3, 6, 5\}$ is
-        \emph{not} ordemagenta. 
+        \emph{not} ordered. 
     \end{itemize*}
 \end{example}
 
@@ -185,6 +190,10 @@
         There are $4^2 = 16$ elements in this poset.
     \end{center}
 \end{example}
+
+We can now define a poset for $\mathcal{PF}_n$, in which
+the \emph{height} of any parking function will be defined
+by its \emph{rank}.
 
 \subsection{The parking functions poset}
 
@@ -263,3 +272,19 @@
 \begin{example}[The poset of $\mathcal{PF}_3$]
     \input{fig/fig18.tex}
 \end{example}
+
+While non-crossing (2-)partitions are frequently used to
+define a poset for (primitive) parking functions, it is
+rather unpractical that using a bijection to define the
+cover relation is necessary.\\
+Thereby, the following section will present our tentative
+at finding a more direct definition for the cover relation
+of $\mathcal{PF}_n$ and  $\mathcal{PF'}_n$, this time using
+a bijection with (decorated) Dyck Paths.
+A main benefit of this solution is that we define a cover
+relation for both structures, and the poset of one can be
+obtained by applying the given bijection to the poset of the
+other.\\
+Furthermore, the two main results of this article -- Theorem 8
+and the corresponding Conjecture for the classical case --
+rise from the number of intervals in those posets.   
