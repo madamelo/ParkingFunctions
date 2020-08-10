@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  10 AUG 2020 17:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  10 AUG 2020 18:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1319,11 +1319,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 616--617
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex)) [68]
-Chapter 3.
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [69
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex) [68]
+Underfull \hbox (badness 10000) in paragraph at lines 634--638
 
-]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [70])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [71]
+ []
+
+) [69]
+Chapter 3.
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [70
+
+]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [71])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [72]
 Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
@@ -1333,7 +1338,7 @@ Overfull \hbox (10.83911pt too wide) in paragraph at lines 62--63
  [] 
  []
 
-[72]) [73]
+[73]) [74]
 Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
@@ -1343,31 +1348,41 @@ Overfull \hbox (47.76611pt too wide) in paragraph at lines 55--56
  [] 
  []
 
-)) [74] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.bbl [75] [76
+)) [75]
+Underfull \hbox (badness 10000) in paragraph at lines 107--113
 
-]) [77]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.bbl [76] [77
+
+]) [78]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 125.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 125.
  (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 125.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 125.
 Package rerunfilecheck Info: File `latex.out' has not changed.
 (rerunfilecheck)             Checksum: B2D97D427CA8076B669E23D4F4C15B04;1834.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 125.
  ) 
 Here is how much of TeX's memory you used:
- 18812 strings out of 494894
- 363401 string characters out of 6179474
+ 18814 strings out of 494894
+ 363419 string characters out of 6179474
  444383 words of memory out of 5000000
  21397 multiletter control sequences out of 15000+600000
  29017 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,14n,59p,465b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (79 pages, 427703 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (80 pages, 430078 bytes).
 PDF statistics:
- 1080 PDF objects out of 1200 (max. 8388607)
- 608 compressed objects within 7 object streams
- 172 named destinations out of 1000 (max. 500000)
+ 1088 PDF objects out of 1200 (max. 8388607)
+ 614 compressed objects within 7 object streams
+ 174 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
