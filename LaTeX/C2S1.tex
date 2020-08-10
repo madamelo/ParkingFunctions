@@ -8,11 +8,12 @@
         \item its non-decreasing reordering 
         $(b_1, b_2, \ldots, b_n)$
         has $b_i \leqslant \frac{b}{a}(i-1) + 1$
-        for all $i$.\\\\
+        for all $i$.
     \end{itemize*}
-    We denote by $\mathcal{PF}_{a,b}$ the set of 
-    a, b - parking functions.
 \end{definition}
+
+We denote by $\mathcal{PF}_{a,b}$ the set of 
+a, b - parking functions.
 
 \begin{example}
     ~\\
@@ -45,7 +46,7 @@
     \end{itemize}
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[Armstrong, Loehr and Warrington, 2014]
     Let $pf_{a,b}$ be the cardinal of $\mathcal{PF}_{a,b}$.
     We have $$pf_{a,b} = b^{a-1}$$
 \end{theorem}
@@ -80,7 +81,7 @@
         \subitem $(3, 2, 1)$
         \subitem $(4, 1, 1)$
         \subitem $(4, 1, 2)$
-        \subitem $(4, 2, 1)$
+        \subitem $(4, 2, 1)$\\
     \end{itemize*}
 \end{example}
 
@@ -89,15 +90,19 @@
     In fact, we do have $b^{a-1} = (n+1)^{n-1}$.
 \end{rem}
 
+Similarly to the integer case, we can define a notion of
+\emph{primitivity} for rational parking functions.
+
 \subsection{Rational primitive parking functions}
 
 \begin{definition}[Rational Primitive]
     A rational parking function $f$ is said
     \emph{primitive} if it is already in
-    non-decreasing order.\\
-    We denote by $\mathcal{PF'}_{a,b}$ the set of
-    primitive a, b - parking functions.
+    non-decreasing order.
 \end{definition}
+
+We denote by $\mathcal{PF'}_{a,b}$ the set of
+primitive a, b - parking functions.
 
 \begin{example}[$a = 4, b = 3$]
     Limits : $[1,\ 1 \frac{3}{4},\ 2 \frac{1}{2},\ 
@@ -109,14 +114,19 @@
     \end{align*}
 \end{example}
 
+The following theorem can be seen as an extension of the main
+result of \cite{ref10}, as we will see later that rational
+primitive parking functions are in bijection with rational
+Dyck paths.
+
 \begin{theorem}
     Let $pf'_{a,b}$ be the cardinal of
     $\mathcal{PF'}_{a,b}$.
     We have $$\displaystyle pf'_{a,b} = 
     \frac{1}{a + b} \binom{a + b}{b}$$
-    which is the \emph{rational Catalan number}
-    $Cat(a,b)$.
 \end{theorem}
+
+which is the \emph{rational Catalan number} $Cat(a,b)$.
 
 \begin{example}[$a = 3, b = 5$]
     ~\\
@@ -130,7 +140,7 @@
         \subitem $(1, 1, 4)$
         \subitem $(1, 2, 2)$
         \subitem $(1, 2, 3)$
-        \subitem $(1, 2, 4)$
+        \subitem $(1, 2, 4)$\\
     \end{itemize*}    
 \end{example}
 
@@ -144,3 +154,14 @@
     = \frac{1}{n+1} \frac{(2n)!}{n!n!}
     = \frac{1}{n+1} \binom{2n}{n}$$
 \end{rem}
+
+In the same fashion as for classical parking functions, one
+can define \emph{Rational Non-crossing Partitions} as a
+bijecting combinatorial structure. Defined by Michelle Bodnar
+in \cite{ref8} for any coprime $a$ and $b$, the construction
+presented depends on a heavy mechanism relying on rational
+Dyck paths. As there is -- to the best of our knowledge --
+no easier way to define rational non-crossing partitions,
+the following section has for only purpose to give an idea
+of what such a partition looks like, and recall some of the
+main results from \cite{ref8}.

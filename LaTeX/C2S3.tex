@@ -2,7 +2,7 @@
 
 \subsection{Rational Dyck Paths}
 
-\begin{definition}[a, b - Dyck path]
+\begin{definition}[a, b - Dyck Word]
     An \emph{a, b - Dyck word} is a word $w \in \{0,1\}^*$
     such that :
     \begin{itemize}
@@ -11,18 +11,19 @@
         \item $|w|_0 = b$.
         \item $|w|_1 = a$.
     \end{itemize}
-    An a, b - Dyck word can be represented as a 
-    \emph{path} from $(0,0)$ to $(b,a)$ that stays over
-    $y = \frac{a}{b}x$, called an \emph{a, b - Dyck path} :
-    \begin{itemize}
-        \item Each $1$ corresponds to a \emph{North step}
-        $\uparrow$. 
-        \item Each $0$ corresponds to an \emph{East step}
-        $\rightarrow$.
-    \end{itemize}
-    We denote by $\mathcal{R}_{a, b}$ the set of
-    a, b - Dyck words.
 \end{definition}
+
+An a, b - Dyck word can be represented as a 
+\emph{path} from $(0,0)$ to $(b,a)$ that stays over
+$y = \frac{a}{b}x$, called an \emph{a, b - Dyck path} :
+\begin{itemize}
+    \item Each $1$ corresponds to a \emph{North step}
+    $\uparrow$. 
+    \item Each $0$ corresponds to an \emph{East step}
+    $\rightarrow$.
+\end{itemize}
+We denote by $\mathcal{R}_{a, b}$ the set of
+a, b - Dyck words.
 
 \begin{example}[$a > b : a = 7, b = 3$]
     ~\\
@@ -50,12 +51,13 @@
     \input{fig/fig39.tex}
 \end{example}
 
-\begin{theorem}
+\begin{theorem}[Bizley, 1954]
     Let $r_{a,b}$ be the cardinal of $\mathcal{R}_{a,b}$.
     We have $$r_{a,b} = \frac{1}{a+b} \binom {a+b}{a} =
-    \frac{(a+b-1)!}{a!b!}$$, which is again the rational
-    Catalan number.
+    \frac{(a+b-1)!}{a!b!}$$
 \end{theorem}
+
+which is, again, the rational Catalan number $Cat(a,b)$.
 
 \begin{example}[$a = 7, b = 2$]
     $r_n = 4$.
@@ -176,9 +178,12 @@
     
 \end{example}
 
+Once again, we will generalize to the non-primitive case by
+adding a \emph{labeling} to our rational Dyck paths.
+
 \subsection{Rational Labeled Dyck Paths}
 
-\begin{definition}[Labeled a, b - Dyck Path]
+\begin{definition}[Labeled a, b - Dyck Word]
     A \emph{labeled a, b - Dyck word} is a word $w \in 
     \{0, \ldots, n\}^*$ such that :
     \begin{itemize}
@@ -192,19 +197,20 @@
             then $w_i < w_{i+1}$. That is, consecutive
             North steps have increasing labels.
     \end{itemize}
-    A labeled a, b - Dyck word can be represented
-    as a path from $(0,0)$ to $(b,a)$, where each North
-    step is associated to a label :
-    \begin{itemize}
-        \item Each $i \neq 0$ corresponds to a
-            \emph{North step} $\uparrow$ labeled $i$.
-        \item Each $0$ corresponds to an
-            \emph{East step} $\rightarrow$.
-    \end{itemize}
-    Those paths are called \emph{labeled a, b - Dyck paths}.\\
-    We denote by $\mathcal{LR}_{a,b}$ the set of labeled
-    a, b - Dyck words.
 \end{definition}
+
+A labeled a, b - Dyck word can be represented
+as a path from $(0,0)$ to $(b,a)$, where each North
+step is associated to a label :
+\begin{itemize}
+    \item Each $i \neq 0$ corresponds to a
+        \emph{North step} $\uparrow$ labeled $i$.
+    \item Each $0$ corresponds to an
+        \emph{East step} $\rightarrow$.
+\end{itemize}
+Those paths are called \emph{labeled a, b - Dyck paths}.\\
+We denote by $\mathcal{LR}_{a,b}$ the set of labeled
+a, b - Dyck words.
 
 \begin{example}[$a > b : a = 7, b = 3$]
        $w_2 = 2456017030$ :\\
@@ -379,6 +385,10 @@
     rational parking functions corresponding to rational labeled
     Dyck paths where the $i^{th}$ North step is labeled $i$.
 \end{rem}
+
+Now that we have these four cover relations and the two
+appropriate bijections, we are able to create the 
+corresponding bijective rational posets.
 
 \subsection{Rational Dyck - Parking Posets}
 

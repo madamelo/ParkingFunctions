@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  6 AUG 2020 19:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  10 AUG 2020 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1166,111 +1166,131 @@ Overfull \hbox (3.14769pt too wide) in paragraph at lines 533--89
 [40]
 Chapter 2.
 (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--15
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
 [41
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--85
-
- []
-
-
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 54--85
-| $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$
- []
-
-
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 54--85
-| $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
- []
-
-
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 54--85
-| $\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--135
-
- []
-
-
-Overfull \hbox (29.03442pt too wide) in paragraph at lines 122--135
-| $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ 
- []
-
-[42]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S2.tex
 Underfull \hbox (badness 10000) in paragraph at lines 44--46
 
  []
 
-[43]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S3.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--86
+
+ []
+
+
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 55--86
+| $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$
+ []
+
+
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 55--86
+| $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
+ []
+
+
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 55--86
+| $\OT1/cmr/m/n/12 (2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(3\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--86
+
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 132--145
+
+ []
+
+
+Overfull \hbox (29.03442pt too wide) in paragraph at lines 132--145
+| $\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3)$ | $(1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--145
+
+ []
+
+) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S2.tex [43]
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig68.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig69.tex) [44]
+Underfull \hbox (badness 10000) in paragraph at lines 80--81
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig70.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig71.tex) [45]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C2S3.tex
 Overfull \hbox (7.36905pt too wide) in paragraph at lines 1--1
 []\T1/cmr/bx/n/17.28 A di-rect poset linked to Ra-tio-nal Dyck paths 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 28--29
-
- []
-
-[44] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig38.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig39.tex [45]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig40.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig41.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig42.tex [46]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig43.tex) [47]
-Overfull \hbox (7.09125pt too wide) in paragraph at lines 78--87
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig38.tex [47])
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig39.tex) [48] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig40.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig41.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig42.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig43.tex [49])
+Overfull \hbox (7.09125pt too wide) in paragraph at lines 80--89
 \T1/cmr/m/n/12 The cor-re-spond-ing ra-tio-nal Dyck word will be $[] \OT1/cmr/m/n/12 0 [] 0 [] [] 0$\T1/cmr/m/n/12 . 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig44.tex [48]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig45.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig46.tex [49]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig47.tex [50]) [51] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig48.tex
-Underfull \hbox (badness 10000) in paragraph at lines 210--1
+[50] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig44.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig45.tex [51]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig46.tex) [52] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig47.tex) [53] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig48.tex
+Underfull \hbox (badness 10000) in paragraph at lines 216--1
 
  []
 
-) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig49.tex
-Underfull \hbox (badness 10000) in paragraph at lines 215--1
+[54]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig49.tex
+Underfull \hbox (badness 10000) in paragraph at lines 221--1
 
  []
 
-) [52] [53] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig50.tex
+) [55] [56] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig50.tex
 Missing character: There is no ; in font nullfont!
- [54]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig51.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig52.tex [55]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig53.tex [56]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig54.tex [57])
-Underfull \hbox (badness 10000) in paragraph at lines 419--420
+) [57] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig51.tex) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig52.tex) [58] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig53.tex) [59] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig54.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig55.tex [58])
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+[60] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig55.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig56.tex [59])
-Underfull \hbox (badness 10000) in paragraph at lines 462--463
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig56.tex [61])
+Underfull \hbox (badness 10000) in paragraph at lines 472--473
 
  []
 
-[60] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig57.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 471--472
+[62] (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig57.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig58.tex [61]) [62]
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig58.tex [63]) [64]
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
@@ -1279,13 +1299,13 @@ Overfull \hbox (35.99564pt too wide) in paragraph at lines 221--222
  [] 
  []
 
-[63])
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
+[65])
+Underfull \hbox (badness 10000) in paragraph at lines 570--571
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig61.tex [64])
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig61.tex [66])
+Underfull \hbox (badness 10000) in paragraph at lines 605--606
 
  []
 
@@ -1294,16 +1314,16 @@ Overfull \hbox (70.2178pt too wide) in paragraph at lines 96--97
  [] 
  []
 
-[65])
-Underfull \hbox (badness 10000) in paragraph at lines 606--607
+[67])
+Underfull \hbox (badness 10000) in paragraph at lines 616--617
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex)) [66]
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig63.tex)) [68]
 Chapter 3.
-(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [67
+(/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S1.tex (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig64.tex [69
 
-]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [68])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [69]
+]) (/home/salsifi/Documents/Stage/Recherche/LaTeX/fig/fig65.tex [70])) (/home/salsifi/Documents/Stage/Recherche/LaTeX/C3S2.tex [71]
 Underfull \hbox (badness 10000) in paragraph at lines 45--48
 
  []
@@ -1313,7 +1333,7 @@ Overfull \hbox (10.83911pt too wide) in paragraph at lines 62--63
  [] 
  []
 
-[70]) [71]
+[72]) [73]
 Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
@@ -1323,9 +1343,9 @@ Overfull \hbox (47.76611pt too wide) in paragraph at lines 55--56
  [] 
  []
 
-)) [72] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.bbl [73]) [74
+)) [74] (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.bbl [75] [76
 
-]
+]) [77]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
  (/home/salsifi/Documents/Stage/Recherche/LaTeX/latex.aux)
@@ -1336,18 +1356,18 @@ Package rerunfilecheck Info: File `latex.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 18771 strings out of 494894
- 362583 string characters out of 6179474
- 444355 words of memory out of 5000000
- 21372 multiletter control sequences out of 15000+600000
+ 18812 strings out of 494894
+ 363401 string characters out of 6179474
+ 444383 words of memory out of 5000000
+ 21397 multiletter control sequences out of 15000+600000
  29017 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,14n,59p,465b,711s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,14n,59p,465b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0700.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (76 pages, 416587 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/LaTeX/latex.pdf (79 pages, 427703 bytes).
 PDF statistics:
- 1050 PDF objects out of 1200 (max. 8388607)
- 588 compressed objects within 6 object streams
- 168 named destinations out of 1000 (max. 500000)
+ 1080 PDF objects out of 1200 (max. 8388607)
+ 608 compressed objects within 7 object streams
+ 172 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 

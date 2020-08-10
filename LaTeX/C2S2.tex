@@ -1,39 +1,46 @@
 \section{Rational Non-crossing Partitions}
 
-%maybe not those
-%rational dyck paths
-%rational labeled dyck paths
-%examples of both
-%covering relation on rational dyck paths
-%covering relation on rational labeled dyck paths
-%bijection between RDP and rational PPF
-%bijection between RLDP and rational PF
-%poset for RDP for a given n
-%corresponding poset for rational PPF 
-%poset for RLDP for a given n
-%corresponding poset for rational PF
-
 \begin{definition}[a, b - Non-crossing Partition]
-    An \emph{a, b - non-crossing partition} is
-    TODO\\
-    We denote by $\mathcal{NC}_{a,b}$ the set of 
-    a, b - non-crossing partitions.
+    An \emph{a, b - non-crossing partition} is a tuple
+    $(P, Q, f_P, f_Q)$ such that :
+    \begin{itemize}
+        \item $P \in \mathcal{NC}_{b - 1}$
+        \item $Q$ is the Kreweras complement of $P$ : $K(P)$
+        \item $\displaystyle \sum_{B \in P}{f_P(B)} + 
+                \sum_{B \in Q}{f_Q(B)} = a$
+        \item $f_P(B) > \frac{a}{b}$ for each block $B$
+                of $P$
+        \item $f_Q(B) < \frac{a}{b}$ for each block $B$
+                of $Q$
+        \item The \emph{rank condition} defined in
+                \cite{ref8} holds.
+    \end{itemize}
 \end{definition}
 
-\begin{example}
-    An abncp
+We denote by $\mathcal{NC}_{a,b}$ the set of 
+a, b - non-crossing partitions.
+
+\begin{example}[$a > b : a = 7, b = 3$]
+    ~\\
+    \begin{center}
+        \input{fig/fig68.tex}
+    \end{center}
 \end{example}
 
-\begin{theorem}
+\begin{example}[$a < b : a = 3, b = 5$]
+    ~\\
+    \begin{center}
+        \input{fig/fig69.tex}
+    \end{center}
+\end{example}
+
+\begin{theorem}[Bodnar, 2017]
     Let $nc_{a,b}$ be the cardinal of $\mathcal{NC}_{a,b}$.
     We have $$nc_{a,b} = \frac{1}{a+b} \binom{a+b}{a} = 
-    \frac{(a+b-1)!}{a!b!}$$, which is the rational Catalan
-    number.
+    \frac{(a+b-1)!}{a!b!}$$
 \end{theorem}
 
-\begin{example}
-    all abncp for some a b
-\end{example}
+which is the rational Catalan number $Cat(a,b)$.
 
 \begin{prop}
     This means we can create a \emph{bijection} between
@@ -41,38 +48,72 @@
 \end{prop}
 
 \begin{proof}
-    ~\\
-\begin{itemize}
-    \item $\mathcal{NC}_{a,b} \to \mathcal{PF'}_{a,b}$ :
-    
-    \item $\mathcal{PF'}_{a,b} \to \mathcal{NC}_{a,b}$ :
-\end{itemize}
+    Following the proof for the non-primitive case in
+    \cite{ref8}, only consider rational Dyck paths where the
+    $i^{th}$ North step is labeled $i$.
 \end{proof}
 
 \begin{definition}[a, b - Non-crossing 2-Partition]
     An \emph{a, b - Non-crossing 2-partition} is
-    TODO\\
-    We denote by $\mathcal{NC}^2_{a,b}$ the set of 
-    a, b - non-crossing 2-partitions.
+    a tuple $(P, Q, f_P, f_Q)$ such that :
+    \begin{itemize}
+        \item $P \in \mathcal{NC}_{b-1}$
+        \item $Q$ is the Kreweras complement of $P$ : $K(P)$
+        \item $\displaystyle \bigcup_{B \in P}{f_P(B)} \cup
+                \bigcup_{B \in Q}{f_Q(B)} = [a]$
+        \item $|f_P(B)| > \frac{a}{b}$ for each block $B$
+                of $P$
+        \item $|f_Q(B)| < \frac{a}{b}$ for each block $B$
+                of $Q$
+        \item The \emph{rank condition} defined in
+            \cite{ref8} holds.  
+    \end{itemize}
 \end{definition}
 
-\begin{example}
-    some ncab2
+This can be seen as a \emph{labeling} of the blocks of
+$P$ and $Q$ by $[a]$.
+
+We denote by $\mathcal{NC}^2_{a,b}$ the set of 
+a, b - non-crossing 2-partitions.
+
+\begin{example}[$a > b : a = 7, b = 3$]
+    ~\\
+    \begin{center}
+        \input{fig/fig70.tex}        
+    \end{center}
 \end{example}
 
-\begin{theorem}
+\begin{example}[$a < b : a = 3, b = 5$]
+    ~\\
+    \begin{center}
+        \input{fig/fig71.tex}        
+    \end{center}
+\end{example}
+
+\begin{theorem}[Bodnar, 2017]
     Let $nc^2_{a,b}$ be the cardinal of $\mathcal{NC}^2_{a,b}$.
     We have $$nc^2_{a,b} = b^{a-1}$$.    
 \end{theorem}
 
-\begin{example}
-    all ncab2 for some a b
-\end{example}
-
 \begin{prop}
-    bijection
+    This means we can create a \emph{bijection} between
+    $\mathcal{PF}_{a,b}$ and $\mathcal{NC}^2_{a,b}$.
 \end{prop}
 
 \begin{proof}
-    bijection proof
+    See \cite{ref8}.
 \end{proof}
+
+While this is an elegant solution, and seems to be the first
+to generalize to \emph{all} coprime $a$ and $b$ -- and 
+not just those where $a < b$ as studied by Armstrong and others
+in the past --, we still wish to define a cover relation for
+rational parking functions without having to refer to an other
+structure -- especially since this construction makes it even
+heavier by having to use rational Dyck paths to verify the
+\emph{rank condition} defined in \cite{ref8}.
+
+Therefore, in the next section, we define cover relations
+for $\mathcal{PF'}_{a,b}$ and $\mathcal{PF}_{a,b}$ through
+(labeled) Rational Dyck Paths, generalizing the classical
+case.

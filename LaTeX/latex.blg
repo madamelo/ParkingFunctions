@@ -4,45 +4,45 @@ The top-level auxiliary file: latex.aux
 The style file: unsrt.bst
 Database file #1: references.bib
 Warning--empty journal in ref9
-You've used 9 entries,
+You've used 10 entries,
             1791 wiz_defined-function locations,
-            494 strings with 4457 characters,
-and the built_in function-call counts, 1649 in all, are:
-= -- 143
-> -- 62
+            501 strings with 4816 characters,
+and the built_in function-call counts, 1855 in all, are:
+= -- 164
+> -- 66
 < -- 0
-+ -- 25
-- -- 16
-* -- 86
-:= -- 271
-add.period$ -- 27
-call.type$ -- 9
-change.case$ -- 7
++ -- 27
+- -- 17
+* -- 101
+:= -- 305
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 10
-duplicate$ -- 74
-empty$ -- 182
-format.name$ -- 16
-if$ -- 375
+cite$ -- 11
+duplicate$ -- 83
+empty$ -- 204
+format.name$ -- 17
+if$ -- 419
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 9
-newline$ -- 46
-num.names$ -- 9
-pop$ -- 33
+int.to.str$ -- 10
+missing$ -- 10
+newline$ -- 51
+num.names$ -- 10
+pop$ -- 34
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 30
+skip$ -- 32
 stack$ -- 0
-substring$ -- 84
-swap$ -- 8
+substring$ -- 103
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 13
-width$ -- 10
-write$ -- 93
+while$ -- 16
+width$ -- 12
+write$ -- 104
 (There was 1 warning)
