@@ -15,6 +15,10 @@
 
 \usepackage[inline]{enumitem}
 
+\usepackage{a4wide}
+
+\usepackage{hyperref}
+
 \usepackage{tikz}
 \usetikzlibrary{shapes.multipart}
 \usetikzlibrary{arrows}
@@ -42,43 +46,108 @@
 
 \subsection*{Contexte général}
 
-De quoi s'agit-il ? 
-D'où vient-il ? 
-Quels sont les travaux déjà accomplis dans ce domaine dans le monde ?
+La \emph{combinatoire} est un domaine des mathématiques et de 
+l'informatique théorique étudiant les ensembles finis par leur énumération
+et leur comptage.
+Se divisant en plusieurs branches, nous abordons dans ce rapport deux
+branches principales : la \emph{combinatoire énumérative}, domaine le plus
+classique, basé sur le dénombrement; et \emph{la combinatoire bijective},
+consistant à déduire une égalité entre les résultats de comptage de deux
+classes combinatoires qui sont en bijection. 
 
-\subsection*{Problème étudié}
+On s'intéresse ici en particulier à des objets combinatoires appelés
+\emph{fonctions de parking}. Introduites en 1966 par Konheim et Weiss
+(\cite{ref1}), les fonctions de parking sont les séquences d'entiers
+positifs dont le nombre d'éléments \emph{inférieurs ou égaux} à $i$ est
+\emph{supérieur ou égal} à $i$ pour tout entier $i$ entre $1$ et $n$.\\
+Leur appellation vient du problème de hachage suivant :
+soient un parking contenant $n$ places numérotées de $1$ à $n$, et $n$
+voitures à garer.
+A chaque voiture $i$ est associé un entier $a_i$, indiquant que cette
+voiture doit être garée à une place dont le numéro est supérieur ou égal
+à $a_i$.
+La séquence $(a_1, \ldots, a_n)$ est alors appelée fonction de parking si
+et seulement si il existe une configuration de garage des $n$ voitures
+respectant les contraintes données par les entiers $a_i$.
 
-Quelle est la question que vous avez abordée ? 
-Pourquoi est-elle importante, à quoi cela sert-il d'y répondre ?  
-Est-ce un nouveau problème ?
-Si oui, pourquoi êtes-vous le premier chercheur de l'univers à l'avoir posée ?
-Si non, pourquoi pensiez-vous pouvoir apporter une contribution originale ?
+Longuement étudiées, les principaux résultats de comptage émanent des
+travaux de Stanley (\cite{ref2}, \cite{ref3}), Kreweras (\cite{ref4}),
+et Edelman (\cite{ref5}).
+Plus récemment, la notion de fonction de parking \emph{rationnelle} à été
+introduite et étudiée -- entre autres -- dans les travaux d'Armstrong, Loehr
+et Warrington (\cite{ref7}), ainsi que de Bodnar (\cite{ref8}).
+Bien que les travaux mentionnées ci-dessus concernent principalement le
+comptage des fonctions de parking et des relations de leurs treillis, 
+ces dernières ont des applications dans de nombreux domaines tels que
+l'analyse et la géométrie.
+
+\subsection*{Problèmes étudiés}
+
+Dans cet article, nous abordons deux principaux problèmes.
+
+Premièrement, à notre connaissance, les treillis proposés jusque là pour
+les fonctions de parking dépendent tous de bijections entre les fonctions
+de parking et une autre structure combinatoire, pour laquelle un treillis
+était déjà défini. Cela rend la définition d'une relation de couverture
+assez lourde, et rajoute des étapes au processus de comparaison.
+
+Ensuite, l'extension au cas rationnel étant en plein essor dans les travaux
+les plus récents, de nombreux concept restent à redéfinir en dehors du cas
+classique.
 
 \subsection*{Contribution proposée}
+Nous présentons ici un nouveau treillis pour les fonctions de
+parking, dans le cas classique ainsi que dans le cas rationnel.
+Ainsi, nous introduisons une relation de couverture plus élégante,
+définie sans structure intermédiaire.
+De plus, celle-ci est en bijection avec une relation naturelle que nous
+définissons sur les chemins de Dyck, qui sont une structure élémentaire
+de la combinatoire.
 
-Qu'avez vous proposé comme solution à cette question ? 
-Attention, pas de technique, seulement les grandes idées ! 
-Soignez particulièrement la description de la démarche \emph{scientifique}.
+Enfin, nous reprenons la notion d'\emph{arbres de parking} donnée par
+Delcroix-Oger, Josuat-Vergès et Randazzo (\cite{ref9}), afin d'en donner
+une version rationnelle.
+
+Pour ces deux contributions, le cas rationnel est traité pour toute paire
+d'entiers premiers entre eux -- sans se limiter au cas $a < b$ comme il a
+pu être fait dans certains travaux.
+
+Une version longue de ce rapport est disponible 
+\href{https://github.com/tessalsifi/ParkingFunctions}{ici}
+\footnote{github.com/tessalsifi/ParkingFunctions}, ainsi que l'encodage
+en Sage des principales notions abordées dans les références 1 à 8 et des
+constructions que nous présentons.
 
 \subsection*{Arguments en faveur de sa validité}
+Les treillis introduits dans le cas classique sont à l'origine de nos
+deux résultats principaux.
 
-Qu'est-ce qui montre que cette solution est une bonne solution ?
-Des expériences, des corollaires ? 
-Commentez la \emph{robustesse} de votre proposition : 
-comment la validité de la solution dépend-elle des hypothèses de travail ?
+Dans le cas des fonctions de parking \emph{primitives}, nous exhibons
+une preuve du Théorème 8, qui donne le nombre d'intervalles dans le
+treillis.
+Quant à son équivalent pour le cas non-primitif, nous établissons une
+Conjecture sur le nombre d'intervalles, vérifiée sur les cas
+$n = 1, \ldots, 8$.
 
 \subsection*{Bilan et perspectives}
+En conclusion, nous avons maintenant des treillis définis de manière
+directe pour les quatre types de fonctions de parking : classiques, 
+classiques primitives, rationnelles, et rationnelles primitives.
 
-Et après ? En quoi votre approche est-elle générale ? 
-Qu'est-ce que votre contribution a apporté au domaine ? 
-Que faudrait-il faire maintenant ? 
-Quelle est la bonne \emph{prochaine} question ?
+Par la suite, il sera nécessaire de trouver une preuve de la Conjecture,
+ou bien si elle doit être réfutée, d'exhiber une formule comptant les
+intervalles dans notre treillis des foncions de parking classiques.
+Quant au cas rationnel, il faudra également trouver des formules exprimant
+le nombre de relations.
 
+Enfin, l'on pourrait également vouloir étudier les relations de couvertures
+sur les arbres de parking rationnels. 
 
-\begin{abstract}
-   Résumé.
-\end{abstract}
+\newpage
 
 \tableofcontents
+
+\bibliographystyle{unsrt}
+\bibliography{ref}
 
 \end{document}

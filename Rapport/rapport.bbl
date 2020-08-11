@@ -1,0 +1,44 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref1}
+Alan~G. Konheim and Benjamin Weiss.
+\newblock An occupancy discipline and applications.
+\newblock {\em SIAM Journal on Applied Mathematics}, 14(6):1266--1274, 1966.
+
+\bibitem{ref2}
+R.P. Stanley and G.C. Rota.
+\newblock {\em Enumerative Combinatorics: Volume 1}.
+\newblock Cambridge Studies in Advanced Mathematics. Cambridge University
+  Press, 1997.
+
+\bibitem{ref3}
+R.P. Stanley and S.~Fomin.
+\newblock {\em Enumerative Combinatorics: Volume 2}.
+\newblock Cambridge Studies in Advanced Mathematics. Cambridge University
+  Press, 1997.
+
+\bibitem{ref4}
+Germain Kreweras.
+\newblock Sur les partitions non croisees d'un cycle.
+\newblock {\em Discret. Math.}, 1:333--350, 1972.
+
+\bibitem{ref5}
+Paul~H. Edelman.
+\newblock Chain enumeration and non-crossing partitions.
+\newblock {\em Discret. Math.}, 31:171--180, 1980.
+
+\bibitem{ref7}
+Drew Armstrong, Nicholas A.~Loehr, and Gregory S.~Warrington.
+\newblock Rational parking functions and catalan numbers.
+\newblock {\em Annals of Combinatorics}, 20:21--58, 2014.
+
+\bibitem{ref8}
+Michelle Bodnar.
+\newblock Rational noncrossing partitions for all coprime pairs, 2017.
+
+\bibitem{ref9}
+Bérénice Delcroix-Oger, Matthier Josuat-Vergès, and Lucas Randazzo.
+\newblock Some properties of the parking function poset.
+\newblock 2020.
+
+\end{thebibliography}
