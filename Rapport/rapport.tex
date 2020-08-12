@@ -24,14 +24,14 @@
 \usetikzlibrary{arrows}
 \usetikzlibrary{patterns}
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Théorème}
+\newtheorem{lemma}{Lemme}
 \newtheorem*{prop}{Proposition}
-\newtheorem{definition}{Definition}
-\newtheorem*{example}{Example}
+\newtheorem{definition}{Définition}
+\newtheorem{example}{Exemple}
 \newtheorem*{notation}{Notation}
-\newtheorem*{cor}{Corollary}
-\newtheorem*{rem}{Remark}
+\newtheorem*{cor}{Corollaire}
+\newtheorem*{rem}{Remarque}
 \newtheorem*{conj}{Conjecture}
 
 \begin{document}
@@ -147,7 +147,19 @@ sur les arbres de parking rationnels.
 
 \tableofcontents
 
+\section{Introduction}
+\input{intro.tex}
+
+\section{Un treillis pour ...}
+
 \bibliographystyle{unsrt}
 \bibliography{ref}
+
+\newpage
+
+\appendix
+
+\section{Exemples pour l'Introduction}
+\input{A.tex}
 
 \end{document}

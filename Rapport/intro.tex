@@ -1,0 +1,107 @@
+\subsection{Fonctions de Parking}
+
+% TODO : ajouter du texte introductif
+
+En annexe A, les exemples 1 à 4 illustrent les définitions et théorèmes
+de cette section.
+
+\begin{definition}[Fonction de Parking]
+    Une \emph{fonction de parking} est une séquence d'entiers positifs
+    $(a_1, a_2, \ldots, a_n)$ dont le tri croissant
+    $(b_1, b_2, \ldots, b_n)$ respecte la condition suivante :
+    $b_i \leqslant i$ pour tout $i \leqslant n$.
+\end{definition}
+
+En d'autres termes, $\#\{i\ |\ a_i \leqslant k\} \geqslant k\ 
+\forall k \leqslant n$.
+
+On note $\mathcal{PF}_n$ l'ensemble des fonctions de parking de longueur $n$.
+
+\begin{theorem}[Konheim et Weiss, 1966]
+    Soit $pf_n$ le cardinal de $\mathcal{PF}_n$.
+    Nous avons $$pf_n = (n + 1)^{n-1}$$.
+\end{theorem}
+
+\begin{definition}[Fonction de Parking Primitive]
+    Une fonction de parking $(a_1, a_2, \ldots, a_n)$ est dite
+    \emph{primitive} si elle est déjà triée en ordre croissant.    
+\end{definition}
+
+On note $\mathcal{PF'}_n$ l'ensemble des fonctions de parking primitives
+de longueur $n$.
+
+\begin{theorem}[Stanley, 1999]
+    Soit $pf'_n$ le cardinal de $\mathcal{PF'}_n$.
+    Nous avons $$pf'_n = \frac{1}{n + 1} \binom{2n}{n}$$
+\end{theorem}
+
+Ce nombre est le $n^{e}$ nombre de Catalan $Cat(n)$.
+
+\subsection{Chemins de Dyck}
+
+En annexe A, les exemples 5 à 8 illustrent les définitions et théorèmes
+de cette section.
+
+\begin{notation}
+    On note par $|w|_s$ le nombre d'occurences du symbole $s$ dans
+    le mot $w$ .
+\end{notation}
+
+\begin{definition}[Mot de Dyck]
+    Un \emph{mot de Dyck} est un mot $w \in \{0,1\}^*$ tel que :
+    \begin{itemize}
+        \item pour tout \emph{suffixe} $w'$ de $w$,
+            $|w'|_1 \geqslant |w'|_0$.
+        \item $|w|_0 = |w|_1$.
+    \end{itemize}
+\end{definition}
+
+Un mot de Dyck de longueur $2n$ peut être représenté par un \emph{chemin}
+allant du point $(0,0)$ au point $(n,n)$, et restant au dessus de l'axe
+$y = x$, appelé \emph{chemin de Dyck} :
+\begin{itemize}
+    \item Chaque $1$ correspond à un \emph{pas Nord}
+    $\uparrow$. 
+    \item Chaque $0$ correspond à un \emph{pas Est}
+    $\rightarrow$.
+\end{itemize}
+
+On note $\mathcal{D}_n$ l'ensemble des mots de Dyck de longeur $2n$.
+
+\begin{theorem}[André, 1887]
+    Soit $d_n$ le cardinal de $\mathcal{D}_n$.
+    Nous avons $$d_n = \frac{1}{n + 1} \binom {2n}{n}$$
+\end{theorem}
+
+\begin{definition}[Mot de Dyck Décoré]
+    Un \emph{mot de Dyck décoré} est un mot $w \in 
+    \{0, \ldots, n\}^*$ tel que :
+    \begin{itemize}
+        \item pour tout suffixe $w'$ de $w$,
+            $|w'|_{\neq 0} \geqslant |w'|_0$.
+        \item $|w|_0 = |w|_{\neq 0}$.
+        \item pour tout $i \in \{1, \ldots, n\}$, $w$ contient
+            exactement une occurence de $i$.
+        \item si $w_i \neq 0$ et $w_{i+1} \neq 0$,
+            alors $w_i < w_{i+1}$. Autrement dit, les labels de pas Nord
+            consécutifs doivent être croissants.
+    \end{itemize}
+\end{definition}
+
+Un mot de Dyck décoré de longueur $2n$ peut être représenté par un 
+\emph{chemin} allant du point $(0,0)$ au point $(n,n)$, où chaque pas
+North est associé à un label :
+\begin{itemize}
+    \item Chaque $i \neq 0$ correspond à un \emph{pas Nord} $\uparrow$
+    de label $i$.
+    \item Chaque $0$ corresponds à un \emph{pas Est} $\rightarrow$.
+\end{itemize}
+
+Ces chemins sont appelés \emph{chemins de Dyck décorés}.\\
+On note $\mathcal{LD}_n$ l'ensemble des mots de Dyck décorés de longueur
+$2n$.
+
+\begin{theorem}
+    Soit $ld_n$ le cardinal de $\mathcal{LD}_n$.
+    Nous avons $$ld_n = (n + 1)^{n - 1}$$.
+\end{theorem}
