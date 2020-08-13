@@ -1,3 +1,7 @@
+\subsection{Fonctions de parking rationnelles}
+
+Cette partie est illustrée par les exemples 17 à 19 de l'annexe C.
+
 \begin{definition}[a, b - Fonction de Parking]
     Une \emph{a, b - fonction de parking} est une séquence d'entiers
     positifs $(a_1, a_2, \ldots, a_n)$ telle que :\\
@@ -10,3 +14,62 @@
 \end{definition}
 
 On note $\mathcal{PF}_{a,b}$ l'ensemble des a, b - fonctions de parking. 
+
+\begin{theorem}[Armstrong, Loehr et Warrington, 2014]
+    Soit $pf_{a,b}$ le cardinal de $\mathcal{PF}_{a,b}$.
+    Nous avons $$pf_{a,b} = b^{a-1}$$
+\end{theorem}
+
+\begin{rem}
+Le cas classique peut être vu comme le cas $a = n, b = n + 1$.
+Autrement dit, $\mathcal{PF}_{n, n + 1} = \mathcal{PF}_n$.
+\end{rem}
+
+Similairement au cas classique, on définit une fonction de parking
+\emph{rationnelle primitive} comme une fonction de parking primitive
+triée en ordre croissant.
+On note $\mathcal{PF'}_{a,b}$ l'ensemble des a, b - fonctions de parking
+primitives.
+
+\begin{theorem}
+    Soit $pf'_{a,b}$ le cardinal de $\mathcal{PF'}_{a,b}$.
+    Nous avons $$\displaystyle pf'_{a,b} = 
+    \frac{1}{a + b} \binom{a + b}{b}$$
+\end{theorem}
+
+Ce nombre est appelé le \emph{nombre de Catalan rationnel}, et on le note
+$Cat(a,b)$.
+Là aussi, le cas classique correspond à $a = n, b = n + 1$.
+Autrement dit, $\mathcal{PF'}_{n, n + 1} = \mathcal{PF'}_n$.
+
+\subsection{Chemins de Dyck rationnels}
+
+Cette partie est illustrée par les exemples 20 à XXX de l'annexe C.
+
+\begin{definition}[a, b - mot de Dyck]
+    Un \emph{a, b - mot de Dyck} est un mot $w \in \{0,1\}^*$ tel que :
+    \begin{itemize}
+        \item pour tout \emph{suffixe} $w'$ de $w$,
+            $\displaystyle |w'|_1 \geqslant \frac{a}{b}|w'|_0$.
+        \item $|w|_0 = b$.
+        \item $|w|_1 = a$.
+    \end{itemize}
+\end{definition}
+
+Un a, b - mot de Dyck peut être représenté par un chemin allant du point
+$(0,0)$ au point $(b,a)$, et restant au dessus de l'axe $y = \frac{a}{b}x$,
+appelé \emph{a, b - chemin de Dyck} :
+\begin{itemize}
+    \item Chaque $1$ correspond à un \emph{pas Nord} $\uparrow$. 
+    \item Chaque $0$ correspond à un \emph{pas Est} $\rightarrow$.
+\end{itemize}
+
+On note $\mathcal{R}_{a, b}$ l'ensemble des a, b - mots de Dyck.
+
+\begin{theorem}[Bizley, 1954]
+    Soit $r_{a,b}$ le cardinal de $\mathcal{R}_{a,b}$.
+    Nous avons $$r_{a,b} = \frac{1}{a+b} \binom {a+b}{a} =
+    \frac{(a+b-1)!}{a!b!}$$
+\end{theorem}
+
+\subsection{Posets rationnels}
