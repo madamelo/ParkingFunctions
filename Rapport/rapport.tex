@@ -26,9 +26,10 @@
 
 \newtheorem{theorem}{Théorème}
 \newtheorem{lemma}{Lemme}
-\newtheorem*{prop}{Proposition}
+\newtheorem{prop}{Proposition}
 \newtheorem{definition}{Définition}
 \newtheorem{example}{Exemple}
+\newtheorem*{expl}{Exemple} %exemples non numérotés
 \newtheorem*{notation}{Notation}
 \newtheorem*{cor}{Corollaire}
 \newtheorem*{rem}{Remarque}
@@ -77,7 +78,7 @@ Plus récemment, la notion de fonction de parking \emph{rationnelle} à été
 introduite et étudiée -- entre autres -- dans les travaux d'Armstrong, Loehr
 et Warrington (\cite{ref7}), ainsi que de Bodnar (\cite{ref8}).
 Bien que les travaux mentionnées ci-dessus concernent principalement le
-comptage des fonctions de parking et des relations de leurs treillis, 
+comptage des fonctions de parking et des relations de leurs posets, 
 ces dernières ont des applications dans de nombreux domaines tels que
 l'analyse et la géométrie.
 
@@ -85,9 +86,9 @@ l'analyse et la géométrie.
 
 Dans cet article, nous abordons deux principaux problèmes.
 
-Premièrement, à notre connaissance, les treillis proposés jusque là pour
+Premièrement, à notre connaissance, les posets proposés jusque là pour
 les fonctions de parking dépendent tous de bijections entre les fonctions
-de parking et une autre structure combinatoire, pour laquelle un treillis
+de parking et une autre structure combinatoire, pour laquelle un poset
 était déjà défini. Cela rend la définition d'une relation de couverture
 assez lourde, et rajoute des étapes au processus de comparaison.
 
@@ -96,7 +97,7 @@ les plus récents, de nombreux concept restent à redéfinir en dehors du cas
 classique.
 
 \subsection*{Contribution proposée}
-Nous présentons ici un nouveau treillis pour les fonctions de
+Nous présentons ici un nouveau poset pour les fonctions de
 parking, dans le cas classique ainsi que dans le cas rationnel.
 Ainsi, nous introduisons une relation de couverture plus élégante,
 définie sans structure intermédiaire.
@@ -119,24 +120,24 @@ en Sage des principales notions abordées dans les références 1 à 8 et des
 constructions que nous présentons.
 
 \subsection*{Arguments en faveur de sa validité}
-Les treillis introduits dans le cas classique sont à l'origine de nos
+Les posets introduits dans le cas classique sont à l'origine de nos
 deux résultats principaux.
 
 Dans le cas des fonctions de parking \emph{primitives}, nous exhibons
-une preuve du Théorème 8, qui donne le nombre d'intervalles dans le
-treillis.
+une preuve du Théorème 5, qui donne le nombre d'intervalles dans le
+poset.
 Quant à son équivalent pour le cas non-primitif, nous établissons une
 Conjecture sur le nombre d'intervalles, vérifiée sur les cas
 $n = 1, \ldots, 8$.
 
 \subsection*{Bilan et perspectives}
-En conclusion, nous avons maintenant des treillis définis de manière
+En conclusion, nous avons maintenant des posets définis de manière
 directe pour les quatre types de fonctions de parking : classiques, 
 classiques primitives, rationnelles, et rationnelles primitives.
 
 Par la suite, il sera nécessaire de trouver une preuve de la Conjecture,
 ou bien si elle doit être réfutée, d'exhiber une formule comptant les
-intervalles dans notre treillis des foncions de parking classiques.
+intervalles dans notre poset des foncions de parking classiques.
 Quant au cas rationnel, il faudra également trouver des formules exprimant
 le nombre de relations.
 
@@ -150,16 +151,32 @@ sur les arbres de parking rationnels.
 \section{Introduction}
 \input{intro.tex}
 
-\section{Un treillis pour ...}
+\section{Un poset pour les fonctions de parking classiques}
+\input{classique.tex}
+
+\input{intro_rationnel.tex}
+\section{Le cas rationnel}
+
+\section{Un poset pour les fonctions de parking rationnelles}
+\input{rationnel.tex}
+
+\section{Arbres de parking rationnels}
+\input{arbres.tex}
+
+\section{Conclusion}
+\input{conclusion.tex}
 
 \bibliographystyle{unsrt}
 \bibliography{ref}
 
-\newpage
-
 \appendix
 
+\newpage
 \section{Exemples pour l'Introduction}
 \input{A.tex}
+
+\newpage
+\section{Exemples pour la Partie 2}
+\input{B.tex}
 
 \end{document}

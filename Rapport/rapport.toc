@@ -1,6 +1,13 @@
 \babel@toc {french}{}
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}
 \contentsline {subsection}{\numberline {1.1}Fonctions de Parking}{3}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Chemins de Dyck}{3}{subsection.1.2}
-\contentsline {section}{\numberline {2}Un treillis pour ...}{4}{section.2}
-\contentsline {section}{\numberline {A}Exemples pour l'Introduction}{6}{appendix.A}
+\contentsline {subsection}{\numberline {1.2}Chemins de Dyck}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Un poset pour les fonctions de parking classiques}{5}{section.2}
+\contentsline {subsection}{\numberline {2.1}Le cas primitif}{5}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Le cas g\IeC {\'e}n\IeC {\'e}ral}{6}{subsection.2.2}
+\contentsline {section}{\numberline {3}Le cas rationnel}{7}{section.3}
+\contentsline {section}{\numberline {4}Un poset pour les fonctions de parking rationnelles}{7}{section.4}
+\contentsline {section}{\numberline {5}Arbres de parking rationnels}{7}{section.5}
+\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}
+\contentsline {section}{\numberline {A}Exemples pour l'Introduction}{8}{appendix.A}
+\contentsline {section}{\numberline {B}Exemples pour la Partie 2}{10}{appendix.B}
