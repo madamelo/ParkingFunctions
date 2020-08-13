@@ -1,6 +1,6 @@
 \subsection{Le cas primitif}
 
-Les exemples 9 à 13 donnés en annexe B illustrent les propositions,
+Les exemples 9 à 12 donnés en annexe B illustrent les propositions,
 définitions et théorèmes de cette section.
 
 \begin{prop}
@@ -109,6 +109,15 @@ Les premiers termes de cette suite sont $1, 1, 3, 14, 84,
     Ce nombre est bien égal à la suite A005700 (Bruce Westbury, 2013).
 \end{proof}
 
+\begin{expl}[Les posets de $\mathcal{D}_4$ et $\mathcal{PF'}_4$]
+    ~\\
+    \begin{center}
+        \input{fig/fig7.tex}
+        Ces posets contiennent chacun $\frac {1}{5} \binom{8}{4} =
+        14$ éléments et $84$ relations.
+    \end{center}
+\end{expl}
+
 On souhaite maintenant étendre cette construction au cas non-primitif.
 Bien que celle sur les fonctions de parking soit la même, il
 reste à expliciter la bijection, et à définir la relation de couverture
@@ -116,7 +125,7 @@ sur les mots de Dyck \emph{décorés}.
 
 \subsection{Le cas général}
 
-Les exemples 14 à 18 donnés en annexe B illustrent les propositions,
+Les exemples 13 à 16 donnés en annexe B illustrent les propositions,
 définitions et théorèmes de cette section.
 
 \begin{prop}
@@ -168,5 +177,66 @@ La relation suivante est l'extension de $\gtrdot_d$ au cas décoré.
         \item $y$ apparait dans $z$, et $z' = z$ où $y$ à été supprimé
         \item $w = lx0zr$
         \item $w' = lx'0z'r$
-    \end{itemize}  
+    \end{itemize}
 \end{definition}
+
+Pour expliquer l'idée derrière cette relation de couverture, nous aurons
+besoin de la définition suivante.
+
+\begin{definition}[Montée]
+    Une \emph{montée} d'un mot de Dyck (décoré ou non) est une sous-mot
+    maximal ne contenant pas de 0, et suivi d'un 0.
+\end{definition}
+
+\begin{rem}
+    Si $w_1 \gtrdot_{ld} w_2$, alors le chemin de Dyck décoré correspondant
+    à $w_2$ est \emph{au dessus} de celui correspondant à $w_1$,
+    et la \emph{différence} entre les deux est un carré de côté 1.\\
+    De plus, la relation $\gtrdot_{ld}$ peut être vue ainsi :
+    $w_1$ couvre $w_2$ si et seulement si l'on peut obtenir $w_2$ à partir
+    de $w_1$ en enlevant un élément de la $i + 1^{e}$ montée, 
+    et en réinsérant cet élément en ordre croissant dans la $i^{e}$
+    montée.
+\end{rem}
+
+Cette relation de couverture engendre notre poset pour $\mathcal{LD}_n$.
+En gardant la relation $\gtrdot$ sur l'ensemble des fonctions de parking
+classiques, on obtient ainsi les posets bijectifs espérés.
+
+
+\begin{conj}[Conjecture Principale]
+    Le nombre d'intervalles des posets définis ici pour $\mathcal{LD}_n$
+    et $\mathcal{PF}_n$ est le $n+1^{e}$ terme de la suite de l'OEIS
+    \href{https://oeis.org/A196304}{A196304}
+    \footnote{https://oeis.org/A196304}.
+\end{conj}
+
+Les premiers termes de cette suite sont $1, 1, 5, 64, 1587,
+65421, 4071178, 357962760, 4237910716, ...$.
+
+\begin{expl}[Les posets de $\mathcal{LD}_3$ et $\mathcal{PF}_3$]
+    ~\\
+    \begin{center}
+        \input{fig/fig11.tex}
+        Il y a $4^2 = 16$ éléments et $64$ intervalles dans chacun de ces
+        posets.
+    \end{center}
+\end{expl}
+
+Bien que, à notre connaissance, il n'existe pas de structure combinatoire
+associée à cette suite, les tests effectués via Sagemath sur
+$n = 1, 2, \cdots, 8$ suggèrent que le nombre d'intervalles de nos posets
+puissent en être une.\\
+
+Pour aller plus loin, la prochaine partie aborde une généralisation des
+fonctions de parking : les fonctions de parking \emph{rationnelles}.
+
+Cette extension peut être vue ainsi :
+Soit $(a_1, \ldots, a_n)$ une séquence d'entiers positifs,
+et $(b_1, \ldots, b_n)$ son tri par ordre croissant.
+Dans le cas classique, les limites pour $(b_1, \ldots, b_n)$
+étaient $(1, \ldots, n)$, et dépendaient donc d'un unique entier $n$.
+Dans le cas rationnel, les limites dépendront de \emph{deux entier
+premiers entre eux} $a$ et $b$.
+Plus précisément, ces limites seront $(1, 1 + \frac{b}{a},
+1 + \frac{2b}{a}, 1 + \frac{3b}{a}, \ldots)$, avec $a = n$. 
