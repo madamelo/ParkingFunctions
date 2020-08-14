@@ -44,7 +44,7 @@ Autrement dit, $\mathcal{PF'}_{n, n + 1} = \mathcal{PF'}_n$.
 
 \subsection{Chemins de Dyck rationnels}
 
-Cette partie est illustrée par les exemples 20 à XXX de l'annexe C.
+Cette partie est illustrée par les exemples 20 à 25 de l'annexe C.
 
 \begin{definition}[a, b - mot de Dyck]
     Un \emph{a, b - mot de Dyck} est un mot $w \in \{0,1\}^*$ tel que :
@@ -72,4 +72,100 @@ On note $\mathcal{R}_{a, b}$ l'ensemble des a, b - mots de Dyck.
     \frac{(a+b-1)!}{a!b!}$$
 \end{theorem}
 
+On remarque ainsi que l'on pourra bien créer une bijection entre
+$\mathcal{PF'}_{a,b}$ et $\mathcal{R}_{a,b}$.
+Cette bijection sera exactement la même que celle entre $\mathcal{PF'}_n$
+et $\mathcal{D}_{n}$.
+
+Il reste maintenant à définir les chemins de Dyck qui seront en bijection
+avec $\mathcal{PF}_{a,b}$.
+
+\begin{definition}[a, b - mot de Dyck décoré]
+    Un \emph{a, b - chemin de Dyck décoré} est un mot $w \in 
+    \{0, \ldots, n\}^*$ tel que :
+    \begin{itemize}
+        \item pour tout suffixe $w'$ de $w$,
+            $\displaystyle|w'|_{\neq 0} \geqslant \frac{a}{b}|w'|_0$.
+        \item $|w|_0 = b$.
+        \item $|w|_{\neq 0} = a$.
+        \item pour tout $i \in \{1, \ldots, a\}$, $w$ a exactement une
+            occurence de $i$.
+        \item si $w_i \neq 0$ et $w_{i+1} \neq 0$,
+            alors $w_i < w_{i+1}$. Autrement dit, les labels des pas Nord
+            consécutifs sont croissants.
+    \end{itemize}
+\end{definition}
+
+Un a, b - mot de Dyck décoré peut être représenté par un chemin allant du
+point $(0,0)$ au point $(b,a)$, où chaque pas Nord a un label :
+\begin{itemize}
+    \item Chaque $i \neq 0$ corresponds à un \emph{pas Nord} $\uparrow$
+    dont le label est $i$.
+    \item Chaque $0$ correspond à un \emph{pas Est} $\rightarrow$.
+\end{itemize}
+
+Ces chemins sont appelés \emph{a, b - chemins de Dyck décorés}.\\
+On note $\mathcal{LR}_{a,b}$ l'ensemble des a, b - chemins de Dyck.
+
+\begin{theorem}
+    Soit $lr_{a,b}$ le cardinal de $\mathcal{LR}_{a,b}$.
+    Nous avons $$lr_{a,b} = b^{a - 1}$$.
+\end{theorem}
+
+On retrouve bien le même cardinal que pour $\mathcal{PF}_{a,b}$.
+A nouveau, la bijection entre $\mathcal{PF}_{a,b}$ et $\mathcal{LR}_{a,b}$
+sera exactement la même que celle entre $\mathcal{PF}_n$ et
+$\mathcal{LD}_{n}$.
+
+Les relations de couverture restent inchangées :
+\begin{itemize}
+    \item Pour $\mathcal{PF'}_{a,b}$ et $\mathcal{PF}_{a,b}$ : $\gtrdot$
+    \item Pour $\mathcal{R}_{a,b}$ : $\gtrdot_r = \gtrdot_d$
+    \item Pour $\mathcal{LR}_{a,b}$ : $\gtrdot_{lr} = \gtrdot_{ld}$ 
+\end{itemize}
+
+On peut maintenant construire nos posets pour le cas rationnel.
+
 \subsection{Posets rationnels}
+
+\begin{expl}[$a > b$ : Les posets de $\mathcal{R}_{5,3}$ et
+    $\mathcal{PF'}_{5,3}$]
+    ~\\
+    \begin{center}
+        \input{fig/fig17.tex}
+        Chacun de ces posets comporte $\frac {1}{8} \binom{8}{5} = 7$
+        éléments.
+    \end{center}
+\end{expl}
+
+\begin{expl}[$a < b$ : Les posets de $\mathcal{R}_{3,7}$ et
+    $\mathcal{PF'}_{3,7}$]
+    ~\\
+    \begin{center}
+        \input{fig/fig18.tex}
+        Chacun de ces posets comporte $\frac {1}{10} \binom{10}{3} = 12$
+        éléments.
+    \end{center}
+\end{expl}
+
+\begin{expl}[$a > b$ : Les posets de $\mathcal{LR}_{5,2}$ et
+    $\mathcal{PF}_{5,2}$]
+    ~\\
+    \begin{center}
+        \input{fig/fig19.tex}
+        Pour plus de clarté, les flêches ont été simplifiées.
+        Celles des deux plus hauts niveaux sont à comprendre ainsi :
+        chaque flêche finit là ou il y a une croix de la même couleur.
+        Il y a  $2^4 = 16$ éléments dans chacun de ces posets.
+    \end{center}
+\end{expl}
+
+
+\begin{expl}[$a < b$ : Les posets de $\mathcal{LR}_{2,7}$ et
+    $\mathcal{PF}_{2,7}$]
+    ~\\
+    \begin{center}
+        \input{fig/fig20.tex}
+        Il y a $7^1 = 7$ éléments dans chacun de ces posets.
+    \end{center}
+\end{expl}

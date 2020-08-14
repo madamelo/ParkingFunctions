@@ -61,26 +61,78 @@
     \end{itemize*}
 \end{example}
 
+\begin{example}[Définition 11 : $a < b : a = 3, b = 5$]
+    ~
+    \begin{itemize}
+        \item $w_1 = 10100010 \text{ n'est \emph{pas} un 3, 5 - mot de
+        Dyck, car } |101000|_1 = 2 < \frac{3}{5}|101000|_0 = 2 \frac{2}{5}.$
+        \item $w_2 = 10100100 \text{ \emph{est} un 3, 5 - mot de Dyck : }$
+    \end{itemize}
+    \input{fig/fig13.tex}
+\end{example}
+
 \begin{example}[Définition 11 : $a > b : a = 7, b = 3$]
-    ~\\
-    \begin{align*}
-        &w_1 = 1110011110 \text{ n'est \emph{pas} un 7, 3 - mot de
-        Dyck, car } |11100|_1 = 3\\
-        & \hspace{5cm} < \frac{7}{3}|11100|_0
-        = \frac{14}{3} = 4 \frac{1}{3}.\\
-        &w_2 = 1110111010 \text{ \emph{est} un 7, 3 - mot de Dyck : }\\
-    \end{align*}
+    ~
+    \begin{itemize}
+        \item $w_1 = 1110011110 \text{ n'est \emph{pas} un 7, 3 - mot de
+        Dyck, car } |11100|_1 = 3 < \frac{7}{3}|11100|_0 = 4 \frac{1}{3}.$
+        \item $w_2 = 1110111010 \text{ \emph{est} un 7, 3 - mot de Dyck : }$
+    \end{itemize}
     \input{fig/fig12.tex}
 \end{example}
 
-\begin{example}[Définition 11 : $a < b : a = 3, b = 5$]
-    ~\\
-    \begin{align*}
-        &w_1 = 10100010 \text{ n'est \emph{pas} un 3, 5 - mot de
-        Dyck, car } |101000|_1 = 2\\
-        & \hspace{5cm} < \frac{3}{5}|101000|_0
-        = \frac{12}{5} = 2 \frac{2}{5}.\\
-        &w_2 = 10100100 \text{ \emph{est} un 3, 5 - mot de Dyck : }\\
-    \end{align*}
-    \input{fig/fig13.tex}
+\begin{example}[Théorème 8 : $a = 7, b = 2$]
+    $r_n = 4$.
+    \begin{center}
+        \input{fig/fig14.tex}
+    \end{center}
+\end{example}
+
+\begin{example}[Définition 12 : $a < b : a = 3, b = 5$]
+    $w = 20130000$ :\\
+    \input{fig/fig16.tex}
+   \end{example}
+
+\begin{example}[Définition 12 : $a > b : a = 7, b = 3$]
+    $w_2 = 2456017030$ :\\
+ \input{fig/fig15.tex}
+\end{example}
+
+\begin{example}[Théorème 9 : $a = 4, b = 3$]
+    $lr_{a,b} = 3^3 = 27$
+    \begin{itemize}
+        \item Mots de la forme $XXXX000$ :
+            \subitem $1234000$
+        \item Mots de la forme $XXX0X00$ :
+            \subitem $1230400$
+            \hspace{2cm} $1240300$
+            \hspace{2cm} $1340200$
+            \subitem $2340100$
+        \item Mots de la forme $XX0XX00$ :
+            \subitem $1203400$
+            \hspace{2cm} $1302400$
+            \hspace{2cm} $1402300$
+            \subitem $2301400$
+            \hspace{2cm} $2401300$
+            \hspace{2cm} $3401200$
+        \item Mots de la forme $XXX00X0$ :
+            \subitem $1230040$
+            \hspace{2cm} $1240030$
+            \hspace{2cm} $1340020$
+            \subitem $2340010$
+        \item Mots de la forme $XX0X0X0$ :
+            \subitem $1203040$
+            \hspace{2cm} $1204030$
+            \hspace{2cm} $1302040$
+            \subitem $1304020$
+            \hspace{2cm} $1402030$
+            \hspace{2cm} $1403020$
+            \subitem $2301040$
+            \hspace{2cm} $2304010$
+            \hspace{2cm} $2401030$
+            \subitem $2403010$
+            \hspace{2cm} $3401020$
+            \hspace{2cm} $3402010$
+    \end{itemize}
+    
 \end{example}

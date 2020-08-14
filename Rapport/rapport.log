@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  13 AUG 2020 20:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  14 AUG 2020 11:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -892,7 +892,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `rapport.toc'.
 
- (/home/salsifi/Documents/Stage/Recherche/Rapport/intro.tex [3]) (/home/salsifi/Documents/Stage/Recherche/Rapport/classique.tex [4]
+ (/home/salsifi/Documents/Stage/Recherche/Rapport/intro.tex [3]) [4] (/home/salsifi/Documents/Stage/Recherche/Rapport/classique.tex
 Overfull \hbox (9.29747pt too wide) in paragraph at lines 69--73
 []\T1/cmr/m/n/10.95 Cette re-la-tion de cou-ver-ture en-gendre notre \T1/cmr/m/it/10.95 po-set \T1/cmr/m/n/10.95 pour $\OMS/cmsy/m/n/10.95 D[]$\T1/cmr/m/n/10.95 . Ainsi, le po-set contient l'\T1/cmr/m/it/10.95 intervalle
  []
@@ -907,12 +907,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig7.tex [6]) [7]
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig7.tex) [6]
 Overfull \hbox (40.29167pt too wide) in paragraph at lines 141--152
 \T1/cmr/m/n/10.95 Le mot de Dyck dé-coré cor-res-pon-dant sera $[] \OT1/cmr/m/n/10.95 0 [] 0 [] [] 0$\T1/cmr/m/n/10.95 . 
  []
 
-
+[7]
 Overfull \hbox (30.33228pt too wide) in paragraph at lines 214--216
 []\T1/cmr/m/n/10.95 Les pre-miers termes de cette suite sont $\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 5\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 64\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1587\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 65421\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 4071178\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 357962760\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 4237910716\OML/cmm/m/it/10.95 ; :::$\T1/cmr/m/n/10.95 . 
  []
@@ -922,12 +922,37 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
-[8] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig11.tex)
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig11.tex [8])
 Underfull \hbox (badness 10000) in paragraph at lines 226--230
 
  []
 
-[9]) (/home/salsifi/Documents/Stage/Recherche/Rapport/rationnel.tex [10]) (/home/salsifi/Documents/Stage/Recherche/Rapport/arbres.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/conclusion.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.bbl) [11] (/home/salsifi/Documents/Stage/Recherche/Rapport/A.tex (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig1.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig2.tex) [12] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig3.tex)) [13] (/home/salsifi/Documents/Stage/Recherche/Rapport/B.tex (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig4.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig5.tex) [14] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig6.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig8.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig9.tex [15]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig10.tex)) [16] (/home/salsifi/Documents/Stage/Recherche/Rapport/C.tex
+) [9] (/home/salsifi/Documents/Stage/Recherche/Rapport/rationnel.tex [10]
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig17.tex [11])
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig18.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig19.tex
+Overfull \hbox (12.75894pt too wide) in paragraph at lines 221--318
+ [] 
+ []
+
+[12])
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
+
+ []
+
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig20.tex)) [13] (/home/salsifi/Documents/Stage/Recherche/Rapport/arbres.tex) [14] (/home/salsifi/Documents/Stage/Recherche/Rapport/conclusion.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.bbl) [15] (/home/salsifi/Documents/Stage/Recherche/Rapport/A.tex (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig1.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig2.tex) [16] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig3.tex)) [17] (/home/salsifi/Documents/Stage/Recherche/Rapport/B.tex (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig4.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig5.tex) [18] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig6.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig8.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig9.tex [19]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig10.tex)) [20] (/home/salsifi/Documents/Stage/Recherche/Rapport/C.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
@@ -957,39 +982,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--62
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig12.tex [17])
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig13.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig12.tex [21]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig14.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig16.tex
+Underfull \hbox (badness 10000) in paragraph at lines 92--1
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig13.tex)) [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
+) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig15.tex
+Underfull \hbox (badness 10000) in paragraph at lines 97--1
+
+ []
+
+[22])) [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
  (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 9CBA700A2011103C3AC7E6198DD0B7C3;1006.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
  ) 
 Here is how much of TeX's memory you used:
- 19414 strings out of 494894
- 367591 string characters out of 6179474
- 470214 words of memory out of 5000000
- 22230 multiletter control sequences out of 15000+600000
+ 19519 strings out of 494894
+ 370206 string characters out of 6179474
+ 504156 words of memory out of 5000000
+ 22303 multiletter control sequences out of 15000+600000
  21057 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,10n,59p,469b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,9n,59p,469b,738s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.pdf (18 pages, 269253 bytes).
+Output written on /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.pdf (23 pages, 288059 bytes).
 PDF statistics:
- 724 PDF objects out of 1000 (max. 8388607)
- 313 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
+ 754 PDF objects out of 1000 (max. 8388607)
+ 337 compressed objects within 4 object streams
+ 106 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
