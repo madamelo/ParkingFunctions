@@ -1,0 +1,136 @@
+Nous commençons par rappeler ce qu'est un arbre de parking.
+
+\begin{definition}[Arbre de Parking]
+    Un \emph{arbre de parking} est défini à partir d'une fonction de
+    parking $f = (a_1, \ldots, a_n) \in \mathcal{PF}_n$ ainsi :
+    \begin{itemize}
+        \item Pour tout $1 \leqslant i \leqslant n+1$, on définit
+            $s_i$ comme $\{j\ |\ a_j = i\}$
+        \item $[s_1, \ldots, s_{n+1}]$ décrit le parcours préfixe de
+            l'arbre.
+        \item Chaque noeud étiquetté par un ensemble de taille $k$
+            est d'arité $k$. 
+    \end{itemize}
+\end{definition}
+
+\begin{rem}
+    Les feuilles de l'arbre correspondent aux éléments $i$ tels que
+    $1 \leqslant i \leqslant n + 1$, où $i$ n'est \emph{pas} dans $f$.\\
+    De plus, comme l'arbre possèdera -- par définition -- $n$ branches,
+    la présence d'un noeud correspondant à $n + 1$ est nécessaire, bien
+    que son étiquette sera toujours l'ensemble vide.
+\end{rem}
+
+\begin{expl}[$n = 12$]
+    ~\\
+    \begin{itemize*}
+        \item $f = (5, 7, 1, 3, 1, 8, 2, 7, 1, 3, 11, 11)$\\
+        \item Labels : $[\{3, 5, 9\},\ \{7\},\ \{4, 10\},\ 
+            \emptyset,\ \{1\},\ \emptyset,\ \{2,8\},\ 
+            \{6\},\ \emptyset,\ \emptyset,\ \{11, 12\},\ 
+            \emptyset, \emptyset]$
+    \end{itemize*}
+    \input{fig/fig21.tex}    
+\end{expl}
+
+Inversement, en lisant les étiquettes d'un arbre de parking en ordre
+préfixe, on obtient la liste des positions de chaque nombre dans la fonction
+de parking correspondante, ce qui créé ainsi une \emph{bijection}.
+
+\begin{expl}[De l'arbre à la fonction]
+    \input{fig/fig22.tex}
+    \begin{itemize}
+        \item Les étiquettes sont $[\{5\},\ \{2\},\ \{1,3,4,7\},\ 
+        \emptyset,\ \emptyset,\ \{8\},\ \{6\},\ \emptyset,\ 
+        \emptyset]$.
+        \item La fonction correspondante est donc
+            $(3,2,3,3,1,7,3,6) \in \mathcal{PF}_8$.
+    \end{itemize}
+\end{expl}
+
+On cherche maintenant à étendre cette construction au cas rationnel.
+
+
+\begin{definition}[Arbre de Parking Rationnel]
+    Un \emph{arbre de parking rationnel} est défini à partir d'une fonction
+    de parking rationnelle $f = (a_1, \ldots, a_a) \in \mathcal{PF}_{a,b}$
+    ainsi :
+    \begin{itemize}
+        \item Pour tout $1 \leqslant i \leqslant n+1$, on définit la limite
+            $l_i$ comme étant la \emph{partie entière} de
+            $\displaystyle \frac{b}{a}(i-1) + 1$.
+            \subitem Posons $l_0 = 0$.
+        \item De ces limites, nous déduisons les intervalles
+            $itv_i =\ ]l_{i-1}, l_i]$ for $1 \leqslant i
+            \leqslant a+1$.
+        \item Pour tout $1 \leqslant i \leqslant b + 1$, posons
+        $s_i = \{j\ |\ a_j = i\}$.
+        \item $[s_1, \ldots, s_{b+1}]$ décrit alors le parcours préfixe
+            de notre arbre.
+        \item Chaque noeud étiquetté par un ensemble de taille $k$
+            possède $k$ \emph{groupes} d'enfants, qui sont définis par
+            les intervalles.
+    \end{itemize}
+\end{definition}
+
+\begin{expl}[$a < b$]
+    ~
+    \begin{itemize}
+        \item $a = 7$
+        \item $b = 9$
+        \item Limites : $[1,\ 2 \frac{2}{7},\ 
+            3 \frac{4}{7},\ 4 \frac{6}{7},\  
+            6 \frac{1}{7},\ 7 \frac{3}{7},\ 
+            8 \frac{5}{7},\ 10]$
+        \item Limites entières : $[0,1,2,3,4,6,7,8,10]$
+        \item Intervalles :
+            \subitem $]0, 1]$ \hspace{5mm} $]1, 2]$
+            \hspace{5mm} $]2, 3]$ \hspace{5mm} $]3, 4]$
+            \hspace{5mm} $]4, 6]$ \hspace{5mm} $]6, 7]$
+            \hspace{5mm} $]7, 8]$ \hspace{5mm} $]8, 10]$
+        \item Groupes d'enfants :
+            \subitem $[1]$ \hspace{5mm} $[2]$ \hspace{5mm}
+            $[3]$ \hspace{5mm} $[4]$ \hspace{5mm}
+            $[5,6]$ \hspace{5mm} $[7]$ \hspace{5mm} $[8]$
+        \item $f = (6,2,6,1,4,7,2)$
+        \item Etiquettes : $\{\{4\},\ \{2,7\},\ \emptyset,\ 
+            \{5\},\ \emptyset,\ \{1,3\},\ \{6\},\ 
+            \emptyset,\ \emptyset,\ \emptyset\}$\\
+    \end{itemize}
+    \input{fig/fig23.tex}
+\end{expl}
+
+\begin{expl}[$a > b$]
+    ~
+    \begin{itemize}
+        \item $a = 9$
+        \item $b = 7$
+        \item Limites : $[1,\ 1 \frac{7}{9},\ 
+            2 \frac{5}{9},\ 3 \frac{3}{9},\  
+            4 \frac{1}{9},\ 4 \frac{8}{9},\ 
+            5 \frac{6}{9},\ 6 \frac{4}{9},\ 
+            7 \frac{2}{9},\ 8]$
+        \item Limites entières : $[0,1,1,2,3,4,4,5,6,7,8]$
+        \item Intervalles :
+            \subitem $]0, 1]$ \hspace{5mm} $]1, 1]$
+            \hspace{5mm} $]1, 2]$ \hspace{5mm} $]2, 3]$
+            \hspace{5mm} $]3, 4]$ 
+            \subitem $]4, 4]$ \hspace{5mm} $[4, 5]$
+            \hspace{5mm} $]5, 6]$ \hspace{5mm} $]6, 7]$
+            \hspace{5mm} $]7, 8]$
+        \item Groupes d'enfants :
+            \subitem $[1]$ \hspace{5mm} $\emptyset$ 
+            \hspace{5mm} $[2]$ \hspace{5mm} $[3]$
+            \hspace{5mm} $[4]$ \hspace{5mm} $\emptyset$
+            \hspace{5mm} $[5]$ \hspace{5mm} $[6]$
+            \hspace{5mm} $[7]$ \hspace{5mm} $[8]$
+        \item $f = (4,2,2,1,4,5,7,4,1)$
+        \item Etiquettes : $\{\{4,9\},\ \{2,3\},\ \emptyset,\ 
+            \{1,5,8\}, \{6\},\ \emptyset,\ \{7\},\ 
+            \emptyset\}$\\
+    \end{itemize}
+    \input{fig/fig24.tex}
+\end{expl}
+
+Dans les deux cas, la direction inverse de la \emph{bijection} est obtenue
+-- comme pour le cas classique -- par un parcours préfixe.
