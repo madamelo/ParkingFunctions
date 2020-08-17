@@ -1,3 +1,6 @@
+Commençons par donner les définitions et résultats principaux des extensions
+rationnelles des fonctions de parking et des chemins de Dyck.
+
 \subsection{Fonctions de parking rationnelles}
 
 Cette partie est illustrée par les exemples 17 à 19 de l'annexe C.
@@ -13,7 +16,9 @@ Cette partie est illustrée par les exemples 17 à 19 de l'annexe C.
     \end{itemize*}
 \end{definition}
 
-On note $\mathcal{PF}_{a,b}$ l'ensemble des a, b - fonctions de parking. 
+On note $\mathcal{PF}_{a,b}$ l'ensemble des a, b - fonctions de parking.
+La formule comptant le nombre d'éléments de cette ensemble est similaire
+à celle pour $\mathcal{PF}_{n}$.
 
 \begin{theorem}[Armstrong, Loehr et Warrington, 2014]
     Soit $pf_{a,b}$ le cardinal de $\mathcal{PF}_{a,b}$.
@@ -66,7 +71,7 @@ appelé \emph{a, b - chemin de Dyck} :
 
 On note $\mathcal{R}_{a, b}$ l'ensemble des a, b - mots de Dyck.
 
-\begin{theorem}[Bizley, 1954]
+\begin{theorem}[Bizley (\cite{ref10}), 1954]
     Soit $r_{a,b}$ le cardinal de $\mathcal{R}_{a,b}$.
     Nous avons $$r_{a,b} = \frac{1}{a+b} \binom {a+b}{a} =
     \frac{(a+b-1)!}{a!b!}$$
@@ -128,6 +133,12 @@ On peut maintenant construire nos posets pour le cas rationnel.
 
 \subsection{Posets rationnels}
 
+Nous présentons ici une série d'exemple des posets obtenus par les relations
+de couverture que nous venons de définir.
+Pour le cas primitif comme pour le cas non-primitif, nous étudions un
+exemple où $a > b$, et un où $a < b$.
+On remarque dans chaque cas que les posets sont bien isomorphes.
+
 \begin{expl}[$a > b$ : Les posets de $\mathcal{R}_{5,3}$ et
     $\mathcal{PF'}_{5,3}$]
     ~\\
@@ -138,6 +149,7 @@ On peut maintenant construire nos posets pour le cas rationnel.
     \end{center}
 \end{expl}
 
+\newpage
 \begin{expl}[$a < b$ : Les posets de $\mathcal{R}_{3,7}$ et
     $\mathcal{PF'}_{3,7}$]
     ~\\
@@ -169,3 +181,13 @@ On peut maintenant construire nos posets pour le cas rationnel.
         Il y a $7^1 = 7$ éléments dans chacun de ces posets.
     \end{center}
 \end{expl}
+
+Ceci conclut la présentation de nos posets bijectifs.\\
+
+Nous passons maintenant au second problème traité par cet article, à savoir
+l'extension de la notion d'arbre de parking au cas rationnel.
+En effet, définie par B. Delcroix-Oger, M. Josuat-Vergès et L. Randazzo
+(2020), la structure d'arbre de parking (classique) est définie par une
+bijection avec les fonctions de parking classiques.
+Nous définissons donc les arbres de parking rationnels, extension qui sera,
+similairement, en bijection avec les fonctions de parking rationnelles.

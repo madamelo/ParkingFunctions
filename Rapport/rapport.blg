@@ -4,45 +4,45 @@ The top-level auxiliary file: rapport.aux
 The style file: unsrt.bst
 Database file #1: ref.bib
 Warning--empty journal in ref9
-You've used 8 entries,
+You've used 10 entries,
             1791 wiz_defined-function locations,
-            489 strings with 4366 characters,
-and the built_in function-call counts, 1531 in all, are:
-= -- 135
-> -- 58
+            501 strings with 4607 characters,
+and the built_in function-call counts, 1855 in all, are:
+= -- 164
+> -- 66
 < -- 0
-+ -- 23
-- -- 15
-* -- 85
-:= -- 254
-add.period$ -- 25
-call.type$ -- 8
-change.case$ -- 6
++ -- 27
+- -- 17
+* -- 101
+:= -- 305
+add.period$ -- 30
+call.type$ -- 10
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 69
-empty$ -- 164
-format.name$ -- 15
-if$ -- 347
+cite$ -- 11
+duplicate$ -- 83
+empty$ -- 204
+format.name$ -- 17
+if$ -- 419
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 9
-newline$ -- 42
-num.names$ -- 8
-pop$ -- 26
+int.to.str$ -- 10
+missing$ -- 10
+newline$ -- 51
+num.names$ -- 10
+pop$ -- 34
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 26
+skip$ -- 32
 stack$ -- 0
-substring$ -- 84
-swap$ -- 7
+substring$ -- 103
+swap$ -- 9
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 12
-width$ -- 9
-write$ -- 85
+while$ -- 16
+width$ -- 12
+write$ -- 104
 (There was 1 warning)

@@ -1,3 +1,33 @@
+\begin{example}
+On appelle \emph{permutation circulaire} une permutation dont la
+représentation sous forme de composition de cycles contient un unique cycle
+de taille $n$. Il est ainsi possible de créer une bijection explicite entre
+$\mathfrak{S}_n$ et l'ensemble des permutations circulaires de
+$\mathfrak{S}_{n+1}.$
+On présente ici deux bijections inverse l'une de l'autre.
+\begin{itemize}
+    \item $\mathfrak{S}_n \to\ ^{n+1}\mathfrak{S}_{n+1}$ :
+    Soit $\sigma = a_1 \ldots a_n$ notre permutation.
+    $\sigma' = (n+1 \ a_1 \ldots a_n) \in ^{n+1}\mathfrak{S}_{n+1}.$
+    \item $^{n+1}\mathfrak{S}_{n+1} \to\ \mathfrak{S}_n$ :
+    Soit $\sigma' = (a_1 \ldots a_{n+1})$ notre permutation circulaire.
+    Notons $i$ l'indice tel que $a_i = n + 1$.
+    $\sigma = a_{i+1} \ldots a_{n+1} a_1 \ldots a_{i-1} \in \mathfrak{S}_n.$
+\end{itemize}
+L'existence d'une telle bijection implique que les deux ensembles sont de
+même cardinal.
+En effet, le cardinal de $\mathfrak{S}_n$ est $n!$. Quant à celui de
+$^{n+1}\mathfrak{S}_{n+1}$, on définit tout d'abord un \emph{k-cycle}.
+$\sigma$ est un k-cycle si son écriture sous la forme d'une composition de
+cycles est un unique cycle de taille $k$. Ainsi, $^{n+1}\mathfrak{S}_{n+1}$
+est l'ensemble des (n + 1)-cycles de $\mathfrak{S}_{n+1}$.
+Or, dans le groupe symétrique $\mathfrak{S}_{n}$, le nombre de k-cycles est
+$\displaystyle \frac{n!}{(n-k)!k}$.
+Ainsi, le cardinal de $^{n+1}\mathfrak{S}_{n+1}$ est
+$\displaystyle \frac{(n+1)!}{(n+1-n-1)!(n+1)} = \frac{(n+1)!}{n+1} = n!$.
+On a bien l'égalité.\\
+\end{example}
+
 \begin{example}[Définition 1 : $n = 7$]
     ~
     \begin{itemize}

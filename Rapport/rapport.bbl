@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{ref1}
 Alan~G. Konheim and Benjamin Weiss.
@@ -37,8 +37,19 @@ Michelle Bodnar.
 \newblock Rational noncrossing partitions for all coprime pairs, 2017.
 
 \bibitem{ref9}
-Bérénice Delcroix-Oger, Matthier Josuat-Vergès, and Lucas Randazzo.
+Bérénice Delcroix-Oger, Matthieu Josuat-Vergès, and Lucas Randazzo.
 \newblock Some properties of the parking function poset.
 \newblock 2020.
+
+\bibitem{ref6}
+Amarpreet Rattan.
+\newblock Parking functions and related combinatorial structures, 2001.
+
+\bibitem{ref10}
+M.~T.~L. Bizley.
+\newblock Derivation of a new formula for the number of minimal lattice paths
+  [...].
+\newblock {\em Journal of the Institute of Actuaries (1886-1994)},
+  80(1):55--62, 1954.
 
 \end{thebibliography}

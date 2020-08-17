@@ -30,14 +30,14 @@
 \newtheorem{cor}[theorem]{Corollaire}
 \newtheorem{conj}[theorem]{Conjecture}
 
-\newtheorem*{notation}{Notation}
-
 \theoremstyle{remark}
 \newtheorem*{rem}{Remarque}
 
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Définition}
+\newtheorem*{notation}{Notation}
 \newtheorem{example}{Exemple}
+\setcounter{example}{-1}
 \newtheorem*{expl}{Exemple} %exemples non numérotés
 
 \begin{document}
@@ -53,13 +53,22 @@
 \subsection*{Contexte général}
 
 La \emph{combinatoire} est un domaine des mathématiques et de 
-l'informatique théorique étudiant les ensembles finis par leur énumération
-et leur comptage.
+l'informatique théorique étudiant les ensembles finis \emph{structurés}
+par leur énumération et leur comptage.
 Se divisant en plusieurs branches, nous abordons dans ce rapport deux
 branches principales : la \emph{combinatoire énumérative}, domaine le plus
 classique, basé sur le dénombrement; et \emph{la combinatoire bijective},
 consistant à déduire une égalité entre les résultats de comptage de deux
-classes combinatoires qui sont en bijection. 
+classes combinatoires qui sont en bijection.
+
+Une \emph{classe combinatoire} est un ensemble $\mathcal{A}$ muni d'une
+application $\mathcal{A} \to \mathbb{N}$, appelée \emph{taille}. 
+Celle ci permet de définir et compter l'ensemble des éléments de
+$\mathcal{A}$ de taille $n$.
+Par exemple, il y a $2^n$ mots de longueur $n$ sur l'alphabet $\{0,1\}$,
+et $n!$ permutations de $\{1, \ldots, n\}$.
+Un exemple de bijection sur les permutations est donné en annexe A
+(exemple 0). 
 
 On s'intéresse ici en particulier à des objets combinatoires appelés
 \emph{fonctions de parking}. Introduites en 1966 par Konheim et Weiss
@@ -77,7 +86,7 @@ et seulement si il existe une configuration de garage des $n$ voitures
 respectant les contraintes données par les entiers $a_i$.
 
 Longuement étudiées, les principaux résultats de comptage émanent des
-travaux de Stanley (\cite{ref2}, \cite{ref3}), Kreweras (\cite{ref4}),
+travaux de Stanley (\cite{ref2, ref3}), Kreweras (\cite{ref4}),
 et Edelman (\cite{ref5}).
 Plus récemment, la notion de fonction de parking \emph{rationnelle} à été
 introduite et étudiée -- entre autres -- dans les travaux d'Armstrong, Loehr
@@ -121,7 +130,8 @@ pu être fait dans certains travaux.
 Une version longue de ce rapport est disponible 
 \href{https://github.com/tessalsifi/ParkingFunctions}{ici}
 \footnote{github.com/tessalsifi/ParkingFunctions}, ainsi que l'encodage
-en Sage des principales notions abordées dans les références 1 à 8 et des
+en Sage des principales notions abordées dans les références \cite{ref1,
+ref2, ref3, ref4, ref5, ref6, ref7, ref8, ref9}, et des
 constructions que nous présentons.
 
 \subsection*{Arguments en faveur de sa validité}
@@ -156,11 +166,9 @@ sur les arbres de parking rationnels.
 \section{Introduction}
 \input{intro.tex}
 
-\newpage
 \section{Un poset pour les fonctions de parking classiques}
 \input{classique.tex}
 
-\newpage
 \section{Un poset pour les fonctions de parking rationnelles}
 \input{rationnel.tex}
 
@@ -168,7 +176,6 @@ sur les arbres de parking rationnels.
 \section{Arbres de parking rationnels}
 \input{arbres.tex}
 
-\newpage
 \section{Conclusion}
 \input{conclusion.tex}
 
@@ -181,11 +188,9 @@ sur les arbres de parking rationnels.
 \section{Exemples pour l'Introduction}
 \input{A.tex}
 
-\newpage
 \section{Exemples pour la Partie 2}
 \input{B.tex}
 
-\newpage
 \section{Exemples pour la Partie 3}
 \input{C.tex}
 
