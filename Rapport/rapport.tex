@@ -25,15 +25,20 @@
 \usetikzlibrary{patterns}
 
 \newtheorem{theorem}{Théorème}
-\newtheorem{lemma}{Lemme}
-\newtheorem{prop}{Proposition}
-\newtheorem{definition}{Définition}
+\newtheorem{lemma}[theorem]{Lemme}
+\newtheorem{prop}[theorem]{Proposition}
+\newtheorem{cor}[theorem]{Corollaire}
+\newtheorem{conj}[theorem]{Conjecture}
+
+\newtheorem*{notation}{Notation}
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remarque}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Définition}
 \newtheorem{example}{Exemple}
 \newtheorem*{expl}{Exemple} %exemples non numérotés
-\newtheorem*{notation}{Notation}
-\newtheorem*{cor}{Corollaire}
-\newtheorem*{rem}{Remarque}
-\newtheorem*{conj}{Conjecture}
 
 \begin{document}
 
@@ -124,10 +129,10 @@ Les posets introduits dans le cas classique sont à l'origine de nos
 deux résultats principaux.
 
 Dans le cas des fonctions de parking \emph{primitives}, nous exhibons
-une preuve du Théorème 5, qui donne le nombre d'intervalles dans le
+une preuve du Théorème 14, qui donne le nombre d'intervalles dans le
 poset.
-Quant à son équivalent pour le cas non-primitif, nous établissons une
-Conjecture sur le nombre d'intervalles, vérifiée sur les cas
+Quant à son équivalent pour le cas non-primitif, nous établissons la
+Conjecture 18 sur le nombre d'intervalles, vérifiée sur les cas
 $n = 1, \ldots, 8$.
 
 \subsection*{Bilan et perspectives}
@@ -135,7 +140,7 @@ En conclusion, nous avons maintenant des posets définis de manière
 directe pour les quatre types de fonctions de parking : classiques, 
 classiques primitives, rationnelles, et rationnelles primitives.
 
-Par la suite, il sera nécessaire de trouver une preuve de la Conjecture,
+Par la suite, il sera nécessaire de trouver une preuve de la Conjecture 18,
 ou bien si elle doit être réfutée, d'exhiber une formule comptant les
 intervalles dans notre poset des foncions de parking classiques.
 Quant au cas rationnel, il faudra également trouver des formules exprimant

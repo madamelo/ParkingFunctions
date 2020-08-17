@@ -5,12 +5,12 @@
 \contentsline {section}{\numberline {2}Un poset pour les fonctions de parking classiques}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Le cas primitif}{5}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Le cas g\IeC {\'e}n\IeC {\'e}ral}{7}{subsection.2.2}
-\contentsline {section}{\numberline {3}Un poset pour les fonctions de parking rationnelles}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Fonctions de parking rationnelles}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Chemins de Dyck rationnels}{10}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Posets rationnels}{11}{subsection.3.3}
-\contentsline {section}{\numberline {4}Arbres de parking rationnels}{14}{section.4}
-\contentsline {section}{\numberline {5}Conclusion}{19}{section.5}
-\contentsline {section}{\numberline {A}Exemples pour l'Introduction}{20}{appendix.A}
-\contentsline {section}{\numberline {B}Exemples pour la Partie 2}{22}{appendix.B}
-\contentsline {section}{\numberline {C}Exemples pour la Partie 3}{25}{appendix.C}
+\contentsline {section}{\numberline {3}Un poset pour les fonctions de parking rationnelles}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Fonctions de parking rationnelles}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Chemins de Dyck rationnels}{11}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Posets rationnels}{12}{subsection.3.3}
+\contentsline {section}{\numberline {4}Arbres de parking rationnels}{15}{section.4}
+\contentsline {section}{\numberline {5}Conclusion}{20}{section.5}
+\contentsline {section}{\numberline {A}Exemples pour l'Introduction}{21}{appendix.A}
+\contentsline {section}{\numberline {B}Exemples pour la Partie 2}{23}{appendix.B}
+\contentsline {section}{\numberline {C}Exemples pour la Partie 3}{26}{appendix.C}

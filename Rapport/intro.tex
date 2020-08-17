@@ -6,8 +6,8 @@ En annexe A, les exemples 1 à 4 illustrent les définitions et théorèmes
 de cette section.
 
 \begin{definition}[Fonction de Parking]
-    Une \emph{fonction de parking} est une séquence d'entiers positifs
-    $(a_1, a_2, \ldots, a_n)$ dont le tri croissant
+    Une \emph{fonction de parking} est une séquence d'entiers strictement
+    positifs $(a_1, a_2, \ldots, a_n)$ dont le tri croissant
     $(b_1, b_2, \ldots, b_n)$ respecte la condition suivante :
     $b_i \leqslant i$ pour tout $i \leqslant n$.
 \end{definition}
@@ -19,7 +19,7 @@ On note $\mathcal{PF}_n$ l'ensemble des fonctions de parking de longueur $n$.
 
 \begin{theorem}[Konheim et Weiss, 1966]
     Soit $pf_n$ le cardinal de $\mathcal{PF}_n$.
-    Nous avons $$pf_n = (n + 1)^{n-1}$$.
+    Nous avons $$pf_n = (n + 1)^{n-1}.$$
 \end{theorem}
 
 \begin{definition}[Fonction de Parking Primitive]
@@ -32,7 +32,7 @@ de longueur $n$.
 
 \begin{theorem}[Stanley, 1999]
     Soit $pf'_n$ le cardinal de $\mathcal{PF'}_n$.
-    Nous avons $$pf'_n = \frac{1}{n + 1} \binom{2n}{n}$$
+    Nous avons $$pf'_n = \frac{1}{n + 1} \binom{2n}{n}.$$
 \end{theorem}
 
 Ce nombre est le $n^{e}$ nombre de Catalan $Cat(n)$.
@@ -50,7 +50,7 @@ de cette section.
 \begin{definition}[Mot de Dyck]
     Un \emph{mot de Dyck} est un mot $w \in \{0,1\}^*$ tel que :
     \begin{itemize}
-        \item pour tout \emph{suffixe} $w'$ de $w$,
+        \item pour tout \emph{préfixe} $w'$ de $w$,
             $|w'|_1 \geqslant |w'|_0$.
         \item $|w|_0 = |w|_1$.
     \end{itemize}
@@ -70,14 +70,14 @@ On note $\mathcal{D}_n$ l'ensemble des mots de Dyck de longeur $2n$.
 
 \begin{theorem}[André, 1887]
     Soit $d_n$ le cardinal de $\mathcal{D}_n$.
-    Nous avons $$d_n = \frac{1}{n + 1} \binom {2n}{n}$$
+    Nous avons $$d_n = \frac{1}{n + 1} \binom {2n}{n}.$$
 \end{theorem}
 
 \begin{definition}[Mot de Dyck Décoré]
     Un \emph{mot de Dyck décoré} est un mot $w \in 
     \{0, \ldots, n\}^*$ tel que :
     \begin{itemize}
-        \item pour tout suffixe $w'$ de $w$,
+        \item pour tout préfixe $w'$ de $w$,
             $|w'|_{\neq 0} \geqslant |w'|_0$.
         \item $|w|_0 = |w|_{\neq 0}$.
         \item pour tout $i \in \{1, \ldots, n\}$, $w$ contient
@@ -103,5 +103,5 @@ $2n$.
 
 \begin{theorem}
     Soit $ld_n$ le cardinal de $\mathcal{LD}_n$.
-    Nous avons $$ld_n = (n + 1)^{n - 1}$$.
+    Nous avons $$ld_n = (n + 1)^{n - 1}.$$
 \end{theorem}

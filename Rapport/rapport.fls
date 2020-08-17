@@ -294,16 +294,15 @@ INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.bbl
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.bbl
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/A.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/A.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti0800.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti0600.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0600.tfm
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig1.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig1.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig2.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig2.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig3.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig3.tex
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecbi1095.tfm
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/B.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/B.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig4.tex
@@ -333,7 +332,6 @@ INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig15.tex
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.aux
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.out
 INPUT /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.out
-INPUT /home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi1095.600pk
 INPUT /home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk
 INPUT /home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk
 INPUT /home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk
