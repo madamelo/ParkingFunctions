@@ -11,6 +11,6 @@
 \contentsline {subsection}{\numberline {3.3}Posets rationnels}{12}{subsection.3.3}
 \contentsline {section}{\numberline {4}Arbres de parking rationnels}{15}{section.4}
 \contentsline {section}{\numberline {5}Conclusion}{19}{section.5}
-\contentsline {section}{\numberline {A}Exemples pour l'Introduction}{20}{appendix.A}
-\contentsline {section}{\numberline {B}Exemples pour la Partie 2}{22}{appendix.B}
-\contentsline {section}{\numberline {C}Exemples pour la Partie 3}{25}{appendix.C}
+\contentsline {section}{\numberline {A}Exemples pour l'Introduction}{21}{appendix.A}
+\contentsline {section}{\numberline {B}Exemples pour la Partie 2}{23}{appendix.B}
+\contentsline {section}{\numberline {C}Exemples pour la Partie 3}{26}{appendix.C}
