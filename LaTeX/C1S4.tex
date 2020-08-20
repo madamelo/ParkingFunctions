@@ -11,7 +11,7 @@
     A \emph{Dyck word} is a word $w \in \{0,1\}^*$ such
     that :
     \begin{itemize}
-        \item for each \emph{suffix} $w'$ of $w$,
+        \item for each \emph{prefix} $w'$ of $w$,
             $|w'|_1 \geqslant |w'|_0$.
         \item $|w|_0 = |w|_1$.
     \end{itemize}
@@ -43,7 +43,7 @@ length $2n$.
 
 \begin{theorem}[André, 1887]
     Let $d_n$ be the cardinal of $\mathcal{D}_n$.
-    We have $$d_n = \frac{1}{n + 1} \binom {2n}{n}$$
+    We have $$d_n = \frac{1}{n + 1} \binom {2n}{n}.$$
 \end{theorem}
 
 which is the $n^{th}$ Catalan number.
@@ -137,7 +137,7 @@ that is, Labeled Dyck Paths.
     A \emph{labeled Dyck word} is a word $w \in 
     \{0, \ldots, n\}^*$ such that :
     \begin{itemize}
-        \item for each suffix $w'$ of $w$,
+        \item for each prefix $w'$ of $w$,
             $|w'|_{\neq 0} \geqslant |w'|_0$.
         \item $|w|_0 = |w|_{\neq 0}$.
         \item for each $i \in \{1, \ldots, n\}$, $w$ has 
@@ -397,13 +397,55 @@ bijective posets.
 \end{theorem}
 
 \begin{proof}
-    As the number of intervals in the poset for Dyck words
+    As the number of intervals in the poset of $\mathcal{D}_n$
     can be seen as the number of pairs $(w_1, w_k)$ such that
     $w_1 \gtrdot_d w_2 \gtrdot_d \cdots \gtrdot_d w_k$, we can
-    define it as the number of \emph{nested pairs of Dyck paths}.
-    This has been proved to be equal to this integer sequence by
-    Bruce Westbury in 2013.
+    describe the number of intervals as the number of
+    \emph{pairs of nested Dyck paths}.\\
+    We thus introduce the notion of a\emph{marked} Dyck path,
+    which is a Dyck path in which some steps are marked by a star *.
+    Those paths are a representation of the pairs of nested Dyck
+    paths : ignoring the stars, we obtain the "below" path.
+    Then, to deduce the "over" path :
+    \begin{itemize}
+        \item Unmarked steps stay unchanged.
+        \item Marked North steps become East steps.
+        \item Marked East steps become North steps.
+    \end{itemize}
+    We now create a bijection between marked Dyck paths of length
+    $2n$ that correspond to pairs of nested Dyck paths of length
+    $2n$, and paths from (0,0) to (0,0) composed of $2n$ North,
+    East, South, and West steps that stay in the first octant.
+    To do so, we use the following transformation :
+    \begin{itemize}
+        \item Unmarked North step $\longleftrightarrow$ North step
+        \item Marked North step $\longleftrightarrow$ West step
+        \item Unmarked East step $\longleftrightarrow$ South step
+        \item Marked East step $\longleftrightarrow$ East step
+    \end{itemize}
+    Thus, since $\mathcal{D}_n \longleftrightarrow \{$Marked Dyck
+    paths of length $2n\} \longleftrightarrow \{$ NESW paths of
+    length $2n\}$, we know that the number of pairs of nested Dyck
+    paths of length d$2n$ is equal to the number of NESW paths of
+    length$2n$.
+
+    But, by definition, this number is equal to the $n+1^{th}$ term
+    of the aforementioned integer sequence (which joins the comment
+    made by Bruce Westbury).\\
+    Therefore, we do have the aforementioned result.
 \end{proof}
+
+\begin{example}[$n = 5$]
+    We define $d_1, d_2 \in \mathcal{D}_5$ to be two nested Dyck
+    paths :
+    \input{fig/fig72.tex}
+    The corresponding marked Dyck path is the following :
+    \input{fig/fig73.tex}
+    The NESW path inn bijection is thus NEWNESNWSS :
+    $\uparrow \rightarrow \leftarrow \uparrow \rightarrow \downarrow
+    \uparrow \leftarrow \rightarrow \rightarrow$ :
+    \input{fig/fig74.tex}
+\end{example}
 
 We now extend this construction to the non-primitive case.
 
@@ -414,13 +456,13 @@ We now extend this construction to the non-primitive case.
     that $w$ covers $w'$, written $w \gtrdot_{ld} w'$,
     if $\exists l, r, x, x', y, z, z'$ such that :
     \begin{itemize}
-        \item $l$ is either empty or ends with $0$
-        \item $r$ is either empty or starts with $0$
-        \item $x = x_1x_2 \cdots$ has all its digits $> 0$
-        \item $z = z_1z_2 \cdots$ has all its digits $> 0$
+        \item $l$ is either empty or ends with $0$.
+        \item $r$ is either empty or starts with $0$.
+        \item $x = x_1x_2 \cdots$ has all its digits $> 0$.
+        \item $z = z_1z_2 \cdots$ has all its digits $> 0$.
         \item $x' = x$ where $y$ is correctly inserted
-            regarding the order condition
-        \item $y$ is in $z$, and $z' = z$ where $y$ is removed
+            regarding the order condition.
+        \item $y$ is in $z$, and $z' = z$ where $y$ is removed.
         \item $w = lx0zr$
         \item $w' = lx'0z'r$
     \end{itemize}  

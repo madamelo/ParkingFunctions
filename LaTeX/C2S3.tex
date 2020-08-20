@@ -6,7 +6,7 @@
     An \emph{a, b - Dyck word} is a word $w \in \{0,1\}^*$
     such that :
     \begin{itemize}
-        \item for each \emph{suffix} $w'$ of $w$,
+        \item for each \emph{prefix} $w'$ of $w$,
             $$|w'|_1 \geqslant \frac{a}{b}|w'|_0$$.
         \item $|w|_0 = b$.
         \item $|w|_1 = a$.
@@ -54,7 +54,7 @@ a, b - Dyck words.
 \begin{theorem}[Bizley, 1954]
     Let $r_{a,b}$ be the cardinal of $\mathcal{R}_{a,b}$.
     We have $$r_{a,b} = \frac{1}{a+b} \binom {a+b}{a} =
-    \frac{(a+b-1)!}{a!b!}$$
+    \frac{(a+b-1)!}{a!b!}.$$
 \end{theorem}
 
 which is, again, the rational Catalan number $Cat(a,b)$.
@@ -187,8 +187,8 @@ adding a \emph{labeling} to our rational Dyck paths.
     A \emph{labeled a, b - Dyck word} is a word $w \in 
     \{0, \ldots, n\}^*$ such that :
     \begin{itemize}
-        \item for each suffix $w'$ of $w$,
-            $$|w'|_{\neq 0} \geqslant \frac{a}{b}|w'|_0$$.
+        \item for each prefix $w'$ of $w$,
+            $$|w'|_{\neq 0} \geqslant \frac{a}{b}|w'|_0.$$
         \item $|w|_0 = b$.
         \item $|w|_{\neq 0} = a$.
         \item for each $i \in \{1, \ldots, a\}$, $w$ has 
@@ -499,13 +499,13 @@ corresponding bijective rational posets.
     that $w$ covers $w'$, written $w \gtrdot_{lr} w'$,
     if $\exists l, r, x, x', y, z, z'$ such that :
     \begin{itemize}
-        \item $l$ is either empty or ends with $0$
-        \item $r$ is either empty or starts with $0$
-        \item $x = x_1x_2 \cdots$ has all its digits $> 0$
-        \item $z = z_1z_2 \cdots$ has all its digits $> 0$
+        \item $l$ is either empty or ends with $0$.
+        \item $r$ is either empty or starts with $0$.
+        \item $x = x_1x_2 \cdots$ has all its digits $> 0$.
+        \item $z = z_1z_2 \cdots$ has all its digits $> 0$.
         \item $x' = x$ where $y$ is correctly inserted
-            regarding the order condition
-        \item $y$ is in $z$, and $z' = z$ where $y$ is removed
+            regarding the order condition.
+        \item $y$ is in $z$, and $z' = z$ where $y$ is removed.
         \item $w = lx0zr$
         \item $w' = lx'0z'r$
     \end{itemize}  

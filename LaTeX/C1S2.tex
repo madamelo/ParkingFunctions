@@ -10,18 +10,18 @@
 
 We denote by $\mathcal{NC}_n$ the set of non-crossing partitions
 of $\{1, 2, \ldots, n\}$.
-$$\mathcal{NC} = \bigcup_{n > 0}{\mathcal{NC}_n}$$
+$$\mathcal{NC} = \bigcup_{n > 0}{\mathcal{NC}_n}.$$
 
 From this point, we assume that every partition $P = \{B_1, \ldots, B_l\}$
 is \emph{sorted} such that :\\
 \begin{itemize*}
     \item For each block $B_i = \{b_1, \ldots, b_k\} \in P$,
-        $b_1 < \ldots < b_k$\\
-    \item $min (B_1) < \ldots < min (B_k)$\\
+        $b_1 < \ldots < b_k$.\\
+    \item $min (B_1) < \ldots < min (B_k)$.\\
 \end{itemize*}
 
 \begin{notation}
-    $[n] = \{1, 2, \ldots, n\}$
+    $[n] = \{1, 2, \ldots, n\}.$
 \end{notation}
 
 \begin{example}[$E = \lbrack 6 \rbrack $]
@@ -33,7 +33,7 @@ is \emph{sorted} such that :\\
 
 \begin{theorem}[Kreweras, 1972]
     Let $nc_n$ be the cardinal of $\mathcal{NC}_n$.
-    We have $$nc_n = \frac{1}{n + 1} \binom{2n}{n}$$
+    We have $$nc_n = \frac{1}{n + 1} \binom{2n}{n}.$$
 \end{theorem}
 
 which is, again, the $n^{th}$ Catalan number $Cat(n)$.
@@ -135,7 +135,7 @@ $\mathcal{NC}_n$ and apply it to $\mathcal{PF}_n$.
 \begin{definition}[$\succ$]
     We say that $P$ covers $Q$, written $P \succ Q$,
     if $\exists B_i, B_j \in P$ such that
-    $Q = P - \{B_i, B_j\} \cup \{B_i \cup B_j\}$    
+    $Q = P - \{B_i, B_j\} \cup \{B_i \cup B_j\}.$    
 \end{definition}
 
 \begin{example}
@@ -150,10 +150,12 @@ $\mathcal{NC}_n$ and apply it to $\mathcal{PF}_n$.
 \begin{prop}
     This covering relation defines the \emph{poset}
     of $\mathcal{NC}_n$.
-    We denote by $\mathcal{NCC}_n$ the set of
-    \emph{maximal chains} in the poset of $\mathcal{NC}_n$.\\
-    $$\mathcal{NCC} = \bigcup_{n > 0}{\mathcal{NCC}_n}$$
 \end{prop}
+
+We denote by $\mathcal{NCC}_n$ the set of
+\emph{maximal chains} in the poset of $\mathcal{NC}_n$.
+
+$$\mathcal{NCC} = \bigcup_{n > 0}{\mathcal{NCC}_n}.$$
 
 \begin{rem}
     The bottom element of this poset is $\{\{1, \ldots, n\}\}$,
@@ -162,13 +164,13 @@ $\mathcal{NC}_n$ and apply it to $\mathcal{PF}_n$.
 
 \begin{theorem}[Kreweras, 1972]
     Let $ncc_n$ be the cardinal of $\mathcal{NCC}_n$.
-    We have $$ncc_n = n^{n - 2}$$.
+    We have $$ncc_n = n^{n - 2}.$$.
 \end{theorem}
 
 \begin{example}[The poset of $\mathcal{NC}_4$]
     ~\\
     To shorten labels, we represent $\{\{1\}, \{2, 3\},
-    \{4\}\}$ by $1|23|4$. \\
+    \{4\}\}$ by $1|23|4$.
 
     \begin{center}
         \input{fig/fig3.tex}
@@ -224,7 +226,7 @@ bijection to the rational case, in the second chapter.
         Let $P = \{B_1, \ldots, B_k\}$ be a non-crossing partition.
         Let $K (P) = \{B'_1, \ldots, B'_l\}$ be its Kreweras complement.
         Then $$\bigcup_{1 \leq i \leq l}{min (B'_i)} =
-        B_1 \cup \bigcup_{1 < j \leq k}{B_i - {max (B_i)}}$$\\
+        B_1 \cup \bigcup_{1 < j \leq k}{B_i - {max (B_i)}}.$$\\
 \end{prop}
 
 \begin{example}[$P = \{\{1, 2, 5\}, \{3, 4\}, \{6\}\}$]
@@ -247,7 +249,7 @@ bijection to the rational case, in the second chapter.
     Let $K (P) = \{B'_1, \ldots, B'_l\}$ be its Kreweras complement.
     Then the size of the block $B'_i$ is defined as follows :
     \begin{itemize}
-        \item Let $m_i$ be the the $i^{th}$ minimum of $K (P)$
+        \item Let $m_i$ be the the $i^{th}$ minimum of $K (P)$.
         \item Define a \emph{transition} $\phi (e)$ as 
             \subitem Let $j = e + 1$ (or $1$ if $e = n$)
             \subitem $\phi(e) = max (B_{[j]})$
@@ -338,10 +340,10 @@ $[n]$}
     $P = \{B_1, \ldots, B_l\}$ of $[n]$ is defined by :\\
     \begin{itemize*}
         \item For each block $B_i = \{b_1, \ldots, b_k\}$ :
-        $\sigma(Bi) =\{\sigma (b_1), \ldots, \sigma (b_k)\}$ \\
+        $\sigma(Bi) =\{\sigma (b_1), \ldots, \sigma (b_k)\}$. \\
         \item When $P \in \mathcal{NC}_n$, we denote 
         $\rho = \sigma(P) =
-            \{\sigma (B_1), \ldots, \sigma (B_l)\}$
+            \{\sigma (B_1), \ldots, \sigma (B_l)\}$.
     \end{itemize*}
 \end{definition}
 
@@ -403,7 +405,7 @@ n12 \ldots n-1 (P)$.
 \begin{rem}
     ~
     \begin{itemize}
-        \item $rot (rot^{-1}(P)) = rot^{-1}(rot(P)) = P$
+        \item $rot (rot^{-1}(P)) = rot^{-1}(rot(P)) = P$.
         \item $rot(P)$ and $rot^{-1}(P)$ are always
             non-crossing partitions.
         \item If $P \in \mathcal{NC}_n$, then $rot^n(P) =
