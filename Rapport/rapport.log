@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  18 AUG 2020 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.8.5)  20 AUG 2020 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -811,29 +811,29 @@ File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
  (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Info: Redefining \degres on input line 43.
-LaTeX Info: Redefining \dots on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Info: Redefining \degres on input line 44.
+LaTeX Info: Redefining \dots on input line 44.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 43.
+(french.ldf)             reported on input line 44.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with enumitem package,
-(french.ldf)             reported on input line 43.
-LaTeX Info: Redefining \up on input line 43.
+(french.ldf)             reported on input line 44.
+LaTeX Info: Redefining \up on input line 44.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count141
@@ -860,7 +860,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 44.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -868,19 +868,19 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 44.
+LaTeX Info: Redefining \pageref on input line 44.
+LaTeX Info: Redefining \nameref on input line 44.
  (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.out) (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.out)
 \@outlinefile=\write4
 \openout4 = `rapport.out'.
 
  ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -894,37 +894,37 @@ Overfull \hbox (9.29747pt too wide) in paragraph at lines 71--75
 []\T1/cmr/m/n/10.95 Cette re-la-tion de cou-ver-ture en-gendre notre \T1/cmr/m/it/10.95 po-set \T1/cmr/m/n/10.95 pour $\OMS/cmsy/m/n/10.95 D[]$\T1/cmr/m/n/10.95 . Ainsi, le po-set contient l'\T1/cmr/m/it/10.95 intervalle
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig7.tex)
-Overfull \hbox (40.29167pt too wide) in paragraph at lines 146--157
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig7.tex) [7]
+Overfull \hbox (40.29167pt too wide) in paragraph at lines 174--185
 \T1/cmr/m/n/10.95 Le mot de Dyck dé-coré cor-res-pon-dant sera $[] \OT1/cmr/m/n/10.95 0 [] 0 [] [] 0$\T1/cmr/m/n/10.95 . 
  []
 
-[7]
-Overfull \hbox (30.33228pt too wide) in paragraph at lines 219--221
+
+Overfull \hbox (30.33228pt too wide) in paragraph at lines 247--249
 []\T1/cmr/m/n/10.95 Les pre-miers termes de cette suite sont $\OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 5\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 64\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 1587\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 65421\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 4071178\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 357962760\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 4237910716\OML/cmm/m/it/10.95 ; :::$\T1/cmr/m/n/10.95 . 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig11.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 232--236
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig11.tex) [9]
+Underfull \hbox (badness 10000) in paragraph at lines 259--263
 
  []
 
-[9]) (/home/salsifi/Documents/Stage/Recherche/Rapport/rationnel.tex [10] [11]
+) (/home/salsifi/Documents/Stage/Recherche/Rapport/rationnel.tex [10] [11]
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
@@ -988,7 +988,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--29
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig1.tex) [21] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig2.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig3.tex) [22]) (/home/salsifi/Documents/Stage/Recherche/Rapport/B.tex (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig4.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig5.tex) [23] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig6.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig8.tex) [24] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig9.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig10.tex)) (/home/salsifi/Documents/Stage/Recherche/Rapport/C.tex [25]
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig1.tex) [21] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig2.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig3.tex) [22]) (/home/salsifi/Documents/Stage/Recherche/Rapport/B.tex (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig4.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig5.tex) [23] (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig6.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig25.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig26.tex [24]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig27.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig8.tex [25]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig9.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig10.tex [26])) (/home/salsifi/Documents/Stage/Recherche/Rapport/C.tex
 Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
@@ -1018,39 +1018,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--62
 
  []
 
-(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig13.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig12.tex [26]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig14.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig16.tex
+(/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig13.tex [27]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig12.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig14.tex) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig16.tex
 Underfull \hbox (badness 10000) in paragraph at lines 92--1
 
  []
 
-) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig15.tex
+[28]) (/home/salsifi/Documents/Stage/Recherche/Rapport/fig/fig15.tex
 Underfull \hbox (badness 10000) in paragraph at lines 97--1
 
  []
 
-[27])) [28]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
+)) [29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
  (/home/salsifi/Documents/Stage/Recherche/Rapport/rapport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `rapport.out' has not changed.
 (rerunfilecheck)             Checksum: 9CBA700A2011103C3AC7E6198DD0B7C3;1006.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 198.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 199.
  ) 
 Here is how much of TeX's memory you used:
- 19652 strings out of 494894
- 372362 string characters out of 6179474
- 497407 words of memory out of 5000000
- 22409 multiletter control sequences out of 15000+600000
- 21064 words of font info for 55 fonts, out of 8000000 for 9000
+ 19706 strings out of 494894
+ 373351 string characters out of 6179474
+ 496407 words of memory out of 5000000
+ 22447 multiletter control sequences out of 15000+600000
+ 28111 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  55i,9n,59p,469b,736s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.pdf (28 pages, 307052 bytes).
+ </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/salsifi/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/salsifi/Documents/Stage/Recherche/Rapport/rapport.pdf (29 pages, 323237 bytes).
 PDF statistics:
- 789 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 117 named destinations out of 1000 (max. 500000)
+ 797 PDF objects out of 1000 (max. 8388607)
+ 384 compressed objects within 4 object streams
+ 119 named destinations out of 1000 (max. 500000)
  133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

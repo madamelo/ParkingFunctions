@@ -1,0 +1,63 @@
+\begin{center}
+    \begin{tikzpicture}[scale=2]
+        \node (a)  at (0, 0)  {};
+        \node (b)  at (0, 3)  {};
+        \node (c)  at (2, 0)  {};
+        \draw [dashed, very thick, ->] (a) to (b);
+        \draw [dashed, very thick, ->] (a) to (c);
+
+        \node (1)  at (0,0)   {};
+        \node (2)  at (0,1)   {};
+        \node (3)  at (0,2)   {};
+        \node (4)  at (1,1)   {};
+        \node (5)  at (1,2)   {};
+  
+
+        \draw [->, ultra thick, color = violet]
+            (1)  to (2);
+        \draw [->, dashed, ultra thick, color = green] 
+            (2)  to (1);
+        \draw [->, ultra thick, color = violet]
+            (2)  to (3);
+        \draw [->, dashed, ultra thick, color = green]
+            (3)  to (2);
+        \draw [->, ultra thick, color = violet]
+            (4)  to (5);
+        \draw [->, dashed, ultra thick, color = green]
+            (5)  to (4);
+        \draw [->, ultra thick, color = cyan]
+            (2)  to (4);
+        \draw [->, dashed, ultra thick, color = red]
+            (4)  to (2);
+        \draw [->, ultra thick, color = cyan]
+            (3)  to (5);
+        \draw [->, dashed, ultra thick, color = red]
+            (5) to (3);
+
+        \node at (0, -0.3)  {$0$};
+        \node at (-0.3, 1)  {$1$};
+        \node at (1, -0.3)  {$1$};
+        \node at (-0.3, 2)  {$2$};
+
+        \fill[color = cyan] (2.5,2) rectangle (3.2,2.2);
+        \node at (4,2.1) {$Est$};
+        \fill[color = violet] (2.5,1.5) rectangle (3.2,1.7);
+        \node at (4,1.6) {$Nord$};
+        \fill[color = red] (2.5,1) rectangle (3.2,1.2);
+        \node at (4,1.1) {$Ouest$};
+        \fill[color = green] (2.5,0.5) rectangle (3.2,0.7);
+        \node at (4,0.6) {$Sud$};
+
+        \node[color = violet] at (-0.3,0.3) {$\mathbf{1}$};
+        \node[color = green]  at (-0.3,0.6) {$\mathbf{10}$};
+        \node[color = violet] at (-0.3,1.3) {$\mathbf{4}$};
+        \node[color = green]  at (-0.3,1.6) {$\mathbf{9}$};
+        \node[color = violet] at (1.3,1.3)  {$\mathbf{7}$};
+        \node[color = green]  at (1.3,1.6)  {$\mathbf{6}$};
+        \node[color = cyan]   at (0.3,2.3)  {$\mathbf{5}$};
+        \node[color = red]    at (0.6,2.3)  {$\mathbf{8}$};
+        \node[color = cyan]   at (0.3,0.7)  {$\mathbf{2}$};
+        \node[color = red]    at (0.6,0.7)  {$\mathbf{3}$};
+
+    \end{tikzpicture}
+\end{center}

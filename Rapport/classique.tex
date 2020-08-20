@@ -1,6 +1,6 @@
 \subsection{Le cas primitif}
 
-Les exemples 9 à 12 donnés en annexe B illustrent les propositions,
+Les exemples 9 à 13 donnés en annexe B illustrent les propositions,
 définitions et théorèmes de cette section.
 
 Puisque $\mathcal{PF'}_n$ et $\mathcal{D}_n$ ont le même cardinal,
@@ -100,18 +100,46 @@ Cette relation de couverture engendre notre poset pour $\mathcal{PF'}_n$.
     peut être vu comme le nombre de paires $(w_1, w_k)$ telles que
     $w_1 \gtrdot_d w_2 \gtrdot_d \cdots \gtrdot_d w_k$, alors nous pouvons
     décrire le nombre d'intervalles comme étant le nombre de 
-    \emph{paires de chemins de Dyck imbriqués}.
-    Or ce nombre est égal au $n+1^{e}$ terme de la suite de l'OEIS 
-    \href{https://oeis.org/A005700}{A005700}
-    \footnote{https://oeis.org/A005700} (Bruce Westbury, 2013).\\
-Alec Mihailovs a démontré que ce nombre est bien égal à 
-$\displaystyle\frac {6 (2n)! (2n+2)!}{n!(n+1)!(n+2)!(n+3)!}$.
+    \emph{paires de chemins de Dyck imbriqués}.\\
+    On introduit alors une notion de chemin de Dyck \emph{étoilé},
+    c'est-à-dire un chemin de Dyck dont certains pas sont annotés d'une
+    étoile *. Ces chemins sont une représentation des paires de chemins de
+    Dyck imbriqués : en omettant les étoiles, on obtient le chemin du dessous.
+    Ensuite, pour déduire le chemin du dessus :
+    \begin{itemize}
+        \item Un pas non étoilé est conservé
+        \item Un pas Nord étoilé est remplacé par un pas Est
+        \item Un pas Est étoilé est remplacé par un pas Nord.
+    \end{itemize}
+    On créé maintenant une bijection entre les chemins de Dyck étoilés
+    de longueur $2n$ correspondant à des paires de chemins de Dyck de
+    longueur $2n$, et les chemins allant du point (0,0) au point (0,0)
+    composées de $2n$ pas Nord, Est, Sud, Ouest qui restent dans le
+    premier octant.
+    Pour cela, on effectue la transformation suivante :
+    \begin{itemize}
+        \item Nord non-étoilé $\longleftrightarrow$ Nord
+        \item Nord étoilé $\longleftrightarrow$ Ouest
+        \item Est non-étoilé $\longleftrightarrow$ Sud
+        \item Est étoilé $\longleftrightarrow$ Est
+    \end{itemize}
+    Ainsi, puisque $\mathcal{D}_n \longleftrightarrow \{$Chemins de Dyck
+    étoilés de longueur $2n\} \longleftrightarrow \{$ Chemins NESO de
+    longueur $2n\}$, on sait que le nombre de paires de chemins de Dyck
+    imbriqués de longueur $2n$ est égal au nombre de chemins NESO de
+    longueur $2n$.
+
+    Or, par définition, ce nombre est égal au $n+1^{e}$ terme de la suite
+    de l'OEIS \href{https://oeis.org/A005700}{A005700}
+    \footnote{https://oeis.org/A005700} (Ce qui rejoint le commentaire de 
+    Bruce Westbury).\\
+    Alec Mihailovs a démontré que ce nombre est bien égal à 
+    $\displaystyle\frac {6 (2n)! (2n+2)!}{n!(n+1)!(n+2)!(n+3)!}$.
 \end{proof}
 
 Les premiers termes de cette suite sont $1, 1, 3, 14, 84,
 594, 4719, 40898, 379236, 3711916, ...$\\
 
-\newpage
 \begin{expl}[Les posets de $\mathcal{D}_4$ et $\mathcal{PF'}_4$]
     ~\\
     \begin{center}
@@ -128,7 +156,7 @@ sur les mots de Dyck \emph{décorés}.
 
 \subsection{Le cas général}
 
-Les exemples 13 à 16 donnés en annexe B illustrent les propositions,
+Les exemples 14 à 17 donnés en annexe B illustrent les propositions,
 définitions et théorèmes de cette section.
 
 Puisque $\mathcal{PF}_n$ et $\mathcal{LD}_n$ ont le même cardinal,
@@ -219,7 +247,6 @@ classiques, on obtient ainsi les posets bijectifs espérés.
 Les premiers termes de cette suite sont $1, 1, 5, 64, 1587,
 65421, 4071178, 357962760, 4237910716, ...$.
 
-\newpage
 \begin{expl}[Les posets de $\mathcal{LD}_3$ et $\mathcal{PF}_3$]
     ~\\
     \begin{center}
