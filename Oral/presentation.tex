@@ -99,8 +99,8 @@
                     \item Chaque 1 devient un pas Nord ($\uparrow$)
                     \item Chaque 0 devient un pas Est ($\rightarrow$)
                 \end{itemize}
-                \item $\displaystyle d_n = |\mathcal{D}_n| = Cat(n) =
-                    \frac{1}{n+1}\binom{2n}{n}$
+                \item $\color{red}{\displaystyle d_n = |\mathcal{D}_n| =
+                    Cat(n) = \frac{1}{n+1}\binom{2n}{n}}$
             \end{itemize}
         \end{column}
         \begin{column}{0.4\textwidth}
@@ -115,16 +115,18 @@
 \begin{frame}
     \frametitle{Introduction : Chemins de Dyck}
     \begin{columns}
-        \begin{column}{0.6\textwidth}
+        \begin{column}{0.65\textwidth}
             \begin{itemize}
                 \item \textbf{Mot de Dyck étiquetté} : $\mathcal{LD}_n = 
                     \{w \in \{0,\ldots, n\}^{2n}$ respectant les 
-                    trois conditions $\}$ :
+                    quatre conditions $\}$ :
                 \begin{itemize}
                     \item $|w|_0 = |w|_{\neq 0} = n$
                     \item Pour tout préfixe $w'$ de $w$, $|w'|_0 \leqslant
                         |w'|_{\neq 0}$
                     \item Pour tout $i \in \{1, \ldots, n\}, |w|_i = 1$
+                    \item Les entiers non-nuls consécutifs sont en ordre
+                        croissant.
                 \end{itemize}
                 \item \textbf{Chemin de Dyck étiquetté} :
                 \begin{itemize}
@@ -132,10 +134,11 @@
                         étiquetté par $i$
                     \item Chaque 0 devient un pas Est ($\rightarrow$)
                 \end{itemize}
-                \item $\displaystyle ld_n = |\mathcal{LD}_n| = (n+1)^{n-1}$
+                \item $\color{red}{\displaystyle ld_n = |\mathcal{LD}_n| =
+                    (n+1)^{n-1}}$
             \end{itemize}
         \end{column}
-        \begin{column}{0.4\textwidth} 
+        \begin{column}{0.35\textwidth} 
                 \begin{itemize}
                     \item Exemple : $w = 4015002030$
                 \end{itemize}
@@ -154,8 +157,8 @@
             \item Exemple : $(1, 1, 3, 3, 4) \in \mathcal{PF'}_5$
             \item Contre-exemple : $(1, 1, 3, 2, 4) \not \in \mathcal{PF'}_5$
         \end{itemize}
-        \item $\displaystyle pf'_n = |\mathcal{PF'}_n = Cat(n) =
-            \frac{1}{n+1}\binom{2n}{n}$
+        \item $\color{red}{\displaystyle pf'_n = |\mathcal{PF'}_n| = Cat(n)
+            = \frac{1}{n+1}\binom{2n}{n}}$
         \item \textbf{Fonction de Parking} : $\mathcal{PF}_n = \{(a_1,
             \ldots, a_n)$ dont le tri croissant $(b_1, \ldots, b_n) \in
             \mathcal{PF'}_n\}$
@@ -163,7 +166,8 @@
             \item Exemple : $(1, 1, 3, 2, 4) \in \mathcal{PF}_5$
             \item Contre-exemple : $(2, 1, 4, 5, 4) \not \in \mathcal{PF}_5$
         \end{itemize}
-        \item $\displaystyle pf_n = |\mathcal{PF}_n = (n+1)^{n-1}$
+        \item $\color{red}{\displaystyle pf_n = |\mathcal{PF}_n| =
+            (n+1)^{n-1}}$
     \end{itemize}
 \end{frame}
 
@@ -201,14 +205,14 @@
 \subsection{Posets classiques primitifs}
 
 \begin{frame}
-    \frametitle{Des relations de couverture pour $\mathcal{D}_n$ et
+    \frametitle{1.1) Des relations de couverture pour $\mathcal{D}_n$ et
         $\mathcal{PF'}_n$}
     \begin{itemize}
         \item $\mathcal{D}_n$ : $w \gtrdot_d w'$, s'il existe deux mots
             $w_1$ et $w_2$ tels que :
         \begin{itemize}
-            \item $w = w_101w_2$
-            \item $w' = w_110w_2$
+            \item $w = w_1\color{red}01\color{black}w_2$
+            \item $w' = w_1\color{red}10\color{black}w_2$
         \end{itemize} 
         \item  Si $w_1 \gtrdot_d w_2$, alors le chemin de Dyck correspondant
         à $w_2$ est \emph{au dessus} de celui correspondant à $w_1$, et la
@@ -218,13 +222,14 @@
         \begin{itemize}
             \item $f = (a_1, \ldots, a_{i-1}, a_i,\ \ \ \ 
                 a_{i+1}, \ldots, a_n)$
-            \item $g = (a_1, \ldots, a_{i-1}, a_i - 1, a_{i+1}, \ldots, a_n)$
+            \item $g = (a_1, \ldots, a_{i-1}, a_i \color{red} - 1\color{black}
+                , a_{i+1}, \ldots, a_n)$
         \end{itemize}
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{\textbf{Bijection} entre les deux ensembles}
+    \frametitle{1.1) \textbf{Bijection} entre les deux ensembles}
     \begin{itemize}
         \item $\mathcal{PF'}_n \to \mathcal{D}_n$ :
         \begin{itemize}
@@ -246,8 +251,8 @@
 \end{frame}
 
 \begin{frame}
-    \frametitle{Posets \textbf{bijectifs} obtenus pour $\mathcal{D}_4$ et
-        $\mathcal{PF'}_4$}
+    \frametitle{1.1) Posets \textbf{bijectifs} obtenus pour $\mathcal{D}_4$
+        et $\mathcal{PF'}_4$}
     \begin{columns}
         \begin{column}{0.4\textwidth}
             \begin{center}
@@ -262,15 +267,259 @@
     \end{columns}
 \end{frame}
 
+\begin{frame}
+    \frametitle{1.1) Théorème Principal}
+    %TODO
+\end{frame}
+
 \subsection{Posets classiques non-primitifs}
+
+\begin{frame}
+    \frametitle{1.2) Des relations de couverture pour $\mathcal{LD}_n$ et
+        $\mathcal{PF}_n$}
+    \begin{itemize}
+        \item $\mathcal{LD}_n$ : $w \gtrdot_{ld} w'$ s'il existe $l$, $r$,
+             $x$, $x'$, $y$, $z$, et $z'$ tels que :
+        \begin{itemize}
+            \item $l$ est le mot vide, ou finit par un $0$
+            \item $r$ est le mot vide, ou commence par un $0$
+            \item $x = x_1x_2 \cdots$ avec $x_i > 0$ pour tout $i$
+            \item $z = z_1z_2 \cdots$ avec $z_i > 0$ pour tout $i$
+            \item $x' = x$ où $y$ est correctement inséré en ordre croissant
+            \item $y$ apparait dans $z$, et $z' = z$ où $y$ à été supprimé
+            \item $w = l\color{red}x\color{black}0\color{red}z\color{black}
+                r$ et $w' = l\color{red}x'\color{black}0\color{red}z'
+                \color{black}r$
+        \end{itemize}
+        \item  Si $w_1 \gtrdot_{ld} w_2$, alors le chemin de Dyck correspondant
+        à $w_2$ est \emph{au dessus} de celui correspondant à $w_1$, et la
+        \emph{différence} entre les deux chemins est un carré de côté 1.
+        \item $\mathcal{PF}_n$ : on garde la même relation que pour
+            $\mathcal{PF'}_n$.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{1.2) \textbf{Bijection} entre les deux ensembles}
+    \begin{itemize}
+        \item $\mathcal{PF}_n \to \mathcal{LD}_n$ :
+        \begin{itemize}
+            \item $f = (a_1, \ldots, a_n) \in \mathcal{PF}_n$.
+            \item $im_i$ : $\{j\ |\ a_j = i\}$.
+            \item $im_{i,1}, \ldots, im_{i,k_i}$ = éléments de $im_i$
+                triés par ordre croissant.
+            \item Mot de Dyck décoré correspondant : $\underbrace{im_{1,1}
+                \cdots im_{1,k_1}}_{im_1}0\underbrace{im_{2,1} \cdots
+                im_{2,k_2}}_{im_2}0 \cdots \underbrace{im_{n,1} \cdots 
+                im_{n,k_n}}_{im_n}0$.
+        \end{itemize}
+        \item $\mathcal{LD}_n \to \mathcal{PF}_n$ :
+        \begin{itemize}
+            \item $w \in \mathcal{LD}_n$. Considérons son chemin de Dyck.
+            \item $s_i$ = abscisse du $i^{e}$ pas Nord.
+            \item $label(i)$ = étiquette du $i^{e}$ pas Nord.
+            \item $dist_i = \{label(j) | s_j = i\}$.
+                Si $j \in dist_i$ alors $a_j = i + 1$.
+            \item Fonction de parking correspondante : $(a_1, \ldots, a_n)$.
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{1.2) Posets \textbf{bijectifs} obtenus pour $\mathcal{LD}_3$
+        et $\mathcal{PF}_3$}
+    \begin{center}
+        \input{fig/fig5.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{1.2) Posets \textbf{bijectifs} obtenus pour $\mathcal{LD}_3$
+        et $\mathcal{PF}_3$}
+    \begin{center}
+        \input{fig/fig6.tex}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{1.2) Conjecture Principale}
+    %TODO
+\end{frame}
 
 \section{Des posets pour le cas rationnel}
 
 \subsection{Le cas rationnel}
 
+\begin{frame}
+    \frametitle{2.1) Chemins de Dyck rationnels}
+    \begin{columns}
+        \begin{column}{0.65\textwidth}
+            \begin{itemize}
+                \item \textbf{Mot de Dyck rationnel} : $\mathcal{R}_{a,b} =
+                \{w \in \{0,1\}^{a+b}$ respectant les trois conditions $\}$ :
+                \begin{itemize}
+                    \item Pour tout préfixe $w'$ de $w$, $\frac{a}{b}|w'|_0
+                     \leqslant |w'|_1$
+                     \item $|w|_0 = b$
+                     \item $|w|_1 = a$
+                \end{itemize}
+                \item \textbf{Chemin de Dyck rationnel} :
+                \begin{itemize}
+                    \item Chaque 1 devient un pas Nord ($\uparrow$)
+                    \item Chaque 0 devient un pas Est ($\rightarrow$)
+                \end{itemize}
+                \item $\color{red}{\displaystyle r_{a,b} = |\mathcal{R}_{a,b}|
+                = Cat(a,b) = \frac{1}{a+b}\binom{a+b}{a}}$
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.35\textwidth}
+            \begin{itemize}
+                \item Exemple : $w = 1110111010 \in \mathcal{R}_{7,3}$
+            \end{itemize}
+            \input{fig/fig8.tex}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.1) Chemins de Dyck rationnels}
+    \begin{itemize}
+        \item $w = 10100100 \in \mathcal{R}_{3,5}$
+    \end{itemize}
+    \input{fig/fig7.tex}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.1) Chemins de Dyck rationnels}
+    \begin{columns}
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}
+                \item \textbf{Mot de Dyck rationnel étiquetté} : 
+                $\mathcal{LR}_{a,b} = 
+                    \{w \in \{0,\ldots, a\}^{a+b}$ respectant les 
+                    cinq conditions $\}$ :
+                \begin{itemize}
+                    \item Pour tout préfixe $w'$ de $w$, $\frac{a}{b}|w'|_0
+                        \leqslant |w'|_{\neq 0}$
+                    \item Pour tout $i \in \{1, \ldots, a\}, |w|_i = 1$
+                    \item $|w|_0 = a$ et $|w|_{\neq 0} = b$
+                    \item Les entiers non-nuls consécutifs sont en ordre
+                        croissant.
+                \end{itemize}
+                \item \textbf{Chemin de Dyck rationnel étiquetté} :
+                \begin{itemize}
+                    \item Chaque $i \neq 0$ devient un pas Nord ($\uparrow$)
+                        étiquetté par $i$
+                    \item Chaque 0 devient un pas Est ($\rightarrow$)
+                \end{itemize}
+                \item $\color{red}{\displaystyle lr_{a,b} =
+                    |\mathcal{LR}_{a,b}| = b^{a-1}}$
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.3\textwidth} 
+                \begin{itemize}
+                    \item Exemple : $w = 2456017030 \in \mathcal{LR}_{7,3}$
+                \end{itemize}
+                \input{fig/fig9.tex}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.1) Chemins de Dyck rationnels}
+    \begin{itemize}
+        \item Exemple : $w = 20130000 \in \mathcal{LR}_{3,5}$
+    \end{itemize}
+    \input{fig/fig10.tex}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.1) Fonctions de parking rationnelles}
+    \begin{itemize}
+        \item \textbf{Fonction de Parking rationnelle primitive} :
+        $\mathcal{PF'}_{a,b} = \{(a_1, \ldots, a_a)$ | $1 \leqslant a_i
+        \leqslant 1 + \frac{b}{a}(i-1)$ pour tout $i$ entre $1$ et $a$,
+        et $a_i \leqslant \ldots \leqslant a_a\}$
+        \begin{itemize}
+            \item Exemple : $(1, 1, 1, 2, 2, 2, 3) \in \mathcal{PF'}_{7,3}$
+            \item Contre-exemple : $(1, 1, 2, 2, 2, 2, 3) \not \in
+                \mathcal{PF'}_{7,3}$
+            \item Exemple : $(1, 2, 4) \in \mathcal{PF'}_{3,5}$
+        \end{itemize}
+        \item $\color{red}{\displaystyle pf'_{a,b} = |\mathcal{PF'}_{a,b}|
+            = Cat(a,b) = \frac{1}{a+b}\binom{a+b}{a}}$
+        \item \textbf{Fonction de Parking rationnelle} : $\mathcal{PF}_{a,b}
+            = \{(a_1, \ldots, a_a)$ dont le tri croissant $(b_1, \ldots,
+            b_a) \in \mathcal{PF'}_{a,b}\}$
+        \begin{itemize}
+            \item Exemple : $(3, 1, 2, 2, 1, 2, 1) \in \mathcal{PF}_{7,3}$
+            \item Exemple : $(4, 1, 2) \in \mathcal{PF}_{3,5}$
+        \end{itemize}
+        \item $\color{red}{\displaystyle pf_{a,b} = |\mathcal{PF}_{a,b}| =
+            b^{a-1}}$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2) Relations et bijections}
+    On utilise ici les mêmes relations et bijections que dans le cas
+    classique.
+\end{frame}
+
 \subsection{Posets rationnels primitifs}
 
+\begin{frame}
+    \frametitle{2.2) Posets \textbf{bijectifs} pour $\mathcal{R}_{5,3}$ et
+        $\mathcal{PF'}_{5,3}$}
+        \begin{columns}
+            \begin{column}{0.35\textwidth}
+                \input{fig/fig11.tex}
+            \end{column}
+            \begin{column}{0.65\textwidth}
+                \input{fig/fig12.tex}
+            \end{column}
+        \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.2) Posets \textbf{bijectifs} pour $\mathcal{R}_{3,7}$ et
+        $\mathcal{PF'}_{3,7}$}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \input{fig/fig13.tex}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \input{fig/fig14.tex}
+            \end{column}
+        \end{columns}
+\end{frame}
+
 \subsection{Posets rationnels non-primitifs}
+
+\begin{frame}
+    \frametitle{2.3) Posets \textbf{bijectifs} pour $\mathcal{LR}_{5,2}$ et
+        $\mathcal{PF}_{5,2}$}
+        \input{fig/fig15.tex}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.3) Posets \textbf{bijectifs} pour $\mathcal{LR}_{5,2}$ et
+        $\mathcal{PF}_{5,2}$}
+        \input{fig/fig16.tex}
+\end{frame}
+
+\begin{frame}
+    \frametitle{2.3) Posets \textbf{bijectifs} pour $\mathcal{LR}_{2,7}$ et
+        $\mathcal{PF}_{2,7}$}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \input{fig/fig17.tex}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \input{fig/fig18.tex}
+            \end{column}
+        \end{columns}
+\end{frame}
 
 \section{Conclusion}
 

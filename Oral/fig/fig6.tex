@@ -1,0 +1,76 @@
+\begin{tikzpicture}[scale = 0.35]
+    \node at (0,0) {$(1,1,1)$};
+
+    \node at (-6,6) {$(1,1,2)$};                
+    \node at (0,6)  {$(1,2,1)$};
+    \node at (6,6)  {$(2,1,1)$};
+
+    \node at (-15,12) {$(1,1,3)$};
+    \node at (-9,12)  {$(1,2,2)$};
+    \node at (-3,12)  {$(1,3,1)$};
+    \node at (3,12)   {$(2,1,2)$};
+    \node at (9,12)   {$(3,1,1)$};
+    \node at (15,12)  {$(2,2,1)$};
+
+    \node at (-15,18) {$(1,2,3)$};
+    \node at (-9,18)  {$(1,3,2)$};
+    \node at (-3,18)  {$(2,1,3)$};
+    \node at (3,18)   {$(3,1,2)$};
+    \node at (9,18)   {$(2,3,1)$};
+    \node at (15,18)  {$(3,2,1)$};
+
+    \draw [->][color=magenta, ultra thick]
+        (-15,17) to (-15,13);
+    \draw [->][color=magenta, ultra thick]
+        (-15,17) to (-10,13);
+    \draw [->][color=magenta, ultra thick]
+        (-15,11) to (-7,7); 
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=magenta](-6,5) to (-1,1);
+
+    \draw [->][color=brown!7!orange, ultra thick]
+        (-9,17) to (-9,13);
+    \draw [->][color=brown!7!orange, ultra thick]
+        (-9,17) to (-4,13);
+    \draw [->][color=brown!7!orange, ultra thick]
+        (-9,11) to (-6,7);
+    \draw [->][color=brown!7!orange, ultra thick]
+        (-9,11) to (-1,7);
+
+    \draw [->][color=yellow, ultra thick]
+        (-3,17) to (-14,13);
+    \draw [->][color=yellow, ultra thick]
+        (-3,17) to (2,13);
+    \draw [->][color=yellow, ultra thick]
+        (-3,11) to (0,7); 
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=yellow](0,5) to (0,1);
+
+    \draw [->][color = green,  ultra thick]
+        (3,17) to (3,13);
+    \draw [->][color=green, ultra thick]
+        (3,17) to (8,13);
+    \draw [->][color=green, ultra thick]
+        (3,11) to (-5,7);
+    \draw [->][color=green, ultra thick]
+        (3,11) to (5,7);
+
+    \draw [->][color=cyan, ultra thick]
+        (9,17) to (-2,13);
+    \draw [->][color=cyan, ultra thick]
+        (9,17) to (14,13);
+    \draw [->][color=cyan, ultra thick]
+        (9,11) to (6,7); 
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=cyan](6,5) to (1,1);
+
+    \draw [->][color=violet, ultra thick]
+        (15,17) to (9,13);
+    \draw [->][color=violet, ultra thick]
+        (15,17) to (15,13);
+    \draw [->][color=violet, ultra thick]
+        (15,11) to (1,7);
+    \draw [->][color=violet, ultra thick]
+        (15,11) to (7,7);
+
+\end{tikzpicture}

@@ -1,0 +1,29 @@
+\begin{center}
+\begin{tikzpicture}[scale = 0.2]
+    \node at (0,0) {$(1,1)$};
+
+    \node at (-6,5) {$(1,2)$};
+    \node at (6,5)  {$(2,1)$};
+
+    \node at (-6,10) {$(1,3)$};
+    \node at (6,10)  {$(3,1)$};
+
+    \node at (-6,15) {$(1,4)$};
+    \node at (6,15)  {$(4,1)$};
+
+    \draw [->][color=magenta, ultra thick]
+        (-6,14) to (-6,11);
+    \draw [->][color=magenta, ultra thick]
+        (-6,9) to (-6,6);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=magenta](-6,4) to (-0.5,1);
+
+    \draw [->][color=green, ultra thick]
+        (6,14) to (6,11);
+    \draw [->][color=green, ultra thick]
+        (6,9) to (6,6);
+    \draw [->][out=-90,in=90, ultra thick] 
+        [color=green](6,4) to (0.5,1);
+
+\end{tikzpicture}
+\end{center}

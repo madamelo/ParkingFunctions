@@ -1,9 +1,9 @@
 \babel@toc {french}{}
 \beamer@sectionintoc {1}{Des posets pour le cas classique}{9}{0}{1}
 \beamer@subsectionintoc {1}{1}{Posets classiques primitifs}{10}{0}{1}
-\beamer@subsectionintoc {1}{2}{Posets classiques non-primitifs}{13}{0}{1}
-\beamer@sectionintoc {2}{Des posets pour le cas rationnel}{13}{0}{2}
-\beamer@subsectionintoc {2}{1}{Le cas rationnel}{14}{0}{2}
-\beamer@subsectionintoc {2}{2}{Posets rationnels primitifs}{14}{0}{2}
-\beamer@subsectionintoc {2}{3}{Posets rationnels non-primitifs}{14}{0}{2}
-\beamer@sectionintoc {3}{Conclusion}{14}{0}{3}
+\beamer@subsectionintoc {1}{2}{Posets classiques non-primitifs}{14}{0}{1}
+\beamer@sectionintoc {2}{Des posets pour le cas rationnel}{19}{0}{2}
+\beamer@subsectionintoc {2}{1}{Le cas rationnel}{20}{0}{2}
+\beamer@subsectionintoc {2}{2}{Posets rationnels primitifs}{26}{0}{2}
+\beamer@subsectionintoc {2}{3}{Posets rationnels non-primitifs}{28}{0}{2}
+\beamer@sectionintoc {3}{Conclusion}{31}{0}{3}
