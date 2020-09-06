@@ -25,6 +25,8 @@
   \end{frame}
 }
 
+\newtheorem*{thm}{Théorème}
+
 \title{Fonctions de Parking}
 \author{Tessa Lelièvre-Osswald}
 \institute{Encadrant : Matthieu Josuat-Vergès \\ IRIF - Pôle Combinatoire}
@@ -32,9 +34,9 @@
 
 \begin{document}
 
-\frame{\titlepage}
+\frame{\titlepage} %1
 
-\begin{frame}
+\begin{frame} %2
     \frametitle{Introduction : Combinatoire}
     \begin{itemize}
         \item \textbf{Combinatoire} : domaine des mathématiques et de 
@@ -52,7 +54,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %3
     \frametitle{Introduction : Exemples}
     \begin{itemize}
         \item \textbf{Classes combinatoires} :
@@ -82,13 +84,13 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %4
     \frametitle{Introduction : Chemins de Dyck}
     \begin{columns}
         \begin{column}{0.6\textwidth}
             \begin{itemize}
-                \item \textbf{Mot de Dyck} : $\mathcal{D}_n = \{w \in
-                    \{0,1\}^{2n}$ respectant les deux conditions $\}$ :
+                \item \textbf{Mot de Dyck} : $\mathcal{D}_n =$ ensemble
+                des $w \in \{0,1\}^{2n}$ respectant les deux conditions :
                 \begin{itemize}
                     \item $|w|_0 = |w|_1 = n$
                     \item Pour tout préfixe $w'$ de $w$, $|w'|_0 \leqslant
@@ -99,9 +101,13 @@
                     \item Chaque 1 devient un pas Nord ($\uparrow$)
                     \item Chaque 0 devient un pas Est ($\rightarrow$)
                 \end{itemize}
-                \item $\color{red}{\displaystyle d_n = |\mathcal{D}_n| =
-                    Cat(n) = \frac{1}{n+1}\binom{2n}{n}}$
             \end{itemize}
+
+            \begin{thm}[Taille de $\mathcal{D}_n$]
+                $\displaystyle d_n = |\mathcal{D}_n| = Cat(n) =
+                    \frac{1}{n+1}\binom{2n}{n}$
+            \end{thm}
+
         \end{column}
         \begin{column}{0.4\textwidth}
             \begin{itemize}
@@ -112,21 +118,21 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Introduction : Chemins de Dyck}
+\begin{frame} %5
+    \fontsize{9}{11}
+    \frametitle{Introduction : Chemins de Dyck étiquettés}
     \begin{columns}
         \begin{column}{0.65\textwidth}
             \begin{itemize}
-                \item \textbf{Mot de Dyck étiquetté} : $\mathcal{LD}_n = 
-                    \{w \in \{0,\ldots, n\}^{2n}$ respectant les 
-                    quatre conditions $\}$ :
+                \item \textbf{Mot de Dyck étiquetté} : $\mathcal{LD}_n =$
+                    ensemble des $w \in \{0,\ldots, n\}^{2n}$ respectant les 
+                    quatre conditions :
                 \begin{itemize}
                     \item $|w|_0 = |w|_{\neq 0} = n$
                     \item Pour tout préfixe $w'$ de $w$, $|w'|_0 \leqslant
                         |w'|_{\neq 0}$
                     \item Pour tout $i \in \{1, \ldots, n\}, |w|_i = 1$
-                    \item Les entiers non-nuls consécutifs sont en ordre
-                        croissant.
+                    \item Si $w_i, w_{i+1} > 0$, alors $w_i < w_{i+1}$
                 \end{itemize}
                 \item \textbf{Chemin de Dyck étiquetté} :
                 \begin{itemize}
@@ -134,9 +140,13 @@
                         étiquetté par $i$
                     \item Chaque 0 devient un pas Est ($\rightarrow$)
                 \end{itemize}
-                \item $\color{red}{\displaystyle ld_n = |\mathcal{LD}_n| =
-                    (n+1)^{n-1}}$
             \end{itemize}
+
+            \begin{thm}[Taille de $\mathcal{LD}_n$]
+                $\displaystyle ld_n = |\mathcal{LD}_n| =
+                (n+1)^{n-1}$
+            \end{thm}
+
         \end{column}
         \begin{column}{0.35\textwidth} 
                 \begin{itemize}
@@ -147,64 +157,97 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %6
     \frametitle{Introduction : Fonctions de Parking}
+    \only<1>{
     \begin{itemize}
         \item \textbf{Fonction de Parking primitive} : $\mathcal{PF'}_n =
             \{(a_1, \ldots, a_n)$ | $1 \leqslant a_i \leqslant i$ pour tout
             $i$ entre $1$ et $n$, et $a_i \leqslant \ldots \leqslant a_n\}$
         \begin{itemize}
             \item Exemple : $(1, 1, 3, 3, 4) \in \mathcal{PF'}_5$
-            \item Contre-exemple : $(1, 1, 3, 2, 4) \not \in \mathcal{PF'}_5$
+            \item Contre-exemple : $(1, 1, 3, \color{blue}{2} \color{black},
+                4) \not \in \mathcal{PF'}_5$
         \end{itemize}
-        \item $\color{red}{\displaystyle pf'_n = |\mathcal{PF'}_n| = Cat(n)
-            = \frac{1}{n+1}\binom{2n}{n}}$
+    \end{itemize}
+
+    \begin{thm}[Taille de $\mathcal{PF'}_n$]
+        $\displaystyle pf'_n = |\mathcal{PF'}_n| = Cat(n)
+        = \frac{1}{n+1}\binom{2n}{n}$
+    \end{thm}
+
+    }\only<2>{
+    \begin{itemize}
         \item \textbf{Fonction de Parking} : $\mathcal{PF}_n = \{(a_1,
             \ldots, a_n)$ dont le tri croissant $(b_1, \ldots, b_n) \in
             \mathcal{PF'}_n\}$
         \begin{itemize}
             \item Exemple : $(1, 1, 3, 2, 4) \in \mathcal{PF}_5$
-            \item Contre-exemple : $(2, 1, 4, 5, 4) \not \in \mathcal{PF}_5$
+            \item Contre-exemple : $(2, 1, 4, 5, 4) \not \in \mathcal{PF}_5$,
+                car $(1, 2, \color{blue}{4} \color{black}, 4, 5) \not \in
+                \mathcal{PF'}_5$
         \end{itemize}
-        \item $\color{red}{\displaystyle pf_n = |\mathcal{PF}_n| =
-            (n+1)^{n-1}}$
     \end{itemize}
+
+    \begin{thm}[Taille de $\mathcal{PF}_n$]
+        $\displaystyle pf_n = |\mathcal{PF}_n| = (n+1)^{n-1}$
+    \end{thm}
+
+    }
+
 \end{frame}
 
-\begin{frame}
+\begin{frame} %7
     \frametitle{Introduction : Posets}
+    \only<1>{
     \begin{itemize}
         \item \textbf{Poset} : Ensemble $\mathcal{E}$ partiellement ordonné
         : ensemble muni d'une \emph{relation d'ordre} $\preccurlyeq$
         permettant de comparer certains couples d'éléments de l'ensemble,
         muni de propriétés :
         \begin{itemize}
-            \item Réflexivité : $e \in \mathcal{E} \to e \preccurlyeq e$
-            \item Anti-symétrie : $e_1 \preccurlyeq e_2 \wedge e_2
-                \preccurlyeq e_1 \to e_1 = e_2$
-            \item Transitivité : $e_1 \preccurlyeq e_2 \wedge e_2
-                \preccurlyeq e_3 \to e_1 \preccurlyeq e_3$
+            \item Réflexivité : Si $e \in \mathcal{E}$, alors $e 
+                \preccurlyeq e$
+            \item Anti-symétrie : Si $e_1 \preccurlyeq e_2$ et $e_2
+                \preccurlyeq e_1$, alors $e_1 = e_2$
+            \item Transitivité : Si $e_1 \preccurlyeq e_2$ et $e_2
+                \preccurlyeq e_3$, alors $e_1 \preccurlyeq e_3$
         \end{itemize}
+    \end{itemize}
+
+    }\only<2>{
+    \begin{itemize}
         \item \textbf{Exemple} :
             \begin{itemize}
                 \item $\mathcal{E} = \mathbb{N} \times \mathbb{N}$
                 \item $\preccurlyeq$ : $(a,b) \preccurlyeq (c, d)$ ssi
-                    $a \leqslant c$ et $b \leqslant d$
-                \item $(3,8)$ et $(2,9)$ sont incomparables
+                    $a \leqslant c$ et $b \leqslant d$.
+                \item $(3,8)$ et $(2,9)$ sont incomparables.
+            \end{itemize}
+        \item \textbf{Ici} : On définira nos ordres via une \emph{relation
+            de couverture}, dont on construira la clôture réfléxive et
+            transitive.
+        \item \textbf{Exemple} : $\mathcal{E} = \mathbb{N}$
+            \begin{itemize} 
+                \item $e \prec e + 1$
+                \item Soit $\preccurlyeq$ la clôture réfléxive et
+                    transitive de $\prec$.
+                \item On a alors $\preccurlyeq\ =\ \leqslant$.
             \end{itemize}
     \end{itemize}
+    }
 \end{frame}
 
-\begin{frame}
+\begin{frame} %8
     \frametitle{Plan}
     \tableofcontents
 \end{frame}
 
-\section{Des posets pour le cas classique}
+\section{Des posets pour le cas classique} %9
 
 \subsection{Posets classiques primitifs}
 
-\begin{frame}
+\begin{frame} %10
     \frametitle{1.1) Des relations de couverture pour $\mathcal{D}_n$ et
         $\mathcal{PF'}_n$}
     \begin{itemize}
@@ -228,7 +271,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %11
     \frametitle{1.1) \textbf{Bijection} entre les deux ensembles}
     \begin{itemize}
         \item $\mathcal{PF'}_n \to \mathcal{D}_n$ :
@@ -250,7 +293,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %12
     \frametitle{1.1) Posets \textbf{bijectifs} obtenus pour $\mathcal{D}_4$
         et $\mathcal{PF'}_4$}
     \begin{columns}
@@ -267,19 +310,75 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %13
     \frametitle{1.1) Théorème Principal}
-    %TODO
+    \only<1>{
+    \begin{thm}[Théorème principal]
+    Le nombre d'intervalles dans ces posets est égal à
+    $$\frac {6 (2n)! (2n+2)!}{n!(n+1)!(n+2)!(n+3)!}$$.
+    \end{thm}
+
+    \begin{proof}
+        Puisque le nombre d'intervalles dans le poset de $\mathcal{D}_n$
+        peut être vu comme le nombre de paires $(w_1, w_k)$ telles que
+        $w_1 \gtrdot_d w_2 \gtrdot_d \cdots \gtrdot_d w_k$, alors nous pouvons
+        décrire le nombre d'intervalles comme étant le nombre de 
+        \emph{paires de chemins de Dyck imbriqués}.\\
+        On introduit alors une notion de chemin de Dyck \emph{étoilé},
+        c'est-à-dire un chemin de Dyck dont certains pas sont annotés d'une
+        étoile (*).
+    \end{proof}
+    }\only<2>{
+    \begin{proof}
+        Ces chemins sont une représentation des paires de chemins de
+        Dyck imbriqués : en omettant les étoiles, on obtient le chemin du
+        dessous.
+        Ensuite, pour déduire le chemin du dessus :
+        \begin{itemize}
+            \item Un pas non étoilé est conservé
+            \item Un pas Nord étoilé est remplacé par un pas Est
+            \item Un pas Est étoilé est remplacé par un pas Nord.
+        \end{itemize}
+        On créé maintenant une bijection entre les chemins de Dyck étoilés
+        de longueur $2n$ correspondant à des paires de chemins de Dyck de
+        longueur $2n$, et les chemins allant du point (0,0) au point (0,0)
+        composées de $2n$ pas Nord, Est, Sud, Ouest qui restent dans le
+        premier octant.
+        Pour cela, on effectue la transformation suivante :
+    \end{proof}
+    }\only<3>{
+    \begin{proof}
+        \begin{itemize}
+            \item Nord non-étoilé $\longleftrightarrow$ Nord et
+                Nord étoilé $\longleftrightarrow$ Ouest
+            \item Est non-étoilé $\longleftrightarrow$ Sud et
+                Est étoilé $\longleftrightarrow$ Est
+        \end{itemize}
+        Ainsi, puisque $\mathcal{D}_n \longleftrightarrow \{$Chemins de Dyck
+        étoilés de longueur $2n\} \longleftrightarrow \{$ Chemins NESO de
+        longueur $2n\}$, on sait que le nombre de paires de chemins de Dyck
+        imbriqués de longueur $2n$ est égal au nombre de chemins NESO de
+        longueur $2n$.
+        Or, par définition, ce nombre est égal au $n+1^{e}$ terme de la suite
+        de l'OEIS A005700 (Ce qui rejoint le commentaire de 
+        Bruce Westbury).
+        Alec Mihailovs a démontré que ce nombre est bien égal à 
+        $\displaystyle\frac {6 (2n)! (2n+2)!}{n!(n+1)!(n+2)!(n+3)!}$.
+    \end{proof}
+
+    Les premiers termes de cette suite sont 1, 1, 3, 14, 84,
+    594, 4719, 40898 ...
+    }
 \end{frame}
 
 \subsection{Posets classiques non-primitifs}
 
-\begin{frame}
+\begin{frame} %14
     \frametitle{1.2) Des relations de couverture pour $\mathcal{LD}_n$ et
         $\mathcal{PF}_n$}
     \begin{itemize}
-        \item $\mathcal{LD}_n$ : $w \gtrdot_{ld} w'$ s'il existe $l$, $r$,
-             $x$, $x'$, $y$, $z$, et $z'$ tels que :
+        \item $\mathcal{LD}_n$ : $w \gtrdot_{ld} w'$ s'il existe des mots
+            $l$, $r$, $x$, $x'$, $z$, $z'$, et une lettre $y$ tels que :
         \begin{itemize}
             \item $l$ est le mot vide, ou finit par un $0$
             \item $r$ est le mot vide, ou commence par un $0$
@@ -299,7 +398,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %15
     \frametitle{1.2) \textbf{Bijection} entre les deux ensembles}
     \begin{itemize}
         \item $\mathcal{PF}_n \to \mathcal{LD}_n$ :
@@ -325,7 +424,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %16
     \frametitle{1.2) Posets \textbf{bijectifs} obtenus pour $\mathcal{LD}_3$
         et $\mathcal{PF}_3$}
     \begin{center}
@@ -333,7 +432,7 @@
     \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %17
     \frametitle{1.2) Posets \textbf{bijectifs} obtenus pour $\mathcal{LD}_3$
         et $\mathcal{PF}_3$}
     \begin{center}
@@ -341,22 +440,23 @@
     \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %18
     \frametitle{1.2) Conjecture Principale}
     %TODO
 \end{frame}
 
-\section{Des posets pour le cas rationnel}
+\section{Des posets pour le cas rationnel} %19
 
 \subsection{Le cas rationnel}
 
-\begin{frame}
+\begin{frame} %20
     \frametitle{2.1) Chemins de Dyck rationnels}
     \begin{columns}
         \begin{column}{0.65\textwidth}
             \begin{itemize}
-                \item \textbf{Mot de Dyck rationnel} : $\mathcal{R}_{a,b} =
-                \{w \in \{0,1\}^{a+b}$ respectant les trois conditions $\}$ :
+                \item \textbf{Mot de Dyck rationnel} : $\mathcal{R}_{a,b} =$
+                    l'ensemble des $w \in \{0,1\}^{a+b}$ respectant les trois
+                    conditions :
                 \begin{itemize}
                     \item Pour tout préfixe $w'$ de $w$, $\frac{a}{b}|w'|_0
                      \leqslant |w'|_1$
@@ -368,9 +468,13 @@
                     \item Chaque 1 devient un pas Nord ($\uparrow$)
                     \item Chaque 0 devient un pas Est ($\rightarrow$)
                 \end{itemize}
-                \item $\color{red}{\displaystyle r_{a,b} = |\mathcal{R}_{a,b}|
-                = Cat(a,b) = \frac{1}{a+b}\binom{a+b}{a}}$
             \end{itemize}
+
+            \begin{thm} [Taille de $\mathcal{R}_{a,b}$]           
+                $\displaystyle r_{a,b} = |\mathcal{R}_{a,b}|
+                = Cat(a,b) = \frac{1}{a+b}\binom{a+b}{a}$
+            \end{thm}
+
         \end{column}
         \begin{column}{0.35\textwidth}
             \begin{itemize}
@@ -381,7 +485,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %21
     \frametitle{2.1) Chemins de Dyck rationnels}
     \begin{itemize}
         \item $w = 10100100 \in \mathcal{R}_{3,5}$
@@ -389,15 +493,15 @@
     \input{fig/fig7.tex}
 \end{frame}
 
-\begin{frame}
-    \frametitle{2.1) Chemins de Dyck rationnels}
+\begin{frame} %22
+    \fontsize{9}{11}
+    \frametitle{2.1) Chemins de Dyck rationnels étiquettés}
     \begin{columns}
         \begin{column}{0.7\textwidth}
             \begin{itemize}
                 \item \textbf{Mot de Dyck rationnel étiquetté} : 
-                $\mathcal{LR}_{a,b} = 
-                    \{w \in \{0,\ldots, a\}^{a+b}$ respectant les 
-                    cinq conditions $\}$ :
+                    $\mathcal{LR}_{a,b} =$ l'ensemble des $w \in
+                    \{0,\ldots, a\}^{a+b}$ respectant les cinq conditions :
                 \begin{itemize}
                     \item Pour tout préfixe $w'$ de $w$, $\frac{a}{b}|w'|_0
                         \leqslant |w'|_{\neq 0}$
@@ -412,9 +516,12 @@
                         étiquetté par $i$
                     \item Chaque 0 devient un pas Est ($\rightarrow$)
                 \end{itemize}
-                \item $\color{red}{\displaystyle lr_{a,b} =
-                    |\mathcal{LR}_{a,b}| = b^{a-1}}$
             \end{itemize}
+
+            \begin{thm} [Taille de $\mathcal{LR}_{a,b}$]
+                $\displaystyle lr_{a,b} = |\mathcal{LR}_{a,b}| = b^{a-1}$
+            \end{thm}
+
         \end{column}
         \begin{column}{0.3\textwidth} 
                 \begin{itemize}
@@ -425,42 +532,53 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}
-    \frametitle{2.1) Chemins de Dyck rationnels}
+\begin{frame} %23
+    \frametitle{2.1) Chemins de Dyck rationnels étiquettés}
     \begin{itemize}
         \item Exemple : $w = 20130000 \in \mathcal{LR}_{3,5}$
     \end{itemize}
     \input{fig/fig10.tex}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %24
     \frametitle{2.1) Fonctions de parking rationnelles}
+    \only<1>{
     \begin{itemize}
         \item \textbf{Fonction de Parking rationnelle primitive} :
-        $\mathcal{PF'}_{a,b} = \{(a_1, \ldots, a_a)$ | $1 \leqslant a_i
+        $\mathcal{PF'}_{a,b} = \{(u_1, \ldots, u_a)$ | $1 \leqslant u_i
         \leqslant 1 + \frac{b}{a}(i-1)$ pour tout $i$ entre $1$ et $a$,
-        et $a_i \leqslant \ldots \leqslant a_a\}$
+        et $u_i \leqslant \ldots \leqslant u_a\}$
         \begin{itemize}
             \item Exemple : $(1, 1, 1, 2, 2, 2, 3) \in \mathcal{PF'}_{7,3}$
-            \item Contre-exemple : $(1, 1, 2, 2, 2, 2, 3) \not \in
-                \mathcal{PF'}_{7,3}$
+            \item Contre-exemple : $(1, 1, \color{blue}{2} \color{black}, 2,
+                 2, 2, 3) \not \in \mathcal{PF'}_{7,3}$
             \item Exemple : $(1, 2, 4) \in \mathcal{PF'}_{3,5}$
         \end{itemize}
-        \item $\color{red}{\displaystyle pf'_{a,b} = |\mathcal{PF'}_{a,b}|
-            = Cat(a,b) = \frac{1}{a+b}\binom{a+b}{a}}$
+    \end{itemize}
+
+    \begin{thm} [Taille de $\mathcal{PF'}_{a,b}$]
+        $\displaystyle pf'_{a,b} = |\mathcal{PF'}_{a,b}|
+            = Cat(a,b) = \frac{1}{a+b}\binom{a+b}{a}$
+    \end{thm}
+
+    }\only<2>{
+    \begin{itemize}
         \item \textbf{Fonction de Parking rationnelle} : $\mathcal{PF}_{a,b}
-            = \{(a_1, \ldots, a_a)$ dont le tri croissant $(b_1, \ldots,
-            b_a) \in \mathcal{PF'}_{a,b}\}$
+            = \{(u_1, \ldots, u_a)$ dont le tri croissant $(v_1, \ldots,
+            v_a) \in \mathcal{PF'}_{a,b}\}$
         \begin{itemize}
             \item Exemple : $(3, 1, 2, 2, 1, 2, 1) \in \mathcal{PF}_{7,3}$
             \item Exemple : $(4, 1, 2) \in \mathcal{PF}_{3,5}$
         \end{itemize}
-        \item $\color{red}{\displaystyle pf_{a,b} = |\mathcal{PF}_{a,b}| =
-            b^{a-1}}$
     \end{itemize}
+
+    \begin{thm} [Taille de $\mathcal{PF}_{a,b}$]
+        $\displaystyle pf_{a,b} = |\mathcal{PF}_{a,b}| = b^{a-1}$
+    \end{thm}
+    }
 \end{frame}
 
-\begin{frame}
+\begin{frame} %25
     \frametitle{2) Relations et bijections}
     On utilise ici les mêmes relations et bijections que dans le cas
     classique.
@@ -468,7 +586,7 @@
 
 \subsection{Posets rationnels primitifs}
 
-\begin{frame}
+\begin{frame} %26
     \frametitle{2.2) Posets \textbf{bijectifs} pour $\mathcal{R}_{5,3}$ et
         $\mathcal{PF'}_{5,3}$}
         \begin{columns}
@@ -481,7 +599,7 @@
         \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %27
     \frametitle{2.2) Posets \textbf{bijectifs} pour $\mathcal{R}_{3,7}$ et
         $\mathcal{PF'}_{3,7}$}
         \begin{columns}
@@ -496,19 +614,19 @@
 
 \subsection{Posets rationnels non-primitifs}
 
-\begin{frame}
+\begin{frame} %28
     \frametitle{2.3) Posets \textbf{bijectifs} pour $\mathcal{LR}_{5,2}$ et
         $\mathcal{PF}_{5,2}$}
         \input{fig/fig15.tex}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %29
     \frametitle{2.3) Posets \textbf{bijectifs} pour $\mathcal{LR}_{5,2}$ et
         $\mathcal{PF}_{5,2}$}
         \input{fig/fig16.tex}
 \end{frame}
 
-\begin{frame}
+\begin{frame} %30
     \frametitle{2.3) Posets \textbf{bijectifs} pour $\mathcal{LR}_{2,7}$ et
         $\mathcal{PF}_{2,7}$}
         \begin{columns}
@@ -521,6 +639,6 @@
         \end{columns}
 \end{frame}
 
-\section{Conclusion}
+\section{Conclusion} %31
 
 \end{document}

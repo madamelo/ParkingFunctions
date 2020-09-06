@@ -4,8 +4,19 @@
         \node (b) at (0, 8) {};
         \node (c) at (4, 0) {};
         \node (d) at (3.3, 7.7) {};
-        \node (e) at (3.5, 5) [color = magenta]
-            {$y = \frac{7}{3}x$}; 
+
+        \draw [dashed, very thin, color=gray] (1,0) to (1,8);
+        \draw [dashed, very thin, color=gray] (2,0) to (2,8);
+        \draw [dashed, very thin, color=gray] (3,0) to (3,8);
+        \draw [dashed, very thin, color=gray] (0,1) to (4,1);
+        \draw [dashed, very thin, color=gray] (0,2) to (4,2);
+        \draw [dashed, very thin, color=gray] (0,3) to (4,3);
+        \draw [dashed, very thin, color=gray] (0,4) to (4,4);
+        \draw [dashed, very thin, color=gray] (0,5) to (4,5);
+        \draw [dashed, very thin, color=gray] (0,6) to (4,6);
+        \draw [dashed, very thin, color=gray] (0,7) to (4,7);
+
+        \node (e) at (3.5, 5) [color = magenta] {$y = \frac{7}{3}x$}; 
         \draw [dashed, very thick, ->] (a) to (b);
         \draw [dashed, very thick, ->] (a) to (c);
         \draw [dashed, very thick, ->]

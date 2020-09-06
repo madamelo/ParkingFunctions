@@ -4,8 +4,17 @@
         \node (b) at (0, 4) {};
         \node (c) at (6, 0) {};
         \node (d) at (5.5, 3.3) {};
-        \node (e) at (6.3, 3) [color = magenta]
-            {$y = \frac{3}{5}x$}; 
+
+        \draw [dashed, very thin, color=gray] (1,0) to (1,4);
+        \draw [dashed, very thin, color=gray] (2,0) to (2,4);
+        \draw [dashed, very thin, color=gray] (3,0) to (3,4);
+        \draw [dashed, very thin, color=gray] (4,0) to (4,4);
+        \draw [dashed, very thin, color=gray] (5,0) to (5,4);
+        \draw [dashed, very thin, color=gray] (0,1) to (6,1);
+        \draw [dashed, very thin, color=gray] (0,2) to (6,2);
+        \draw [dashed, very thin, color=gray] (0,3) to (6,3);
+
+        \node (e) at (6.3, 3) [color = magenta] {$y = \frac{3}{5}x$}; 
         \draw [dashed, very thick, ->] (a) to (b);
         \draw [dashed, very thick, ->] (a) to (c);
         \draw [dashed, very thick, ->]
