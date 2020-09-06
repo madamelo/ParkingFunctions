@@ -9,6 +9,8 @@
 \usepackage{amsthm}
 \usepackage{amsbsy}
 
+\usepackage{natbib}
+
 \usepackage{tikz}
 \usetikzlibrary{shapes.multipart}
 \usetikzlibrary{arrows}
@@ -26,6 +28,7 @@
 }
 
 \newtheorem*{thm}{Théorème}
+\newtheorem*{conj}{Conjecture}
 
 \title{Fonctions de Parking}
 \author{Tessa Lelièvre-Osswald}
@@ -442,7 +445,28 @@
 
 \begin{frame} %18
     \frametitle{1.2) Conjecture Principale}
-    %TODO
+    \only<1>{
+    \begin{conj}[Conjecture Principale]
+        Le nombre d'intervalles des posets définis ici pour $\mathcal{LD}_n$
+        et $\mathcal{PF}_n$ est donnée par :
+        \begin{itemize}
+            \item $a(1) = 1$
+            \item $\displaystyle a(n+1) = \sum_{k = 1}^{n}{(-1)^{k-1}
+                \binom{n}{k} \binom{n+2-k}{2}^k a (n+1-k)}$
+        \end{itemize}
+    \end{conj}
+    \begin{itemize}
+        \item Cette formule donne le $n+1^{e}$ terme de la suite de l'OEIS
+        A196304.
+        \item Les premiers termes de cette suite sont $1, 1, 5, 64, 1587,
+        65421, 4071178, 357962760, 4237910716, ...$.
+    \end{itemize}
+    }\only<2>{
+    
+    Bien que, à notre connaissance, il n'existe pas de structure combinatoire associée à cette suite, les tests effectués via Sagemath
+    sur $n = 1, 2, \cdots, 8$ suggèrent que le nombre d'intervalles de nos
+    posets puissent en être une.
+    }
 \end{frame}
 
 \section{Des posets pour le cas rationnel} %19
@@ -640,5 +664,43 @@
 \end{frame}
 
 \section{Conclusion} %31
+
+\begin{frame} %32
+    \frametitle{3) Résumé}
+    \begin{itemize}
+        \item Relations de couvertures créant des
+        posets pour les quatre types de fonctions de parking et
+        les quatre types de chemins de Dyck mis en bijections
+        avec ces dernières.
+        \item Dans chaque cas, le poset de l'un peut être obtenu en appliquant la
+        bijection présentée au poset de l'autre.
+        \item Cas rationnel : marche pour $a > b$ et $a < b$.
+        \item La plupart des travaux précédents se basaient sur les
+            \emph{partitions non-croisées}, et ne donnaient pas de relation de
+            couverture évidente pour les fonctions de parking.
+                
+        \item Une autre partie de nos travaux, non-incluse dans cette
+            présentation, a été d'étendre la notion d'\emph{arbre de parking}
+            au cas rationnel, et d'encoder les notions présentées.
+    \end{itemize}
+\end{frame}
+
+\begin{frame} %33
+    \frametitle{3) Travaux futurs}
+    \begin{itemize}
+        \item Preuve pour la Conjecture Principale.
+        \item Formules généralisées pour le nombre d'intervalles des posets
+            dans le cas rationnel.
+        \item Relation de couverture pour les arbres de parking rationnels.
+    \end{itemize}
+\end{frame}
+
+\begin{frame} %34
+    \frametitle{3) Bibliographie}
+    \small
+    \bibliographystyle{unsrt}
+    \bibliography{ref}
+    \nocite{*}
+\end{frame}
 
 \end{document}

@@ -1,0 +1,44 @@
+\begin{thebibliography}{10}
+
+\bibitem{ref1}
+Alan~G. Konheim and Benjamin Weiss.
+\newblock An occupancy discipline and applications.
+
+\bibitem{ref2}
+R.P. Stanley and G.C. Rota.
+\newblock {\em Enumerative Combinatorics: Volume 1}.
+
+\bibitem{ref3}
+R.P. Stanley and S.~Fomin.
+\newblock {\em Enumerative Combinatorics: Volume 2}.
+
+\bibitem{ref4}
+Germain Kreweras.
+\newblock Sur les partitions non croisees d'un cycle.
+
+\bibitem{ref5}
+Paul~H. Edelman.
+\newblock Chain enumeration and non-crossing partitions.
+
+\bibitem{ref6}
+Amarpreet Rattan.
+\newblock Parking functions and related combinatorial structures.
+
+\bibitem{ref7}
+Drew Armstrong, Nicholas A.~Loehr, and Gregory S.~Warrington.
+\newblock Rational parking functions and catalan numbers.
+
+\bibitem{ref8}
+Michelle Bodnar.
+\newblock Rational noncrossing partitions for all coprime pairs.
+
+\bibitem{ref9}
+Bérénice Delcroix-Oger, Matthieu Josuat-Vergès, and Lucas Randazzo.
+\newblock Some properties of the parking function poset.
+
+\bibitem{ref10}
+M.~T.~L. Bizley.
+\newblock Derivation of a new formula for the number of minimal lattice paths
+  [...].
+
+\end{thebibliography}
